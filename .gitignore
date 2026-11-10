@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+maqueta/manual.html
+Caribdis-imprenta.pdf
+dist/
+app/dist/
+app/src-tauri/
+.DS_Store
+Thumbs.db

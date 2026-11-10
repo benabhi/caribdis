@@ -1,0 +1,6 @@
+src-tauri/target/
+Caribdis-portable/
+Caribdis-portable.zip
+Caribdis-datos/
+node_modules/
+__pycache__/

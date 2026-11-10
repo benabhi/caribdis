@@ -1,0 +1,54 @@
+<meta charset="utf-8">
+<title>Caribdis</title>
+<meta name="description" content="Caribdis: la app para jugar el juego de rol en solitario. Tu nave cayó. El planeta canta. Algo viene.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#1d1512">
+<style>
+/*@@FUENTES@@*/
+/*@@CSS@@*/
+</style>
+<div id="titulo"></div>
+<div id="app">
+  <header id="cabecera" hidden></header>
+  <div id="marco">
+    <aside id="hoja" data-vista="hoja" aria-label="Hoja de personaje"></aside>
+    <main id="mesa" data-vista="mesa" class="activa" aria-live="polite"></main>
+    <section id="vista-mapa" data-vista="mapa" aria-label="Mapa"></section>
+    <section id="vista-bitacora" data-vista="bitacora" aria-label="Bitácora"></section>
+  </div>
+  <nav id="nav-movil" aria-label="Navegación"></nav>
+</div>
+<aside id="codice" aria-label="Códice: reglas y eventos"></aside>
+<div id="avisos" aria-live="polite"></div>
+<noscript><p style="padding:20px">Caribdis necesita JavaScript para funcionar.</p></noscript>
+<script src="vendor/three.min.js"></script>
+<script>
+/*@@BASE@@*/
+</script>
+<script type="application/json" id="datos-libro">/*@@LIBRO@@*/</script>
+<script>
+CB.libro = JSON.parse(document.getElementById('datos-libro').textContent);
+</script>
+<script>
+/*@@JS@@*/
+</script>
+<script>
+/* arranque */
+(function () {
+  'use strict';
+  const A = CB.app, T = CB.texto, el = CB.el;
+  // navegación móvil
+  const nav = document.getElementById('nav-movil');
+  [['mesa', 'mapa', 'Mesa', 'data-ir-vista'], ['hoja', 'persona', 'Hoja', 'data-ir-vista'], ['mapa', 'mapa', 'Mapa', 'data-ir-vista'], ['bitacora', 'bitacora', 'Bitácora', 'data-ir-vista'], [null, 'libro', 'Códice', 'data-codice']].forEach(([v, ico, t, attr]) => {
+    const b = el('button', { type: 'button', html: `${T.ico(v === 'mesa' ? 'dado' : ico)}<span>${t}</span>` });
+    b.setAttribute(attr, v || '');
+    nav.append(b);
+  });
+  // partida guardada
+  let S = CB.guardado.cargarActual();
+  if (S && (!S.prota || !S.escena || !S.attr)) S = null;
+  if (S && S.escena && S.escena.tipo === 'evento') S.escena = Object.assign({ aplicados: {}, ramas: {}, si: {}, dados: {}, elegida: null, plantilla: null }, S.escena);
+  A.S = S;
+  CB.crear.titulo();
+})();
+</script>
