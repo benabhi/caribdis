@@ -224,12 +224,31 @@
   // instrucciones del libro que la app ya resolvió al crear la partida: se dice junto a la instrucción
   const YA_HECHO = {
     e005: [{ re: /cinco sistemas como «perdidos»/, txt: (S) => `<b>Ya está anotado.</b> La app lo hizo al crear tu partida: en la Hoja, pestaña <b>Nave</b>, tienes los cinco sistemas como «Perdido» y tu sistema personal, ${S.sistemas.Personal && S.sistemas.Personal.n ? `la <b>${CB.u.esc(S.sistemas.Personal.n)}</b>` : 'el de tu protagonista'}, como «Por descubrir».` }],
+    e840: [{ re: /Cuenta tus FRAGMENTO_/, txt: (S) => {
+      const r = M.fijarSecreto(S);
+      if (!r.ya) A.guardar();
+      return `${cuentaVerdades(S)}<br><b>${r.azar ? `No tenías ningún FRAGMENTO_: la app tiró 1d6 y salió ${r.v}.` : 'La app ya contó.'} Tu Secreto es el ${r.v}:</b> lee ${T.ref('e84' + r.v)}. Queda fijo: aunque ganes más FRAGMENTO_, ya no cambia.`;
+    } }],
+    e917: [{ re: /Si el Secreto es 1/, txt: secretoAlFinal }],
+    e918: [{ re: /Si el Secreto es 3/, txt: secretoAlFinal }],
     e009: [{ re: /El Reloj empieza en 60/, txt: (S) => S.reloj == null ? '<b>Ya está anotado.</b> En este modo no hay Reloj.' : `<b>Ya está anotado.</b> Tu Reloj está en <b>${S.reloj}</b> (arriba, en la barra); la app lo baja sola en cada amanecer.` }],
   };
+  function cuentaVerdades(S) {
+    const { cuenta } = M.verdades(S);
+    return 'Tus FRAGMENTO_ por verdad: ' + [1, 2, 3, 4, 5, 6].map((v) => `<b>${v}</b>: ${cuenta[v]}`).join(' · ');
+  }
+  function secretoAlFinal(S) {
+    if (S.secreto != null) return `<b>Tu Secreto es el ${S.secreto}.</b>`;
+    const v = M.secretoContado(S);
+    return `${cuentaVerdades(S)}<br><b>${v ? `No lo habías descubierto: tus FRAGMENTO_ dicen que es el ${v}.` : 'No lo habías descubierto y no tienes FRAGMENTO_: tira 1d6.'}</b>`;
+  }
   function yaHecho(cuerpo, id) {
     for (const n of YA_HECHO[id] || []) {
-      const p = [...cuerpo.querySelectorAll('p')].find((x) => n.re.test(x.textContent));
-      if (p && !p.nextElementSibling?.classList.contains('ya-hecho')) p.after(el('div.ya-hecho', { html: `<span class="yh-ico">✓</span><span>${n.txt(A.S)}</span>` }));
+      const p = [...cuerpo.querySelectorAll('p, li')].find((x) => n.re.test(x.textContent));
+      if (!p) continue;
+      const caja = () => el('div.ya-hecho', { html: `<span class="yh-ico">✓</span><span>${n.txt(A.S)}</span>` });
+      if (p.tagName === 'LI') { if (!p.querySelector('.ya-hecho')) p.append(caja()); }
+      else if (!p.nextElementSibling?.classList.contains('ya-hecho')) p.after(caja());
     }
   }
   function restaurarEvento(cuerpo, e) {

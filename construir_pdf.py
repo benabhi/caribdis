@@ -750,6 +750,9 @@ class Libro:
             if m:
                 refs = re.findall(r'\[([er]\d{3})\]', m.group(2))
                 r = ' '.join(f'<a class="ref ref-{x[0]}" href="#{x}">{x}</a>' for x in refs)
+                v = re.match(r'\s*\*\*(\d)\*\*', m.group(2))
+                if v:
+                    r = f'<span class="im-v">{v.group(1)}</span> ' + r
                 filas.append(f'<p class="im"><span class="marca">{esc(m.group(1)).replace("_", "_<wbr>")}</span> {r}</p>')
         intro = [ln for ln in n.get('cuerpo', []) if ln.startswith('*')]
         self.cerrar_col()
@@ -854,8 +857,9 @@ def hoja_nave(ancla):
   <div class="h-bloque"><div class="h-rot">{icono("asentamiento")} Grandes obras <span class="h-nota">fases I · II · III</span></div>
     {''.join(f'<div class="h-obra"><div class="h-campo mini"></div>{casillas(3, "c gr")}</div>' for _ in range(2))}</div>
  </div>
- <div class="h-secreto"><div class="h-sec-sobre">{icono("canto")}</div><div><b>El Secreto.</b> Tira 1d6 sin mirar, anota el número en un papel,
-  dóblalo y guárdalo aquí. Solo se abre en e840.</div></div>
+ <div class="h-secreto"><div class="h-sec-txt"><b>El Secreto.</b> Una raya por cada FRAGMENTO_ en la verdad a la que apunta (índice de Marcas).
+  En e840, rodea la que más tenga: es tu Secreto.</div>
+  <div class="h-sec-cuenta">{''.join(f'<div><span>{i}</span></div>' for i in range(1, 7))}</div></div>
 </section>'''
 
 

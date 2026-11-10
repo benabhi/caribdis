@@ -84,7 +84,7 @@
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-**El Secreto:** dobla un papel con tu número (1d6) y guárdalo aquí: ▢
+**El Secreto:** una raya por cada `FRAGMENTO_` en su verdad (índice de Marcas): 1▢ 2▢ 3▢ 4▢ 5▢ 6▢
 
 ---
 
@@ -110,8 +110,8 @@
 ### Regiones (1d8)
 1 Dunas (e200) · 2 Cementerio (e220) · 3 Salinas (e240) · 4 Cañones (e300) · 5 Bosque (e260) · 6 Ciudad (e320) · 7 Torres (e340) · 8 Polo (e280).
 
-### Secreto (1d6)
-Léelo solo en e840: 1 e841 · 2 e842 · 3 e843 · 4 e844 · 5 e845 · 6 e846.
+### Secreto
+El que más repiten tus `FRAGMENTO_` (e840): 1 e841 · 2 e842 · 3 e843 · 4 e844 · 5 e845 · 6 e846.
 
 ### Alerta
 Sube con ◉ y combates ruidosos · elige la columna · a 4, cada subida extra resta 2 al Reloj · `BALIZA_ACTIVA`: llegada a 2, ya no baja · Ocultarte: −1.

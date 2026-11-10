@@ -46,6 +46,10 @@ def arte():
                 im = im.resize((ancho, round(im.height * ancho / im.width)), Image.LANCZOS)
             im.save(out, 'JPEG', quality=78, optimize=True, progressive=True)
             hechos += 1
+    # el logo de la editorial (pantalla de inicio): PNG con transparencia
+    logo = Image.open(RAIZ / 'arte' / 'marca' / 'utopia-logo-claro.png').convert('RGBA')
+    logo = logo.resize((480, round(logo.height * 480 / logo.width)), Image.LANCZOS)
+    logo.save(dest / 'utopia.png', 'PNG', optimize=True)
     for n in ['papel.jpg', 'papel-oscuro.jpg']:
         im = Image.open(RAIZ / 'maqueta' / n).convert('RGB')
         im.save(dest / n, 'JPEG', quality=72, optimize=True, progressive=True)
@@ -82,6 +86,10 @@ def pagina():
     # la entradilla de «Lo que se sabe de Caribdis», para el Códice
     m = re.search(r'^## Lo que se sabe de Caribdis\s*\n+\*(.+?)\*\s*$', (RAIZ / 'libro' / '03-mundo.md').read_text(encoding='utf-8'), re.M)
     libro['lore_intro'] = m.group(1) if m else ''
+    # r191 · a qué verdad apunta cada FRAGMENTO_ (la misma tabla que usa el índice de Marcas)
+    sys.path.insert(0, str(RAIZ / 'herramientas'))
+    from verdades import VERDADES
+    libro['verdades'] = VERDADES
     libro['repo'] = {'url': REPO, 'pdf': PDF, 'descarga': f'{REPO}/raw/{RAMA}/{PDF}', 'carpeta': f'{REPO}/blob/{RAMA}/{PDF}'}
     libro = json.dumps(libro, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
     fuentes = (APP / 'vendor' / 'fuentes' / 'fuentes.css').read_text(encoding='utf-8')

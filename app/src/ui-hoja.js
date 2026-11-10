@@ -176,6 +176,10 @@
       el('div', el('b', p.nombre), el('small', { html: `${D.REGIONES[p.region] ? D.REGIONES[p.region].corto : p.region} · ${T.ref(p.ev)}${p.region === S.region ? ' · <em>estás aquí</em>' : ''}` })),
       el('button.btn-icono.peq', { type: 'button', 'aria-label': 'Borrar Pista', onclick: () => A.hacer((S) => { S.pistas.splice(i, 1); M.log(S, `Borras la Pista «${p.nombre}».`, ['r192']); }), html: T.ico('cerrar') }))));
     c.append(el('h4.hoja-sec', { html: `Marcas ${T.ref('r191')} <small>· ${M.cuentaFragmentos(S)}/3 FRAGMENTO_</small>` }));
+    const { cuenta } = M.verdades(S);
+    c.append(el('div.verdades', { title: 'A qué verdad apuntan tus FRAGMENTO_ (índice de Marcas). En e840, la que más se repite es tu Secreto.' },
+      el('span.vd-rot', S.secreto != null ? `Tu Secreto es el ${S.secreto}` : 'FRAGMENTO_ por verdad (e840)'),
+      ...[1, 2, 3, 4, 5, 6].map((v) => el('span.vd' + (S.secreto === v ? '.es' : ''), el('b', String(v)), el('i', '×' + cuenta[v])))));
     const lista = el('div.marcas-lista');
     S.marcas.forEach((m) => lista.append(el('span.marca-chip', el('a.marca', { href: '#marca-' + m, onclick: (e) => { e.preventDefault(); A.cod.filtro = 'marcas'; A.cod.q = m; A.cod.id = null; A.abrirCodice(); } }, m), el('button', { type: 'button', 'aria-label': 'Borrar ' + m, onclick: () => A.hacer((S) => M.marcar(S, m, false, 'a mano')) }, '×'))));
     c.append(lista);

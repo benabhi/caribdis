@@ -18,6 +18,12 @@ CB.u = {
   plural: (n, s, p) => (n === 1 ? s : p || s + 's'),
 };
 
+/** Partidas de versiones anteriores: el Secreto ya no se tira al empezar (r108), sale de los FRAGMENTO_ en e840. */
+CB.migrar = function (S) {
+  if (S && S.secreto != null && !(S.marcas || []).includes('SECRETO_DESCUBIERTO')) S.secreto = null;
+  return S;
+};
+
 /** Crea un elemento: el('div.clase#id', {attr}, hijos...) */
 CB.el = function (sel, attrs, ...hijos) {
   const m = sel.match(/^([a-z0-9]+)?((?:[.#][\w-]+)*)$/i);
@@ -287,7 +293,7 @@ CB.guardado = {
     this.escribir(this.ACTUAL, S.id);
     return ok;
   },
-  cargar(id) { return this.leer(this.clavePartida(id)); },
+  cargar(id) { return CB.migrar(this.leer(this.clavePartida(id))); },
   cargarActual() {
     const ix = this.indice();
     const id = this.leer(this.ACTUAL) || (ix[0] && ix[0].id);

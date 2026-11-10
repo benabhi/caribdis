@@ -22,7 +22,7 @@ Cuando un texto dice **→ e030**, ve al evento e030 y léelo. Cuando dice **(r1
 - **Tres dados de seis caras** (d6). «2d6» significa tirar dos y sumarlos. «d66» significa tirar dos dados distintos: el primero son las decenas y el segundo las unidades (de 11 a 66).
 - **1d8 y 1d12 con dados de seis.** Para «1d12», tira dos d6: si el segundo sale 4–6, suma 6 al primero. Para «1d8», tira dos d6: el segundo da de 1 a 4 (con 5–6, vuelve a tirarlo), y suma 4 si el primero sale 4–6.
 - La **Hoja de protagonista** y la **Hoja de la nave** (Apéndices) y un lápiz.
-- Un papel doblado para el **Secreto** (r108).
+- Un papel aparte para tus **Marcas** (r191).
 
 Una goma también viene bien: la Hoja se borra mucho.
 
@@ -224,7 +224,7 @@ Las armas **cuerpo a cuerpo** usan Vigor. Las de **distancia** usan Reflejos. Un
 <a id="r108"></a>
 ### r108 · Preparar la partida
 
-1. **El Secreto.** Tira 1d6 sin mirar el resultado, anótalo en un papel y dóblalo. Es el **Origen del Canto**. No lo mires hasta que el libro te lo pida.
+1. **El Secreto.** El **Origen del Canto** no se tira: lo dirán los `FRAGMENTO_` que reúnas (r191). Hasta descubrirlo en [e840](#e840), no tienes Secreto: lo que dependa de él no cuenta.
 2. **Los sistemas.** Para cada uno de estos cinco sistemas, tira 1d8 y anota en la Hoja de la nave en qué región está su pecio: **Casco, Motor, Navegación, Soporte vital, Combustible**.
 3. **La tripulación.** Para cada tripulante, tira 1d8 y anota la región en la que está: **Iria, Bruno, Amara, Noemí, Tadeo, Lio**. Si eres el Piloto, empiezas con 1 tripulante al azar ya contigo (tira 1d6 en el orden de la lista) y no tiras su región.
 4. **Las regiones (1d8):** 1 Dunas de Óxido · 2 Cementerio de Naves · 3 Salinas Blancas · 4 Cañones de las Bestias · 5 Bosque Petrificado · 6 Ciudad Enterrada · 7 Torres del Canto · 8 Polo Helado. (Sin d8, usa dos d6 como explica r002.)
@@ -806,7 +806,7 @@ Las Marcas son palabras clave en `VERSALITAS`. Anótalas cuando el libro lo diga
 
 Una Marca escrita con un guion bajo al final, como `RUTA_` o `FRAGMENTO_`, es una familia: vale cualquier Marca que empiece así. Cuando ganes una, complétala al anotarla (por ejemplo, `RUTA_SALINAS` para una ruta a las Salinas Blancas). Cuando el libro pida `RUTA_` hacia una región, vale cualquiera que lleve a ella.
 
-Las Marcas que empiezan por `FRAGMENTO_` son pedazos de la verdad sobre el Canto. **Cuando tengas 3 `FRAGMENTO_` distintos**, ve inmediatamente a [e840](#e840).
+Las Marcas que empiezan por `FRAGMENTO_` son pedazos de la verdad sobre el Canto, y cada uno apunta a una verdad (e840). **Cuando tengas 3 `FRAGMENTO_` distintos**, ve inmediatamente a [e840](#e840).
 
 <a id="r192"></a>
 ### r192 · Pistas
@@ -861,7 +861,7 @@ Si recibes una Herida estando en Crítico, caes. Gasta **1 Temple**: despiertas 
 
 La partida termina cuando despegas (e900 o e905), cuando el Reloj llega a 0 (e919), cuando caes sin Temple (e920) o cuando un evento te lleva a un final. Lee tu final y tu epílogo.
 
-**Puntuación (opcional):** cada tripulante a bordo da 3 puntos; cada sistema Excelente, 2; cada día que quede en el Reloj, 1; y cada `FRAGMENTO_`, 1. Si descubriste el Secreto, suma 5.
+**Puntuación (opcional):** cada tripulante a bordo da 3 puntos; cada sistema Excelente, 2; cada día que quede en el Reloj, 1; y cada `FRAGMENTO_`, 1. Con `SECRETO_DESCUBIERTO`, suma 5.
 
 
 ---

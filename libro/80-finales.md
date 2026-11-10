@@ -201,7 +201,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - `DOS_EN_UNA` o `EL_VIGIA_APRENDE`: *«Hay otra mente como la tuya. No estás sola.»*
 - `AMARA_TENIA_RAZON`: *«Amara tenía razón. Lo escribió todo. Algún día, alguien la creerá.»*
 
-**Sobre el Secreto** (desdobla el papel si lo descubriste):
+**Sobre el Secreto** (solo si lo descubriste):
 - Si descubriste que el Secreto es **2** y no tienes `ENGAÑASTE_A_LA_SONDA` ni `MAPA_DE_LOS_RECOLECTORES`: *«Un año después, seis luces aparecen en el cielo de tu mundo.»*
 - Si el Secreto es **4**: *«Cuentas lo que sabes. Nadie te cree. Pero algunos dejan de responder a las llamadas de socorro de los sistemas que no salen en las cartas.»*
 - Si el Secreto es **6**: *«A veces, cuando oyes interferencias en una radio, te parece oír tu propia voz.»*
@@ -299,7 +299,7 @@ Dejas de resistirte. El Canto te envuelve como agua tibia y, por primera vez des
 
 Subes a la cima de la torre más alta. Te sientas en el trono. Y te vas, hacia dentro, con todos los demás.
 
-- **Si el Secreto es 1** (desdobla el papel): *«Es verdad. Nadie muere. Estás con los Antiguos, con los niños de las cunas vacías, con los ancianos del jardín, con cada náufrago que oyó la llamada. Sois millones. Sois uno. Y cuando llegan los Recolectores, el Canto canta más fuerte, y ellos no encuentran a nadie que llevarse.»* **Es una victoria.**
+- **Si el Secreto es 1** (si no lo sabías, cuéntalo: [e840](#e840)): *«Es verdad. Nadie muere. Estás con los Antiguos, con los niños de las cunas vacías, con los ancianos del jardín, con cada náufrago que oyó la llamada. Sois millones. Sois uno. Y cuando llegan los Recolectores, el Canto canta más fuerte, y ellos no encuentran a nadie que llevarse.»* **Es una victoria.**
 - **Si no:** *«Durante un tiempo, es maravilloso. Luego, poco a poco, ya no recuerdas por qué. Te conviertes en una nota más del Canto, que llama a la siguiente nave. Y la siguiente nave te oye.»* **Es una derrota.**
 
 *Fin.*
@@ -312,7 +312,7 @@ Subes a la cima de la torre más alta. Te sientas en el trono. Y te vas, hacia d
 
 El Polo se abre. El hielo estalla en una columna que llega hasta la Corona. Y de debajo sale algo tan grande que no lo entiendes: un ojo, una boca, un horizonte vivo.
 
-- **Si el Secreto es 3 y estás en la secuencia de despegue** (o despegas antes de que el Reloj baje 3, antes de que el planeta termine de romperse: si no lo consigues, es una derrota): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) y añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
+- **Si el Secreto es 3** (si no lo sabías, cuéntalo: [e840](#e840)) **y estás en la secuencia de despegue** (o despegas antes de que el Reloj baje 3, mientras el planeta se rompe; si no, es una derrota): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) y añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
 - **Si no:** *«La Bestia despierta hambrienta. Y tú estás encima.»* **Es una derrota.**
 
 *Fin.*

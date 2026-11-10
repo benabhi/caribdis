@@ -171,7 +171,7 @@ Cuando aparece un PNJ o una criatura, eliges una **postura** antes de tirar 1d6:
 
 ## 6. Motores de rejugabilidad
 
-1. **Origen del Canto (secreto, 1d6 al empezar):** decide qué emite el Canto en esta partida (los Antiguos dormidos, una IA de los Antiguos, una criatura planetaria, otra nave, el propio planeta, o algo que tu protagonista ya conoce). Las pistas apuntan a una u otra respuesta, y el final cambia.
+1. **Origen del Canto (secreto; en el libro final lo deciden los `FRAGMENTO_` reunidos, e840):** decide qué emite el Canto en esta partida (los Antiguos dormidos, una IA de los Antiguos, una criatura planetaria, otra nave, el propio planeta, o algo que tu protagonista ya conoce). Las pistas apuntan a una u otra respuesta, y el final cambia.
 2. **Columna de Alerta:** tu forma de jugar cambia lo que encuentras.
 3. **Colocación aleatoria:** al empezar tiras dónde están los 6 sistemas, los 6 tripulantes y 6 lugares sellados, sobre 12 sitios posibles. El mapa es fijo, pero su contenido no.
 4. **Pecios y ruinas procedurales:** tipo de nave o ruina (carguero, nave colonia, nave militar, arca de los Antiguos, torre del Canto, ciudad enterrada) × salas (d66) × guardián, con una profundidad de 1 a 3.

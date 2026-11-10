@@ -415,7 +415,7 @@
       const q = norm(A.cod.q);
       cuerpo.append(el('p.cod-intro', { html: `Cada Marca y dónde aparece (${T.ref('r191')}). ${S ? 'Las que tienes anotadas van resaltadas.' : ''}` }));
       Object.keys(CB.libro.marcas).filter((m) => !q || norm(m).includes(q)).forEach((m) => {
-        cuerpo.append(el('div.cod-marca' + (S && M.tiene(S, m) ? '.tiene' : ''), { id: 'marca-' + m, html: `<span class="marca">${m.replace(/_/g, '_<wbr>')}</span><span>${CB.libro.marcas[m].map((id) => T.ref(id)).join(' ')}</span>` }));
+        cuerpo.append(el('div.cod-marca' + (S && M.tiene(S, m) ? '.tiene' : ''), { id: 'marca-' + m, html: `<span class="marca">${m.replace(/_/g, '_<wbr>')}</span><span>${(CB.libro.verdades || {})[m] ? `<b class="cod-verdad" title="Apunta a la verdad ${CB.libro.verdades[m]} (e840)">${CB.libro.verdades[m]}</b> ` : ''}${CB.libro.marcas[m].map((id) => T.ref(id)).join(' ')}</span>` }));
       });
       cuerpo.querySelectorAll('.ref').forEach(enlazarRef);
       return;

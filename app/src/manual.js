@@ -69,7 +69,7 @@
         const S = o && o.juego === 'caribdis' ? o.partida : o;
         if (!S || !S.prota || !S.escena || !S.attr) throw new Error('formato');
         S.id = CB.guardado.nuevoId(); // una partida importada entra como partida nueva, sin pisar otra
-        A.S = S;
+        A.S = CB.migrar(S);
         A.deshacer = [];
         A.vista = 'mesa';
         A.guardar();

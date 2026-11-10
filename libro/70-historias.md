@@ -374,9 +374,9 @@ Tus registros se reescriben solos. Cada vez que intentas guardar un recuerdo, ap
 
 Lo has visto. Lo has oído. Lo has tocado. Ya no puedes no saberlo.
 
-**Desdobla el papel del Secreto** (r108) y lee el evento que corresponde a tu número: 1 → [e841](#e841), 2 → [e842](#e842), 3 → [e843](#e843), 4 → [e844](#e844), 5 → [e845](#e845), 6 → [e846](#e846).
+**Cuenta tus `FRAGMENTO_`** según la verdad a la que apunta cada uno (el número que lleva en el índice de Marcas). Tu **Secreto** es la que más se repite; si empatan, gana la del último `FRAGMENTO_` que anotaste de esas verdades; si no tienes ninguno, tira 1d6. Lee su evento: 1 → [e841](#e841), 2 → [e842](#e842), 3 → [e843](#e843), 4 → [e844](#e844), 5 → [e845](#e845), 6 → [e846](#e846).
 
-Anota `SECRETO_DESCUBIERTO`. Desde ahora, en tu final, puedes elegir los finales que dependan del Secreto. **★** (Si ya tenías la Marca, no ganas nada nuevo.)
+Anota `SECRETO_DESCUBIERTO` y su número: ya no cambia, aunque ganes más `FRAGMENTO_`. Desde ahora puedes elegir los finales que dependan del Secreto. **★** (Si ya tenías la Marca, no vuelves a contar ni ganas nada nuevo.)
 
 ---
 

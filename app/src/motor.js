@@ -68,7 +68,6 @@
 
   /** r108 · preparar la partida con los dados ya tirados */
   M.preparar = function (S, t) {
-    S.secreto = t.secreto;
     D.SISTEMAS.forEach((s, i) => (S.sistemas[s].region = t.sistemas[i]));
     Object.keys(D.TRIPULACION).forEach((n, i) => (S.tripu[n].region = t.tripu[i]));
     if (t.compa) {
@@ -77,7 +76,7 @@
     }
     if (S.modo === 'corta' && t.esperando) S.tripu[t.esperando] = { estado: 'cicatriz', region: null, lealtad: 2, heridas: 0 };
     if (S.estacion == null && t.estacion) S.estacion = t.estacion;
-    M.log(S, 'Partida preparada: el Secreto doblado, los pecios y la tripulación repartidos por Caribdis.', ['r108']);
+    M.log(S, 'Partida preparada: los pecios y la tripulación repartidos por Caribdis. El Secreto lo dirán tus FRAGMENTO_.', ['r108']);
   };
 
   /* ---------------- consultas ---------------- */
@@ -89,6 +88,31 @@
   M.tiene = (S, m) => (m.endsWith('_') ? S.marcas.some((x) => x.startsWith(m)) : S.marcas.includes(m));
   M.compas = (S) => Object.keys(S.tripu).filter((n) => S.tripu[n].estado === 'contigo');
   M.cuentaFragmentos = (S) => new Set(S.marcas.filter((m) => m.startsWith('FRAGMENTO_'))).size;
+  /** r191 · cuántos FRAGMENTO_ apuntan a cada verdad (1–6), en el orden en que se anotaron */
+  M.verdades = (S) => {
+    const V = (CB.libro && CB.libro.verdades) || {};
+    const cuenta = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
+    const orden = [];
+    S.marcas.forEach((m) => { const v = V[m]; if (v) { cuenta[v] += 1; orden.push(v); } });
+    return { cuenta, orden };
+  };
+  /** e840 · la verdad que más se repite; empate: la del último anotado; sin ninguno: null (se tira 1d6) */
+  M.secretoContado = (S) => {
+    const { cuenta, orden } = M.verdades(S);
+    const max = Math.max(...Object.values(cuenta));
+    if (!max) return null;
+    for (let i = orden.length - 1; i >= 0; i--) if (cuenta[orden[i]] === max) return orden[i];
+    return null;
+  };
+  /** e840 · fija el Secreto (una sola vez). Devuelve {v, azar} */
+  M.fijarSecreto = (S) => {
+    if (S.secreto != null) return { v: S.secreto, azar: false, ya: true };
+    let v = M.secretoContado(S), azar = false;
+    if (v == null) { v = CB.u.d(6); azar = true; }
+    S.secreto = v;
+    M.log(S, azar ? `No tenías ningún FRAGMENTO_: tiras 1d6 y sale ${v}. Tu Secreto es el ${v}.` : `Cuentas tus FRAGMENTO_: tu Secreto es el ${v}.`, ['e840'], { ev: 'e84' + v });
+    return { v, azar, ya: false };
+  };
   M.llevaPesado = (S) => D.PESADOS.filter((s) => S.sistemas[s].estado === 'llevado').length;
   M.blindaje = (S) => {
     let b = (D.PROTECCIONES[S.proteccion] || { bl: 0 }).bl;
@@ -256,6 +280,7 @@
       S.marcas.push(m);
       M.log(S, `Anotas la Marca ${m}${fuente ? ' · ' + fuente : ''}`, ['r191']);
       if (m === 'BALIZA_MUDA' || m === 'BALIZA_ROTA') M.marcar(S, 'BALIZA_ACTIVA', false);
+      if (m === 'SECRETO_DESCUBIERTO') M.fijarSecreto(S);
       if (m.startsWith('FRAGMENTO_')) {
         if (S.rasgos.includes('e715')) M.cambiar(S, 'temple', 1, 'Oído profundo (e715)');
         if (M.cuentaFragmentos(S) >= 3 && !S.umbrales.verdad) {
@@ -265,6 +290,7 @@
       }
     } else if (!si && ya) {
       S.marcas = S.marcas.filter((x) => x !== m);
+      if (m === 'SECRETO_DESCUBIERTO') S.secreto = null;
       M.log(S, `Borras la Marca ${m}${fuente ? ' · ' + fuente : ''}`, ['r191']);
     }
   };
@@ -780,7 +806,7 @@
     const exc = Object.values(S.sistemas).filter((s) => s.estado === 'instalado' && s.cal === 'Excelente').length;
     const dias = Math.max(0, S.reloj || 0);
     const frag = M.cuentaFragmentos(S);
-    const secreto = S.umbrales.verdad ? 5 : 0;
+    const secreto = M.tiene(S, 'SECRETO_DESCUBIERTO') ? 5 : 0;
     return { tripu: tripu * 3, exc: exc * 2, dias, frag, secreto, total: tripu * 3 + exc * 2 + dias + frag + secreto };
   };
 })();

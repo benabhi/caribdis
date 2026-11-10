@@ -86,6 +86,7 @@
       el('div.tp-fondo', { style: { backgroundImage: 'url(arte/portada-panoramica.jpg)' } }),
       el('div.tp-velo'),
       el('main.tp-centro',
+        el('img.tp-utopia', { src: 'arte/utopia.png', alt: 'UtopIA' }),
         el('div.tp-sobre', 'Un juego de rol en solitario'),
         el('h1.tp-marca', 'Caribdis'),
         el('p.tp-lema', CB.libro.lema || 'Tu nave cayó. El planeta canta. Algo viene.'),
@@ -457,13 +458,13 @@
 
   /* ---------- 7 · preparar (r108) ---------- */
   function pasoPreparar(c) {
-    c.append(...cabecera(7, 'Preparar la partida', 'Los dados reparten por el planeta los cinco sistemas perdidos y a tu tripulación. Esos lugares son tus <b>Hallazgos</b>: cuando explores esa región (r153), podrás encontrarlos. El Secreto queda doblado: no lo mires hasta que el libro lo pida.', ['r108', 'r150', 'r153']));
+    c.append(...cabecera(7, 'Preparar la partida', 'Los dados reparten por el planeta los cinco sistemas perdidos y a tu tripulación. Esos lugares son tus <b>Hallazgos</b>: cuando explores esa región (r153), podrás encontrarlos. El Secreto no se tira: lo dirán los <b>FRAGMENTO_</b> que reúnas (r191).', ['r108', 'r150', 'r153']));
     const p = W.prep;
     if (!p) {
       c.append(el('div.prep-vacia',
-        el('div.secreto-sobre.cerrado', el('span', 'El Secreto'), el('small', 'aún sin tirar')),
+        el('div.secreto-sobre.cerrado', el('span', 'El Secreto'), el('small', 'lo dirán tus FRAGMENTO_')),
         el('button.btn.primario.grande', { type: 'button', onclick: tirarPrep, html: `${T.ico('dado')} Tirar la preparación` }),
-        el('p.as-nota', { html: `Un dado para el Secreto, 1d8 por sistema y por tripulante${W.prota === 'piloto' ? ', y 1d6 para el tripulante que ya está contigo' : ''}${W.estacion === 'azar' ? ', y 1d6 para la estación' : ''}. Si juegas con tus propios dados, después puedes corregir cada valor.` }),
+        el('p.as-nota', { html: `1d8 por sistema y por tripulante${W.prota === 'piloto' ? ', y 1d6 para el tripulante que ya está contigo' : ''}${W.estacion === 'azar' ? ', y 1d6 para la estación' : ''}. Si juegas con tus propios dados, después puedes corregir cada valor.` }),
       ));
       return;
     }
@@ -489,7 +490,7 @@
       ),
       el('div.prep-col',
         mapa,
-        el('div.secreto-sobre', el('span', 'El Secreto'), el('small', 'Doblado. No lo mires.'), el('i', { html: T.ico('canto') })),
+        el('div.secreto-sobre', el('span', 'El Secreto'), el('small', 'Sin tirar: lo dirán tus FRAGMENTO_ (e840).'), el('i', { html: T.ico('canto') })),
         W.estacion !== 'ninguna' ? el('div.prep-estacion', { html: `<span class="et">Estación ${T.ref('r213')}</span><b>${p.estacion} · ${D.ESTACIONES[p.estacion][0]}</b><span>${D.ESTACIONES[p.estacion][1]}</span>` }) : null,
         W.modo === 'corta' ? el('label.campo', el('span', { html: `Tripulante esperando en la Cicatriz ${T.ref('r211')}` }), (() => { const s = el('select', { onchange: (e) => { p.esperando = e.target.value; pintar(); } }); Object.keys(D.TRIPULACION).filter((t) => t !== p.compa).forEach((t) => s.append(el('option', { value: t, selected: p.esperando === t ? true : null }, `${t} · ${D.TRIPULACION[t].rol}`))); return s; })()) : null,
         el('button.btn.fantasma', { type: 'button', onclick: tirarPrep, html: `${T.ico('dado')} Volver a tirar todo` }),
@@ -504,7 +505,6 @@
   function tirarPrep() {
     const nombres = Object.keys(D.TRIPULACION);
     const p = {
-      secreto: CB.u.d(6),
       sistemas: D.SISTEMAS.map(() => CB.u.d(8)),
       tripu: nombres.map(() => CB.u.d(8)),
       compa: W.prota === 'piloto' ? nombres[CB.u.d(6) - 1] : null,
@@ -526,7 +526,7 @@
       attr: attrFinal(), origen: D.ORIGENES[W.prota][W.origen], rasgos: W.rasgos,
     });
     if (W.defectos.length) { S.templeMax += W.defectos.length; M.log(S, `Te quedas ${W.defectos.length === 1 ? 'un defecto' : W.defectos.length + ' defectos'}: +${W.defectos.length} Temple máximo.`, ['e710']); }
-    M.preparar(S, { secreto: p.secreto, sistemas: p.sistemas, tripu: p.tripu, compa: p.compa, esperando: p.esperando, estacion: p.estacion });
+    M.preparar(S, { sistemas: p.sistemas, tripu: p.tripu, compa: p.compa, esperando: p.esperando, estacion: p.estacion });
     if (p.compa) M.log(S, `${p.compa} sobrevivió a la caída contigo.`, ['r108']);
     if (p.estacion) M.log(S, `Estación: ${D.ESTACIONES[p.estacion][0]}. ${D.ESTACIONES[p.estacion][1]}.`, ['r213']);
     S.escena = { tipo: 'evento', id: 'e001', origen: 'prologo', aplicados: {}, ramas: {}, si: {}, dados: {}, elegida: null, plantilla: null };

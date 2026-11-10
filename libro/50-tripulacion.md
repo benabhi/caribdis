@@ -167,7 +167,7 @@ Amara extiende sus notas en el suelo. Ha unido todo lo que habéis visto. Tiene 
 
 «Creo que lo sé. Creo que sé qué es el Canto. ¿Quieres oírlo?»
 
-1. **Escucharla.** Ve a [e840](#e840) como corresponde, pero antes de leer tu número del Secreto, tira 1d6: con 4–6, Amara acierta, y gana `AMARA_TENIA_RAZON` (tu epílogo cambiará y, en la puntuación, suma 3). +1 Lealtad.
+1. **Escucharla.** Ve a [e840](#e840) como corresponde. Si tu Secreto sale con 2 o más `FRAGMENTO_` a su favor, Amara acierta: gana `AMARA_TENIA_RAZON` (tu epílogo cambiará y, en la puntuación, suma 3). +1 Lealtad.
 2. **Pedirle que no diga nada todavía.** «*¿Tienes miedo de saberlo?*» No vas a [e840](#e840) hasta que ganes otro `FRAGMENTO_` más. +1 Temple.
 
 ---

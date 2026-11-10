@@ -18,7 +18,7 @@ Nadie sabe qué les pasó. Las pistas del juego apuntan a varias respuestas posi
 
 Una señal que emiten las **Torres del Canto**. Se percibe como interferencia en los instrumentos, como zumbido en los huesos y, a veces, como una voz conocida. Desvía las naves que pasan cerca y las hace caer. También afecta a la mente: con exposición prolongada se oyen voces, se pierde la noción del tiempo y aparece el deseo de quedarse.
 
-**Origen del Canto (secreto, 1d6 al preparar la partida):**
+**Origen del Canto (el Secreto: lo deciden los `FRAGMENTO_` que reúne el jugador, cada uno apunta a una verdad; ver r191 y e840):**
 
 | d6 | Origen | Resumen |
 |---|---|---|
