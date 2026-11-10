@@ -211,7 +211,7 @@ Si eres **el Nativo**, ganas además la Pista `Cañones · Quilla · e410` (ya s
 ### e011 · Inventario
 *Prólogo · Dunas de Óxido*
 
-Antes de salir, rebuscas en los restos de la nave. Tira 1d6 dos veces y gana ambas cosas (si repites, elige otra):
+Rebuscas en los restos. Tira 1d6 dos veces y gana ambas cosas (si repites, elige otra):
 
 | d6 | Encuentras |
 |---|---|
@@ -219,8 +219,8 @@ Antes de salir, rebuscas en los restos de la nave. Tira 1d6 dos veces y gana amb
 | 2 | Bombona de aire (Piloto) o célula de energía (los demás) |
 | 3 | 3 Chatarra en piezas sueltas |
 | 4 | Hacha de casco de emergencia |
-| 5 | 3 Raciones de emergencia (saben a cartón dulce) |
-| 6 | Una caja con candado de la tripulación: si la abres con `[Vigor · 9]` (con un Fallo, no cede), dentro hay una **reliquia sin identificar** que alguien traía de contrabando. Anota `CONTRABANDO` |
+| 5 | 3 Raciones (saben a cartón dulce) |
+| 6 | Una caja con candado: si la abres con `[Vigor · 9]` (con un Fallo, no cede), dentro hay una **reliquia sin identificar** de contrabando. Anota `CONTRABANDO` |
 
 → [e012](#e012).
 
@@ -236,7 +236,7 @@ Recuerda:
 - **Lleva los sistemas a la Cicatriz** e instálalos (r181).
 - **Cuidado con la Alerta**: cuanto más ruido hagas, peor será lo que te encuentre.
 
-El viento borra tus huellas en cuanto las haces. Escila ya está alta. Detrás de ti, la baliza parpadea o calla.
+El viento borra tus huellas en cuanto las haces. Escila ya está alta. Detrás de ti, la baliza parpadea o calla. Más allá de las dunas, el Canto sube y baja como una respiración: en algún lugar de ese ruido está tu tripulación, y en algún lugar del cielo, algo ya viene.
 
 **Comienza el día 1.** Ve al amanecer (r131). El Reloj pasa de 60 a 59.
 

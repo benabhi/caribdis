@@ -580,7 +580,7 @@ Cada asentamiento tiene su carácter: lo que en uno es barato, en otro puede ser
 
 | Objeto | Precio | Notas |
 |---|---|---|
-| 2 Raciones | 1 | |
+| 2 Raciones | 1 | 1 por amanecer (r136) |
 | Botiquín | 3 | Cura 2 Heridas, 1 uso |
 | Célula de energía | 2 | +3 Energía |
 | Bombona de aire | 2 | +3 Aire |
