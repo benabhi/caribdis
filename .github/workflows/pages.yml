@@ -1,5 +1,5 @@
 # Construye la app (app/) y la publica en GitHub Pages.
-# Actívalo una vez: Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Actívalo una vez en Settings → Pages → Build and deployment → Source: GitHub Actions.
 name: App en GitHub Pages
 
 on:
