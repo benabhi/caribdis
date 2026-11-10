@@ -40,7 +40,7 @@
       vehiculo: null, secreto: null, clima: null,
       hoy: { accion: null, descanso: false, cubierto: false },
       ayerCubierto: false,
-      historiaLeida: [], cola: [], avisos: [], bitacora: [],
+      historiaLeida: [], cola: [], avisos: [], notas: [], bitacora: [],
       escena: { tipo: 'evento', id: 'e001', origen: 'prologo' },
       fin: null, umbrales: {},
     };
@@ -271,6 +271,39 @@
       notas.push('Sin Temple, caer es el final (r195 → e920).');
     }
     return { notas };
+  };
+
+  /* ---------------- recordatorios: efectos que el libro deja «para la próxima vez» ---------------- */
+  // tipo: 'fallo' (ignora un Fallo), 'ventaja' (Ventaja en una prueba) o 'nota' (lo aplicas tú)
+  // cuando: en qué tirada se ofrece ('explorar', 'orientacion', 'instalar', 'prueba') o null
+  M.clasificarNota = function (S, txt) {
+    const t = txt.toLowerCase();
+    const tipo = /ignora un fallo|cuenta como éxito/.test(t) ? 'fallo' : /(?<!des)ventaja/.test(t) ? 'ventaja' : 'nota';
+    const cuando = /orientaci/.test(t) ? 'orientacion' : /explor/.test(t) ? 'explorar' : /instal/.test(t) ? 'instalar' : /prueba/.test(t) ? 'prueba' : null;
+    let region = null;
+    if (/su región|elige una región|tripulante/.test(t)) region = null;
+    else if (/esta región|allí|aquí/.test(t)) region = S.region;
+    else for (const [k, v] of Object.entries(CB.texto ? CB.texto.REGION_CORTA || {} : {})) if (t.includes(k.toLowerCase())) { region = v; break; }
+    return { tipo, cuando, region };
+  };
+  M.notaNueva = function (S, txt, ev, extra = {}) {
+    S.notas = S.notas || [];
+    if (S.notas.some((n) => n.txt === txt && n.ev === ev)) return null;
+    const n = Object.assign({ id: CB.u.uid(), txt, ev, dia: S.dia }, M.clasificarNota(S, txt), extra);
+    S.notas.push(n);
+    M.log(S, `Recordatorio anotado (${ev || 'a mano'}): ${txt}`, ev ? [ev] : []);
+    return n;
+  };
+  M.notaUsada = function (S, id, como = 'usado') {
+    const n = (S.notas || []).find((x) => x.id === id);
+    if (!n) return;
+    S.notas = S.notas.filter((x) => x.id !== id);
+    M.log(S, `Recordatorio ${como}${n.ev ? ' (' + n.ev + ')' : ''}: ${n.txt}`, n.ev ? [n.ev] : []);
+  };
+  /** recordatorios que se ofrecen en una tirada: los de esta región (o sin región) y del momento que encaja */
+  M.notasPara = function (S, tipo, contexto) {
+    return (S.notas || []).filter((n) => n.tipo === tipo && (n.region == null || n.region === S.region)
+      && (!n.cuando || n.cuando === 'prueba' || n.cuando === contexto || (tipo === 'fallo' && n.cuando === 'explorar')));
   };
 
   /* ---------------- marcas, pistas, objetos ---------------- */
@@ -575,6 +608,8 @@
   M.hallazgosAqui = function (S) {
     const out = [];
     for (const s of D.SISTEMAS) if (S.sistemas[s].region === S.region && S.sistemas[s].estado === 'perdido') out.push({ k: 'sistema', s, ev: D.RESCATE[s], n: `Pecio del ${s}` });
+    const Pe = S.sistemas.Personal;
+    if (Pe && Pe.estado === 'perdido' && Pe.region === S.region && Pe.ev) out.push({ k: 'personal', s: 'Personal', ev: Pe.ev, n: Pe.n || 'Tu sistema personal' });
     for (const t in S.tripu) if (S.tripu[t].region === S.region && S.tripu[t].estado === 'perdido') out.push({ k: 'tripu', t, ev: D.TRIPULACION[t].ev, n: D.TRIPULACION[t].n });
     if (S.naveAnterior && S.naveAnterior.region === S.region && !S.naveAnterior.hallada) out.push({ k: 'anterior', n: 'Tu nave anterior (r212)' });
     return out;

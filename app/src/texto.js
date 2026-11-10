@@ -78,6 +78,14 @@
     [/(^|[^+−\-\d\w])(\d+) (Heridas?|Daños?)(?! de nave)(?! más)\b/g, (m, pre, n) => pre + chip({ k: 'heridas', d: +n }, `${n} ${m.trim().split(' ').slice(1).join(' ')}`, 'malo')],
     // reliquia sin identificar
     [/(una |la )?reliquia sin identificar/g, (m) => chip({ k: 'reliquia' }, m, 'raro')],
+    // el Reloj: «el Reloj baja 2», «el Reloj sube 3», «Reloj +3», «+3 al Reloj»
+    [/\b([Ee]l Reloj) (baja|sube) (\d+)/g, (m, a, v, n) => chip({ k: 'reloj', d: (v === 'baja' ? -1 : 1) * n }, m)],
+    [/\bReloj ([+−-])(\d+)/g, (m, s, n) => chip({ k: 'reloj', d: SIGNO(s) * n }, m)],
+    [/([+−-])(\d+) al Reloj/g, (m, s, n) => chip({ k: 'reloj', d: SIGNO(s) * n }, m)],
+    // Lealtad: «+1 Lealtad», «+1 Lealtad de Lio», «+1 Lealtad a cada uno»
+    [/([+−-])(\d+) (?:de )?Lealtad(?: (?:de|a) (Iria|Bruno|Amara|Noemí|Tadeo|Lio|cada uno))?/g, (m, s, n, t) => chip({ k: 'lealtad', d: SIGNO(s) * n, t: t || null }, m)],
+    // calidad de un sistema: «sube 1 de calidad», «+1 de calidad», «baja 1 de calidad»
+    [/\b(sube|suben|baja) 1 de calidad|([+−-])1 de calidad/g, (m, v, s) => chip({ k: 'calidad', d: v === 'baja' || s === '−' || s === '-' ? -1 : 1 }, m, 'nave')],
     // Casco Precario / Motor Sólido …
     [/(Casco|Motor|Navegación|Soporte vital|Combustible) (Precari[oa]|Sólid[oa]|Excelente)\b/g, (m, s, c) => chip({ k: 'sistema', s, cal: c.startsWith('Precari') ? 'Precaria' : c.startsWith('Sólid') ? 'Sólida' : 'Excelente' }, m, 'nave')],
   ];

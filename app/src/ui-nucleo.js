@@ -118,6 +118,8 @@
     return new Promise((resolver) => {
       const S = A.S;
       const esPrueba = cfg.dif != null;
+      const CONTEXTO = { r153: 'explorar', r151: 'orientacion', r181: 'instalar' };
+      const contexto = cfg.contexto || CONTEXTO[cfg.regla] || 'prueba';
       let modo = cfg.modo || null;
       let resultado = null;
       let templeUsado = false;
@@ -146,6 +148,10 @@
             seg.append(el('button' + (modo === m ? '.activo' : ''), { type: 'button', disabled: !!resultado, onclick: () => { modo = m; pintarFormula(); prepararZona(); } }, t)),
           );
           info.append(el('div.fila-modo', seg, el('span.ayuda-mini', { html: `Ventaja: tiras 3 y te quedas los 2 altos. Nunca se acumulan (${T.ref('r121')}).` })));
+          // recordatorios con Ventaja guardados de un evento (p. ej. «la próxima vez que explores allí, tienes Ventaja»)
+          const venGuard = M.notasPara(S, 'ventaja', contexto);
+          if (venGuard.length && !resultado) info.append(el('div.notas-tirada', venGuard.map((n) => el('div.nota-tirada', el('span', { html: `${T.ico('recuerda')} <b>Guardado${n.ev ? ' en ' + T.ref(n.ev) : ''}:</b> ${esc(n.txt)}` }),
+            el('button.btn.mini', { type: 'button', onclick: () => { A.foto(); if (/calidad/.test(n.txt)) { n.tipo = 'nota'; M.log(S, `Usas la Ventaja guardada (${n.ev}); el resto del recordatorio sigue en pie.`, n.ev ? [n.ev] : []); } else M.notaUsada(S, n.id, 'usado: Ventaja'); A.guardar(); modo = 'V'; pintarFormula(); prepararZona(); } }, 'Usar: Ventaja')))));
           if (cfg.sugerencias && cfg.sugerencias.length) {
             info.append(el('ul.sugerencias', cfg.sugerencias.map((s) => el('li.' + (s.modo === 'V' ? 'ven' : s.modo === 'D' ? 'des' : 'neu'), { html: `${s.modo === 'V' ? '▲' : s.modo === 'D' ? '▼' : '•'} ${T.inline(s.t, {})}${s.r ? ' ' + T.ref(s.r) : ''}` }))));
           }
@@ -197,6 +203,10 @@
           const fila = el('div.botones');
           if (cfg.templeOk !== false && S.temple >= coste && !templeUsado) {
             fila.append(el('button.btn.secundario', { type: 'button', onclick: () => { templeUsado = true; A.foto(); S.temple -= coste; M.log(S, `Gastas ${coste} Temple para repetir la tirada.`, ['r122']); A.guardar(); A.pintarCabecera(); resultado = null; pie.innerHTML = ''; btnTirar.disabled = false; prepararZona(); pie.append(btnTirar); lanzar(); }, html: `${T.ico('deshacer')} Repetir con Temple <small>(${coste}, te quedan ${S.temple})</small>` }));
+          }
+          if (r.res === 'fa') {
+            // recordatorios que convierten un Fallo en Éxito (p. ej. la mujer sin ojos, e060)
+            M.notasPara(S, 'fallo', contexto).forEach((n) => fila.append(el('button.btn.secundario', { type: 'button', title: n.txt, onclick: () => { A.foto(); M.notaUsada(S, n.id, 'usado: ignoras el Fallo'); resultado.res = 'ex'; A.guardar(); cerrar(); }, html: `Ignorar este Fallo <small>(${n.ev || 'guardado'}${n.region ? ' · ' + D.REGIONES[n.region].corto : ''})</small>` })));
           }
           if (r.res === 'fa' && M.tiene(S, 'SIN_REGISTRO') && !S.umbrales.sinRegistro) {
             fila.append(el('button.btn.secundario', { type: 'button', onclick: () => { S.umbrales.sinRegistro = 1; resultado.res = 'ex'; M.log(S, 'IA sin registro: conviertes un Fallo en Éxito.', ['r105']); cerrar(); }, html: 'Convertir en Éxito <small>(IA sin registro, una vez)</small>' }));
@@ -523,6 +533,7 @@
       fila('ayuda', A.aj.guia ? 'Guía: activada' : 'Guía: desactivada', 'Consejos que te enseñan a jugar sobre la marcha', () => { A.aj.guia = !A.aj.guia; if (A.aj.guia) A.aj.vistos = {}; A.guardar(); A.render(); A.menu(); }),
       S ? fila('bajar', 'Guardar partida en un archivo', 'Para seguirla en otro equipo', () => CB.manual.exportar()) : null,
       fila('mas', 'Cargar partida desde un archivo', null, () => CB.manual.importar()),
+      S ? fila('dado', 'Herramientas', 'Una prueba, un pecio, un rumor, moverte… lo que pida el libro, sin terminar el día', () => { A.cerrarModal(); CB.mesa.herramientas(); }) : null,
       S ? fila('deshacer', 'Deshacer el último paso', null, () => { A.cerrarModal(); A.deshacerUno(); }) : null,
       fila('nave', 'Pantalla de título', 'Nueva partida, continuar, leer el libro', () => { A.cerrarModal(); CB.crear.titulo(); }),
     );

@@ -1220,3 +1220,16 @@ button.enlace:hover { color: var(--oxido); }
 .verdades .vd i { font-style: normal; font-size: 11px; opacity: .75; }
 .verdades .vd.es { opacity: 1; background: var(--oxido, #9e3a22); color: #fff; border-color: transparent; }
 .cod-verdad { display: inline-block; min-width: 1.35em; height: 1.35em; line-height: 1.35em; border-radius: 50%; background: var(--oxido); color: #fff; text-align: center; font-size: .8em; margin-right: 2px; }
+
+/* herramientas dentro de los eventos y recordatorios */
+.herr-fila { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 2px; }
+.tk.herr { display: inline-flex; align-items: center; gap: 5px; font: 600 .82rem var(--rotulo); letter-spacing: .03em; padding: 3px 9px; border-radius: 999px; border: 1px dashed var(--oxido); background: rgba(158,58,34,.06); color: var(--oxido); cursor: pointer; }
+.tk.herr .ico, .tk.herr svg { width: 14px; height: 14px; }
+.tk.herr:hover { background: rgba(158,58,34,.14); }
+.tk.herr.hecho { border-style: solid; background: var(--oxido); color: #fff; }
+.recordatorios .aviso-libro.aqui { box-shadow: inset 3px 0 0 var(--oxido); }
+.notas-tirada { display: flex; flex-direction: column; gap: 6px; margin: 6px 0; }
+.nota-tirada { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 10px; border-radius: 6px; background: rgba(158,58,34,.08); font-size: .9rem; }
+.pecio-cond { margin-bottom: 10px; }
+.ev-pie-herr { margin-top: 8px; text-align: center; font-size: .85rem; }
+.sel-region { font-size: .8rem; padding: 2px 4px; max-width: 120px; }

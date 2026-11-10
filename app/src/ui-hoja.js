@@ -83,6 +83,13 @@
   }
 
   /* ---------- nave ---------- */
+  /** región editable de un Hallazgo (cuando un evento te dice que la corrijas) */
+  function selRegion(v, etiqueta, on) {
+    const s = el('select.sel-region', { 'aria-label': etiqueta, title: etiqueta, onchange: (e) => on(+e.target.value || null) });
+    s.append(el('option', { value: '' }, '¿Dónde?'));
+    for (const r in D.REGIONES) s.append(el('option', { value: r, selected: +r === v ? true : null }, `${T.ico ? '' : ''}${r} · ${D.REGIONES[r].corto}`));
+    return s;
+  }
   function nave(c, S) {
     c.append(el('div.ficha-cab.nave-cab', el('div', el('div.ficha-n', S.nave), el('div.ficha-sub', { html: `Hoja de la nave · ${T.ref('r180')}` }))));
     const lista = el('div.sistemas');
@@ -96,6 +103,7 @@
         el('div.sis-ico', { html: T.ico(sis.estado === 'instalado' ? 'check' : 'nave') }),
         el('div.sis-n', el('b', nombre), el('small', [ESTADO[sis.estado], donde ? ' · ' + donde : '', D.PESADOS.includes(s) ? ' · pesado' : ''].join(''))),
         cal,
+        sis.estado === 'perdido' ? selRegion(sis.region, `Región del pecio de ${nombre}`, (r) => A.hacer((S) => { S.sistemas[s].region = r; M.log(S, `${nombre}: el pecio está en ${r ? D.REGIONES[r].n : '¿?'} · ajuste a mano`, ['r108']); })) : null,
         el('select.sis-sel', { 'aria-label': 'Estado de ' + nombre, onchange: (e) => A.hacer((S) => { const [est, ca] = e.target.value.split('|'); S.sistemas[s].estado = est; S.sistemas[s].cal = ca || null; M.log(S, `${nombre}: ${ESTADO[est]}${ca ? ' (' + ca + ')' : ''} · ajuste a mano`, ['r180']); }) },
           ['perdido|', 'llevado|Precaria', 'llevado|Sólida', 'llevado|Excelente', 'instalado|Precaria', 'instalado|Sólida', 'instalado|Excelente'].concat(s === 'Personal' ? ['oculto|'] : []).map((v) => {
             const [est, ca] = v.split('|');
@@ -125,7 +133,7 @@
         el('div.tri-cuerpo',
           el('div.tri-n', el('b', TT.n), el('small', TT.rol)),
           el('div.tri-hab', TT.hab),
-          el('div.tri-pie', sel, st.estado === 'perdido' && st.region ? el('span.tri-donde', { html: `${T.ico('mapa')} ${D.REGIONES[st.region].corto}` }) : null,
+          el('div.tri-pie', sel, st.estado === 'perdido' ? selRegion(st.region, `Región de ${t}`, (r) => A.hacer((S) => { S.tripu[t].region = r; M.log(S, `${TT.n}: está en ${r ? D.REGIONES[r].n : '¿?'} · ajuste a mano`, ['r108']); })) : null,
             ['contigo', 'cicatriz', 'fuera'].includes(st.estado) ? el('span.tri-leal', 'Lealtad ', leal, el('button.aj', { type: 'button', 'aria-label': 'Bajar lealtad', onclick: () => A.hacer((S) => M.lealtad(S, t, -1)) }, '−'), el('button.aj', { type: 'button', 'aria-label': 'Subir lealtad', onclick: () => A.hacer((S) => M.lealtad(S, t, 1)) }, '+')) : null,
             st.estado === 'contigo' && st.heridas ? el('span.tri-her', `${st.heridas}/2 Heridas`) : null),
           el('div.tri-evs', { html: `Primer evento ${T.ref(TT.ev)} · lealtad ${T.ref(TT.leal)}` }))));

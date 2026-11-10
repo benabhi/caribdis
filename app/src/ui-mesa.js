@@ -59,7 +59,8 @@
   function pintarAvisos(cont, S) {
     const urg = S.avisos.filter((a) => !a.tipo || a.tipo === 'tirada');
     const pend = S.avisos.filter((a) => a.tipo === 'pendiente' || a.tipo === 'descanso');
-    if (!urg.length && !pend.length) return;
+    const notas = S.notas || [];
+    if (!urg.length && !pend.length && !notas.length) return;
     const caja = el('div.avisos-libro');
     urg.forEach((a) => {
       caja.append(el('div.aviso-libro', el('span.al-ico', { html: T.ico('recuerda') }),
@@ -72,8 +73,20 @@
         el('button.btn.mini', { type: 'button', onclick: () => irAviso(a) }, `Ir a ${a.ev}`),
         el('button.btn-icono.peq', { type: 'button', 'aria-label': 'Descartar', onclick: () => A.hacer((S) => { S.avisos = S.avisos.filter((x) => x.clave !== a.clave); }), html: T.ico('cerrar') })))));
     }
+    if (notas.length) caja.append(cajaNotas(S, notas));
     cont.append(caja);
   }
+  /** recordatorios guardados de los eventos: se abren solos si alguno es de esta región */
+  function cajaNotas(S, notas) {
+    const aqui = notas.filter((n) => n.region === S.region);
+    const d = el('details.pendientes.recordatorios', { open: aqui.length ? true : null },
+      el('summary', `Recordatorios (${notas.length})${aqui.length ? ' · ' + aqui.length + ' aquí' : ''}`),
+      notas.map((n) => el('div.aviso-libro.peq' + (n.region === S.region ? '.aqui' : ''),
+        el('div.al-t', { html: `${esc(n.txt)} ${n.ev ? T.ref(n.ev) : ''}${n.region ? ` <small>· ${D.REGIONES[n.region].corto}</small>` : ''}${n.tipo !== 'nota' ? ` <small>· la app te lo ofrece al tirar</small>` : ''}` }),
+        el('button.btn.mini', { type: 'button', title: 'Ya lo aplicaste o ya no vale', onclick: () => A.hacer((S) => M.notaUsada(S, n.id, 'cumplido')) }, 'Hecho'))));
+    return d;
+  }
+  Me.cajaNotas = cajaNotas;
   function irAviso(a) {
     A.hacer((S) => {
       S.avisos = S.avisos.filter((x) => x.clave !== a.clave);
@@ -163,6 +176,7 @@
     // claves estables para recordar lo que ya hiciste en este evento
     cuerpo.querySelectorAll('.tk, .op-elegir, .marca.tk').forEach((b, i) => (b.dataset.k = i));
     restaurarEvento(cuerpo, esc_);
+    herramientasEvento(cuerpo, S, esc_);
     cuerpo.addEventListener('click', (ev) => clicEvento(ev, cuerpo));
     // plantilla r300 ya tirada
     if (esc_.plantilla) {
@@ -172,6 +186,7 @@
     // asistente de despegue
     if (esc_.id === 'e900') art_.insertBefore(asistenteDespegue(S, esc_), cuerpo);
     if (['e400', 'e410', 'e420', 'e430'].includes(esc_.id) && esc_.origen === 'accion') art_.append(servicios(S, esc_));
+    else if (esc_.tienda) art_.insertBefore(servicios(S, esc_, { soloTienda: true }), art_.lastElementChild);
     art_.append(pieEvento(S, esc_, e));
     actualizarPie(cuerpo);
     cont.append(art_);
@@ -197,6 +212,195 @@
     if (D.PULSOS.includes(id)) return el('div.barra-ctx.canto', { html: `${T.ico('canto')} Un pulso del Canto (${T.ref('r131')}). Si el libro no dice otra cosa, después sigues con tu día.` });
     if (esc_.despues && esc_.despues.canto != null) return el('div.barra-ctx.canto', { html: `${T.ico('canto')} Después de leer esto, tu Canto baja a 4 (${T.ref('r137')}).` });
     return null;
+  }
+
+  /* ---------------- herramientas dentro de un evento ----------------
+     Lo que el texto manda hacer con otra regla (explorar un pecio, oír un rumor, un Hallazgo…)
+     o guardar «para la próxima vez» se puede hacer aquí mismo, sin terminar el día. */
+  const RE_DIFERIDO = /(la próxima vez|tu próxima|en tu próxim|hasta tu próxim|los próximos \d+ días|durante (?:dos|tres|\d) días|el próximo Explorar|hasta el próximo|(?:hasta|antes de) que el Reloj baje \d+|al día siguiente|al amanecer de \*?\*?mañana)/i;
+  const TIPOS_PECIO = [[/Arca de los Antiguos/, 5], [/[Nn]ave colonia/, 2], [/[Nn]ave militar|\bMilitar\b/, 3], [/\bCarguero\b/, 1], [/\bYate\b/, 4], [/[Pp]ecio sin nombre/, 6]];
+  function textoPropio(n) {
+    const c = n.cloneNode(true);
+    c.querySelectorAll('ul, ol, .ya-hecho, .herr-fila, .op-num, .op-elegir').forEach((x) => x.remove());
+    c.querySelectorAll('.tk.ir').forEach((x) => x.replaceWith('→ ' + x.dataset.ir));
+    c.querySelectorAll('.rama-et').forEach((x) => x.replaceWith(' ¶ ' + x.textContent + ': '));
+    c.querySelectorAll('.rama, .rama-si, p, div').forEach((x) => x.append(' ¶ '));
+    return c.textContent.replace(/\s+/g, ' ').replace(/(\s*¶\s*)+$/, '').trim();
+  }
+  function frases(t) { return t.split(/¶|(?<=[.!?»)])\s*(?=[A-ZÁÉÍÓÚ«*(])/).map((x) => x.replace(/\s+/g, ' ').trim()).filter(Boolean); }
+  function herramientasEvento(cuerpo, S, esc_) {
+    const nodos = [...cuerpo.querySelectorAll('li, p')].filter((n) => !n.closest('.ya-hecho, .encuentro-r300'));
+    for (const n of nodos) {
+      const t = textoPropio(n);
+      if (!t) continue;
+      const bots = [];
+      // efectos para más adelante → recordatorio
+      frases(t).filter((f) => RE_DIFERIDO.test(f) && !/quizás la próxima vez|^Clima:/.test(f)).forEach((f) => {
+        const ya = (S.notas || []).some((x) => x.txt === f && x.ev === esc_.id);
+        bots.push(el('button.tk.herr.recordar' + (ya ? '.hecho' : ''), { type: 'button', 'data-herr': JSON.stringify({ k: 'nota', txt: f }), title: ya ? 'Ya lo guardaste: está en Recordatorios' : 'Guárdalo: la app te lo recordará y, si es un Fallo ignorado o una Ventaja, te lo ofrecerá al tirar' }, el('span', { html: T.ico('recuerda') }), ya ? 'Guardado' : 'Guardar para después'));
+      });
+      // explorar un pecio (r170 / r171)
+      if (/\(r17[01]\b|[Pp]ecio \(r170|un pecio en el que/.test(t) && /[Pp]ecio|[Ee]xplóralo/.test(t)) {
+        const tipos = TIPOS_PECIO.filter(([re]) => re.test(t)).map(([, v]) => v);
+        const veces = /tira(?:ndo)? tres veces el tipo/.test(t) ? 3 : /tira(?:ndo)? dos veces el tipo/.test(t) ? 2 : 1;
+        const max = (t.match(/hasta (\d) salas/) || [])[1] || (/máximo 3/.test(t) ? 3 : null);
+        bots.push(el('button.tk.herr.pecio', { type: 'button', 'data-herr': JSON.stringify({ k: 'pecio', tipos, veces, max: max ? +max : null, cond: t }) }, el('span', { html: T.ico('reliquia') }), 'Explorar el pecio ahora'));
+      }
+      // un rumor (r164)
+      if (/rumor[^.]*\(r164/.test(t) || /\(r164, tirando 2d6\)/.test(t)) {
+        const mas = /con \+1/.test(t) ? 1 : 0;
+        bots.push(el('button.tk.herr.rumor', { type: 'button', 'data-herr': JSON.stringify({ k: 'rumor', mas, n: /dos rumores/.test(t) ? 2 : 1 }) }, el('span', { html: T.ico('pista') }), mas ? 'Tirar el rumor (+1)' : /dos rumores/.test(t) ? 'Tirar dos rumores' : 'Tirar un rumor'));
+      }
+      // un Hallazgo de la región (r153)
+      if (/un Hallazgo de la región \(r153\)/.test(t)) bots.push(el('button.tk.herr.hallazgo', { type: 'button', 'data-herr': JSON.stringify({ k: 'hallazgo' }) }, el('span', { html: T.ico('buscar') }), 'Elegir el Hallazgo'));
+      // un Hallazgo más que hay que situar (la caja negra, el núcleo de memoria…)
+      const hm = t.match(/Tira 1d8 y anota[^.]*Hallazgo más \(r153\)\. Cuando la encuentres → (e\d{3})/);
+      if (hm && S.sistemas.Personal) {
+        const Pe = S.sistemas.Personal;
+        const ya = Pe && Pe.ev === hm[1] && Pe.region;
+        bots.push(el('button.tk.herr.hallazgo' + (ya ? '.hecho' : ''), { type: 'button', 'data-herr': JSON.stringify({ k: 'situar', ev: hm[1] }) }, el('span', { html: T.ico('mapa') }), ya ? `Anotado: ${D.REGIONES[Pe.region].corto}` : 'Tirar 1d8 y anotarlo en la Hoja'));
+      }
+      // un tripulante que aún no encontraste está aquí (o lo eliges): su primer evento
+      if (/tripulante (?:tuyo )?que (?:aún )?no (?:hayas|has) encontrado/.test(t) && /primer evento/.test(t)) bots.push(el('button.tk.herr.tripu', { type: 'button', 'data-herr': JSON.stringify({ k: 'tripulante' }) }, el('span', { html: T.ico('grupo') }), 'Elegir el tripulante e ir a su evento'));
+      // el clima que deja un evento
+      const cl = t.match(/Clima: ([^.(]+?) hasta mañana/);
+      if (cl) { const ya = S.clima && S.clima.n === cl[1].trim(); bots.push(el('button.tk.herr.clima' + (ya ? '.hecho' : ''), { type: 'button', 'data-herr': JSON.stringify({ k: 'clima', n: cl[1].trim() }) }, el('span', { html: T.ico('tiempo') }), ya ? 'Clima anotado' : 'Anotar el clima')); }
+      // comerciar en un evento (r161)
+      if (/comprar como en un asentamiento|de la tabla r161/.test(t)) bots.push(el('button.tk.herr.tienda', { type: 'button', 'data-herr': JSON.stringify({ k: 'tienda' }) }, el('span', { html: T.ico('asentamiento') }), 'Abrir la tienda (r161)'));
+      if (!bots.length) continue;
+      const fila = el('span.herr-fila', bots);
+      // en una opción, los botones van al final de su propio texto (antes de sus sublistas)
+      const dentro = n.querySelector(':scope > .op-cuerpo') || n;
+      const sub = dentro.querySelector(':scope > ul, :scope > ol');
+      if (sub) dentro.insertBefore(fila, sub); else dentro.append(fila);
+    }
+  }
+  async function herramienta(h) {
+    const S = A.S;
+    if (h.k === 'nota') {
+      const ya = (S.notas || []).find((x) => x.txt === h.txt && x.ev === S.escena.id);
+      if (ya) return A.hacer((S) => M.notaUsada(S, ya.id, 'quitado'));
+      if (/elige una región/.test(h.txt)) {
+        return A.modal('¿Qué región eliges?', el('div.botones-col', Object.keys(D.REGIONES).map((r) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); A.hacer((S) => M.notaNueva(S, h.txt, S.escena.id, { region: +r })); } }, `${r} · ${D.REGIONES[r].n}`))), { clase: 'estrecho' });
+      }
+      A.hacer((S) => M.notaNueva(S, h.txt, S.escena.id));
+      return A.aviso('Guardado en <b>Recordatorios</b> (arriba, en la mesa). Si es un Fallo que puedes ignorar o una Ventaja, la app te lo ofrecerá al tirar.', 'regla');
+    }
+    if (h.k === 'pecio') return Me.pecioDesde(h);
+    if (h.k === 'clima') return A.hacer((S) => { S.clima = { n: h.n, hasta: S.dia + 1 }; M.log(S, `Clima: ${h.n} hasta mañana.`, ['r155']); });
+    if (h.k === 'tienda') return A.hacer((S) => { S.escena.tienda = !S.escena.tienda; });
+    if (h.k === 'tripulante') {
+      const perd = Object.keys(S.tripu).filter((t) => S.tripu[t].estado === 'perdido');
+      if (!perd.length) return A.aviso('Ya encontraste a toda tu tripulación.');
+      return A.modal('¿Qué tripulante?', [el('p.ayuda-mini', 'Lees su primer evento y, al terminarlo, vuelves aquí.'), el('div.botones-col', perd.map((t) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); A.hacer((S) => { S.tripu[t].region = S.region; Me._jugar(S, D.TRIPULACION[t].ev, 'aviso'); }); } }, `${t} · ${D.TRIPULACION[t].rol}${S.tripu[t].region ? ' (anotado en ' + D.REGIONES[S.tripu[t].region].corto + ')' : ''}`)))], { clase: 'estrecho' });
+    }
+    if (h.k === 'rumor') { for (let i = 0; i < (h.n || 1); i++) await Me.rumor({ mas: h.mas, gratis: true }); return; }
+    if (h.k === 'hallazgo') return A.hacer((S) => { S.escena = { tipo: 'hallazgo', pleno: false }; });
+    if (h.k === 'situar') {
+      const r = await A.tirarNotacion('1d8', 'Dónde está (1d8)');
+      if (!r) return;
+      A.hacer((S) => {
+        const Pe = S.sistemas.Personal;
+        Object.assign(Pe, { estado: 'perdido', region: r.valor, ev: h.ev });
+        M.log(S, `${Pe.n || 'Tu sistema personal'}: está en ${D.REGIONES[r.valor].n}. Es un Hallazgo más (r153).`, ['r153', h.ev]);
+      });
+      return A.aviso(`Anotado en la Hoja (pestaña Nave): está en <b>${D.REGIONES[r.valor].n}</b>. Explora allí para encontrarlo.`);
+    }
+  }
+  /** explorar un pecio que manda un evento; al salir vuelves al evento para terminarlo */
+  Me.pecioDesde = async function (h = {}) {
+    let tipo = null;
+    const tipos = h.tipos || [];
+    const elegir = (ops, titulo) => new Promise((ok) => A.modal(titulo, el('div.botones-col', ops.map((d) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); ok(d); } }, `${d} · ${D.PECIOS[d].n}`))), { clase: 'estrecho', cerrable: true, alCerrar: () => ok(null) }));
+    if (tipos.length === 1) tipo = tipos[0];
+    else if (tipos.length > 1) tipo = await elegir(tipos, 'Elige el pecio');
+    else {
+      const n = h.veces || 1;
+      const r = await A.tirarDados(n > 1 ? `Tipo de pecio (${n} veces)` : 'Tipo de pecio (1d6)', n, 'x', { regla: 'r171' });
+      if (!r) return;
+      const vals = [...new Set(r.dados)];
+      tipo = vals.length > 1 ? await elegir(vals, 'Elige el pecio') : vals[0];
+    }
+    if (!tipo) return;
+    A.hacer((S) => {
+      const volver = S.escena && S.escena.tipo === 'evento';
+      if (volver) { S.pila = S.pila || []; S.pila.push(S.escena); }
+      const P = M.pecioNuevo(S, tipo);
+      if (h.max) P.max = h.max;
+      if (h.cond) P.cond = h.cond;
+      if (volver) P.volver = S.escena.id;
+      S.escena = { tipo: 'pecio', P };
+    });
+  };
+  function salirPecio(S) {
+    const P = S.escena.P;
+    if (P && P.volver && S.pila && S.pila.length) { S.escena = S.pila.pop(); M.log(S, `Sales del pecio y vuelves a ${P.volver}.`, ['r170']); return; }
+    entrarAnochecer(S);
+  }
+  /** rumor (r164): de pago en los asentamientos, gratis si lo da un evento */
+  Me.rumor = async function ({ mas = 0, gratis = false } = {}) {
+    const r = await A.tirarDados(`Rumor (2d6${mas ? ' +' + mas : ''})`, 2, 'x', { regla: 'r164' });
+    if (!r) return;
+    const suma = Math.min(12, r.suma + mas);
+    A.hacer((S) => {
+      if (!gratis) { S.hoy.rumor = 1; M.cambiar(S, 'chatarra', -1, 'rumores'); }
+      aplicarRumor(S, suma);
+    });
+  };
+  function aplicarRumor(S, suma) {
+    const R = D.RUMORES[suma];
+    if (!R) {
+      M.notaNueva(S, 'Rumor: alguien de tu tripulación pasó por aquí. Elige un tripulante perdido: la próxima vez que explores su región, tienes Ventaja.', 'r164', { tipo: 'ventaja', cuando: 'explorar', region: null });
+      A.aviso('Rumor 7: alguien de tu tripulación pasó por aquí (r164). Está en <b>Recordatorios</b>: la Ventaja te la ofrece la app al explorar.');
+      return;
+    }
+    A.notas(M.pista(S, { region: R[1], nombre: R[2], ev: R[3] }).notas);
+    A.aviso(`Nueva Pista: <b>${R[2]}</b> (${R[0]})`);
+  }
+  Me.aplicarRumor = aplicarRumor;
+
+  /* ---------------- herramientas: lo que pide el libro, sin terminar el día ---------------- */
+  Me.herramientas = function () {
+    const S = A.S;
+    if (!S) return;
+    const fila = (ico, t, sub, fn) => el('button.menu-item', { type: 'button', onclick: fn }, el('span.mi-ico', { html: T.ico(ico) }), el('span', el('b', t), sub ? el('small', { html: sub }) : null));
+    const cerrarY = (fn) => () => { A.cerrarModal(); fn(); };
+    const enEvento = S.escena && S.escena.tipo === 'evento';
+    const cuerpo = el('div.menu',
+      el('p.ayuda-mini', 'Para cuando el libro te manda hacer algo que no tiene botón. Nada de esto termina el día; desde un evento, vuelves a él.'),
+      fila('dado', 'Una prueba', 'Atributo y dificultad a tu elección (r120)', cerrarY(pruebaLibre)),
+      fila('dado', 'Tirar dados', '1d6, 2d6, 1d8, 1d12 o d66 (r002)', cerrarY(dadosLibres)),
+      fila('reliquia', 'Explorar un pecio', `Sala a sala (r170)${enEvento ? '; al salir vuelves al evento' : ''}`, cerrarY(() => Me.pecioDesde({}))),
+      fila('pista', 'Tirar un rumor', 'Gratis, como cuando lo da un evento (r164)', cerrarY(() => Me.rumor({ gratis: true }))),
+      fila('mapa', 'Moverte a otra región', 'Cuando un evento te lleva a otro sitio, sin viaje ni encuentro', cerrarY(moverLibre)),
+      fila('recuerda', 'Anotar un recordatorio', 'Algo «para la próxima vez» que quieras tener a la vista', cerrarY(notaLibre)),
+      fila('libro', 'Leer o jugar un evento', 'Desde el Códice: «Jugar este evento ahora»', cerrarY(() => A.abrirCodice())),
+    );
+    A.modal('Herramientas', cuerpo, { clase: 'estrecho' });
+  };
+  async function pruebaLibre() {
+    const ATR = ['Vigor', 'Reflejos', 'Ingenio', 'Voluntad'];
+    const ps = await new Promise((ok) => {
+      let attr = 'Ingenio', dif = 9;
+      const seg = (vals, v0, on, fmt = String) => { const g = el('div.segmento'); vals.forEach((v) => g.append(el('button' + (v === v0 ? '.activo' : ''), { type: 'button', onclick: (e) => { g.querySelectorAll('button').forEach((b) => b.classList.remove('activo')); e.target.classList.add('activo'); on(v); } }, fmt(v)))); return g; };
+      A.modal('Una prueba', [el('p.ayuda-mini', '2d6 + atributo contra la dificultad (r120).'), seg(ATR, attr, (v) => (attr = v)), seg([7, 9, 11, 13], dif, (v) => (dif = v), (v) => `${v} · ${D.DIFICULTAD[v] || ''}`),
+        el('div.botones', el('button.btn.primario', { type: 'button', onclick: () => { A.cerrarModal(); ok({ attr, dif }); } }, 'Tirar'))], { clase: 'estrecho', alCerrar: () => ok(null) });
+    });
+    if (!ps) return;
+    await A.tirar({ titulo: `Prueba de ${ps.attr}`, attr: ps.attr, dif: ps.dif, sugerencias: A.sugerencias(ps.attr), regla: 'r120', cancelable: true });
+  }
+  async function dadosLibres() {
+    const nota = await new Promise((ok) => A.modal('Tirar dados', el('div.botones-col', ['1d6', '2d6', '1d8', '1d12', 'd66'].map((n) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); ok(n); } }, n))), { clase: 'estrecho', alCerrar: () => ok(null) }));
+    if (nota) await A.tirarNotacion(nota, `Tirada: ${nota}`);
+  }
+  function moverLibre() {
+    const S = A.S;
+    A.modal('¿Adónde te lleva el libro?', el('div.botones-col', Object.keys(D.REGIONES).map((r) => el('button.btn.secundario' + (+r === S.region ? '.activo' : ''), { type: 'button', disabled: +r === S.region, onclick: () => { A.cerrarModal(); A.hacer((S) => { S.region = +r; M.log(S, `Estás en ${D.REGIONES[r].n} (lo dice el libro; sin viaje ni encuentro).`, ['r150']); }); } }, `${r} · ${D.REGIONES[r].n}`))), { clase: 'estrecho' });
+  }
+  function notaLibre() {
+    const inp = el('textarea', { rows: 3, placeholder: 'Por ejemplo: la próxima vez que instales un sistema, sube 1 de calidad.', 'aria-label': 'Recordatorio' });
+    A.modal('Anotar un recordatorio', [inp, el('div.botones', el('button.btn.primario', { type: 'button', onclick: () => { const t = inp.value.trim(); if (!t) return; A.cerrarModal(); A.hacer((S) => M.notaNueva(S, t, null)); } }, 'Guardar'))], { clase: 'estrecho' });
+    setTimeout(() => inp.focus(), 50);
   }
 
   function rotularElegir(cuerpo) {
@@ -312,6 +516,7 @@
   async function clicEvento(ev, cuerpo) {
     const b = ev.target.closest('button');
     if (!b || !cuerpo.contains(b) || b.classList.contains('glosa')) return;
+    if (b.dataset.herr) return herramienta(JSON.parse(b.dataset.herr));
     const S = A.S;
     const esc_ = S.escena;
     const k = b.dataset.k;
@@ -399,6 +604,29 @@
       return;
     }
     if (ef.ambos) return preguntarSigno(ef, k, b);
+    // ¿a quién o a qué? Lealtad sin nombre y calidad sin sistema: se pregunta
+    if (ef.k === 'lealtad' && !ef.t) {
+      const delEvento = Object.keys(D.TRIPULACION).find((t) => { const n = +S.escena.id.slice(1), b0 = +D.TRIPULACION[t].ev.slice(1); return n >= b0 && n < b0 + 5; });
+      const cand = Object.keys(S.tripu).filter((t) => ['contigo', 'cicatriz'].includes(S.tripu[t].estado));
+      const amb = b.closest('li, p');
+      const nombrado = amb && cand.find((t) => amb.textContent.includes(t));
+      if (delEvento || nombrado || cand.length === 1) return aplicarFicha(Object.assign({}, ef, { t: delEvento || nombrado || cand[0] }), k, b);
+      if (!cand.length) return A.aviso('No tienes tripulantes contigo ni en la Cicatriz.');
+      return elegirEn(b, `¿De quién? (${ef.d > 0 ? '+' : '−'}${Math.abs(ef.d)} Lealtad)`, cand.map((t) => [t, t]), (t) => aplicarFicha(Object.assign({}, ef, { t }), k, b));
+    }
+    if (ef.k === 'lealtad' && ef.t === 'cada uno') {
+      const cand = Object.keys(S.tripu).filter((t) => ['contigo', 'cicatriz'].includes(S.tripu[t].estado));
+      return aplicarFicha(Object.assign({}, ef, { k: 'lealtades', ts: cand }), k, b);
+    }
+    if (ef.k === 'calidad' && !ef.s) {
+      const amb = b.closest('li, p');
+      const txt = amb ? amb.textContent : '';
+      const cand = Object.keys(S.sistemas).filter((s) => S.sistemas[s].cal && ['instalado', 'llevado'].includes(S.sistemas[s].estado));
+      const nombrados = cand.filter((s) => txt.includes(s === 'Personal' ? S.sistemas.Personal.n || '··' : s));
+      if (nombrados.length === 1) return aplicarFicha(Object.assign({}, ef, { s: nombrados[0] }), k, b);
+      if (!cand.length) return A.aviso('No tienes ningún sistema con calidad (instalado o en la mochila).');
+      return elegirEn(b, `¿Qué sistema? (${ef.d > 0 ? 'sube' : 'baja'} 1 de calidad)`, cand.map((s) => [s, `${s === 'Personal' ? S.sistemas.Personal.n : s} · ${S.sistemas[s].cal}`]), (s) => aplicarFicha(Object.assign({}, ef, { s }), k, b));
+    }
     let notas = [];
     A.hacer((S) => {
       let inv;
@@ -426,6 +654,14 @@
       } else if (ef.k === 'pista') {
         notas = M.pista(S, ef.pista).notas;
         inv = { k: 'pista', ev: ef.pista.ev };
+      } else if (ef.k === 'lealtad' || ef.k === 'lealtades') {
+        const ts = ef.ts || [ef.t];
+        const antes = Object.fromEntries(ts.map((t) => [t, { ...S.tripu[t] }]));
+        ts.forEach((t) => M.lealtad(S, t, ef.d));
+        inv = { k: 'lealtad', antes };
+      } else if (ef.k === 'calidad') {
+        inv = { k: 'calidad', s: ef.s, cal: S.sistemas[ef.s].cal };
+        M.subirCalidad(S, ef.s, ef.d, CB.libro.titulo(S.escena.id));
       }
       S.escena.aplicados[k] = inv || { k: 'nada' };
     });
@@ -439,6 +675,19 @@
     else if (inv.k === 'sistema') S.sistemas[inv.s] = inv.prev;
     else if (inv.k === 'pista') S.pistas = S.pistas.filter((p) => p.ev !== inv.ev);
     else if (inv.k === 'mejoras') S.mejoras = Math.max(0, S.mejoras - 1);
+    else if (inv.k === 'lealtad') Object.entries(inv.antes).forEach(([t, v]) => (S.tripu[t] = v));
+    else if (inv.k === 'calidad') S.sistemas[inv.s].cal = inv.cal;
+  }
+  /** pequeño menú junto a una ficha para elegir a quién o a qué se aplica */
+  function elegirEn(b, pregunta, ops, fn) {
+    document.querySelectorAll('.glosa-pop').forEach((x) => x.remove());
+    const pop = el('div.glosa-pop.signo', el('p', pregunta), el('div.botones', ops.map(([v, t]) => el('button.btn.secundario', { type: 'button', onclick: () => { pop.remove(); fn(v); } }, t))));
+    document.body.append(pop);
+    const r = b.getBoundingClientRect(), w = Math.min(320, innerWidth - 32);
+    pop.style.width = w + 'px';
+    pop.style.left = Math.max(16, Math.min(innerWidth - w - 16, r.left)) + 'px';
+    pop.style.top = (r.bottom + pop.offsetHeight + 12 > innerHeight ? r.top - pop.offsetHeight - 8 : r.bottom + 8) + 'px';
+    setTimeout(() => document.addEventListener('click', function f(ev) { if (!pop.contains(ev.target)) { pop.remove(); document.removeEventListener('click', f, true); } }, true), 0);
   }
 
   /* ---------------- pie del evento: terminar ---------------- */
@@ -450,6 +699,7 @@
     pie.append(el('button.btn.primario.grande', { type: 'button', onclick: () => Me.terminarEvento() }, el('span', { html: `${sig.ico ? T.ico(sig.ico) : ''} ${sig.boton}` })));
     // si el evento sigue por una flecha, el pie se reduce a una salida discreta
     pie.append(el('div.ev-pie-mini', el('span', 'La historia sigue por la flecha de arriba.'), el('button.enlace', { type: 'button', onclick: () => Me.terminarEvento() }, 'Ninguna me sirve: terminar aquí')));
+    pie.append(el('div.ev-pie-herr', el('button.enlace', { type: 'button', onclick: () => Me.herramientas(), html: `${T.ico('dado')} ¿El libro pide algo sin botón? Herramientas` })));
     return pie;
   }
   // ¿la historia sigue por una flecha? Flecha suelta fuera de las opciones (todas van ahí),
@@ -583,7 +833,7 @@
   }
 
   /* ---------------- servicios de los asentamientos (r160–r164) ---------------- */
-  function servicios(S, esc_) {
+  function servicios(S, esc_, op = {}) {
     const taller = ['e400', 'e430'].includes(esc_.id);
     const quilla = esc_.id === 'e410';
     const caja = el('section.servicios', el('h3', { html: `${T.ico('asentamiento')} Servicios ${T.ref('r160')}` }), el('p.ayuda-mini', 'Todos los que quieras, hoy mismo. Si el evento cambia algún precio, ajústalo a mano en la Hoja.'));
@@ -605,6 +855,7 @@
     if (!S.equipo.length && !S.reliquias.length) vender.append(el('p.vacio', 'Nada que vender.'));
     grid.append(vender);
     // otros
+    if (op.soloTienda) { caja.querySelector('h3').innerHTML = `${T.ico('asentamiento')} Comerciar ${T.ref('r161')}`; caja.append(grid); A.enlazarRefs(caja); return caja; }
     const otros = el('div.serv', el('h4', 'Más servicios'));
     if (S.prota === 'piloto') otros.append(el('div.serv-fila', el('span', 'Rellenar el Aire'), el('b', '1'), el('button.btn.mini', { type: 'button', disabled: S.chatarra < 1 || S.aire >= 6, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -1, 'rellenar Aire'); S.aire = 6; M.log(S, 'Aire al máximo.', ['r136']); }) }, 'Rellenar')));
     if (S.prota !== 'nativo') otros.append(el('div.serv-fila', el('span', 'Rellenar la Energía'), el('b', '1'), el('button.btn.mini', { type: 'button', disabled: S.chatarra < 1 || S.energia >= 6, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -1, 'rellenar Energía'); S.energia = 6; M.log(S, 'Energía al máximo.', ['r136']); }) }, 'Rellenar')));
@@ -637,18 +888,7 @@
     const r = await A.tirar({ titulo: 'Regatear', attr: 'Voluntad', dif: 9, sugerencias: sug, regla: 'r161', cancelable: true, explicar: 'Con un Éxito, la próxima compra cuesta 1 menos. Con un Fallo, hoy no puedes comprar más.' });
     if (r) A.hacer((S) => (S.hoy.regateo = r.res === 'fa' ? 'mal' : 'ok'));
   }
-  async function rumor() {
-    const r = await A.tirarDados('Rumores (2d6)', 2, 'x', { regla: 'r164' });
-    if (!r) return;
-    const R = D.RUMORES[r.suma];
-    A.hacer((S) => {
-      S.hoy.rumor = 1;
-      M.cambiar(S, 'chatarra', -1, 'rumores');
-      if (!R) { M.log(S, 'Rumor: «Alguien de tu tripulación pasó por aquí.» Elige un tripulante perdido: la próxima vez que explores su región, tienes Ventaja.', ['r164']); A.aviso('Rumor 7: alguien de tu tripulación pasó por aquí (r164). Mira su región en la Hoja.'); return; }
-      A.notas(M.pista(S, { region: R[1], nombre: R[2], ev: R[3] }).notas);
-      A.aviso(`Nueva Pista: <b>${R[2]}</b> (${R[0]})`);
-    });
-  }
+  function rumor() { return Me.rumor({ gratis: false }); }
   function comprarPlano() {
     const S = A.S;
     const nodo = S.region === 6;
@@ -1061,6 +1301,8 @@
       cont.append(reglas(['r170', 'r171', 'r172']));
       return;
     }
+    if (P.cond) cont.append(el('div.barra-ctx.pecio-cond', { html: `${T.ico('recuerda')} <b>Lo que dice ${P.volver ? T.ref(P.volver) : 'el evento'} de este pecio:</b> ${esc(P.cond)}${P.volver ? `<br><small>Al salir vuelves a ${P.volver} para terminarlo.</small>` : ''}` }));
+    const maxS = P.max || 4;
     const salas = el('ol.salas');
     P.salas.forEach((s, i) => salas.append(el('li.sala' + (s.fin ? '.cierra' : ''), el('span.sala-n', `Sala ${i + 1}`), el('div', el('b', `${s.suma} · ${s.sala}`), s.nota ? el('small.nota', s.nota) : null, el('div.sala-t', { html: T.inline(s.txt || '', {}) })))));
     cont.append(salas);
@@ -1068,12 +1310,14 @@
     const bot = el('div.botones-fase');
     if (ult && ult.pendiente) {
       bot.append(...botonesSala(S, P, ult));
-    } else if (!P.fin && P.salas.length < 4) {
+    } else if (!P.fin && P.salas.length < maxS) {
       bot.append(el('button.btn.primario.grande', { type: 'button', onclick: entrarSala }, el('span', { html: `${T.ico('dado')} ${P.salas.length ? 'Seguir: sala ' + (P.salas.length + 1) : 'Entrar en la primera sala'} (2d6)` })));
-      if (P.salas.length) bot.append(el('button.btn.secundario', { type: 'button', onclick: () => A.hacer((S) => { M.log(S, 'Sales del pecio.', ['r170']); entrarAnochecer(S); }) }, 'Salir del pecio'));
+      // cuando un evento fija una sala («la primera sala es siempre de Restos»), se elige en lugar de tirar
+      if (P.cond) bot.append(el('button.btn.secundario', { type: 'button', onclick: elegirSala }, 'Elegir la sala (lo dice el evento)'));
+      if (P.salas.length) bot.append(el('button.btn.secundario', { type: 'button', onclick: () => A.hacer((S) => { M.log(S, 'Sales del pecio.', ['r170']); salirPecio(S); }) }, P.volver ? `Salir y volver a ${P.volver}` : 'Salir del pecio'));
       if (S.alerta >= 4 || S.heridas >= 2) bot.append(el('p.ayuda-mini', { html: `Con Alerta 4 o 2 Heridas puedes salir con prisa en mitad de una sala (${T.ref('r174')}).` }));
     } else {
-      bot.append(el('p.ayuda-mini', P.fin ? 'Tienes que salir.' : 'Cuatro salas: es todo lo que da de sí (r170).'), el('button.btn.primario', { type: 'button', onclick: () => A.hacer((S) => entrarAnochecer(S)) }, 'Salir y terminar el día'));
+      bot.append(el('p.ayuda-mini', P.fin ? 'Tienes que salir.' : `${maxS === 4 ? 'Cuatro' : maxS} salas: es todo lo que da de sí (r170).`), el('button.btn.primario', { type: 'button', onclick: () => A.hacer((S) => salirPecio(S)) }, P.volver ? `Salir y volver a ${P.volver}` : 'Salir y terminar el día'));
     }
     cont.append(bot);
     cont.append(reglas(['r172', 'r173', 'r174', 'r193']));
@@ -1092,12 +1336,22 @@
     }
     A.hacer((S) => { S.escena = { tipo: 'pecio', P: M.pecioNuevo(S, tipo) }; });
   }
-  async function entrarSala() {
-    const r = await A.tirarDados(`Sala ${A.S.escena.P.salas.length + 1} (2d6)`, 2, 'x', { regla: 'r172' });
-    if (!r) return;
+  function elegirSala() {
+    const SAL = D.SALAS;
+    const ops = [...new Set(Object.values(SAL))].map((n) => [+Object.keys(SAL).find((k) => SAL[k] === n), n]);
+    A.modal('¿Qué sala?', [el('p.ayuda-mini', 'Solo cuando el evento fija la sala. Si no, tira.'), el('div.botones-col', ops.map(([v, n]) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); entrarSala({ fija: v }); } }, n)))], { clase: 'estrecho' });
+  }
+  async function entrarSala(op = {}) {
+    let suma = op.fija;
+    if (suma == null) {
+      const r = await A.tirarDados(`Sala ${A.S.escena.P.salas.length + 1} (2d6)`, 2, 'x', { regla: 'r172' });
+      if (!r) return;
+      suma = r.suma;
+    }
+    const r = { suma };
     const S = A.S;
     const P = S.escena.P;
-    const x = M.salaDe(P, r.suma);
+    const x = op.fija != null ? { suma, sala: D.SALAS[suma], nota: 'Elegida: lo dice el evento.' } : M.salaDe(P, r.suma);
     const sala = { suma: x.suma, sala: x.sala, nota: x.nota, txt: '', pendiente: true };
     const tipo = D.PECIOS[P.tipo];
     A.hacer((S) => {
@@ -1162,7 +1416,7 @@
           const r = await A.tirarDados('Sala especial (1d6)', 1, 'x', { regla: 'r172' });
           if (!r) return;
           const id = M.salaEspecial(P.tipo, r.dados[0]);
-          A.hacer((S) => { const u = S.escena.P.salas[S.escena.P.salas.length - 1]; u.pendiente = false; u.txt += ` → ${id}`; Me._jugar(S, id, 'accion'); });
+          A.hacer((S) => { const u = S.escena.P.salas[S.escena.P.salas.length - 1]; u.pendiente = false; u.txt += ` → ${id}`; Me._jugar(S, id, 'libre'); }); // e500: al terminar, puedes seguir explorando el pecio o salir
         } }, 'Tirar la sala especial')];
       case 'Superviviente o tesoro':
         return [el('button.btn.primario', { type: 'button', onclick: async () => {
@@ -1172,7 +1426,7 @@
           else {
             const r2 = await A.tirarDados('El superviviente sabe algo (2d6, r164)', 2, 'x', { regla: 'r164' });
             const R = r2 && D.RUMORES[r2.suma];
-            if (R) A.hacer((S) => M.pista(S, { region: R[1], nombre: R[2], ev: R[3] }), { foto: false });
+            if (r2) A.hacer((S) => aplicarRumor(S, r2.suma), { foto: false });
             fin(R ? `Un superviviente te da una Pista: ${R[2]}.` : 'Un superviviente: «alguien de tu tripulación pasó por aquí».');
           }
         } }, 'Tirar 1d6')];
@@ -1218,11 +1472,7 @@
     cont.append(bot);
     cont.append(reglas(['r133', 'r135', 'r154', M.P(S).regla]));
   }
-  async function rumorGratis() {
-    const r = await A.tirarDados('Rumor (2d6)', 2, 'x', { regla: 'r164' });
-    const R = r && D.RUMORES[r.suma];
-    if (R) A.hacer((S) => A.notas(M.pista(S, { region: R[1], nombre: R[2], ev: R[3] }).notas));
-  }
+  function rumorGratis() { return Me.rumor({ gratis: true }); }
   async function noche() {
     const S = A.S;
     const umbral = S.equipo.some((o) => /Capa de sal/.test(o)) ? 10 : 10;

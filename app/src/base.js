@@ -21,6 +21,7 @@ CB.u = {
 /** Partidas de versiones anteriores: el Secreto ya no se tira al empezar (r108), sale de los FRAGMENTO_ en e840. */
 CB.migrar = function (S) {
   if (S && S.secreto != null && !(S.marcas || []).includes('SECRETO_DESCUBIERTO')) S.secreto = null;
+  if (S && !S.notas) S.notas = [];
   return S;
 };
 
