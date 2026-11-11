@@ -2,7 +2,7 @@
 
 *Agujas de metal negro de un kilómetro de altura, tan juntas que forman un bosque. El aire vibra. Las piedras vibran. Tus dientes vibran. Aquí nace el Canto.*
 
-**Regla especial:** al amanecer en las Torres, el pulso del Canto sale con 5–6 (r131). Cada amanecer aquí, +1 Canto (r131), salvo que tengas la habilidad *Raíz* (r190), el Corazón dorado o te hayas tapado los oídos de algún modo que un evento te haya dado.
+**Regla especial:** al amanecer en las Torres, el pulso del Canto sale con 4–6 (r131). Cada amanecer aquí, +1 Canto (r131), salvo que tengas la habilidad *Raíz* (r190), el Corazón dorado o te hayas tapado los oídos de algún modo que un evento te haya dado.
 
 <a id="e340"></a>
 ### e340 · Tabla de encuentros: Torres del Canto
@@ -181,6 +181,6 @@ El viento silba entre los arcos y la torre entera oscila, muy despacio, como un 
 
 Desde aquí se ven las seis luces de los Recolectores con claridad. Y se ve también, por primera vez, que **las seis luces cambian de rumbo cada vez que el Canto sube de tono**.
 
-1. **Sentarte en el trono.** +3 Canto ♫. El Canto pasa por ti. Durante un instante, **eres** el Canto: ves cada nave que cae, cada náufrago, cada torre. Y debajo de todo, en el Polo, algo. Gana `FRAGMENTO_LA_CIMA`. **★**
+1. **Sentarte en el trono.** +3 Canto ♫. El Canto pasa por ti. Durante un instante, **eres** el Canto: ves cada nave que cae, cada náufrago, cada torre. Y debajo de todo, en el Polo, algo. Gana `FRAGMENTO_LA_CIMA`. **★** Si quieres, puedes no levantarte nunca → [e917](#e917).
 2. **Estudiar la espiral.** `[Ingenio · 11]` (Amara: Ventaja). *Éxito:* es un mapa de órbitas. Hay una ruta para salir del planeta **por donde el Canto no llega**. Si tu Navegación está instalada, sube a Excelente. Si no, anota `RUTA_DE_SALIDA` (en la secuencia de despegue, la prueba de Navegación tiene Ventaja). *Fallo:* te mareas. 1 Herida.
 3. **Mirar a los Recolectores.** Si el Canto los desvía… quizá el Canto no es la trampa, sino el **escudo**. `[Voluntad · 9]`. *Éxito:* gana `FRAGMENTO_EL_ESCUDO`. *Fallo:* el vértigo te gana. Bajas temblando.

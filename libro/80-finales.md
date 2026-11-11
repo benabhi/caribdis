@@ -4,17 +4,16 @@
 ### e900 · La secuencia de despegue
 *La Cicatriz · ⌛ día*
 
-Seis sistemas. Semanas de trabajo. Piezas de cien naves distintas soldadas con rabia y esperanza. Tu nave, la que lleva el nombre que escribiste en la Hoja, está lista. O todo lo lista que puede estar.
-
-Sube a bordo quien vaya a subir. Siéntate. Respira.
+Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está lista, o casi. Sube a bordo quien vaya a subir. Siéntate. Respira.
 
 **Paso 0 · Quién viene.** Anota quién va a bordo: tus compañeros, los tripulantes que esperan en la Cicatriz y los pasajeros que ganaste con Marcas (`MIRASOLES_A_BORDO` cuenta como 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` cuentan como 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
 - Si tienes `TADEO_SE_QUEDA`, o Tadeo está a bordo y tienes `TADEO_CREE` (en [e622](#e622) le dijiste que quizá era Dios) → [e623](#e623) antes de seguir.
 - Si eres el Nativo con `ARRAIGO` 6 y elegiste «pedir tiempo» en [e816](#e816), o tienes `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
+- Con el Secreto 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
 
 **Paso 1 · Antes de encender.** Si tienes `DEUDA_CON_EL_CONTABLE`, `ENEMIGO_DEL_CONTABLE`, Reputación −3 con cualquier facción o `ROBASTE_AL_ARGO` → [e901](#e901), y luego vuelve aquí.
 
-**Paso 2 · Las pruebas.** Haz una prueba por cada sistema, en este orden. La **dificultad** depende de la calidad del sistema: Precaria 11, Sólida 9, Excelente 7.
+**Paso 2 · Las pruebas.** Haz una prueba por cada sistema, en este orden. La **dificultad** depende de la calidad del sistema: Precaria 11, Sólida 9, Excelente 7. Una vez empiezas no hay vuelta atrás: tira en orden y sin saltarte ninguna.
 
 | # | Sistema | Atributo | Ayudas |
 |---|---|---|---|
@@ -92,7 +91,7 @@ Detrás, Caribdis se hace pequeña: un punto rojo con un anillo brillante. Desde
 |---|---|
 | **Regreso** → [e910](#e910) | Siempre disponible |
 | **Romper el bucle** → [e911](#e911) | Secreto 6 y `SECRETO_DESCUBIERTO` |
-| **Silencio** → [e912](#e912) | Secreto 5 y `LA_ESPERANZA_CALLA` (ya descubierto) |
+| **Silencio** → [e912](#e912) | Secreto 5, `SECRETO_DESCUBIERTO` y `LA_ESPERANZA_CALLA` |
 | **Sabotaje** → [e913](#e913) | Secreto 4, `SECRETO_DESCUBIERTO` y al menos 1 `TORRE_ROTA` |
 | **Retorno** → [e916](#e916) | La Mente con `FRAGMENTO_DE_AQUI` |
 
@@ -176,6 +175,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 
 **Sobre los que se quedaron:**
 - Por cada tripulante que no subió: *«(Nombre) se queda en Caribdis.»*
+- Con `PASAJERO_EL_CONTABLE` y sin él a bordo: *«La gente del Contable te busca durante años. Cobra siempre.»*
 - Con `HALCYON`: *«No vuelves a por los dormidos del Halcyon. Siete luces verdes, en un cementerio de naves. Siempre te preguntarás.»*
 
 **Lo que hiciste por el camino** (lee las que tengas):

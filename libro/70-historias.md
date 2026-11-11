@@ -14,9 +14,9 @@ Esa noche, el receptor de tu muñeca, un implante que habías olvidado, empieza 
 
 No está en la Cicatriz. Salió despedida en la caída.
 
-Tira 1d8 y anota en tu Hoja la región donde está la **Caja negra**: es un Hallazgo más (r153). Cuando la encuentres → [e807](#e807).
+Tira 1d8 dos veces y anota en tu Hoja la región que elijas: allí está la **Caja negra**, un Hallazgo más (r153). Cuando la encuentres → [e807](#e807).
 
-El pitido no para, ni siquiera cuando te tapas la muñeca. Te zumba en los dientes.
+El pitido no para, ni cuando te tapas la muñeca. Te zumba en los dientes.
 
 Te quedas mirando el techo hasta el amanecer, contando pitidos.
 
@@ -263,7 +263,7 @@ Cada vez que la lees, tu ventilador gira más rápido.
 
 Recuerdas algo, de golpe: durante la caída, una parte de ti hizo una **copia de seguridad** y la expulsó en una cápsula. Es tu **Núcleo de memoria**: todo lo que eras.
 
-Tira 1d8 y anota la región en tu Hoja: es un Hallazgo más (r153). Cuando la encuentres → [e826](#e826).
+Tira 1d8 dos veces y anota en tu Hoja la región que elijas (con `MEMORIA` 3 o más, cualquiera): es un Hallazgo más (r153). Cuando la encuentres → [e826](#e826).
 
 1. **Sentir esperanza.** +1 Temple.
 2. **Sentir miedo.** ¿Y si lo que eras no te gusta? +1 Canto ♫, pero +1 `MEMORIA`: el miedo también es un recuerdo.
@@ -417,7 +417,7 @@ Caribdis está vivo. Bajo el Polo duerme una criatura del tamaño de un continen
 Los Recolectores no vienen a por ti. Vienen a por **ella**. Llevan milenios cazándola.
 
 **Efectos:**
-- Si tienes `CASI_DESPIERTA` o `LO_VISTE`, la Bestia te conoce: cada `TORRE_ROTA` que tengas sube 1 la Alerta en la secuencia de despegue (las torres la mantenían dormida).
+- Si tienes `CASI_DESPIERTA` o `LO_VISTE`, la Bestia te conoce: cada `TORRE_ROTA` que tengas es 1 Daño de nave en la secuencia de despegue (las torres la mantenían dormida).
 - Nuevo final posible: **Despertar** ([e918](#e918)): con `LO_VISTE`, en el paso 0 del despegue puedes despertarla a propósito; los Recolectores irán a por ella y escaparás en la confusión. Cuenta como victoria, pero Caribdis morirá.
 
 ---

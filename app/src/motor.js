@@ -35,7 +35,7 @@
       pistas: [], marcas: [], equipo: [], reliquias: [],
       arma: 'Puños', proteccion: cfg.prota === 'mente' ? 'Chasis' : 'Traje de vuelo',
       piezas: { cobre: 0, hueso: 0, cristal: 0, luz: 0 }, planos: P.planos.slice(), obras: {},
-      sistemas: {}, despensa: 15, guardado: [],
+      sistemas: {}, despensa: 8, guardado: [],
       tripu: {}, conocidos: { peregrina: 0, perro: 0, mirasoles: 0 },
       vehiculo: null, secreto: null, clima: null,
       hoy: { accion: null, descanso: false, cubierto: false },
@@ -252,19 +252,17 @@
   /** r195 · Caer */
   M.caer = function (S, fuente) {
     const notas = [];
-    const coste = 1;
-    if (S.temple >= coste) {
-      S.temple -= coste;
-      S.heridas = S.nivelesHerida;
-      const perdidas = `${S.raciones} Raciones y ${S.chatarra} Chatarra`;
-      S.raciones = 0; S.chatarra = 0;
-      M.log(S, `Caes${fuente ? ' (' + fuente + ')' : ''}. Gastas 1 Temple: despiertas en Crítico. Alguien te registró: pierdes ${perdidas}.`, ['r195']);
+    const copia = S.habilidades.includes('Copia de seguridad') && !S.umbrales.copia;
+    if (copia || S.temple >= 1) {
+      if (copia) { S.umbrales.copia = 1; S.region = 1; }
+      else S.temple -= 1;
+      S.heridas = Math.max(0, S.nivelesHerida - 1);
+      const r = Math.ceil(S.raciones / 2), c = Math.ceil(S.chatarra / 2);
+      S.raciones -= r; S.chatarra -= c;
+      const perdidas = `${r} ${CB.u.plural(r, 'Ración')} y ${c} Chatarra`;
+      M.log(S, `Caes${fuente ? ' (' + fuente + ')' : ''}. ${copia ? 'Tu Copia de seguridad te despierta en la Cicatriz, sin gastar Temple' : 'Gastas 1 Temple: despiertas donde estabas'}, en ${M.nivel(S)}. Alguien te registró: pierdes ${perdidas}.`, copia ? ['r195', 'r190'] : ['r195']);
       M.cambiar(S, 'reloj', -2, 'Caer (r195)');
-      notas.push('Caíste: gastas 1 Temple, el Reloj baja 2 y pierdes Raciones y Chatarra (r195).');
-    } else if (S.habilidades.includes('Copia de seguridad') && !S.umbrales.copia) {
-      S.umbrales.copia = 1; S.heridas = 3; S.region = 1;
-      M.log(S, 'Caes, pero tu Copia de seguridad te despierta en la Cicatriz con Daño 3.', ['r190']);
-      notas.push('Copia de seguridad: vuelves en la Cicatriz (r190).');
+      notas.push(copia ? 'Copia de seguridad: vuelves en la Cicatriz sin gastar Temple; el Reloj baja 2 y pierdes la mitad de tus Raciones y tu Chatarra (r190, r195).' : 'Caíste: gastas 1 Temple, despiertas en Grave, el Reloj baja 2 y pierdes la mitad de tus Raciones y tu Chatarra (r195).');
     } else {
       M.log(S, 'Caes sin Temple.', ['r195']);
       M.avisar(S, { clave: 'muerte', ev: 'e920', regla: 'r195', txt: 'Caíste sin Temple que gastar.' });
@@ -425,10 +423,6 @@
       M.marcar(S, 'PERDIDO_' + CB.u.norm(t).toUpperCase());
       if (S.prota === 'piloto') M.cambiar(S, 'contador', 1, `${t} se va`);
     }
-    if (T.lealtad === 3 && antes < 3 && !S.umbrales['leal3-' + t]) {
-      S.umbrales['leal3-' + t] = 1; S.mejoras += 1;
-      M.log(S, `${t} llega a Lealtad 3: es un hito, eliges una mejora.`, ['r190']);
-    }
     if (T.lealtad === 3 && antes < 3) M.avisar(S, { clave: 'leal-' + t, tipo: 'descanso', ev: D.TRIPULACION[t].leal, regla: 'r186', txt: `${t} tiene Lealtad 3: lee su evento la próxima vez que descanses.` });
   };
 
@@ -503,8 +497,10 @@
       else { L.push({ t: 'Sin Aire: 1 Herida', r: 'r136', mal: true }); M.herir(S, 1, 'sin aire'); }
     }
     if (S.prota === 'mente') {
-      if (enCic) { S.energia = 6; L.push({ t: 'En la Cicatriz recargas la Energía al máximo', r: 'r104' }); }
-      if (S.energia > 0) { S.energia -= 1; L.push({ t: 'Gastas 1 Energía', r: 'r104' }); }
+      if (enCic) {
+        if (S.energia < 6) { S.energia += 1; L.push({ t: 'En la Cicatriz recuperas 1 Energía (recargar del todo cuesta 2 Chatarra)', r: 'r104' }); }
+        else L.push({ t: 'En la Cicatriz no gastas Energía', r: 'r104' });
+      } else if (S.energia > 0) { S.energia -= 1; L.push({ t: 'Gastas 1 Energía', r: 'r104' }); }
       else { L.push({ t: 'Sin Energía: 1 Daño', r: 'r136', mal: true }); M.herir(S, 1, 'sin energía'); }
     }
     for (const t of M.compas(S)) {
@@ -530,8 +526,8 @@
   /** r131.4 · ¿hay pulso? */
   M.hayPulso = function (S, d) {
     if (S.estacion === 6 && S.reloj != null && S.reloj % 10 === 5) return { pulso: false, nota: 'Silencio: hoy no hay pulso (r213).' };
-    if (S.estacion === 1 && d === 5) { S.clima = { n: 'Tormenta de óxido', hasta: S.dia + 1 }; }
-    const umbral = S.region === 7 ? 5 : 6;
+    if (S.estacion === 1 && d === 4) { S.clima = { n: 'Tormenta de óxido', hasta: S.dia + 1 }; }
+    const umbral = S.region === 7 ? 4 : 5;
     return { pulso: d >= umbral, umbral };
   };
 
@@ -550,7 +546,7 @@
   M.disponible = function (S, k) {
     const R = M.reg(S);
     switch (k) {
-      case 'viajar': return S.heridas >= 4 && M.compas(S).length === 0 && !S.vehiculo ? 'En Crítico no puedes viajar sin un compañero o un vehículo (r106).' : true;
+      case 'viajar': return M.destinosViaje(S).length ? true : 'En Crítico, sin compañero ni vehículo, solo puedes Viajar hacia la Cicatriz (r106).';
       case 'visitar': return S.region === 1 ? 'La Cicatriz es tu casa: aquí no hay asentamiento que visitar.' : !R.asent ? 'En esta región no hay asentamiento (r150).' : true;
       case 'nave': return M.enCicatriz(S) ? true : 'Solo en la Cicatriz (Dunas de Óxido).';
       case 'ocultarte': return S.region === 7 ? 'En las Torres del Canto no hay dónde esconderse (r135).' : true;
@@ -587,6 +583,19 @@
   };
   M.avanzarConocido = function (S, k) { S.conocidos[k] += 1; };
 
+  /** r106: en Crítico, sin compañero ni vehículo, solo hacia la Cicatriz */
+  M.distCicatriz = function (r) {
+    const dist = { 1: 0 }, cola = [1];
+    while (cola.length) { const x = cola.shift(); for (const v of D.REGIONES[x].vec) if (dist[v] == null) { dist[v] = dist[x] + 1; cola.push(v); } }
+    return dist[r];
+  };
+  M.criticoSolo = (S) => S.heridas >= S.nivelesHerida && M.compas(S).length === 0 && !S.vehiculo;
+  M.destinosViaje = function (S) {
+    const vec = M.reg(S).vec;
+    if (!M.criticoSolo(S)) return vec;
+    const d = M.distCicatriz(S.region);
+    return vec.filter((r) => M.distCicatriz(r) < d);
+  };
   M.viajar = function (S, destino, res, dFallo) {
     const notas = [];
     if (res === 'fa') {
@@ -599,6 +608,10 @@
         notas.push('Te desvías: sigues donde estabas, pero sufres el encuentro igual (r151).');
       }
     } else S.region = destino;
+    if (S.prota === 'mente' && !S.vehiculo) {
+      if (S.energia > 0) { M.cambiar(S, 'energia', -1, 'viajar sin vehículo (r104)'); notas.push('Viajar sin vehículo te cuesta 1 Energía (r104).'); }
+      else { notas.push(...M.herir(S, 1, 'viajar sin Energía (r104)').notas); }
+    }
     M.log(S, S.region === destino ? `Llegas a ${D.REGIONES[destino].n}.` : `Te desvías y sigues en ${M.reg(S).n}.`, ['r151']);
     if (S.region === 1) M.log(S, 'Estás en la Cicatriz.', ['r182']);
     return { notas, llegaste: S.region === destino };
@@ -616,7 +629,7 @@
   };
   M.forrajear = function (S, pleno = false) {
     if (S.prota === 'mente') { M.cambiar(S, 'energia', 1, 'forrajear (r153)'); return; }
-    let n = S.prota === 'nativo' ? 3 : 2;
+    let n = S.prota === 'nativo' ? 3 : 1;
     if (M.tiene(S, 'COLONO')) n += 1;
     M.cambiar(S, 'raciones', n, 'forrajear (r153)');
   };

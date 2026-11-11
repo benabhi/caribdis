@@ -183,7 +183,7 @@
 | `JARDIN_A_BORDO` | [e261](#e261) · [e910](#e910) |
 | `LANZADERA_DE_UR` | [e264](#e264) · [e813](#e813) |
 | `LA_ANTENA` | [e610](#e610) |
-| `LA_ESPERANZA_CALLA` | [e813](#e813) · [e845](#e845) · [e900](#e900) · [e903](#e903) |
+| `LA_ESPERANZA_CALLA` | [e290](#e290) · [e813](#e813) · [e845](#e845) · [e900](#e900) · [e903](#e903) |
 | `LA_ESPIRAL` | [e610](#e610) |
 | `LA_NIÑA_DE_LA_CAPSULA` | [e606](#e606) · [e900](#e900) · [e910](#e910) |
 | `LA_PEREGRINA_A_BORDO` | [e063](#e063) |
@@ -192,7 +192,7 @@
 | `LINEA_AISLADA` | [e821](#e821) · [e832](#e832) |
 | `LISTA_DE_A_BORDO` | [e004](#e004) |
 | `LOS_MIRASOLES_TE_CONOCEN` | [e068](#e068) · [e069](#e069) · [e071](#e071) |
-| `LO_VISTE` | [e291](#e291) · [e843](#e843) |
+| `LO_VISTE` | [e281](#e281) · [e291](#e291) · [e843](#e843) · [e900](#e900) |
 | `MAPA_DEL_CIEGO` | [e226](#e226) |
 | `MAPA_DE_LOS_RECOLECTORES` | [e065](#e065) · [e516](#e516) · [e842](#e842) · [e902](#e902) · [e910](#e910) |
 | `MATASTE_A_LA_MADRE` | [e310](#e310) · [e410](#e410) · [e415](#e415) · [e910](#e910) |
@@ -256,7 +256,7 @@
 | `SALTASTE` | [e311](#e311) · [e910](#e910) |
 | `SALUDO_DEL_CORO` | [e033](#e033) · [e268](#e268) · [e343](#e343) · [e420](#e420) |
 | `SAL_EN_LA_PIEL` | [e245](#e245) · [e251](#e251) · [e569](#e569) |
-| `SECRETO_DESCUBIERTO` | [e840](#e840) · [e903](#e903) · [r196](#r196) |
+| `SECRETO_DESCUBIERTO` | [e840](#e840) · [e900](#e900) · [e903](#e903) · [r196](#r196) |
 | `SEGUIDO` | [r308](#r308) |
 | `SEÑAL_EN_ROCA` | [e037](#e037) |
 | `SEÑAS_DE_LOS_SORDOS` | [e231](#e231) · [e346](#e346) |

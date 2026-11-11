@@ -254,11 +254,11 @@
       // un Hallazgo de la región (r153)
       if (/un Hallazgo de la región \(r153\)/.test(t)) bots.push(el('button.tk.herr.hallazgo', { type: 'button', 'data-herr': JSON.stringify({ k: 'hallazgo' }) }, el('span', { html: T.ico('buscar') }), 'Elegir el Hallazgo'));
       // un Hallazgo más que hay que situar (la caja negra, el núcleo de memoria…)
-      const hm = t.match(/Tira 1d8 y anota[^.]*Hallazgo más \(r153\)\. Cuando la encuentres → (e\d{3})/);
+      const hm = t.match(/Tira 1d8 (?:dos veces )?y anota[^.]*Hallazgo más \(r153\)\. Cuando la encuentres → (e\d{3})/);
       if (hm && S.sistemas.Personal) {
         const Pe = S.sistemas.Personal;
         const ya = Pe && Pe.ev === hm[1] && Pe.region;
-        bots.push(el('button.tk.herr.hallazgo' + (ya ? '.hecho' : ''), { type: 'button', 'data-herr': JSON.stringify({ k: 'situar', ev: hm[1] }) }, el('span', { html: T.ico('mapa') }), ya ? `Anotado: ${D.REGIONES[Pe.region].corto}` : 'Tirar 1d8 y anotarlo en la Hoja'));
+        bots.push(el('button.tk.herr.hallazgo' + (ya ? '.hecho' : ''), { type: 'button', 'data-herr': JSON.stringify({ k: 'situar', ev: hm[1] }) }, el('span', { html: T.ico('mapa') }), ya ? `Anotado: ${D.REGIONES[Pe.region].corto}` : 'Tirar 1d8 dos veces y elegir'));
       }
       // un tripulante que aún no encontraste está aquí (o lo eliges): su primer evento
       if (/tripulante (?:tuyo )?que (?:aún )?no (?:hayas|has) encontrado/.test(t) && /primer evento/.test(t)) bots.push(el('button.tk.herr.tripu', { type: 'button', 'data-herr': JSON.stringify({ k: 'tripulante' }) }, el('span', { html: T.ico('grupo') }), 'Elegir el tripulante e ir a su evento'));
@@ -297,14 +297,20 @@
     if (h.k === 'rumor') { for (let i = 0; i < (h.n || 1); i++) await Me.rumor({ mas: h.mas, gratis: true }); return; }
     if (h.k === 'hallazgo') return A.hacer((S) => { S.escena = { tipo: 'hallazgo', pleno: false }; });
     if (h.k === 'situar') {
-      const r = await A.tirarNotacion('1d8', 'Dónde está (1d8)');
-      if (!r) return;
+      const r1 = await A.tirarNotacion('1d8', 'Dónde está (primer 1d8)');
+      if (!r1) return;
+      const r2 = await A.tirarNotacion('1d8', 'Dónde está (segundo 1d8)');
+      if (!r2) return;
+      const memoria = S.prota === 'mente' ? S.contador : 0;
+      const ops = h.ev === 'e826' && memoria >= 3 ? [1, 2, 3, 4, 5, 6, 7, 8] : [...new Set([r1.valor, r2.valor])];
+      const valor = ops.length === 1 ? ops[0] : await new Promise((ok) => A.modal(ops.length > 2 ? 'Con MEMORIA 3 o más, elige cualquier región' : `Sacaste ${r1.valor} y ${r2.valor}: elige`, el('div.botones-col', ops.map((v) => el('button.btn.secundario', { type: 'button', onclick: () => { A.cerrarModal(); ok(v); } }, `${v} · ${D.REGIONES[v].n}`))), { clase: 'estrecho' }));
+      if (!valor) return;
       A.hacer((S) => {
         const Pe = S.sistemas.Personal;
-        Object.assign(Pe, { estado: 'perdido', region: r.valor, ev: h.ev });
-        M.log(S, `${Pe.n || 'Tu sistema personal'}: está en ${D.REGIONES[r.valor].n}. Es un Hallazgo más (r153).`, ['r153', h.ev]);
+        Object.assign(Pe, { estado: 'perdido', region: valor, ev: h.ev });
+        M.log(S, `${Pe.n || 'Tu sistema personal'}: está en ${D.REGIONES[valor].n}. Es un Hallazgo más (r153).`, ['r153', h.ev]);
       });
-      return A.aviso(`Anotado en la Hoja (pestaña Nave): está en <b>${D.REGIONES[r.valor].n}</b>. Explora allí para encontrarlo.`);
+      return A.aviso(`Anotado en la Hoja (pestaña Nave): está en <b>${D.REGIONES[valor].n}</b>. Explora allí para encontrarlo.`);
     }
   }
   /** explorar un pecio que manda un evento; al salir vuelves al evento para terminarlo */
@@ -858,7 +864,8 @@
     if (op.soloTienda) { caja.querySelector('h3').innerHTML = `${T.ico('asentamiento')} Comerciar ${T.ref('r161')}`; caja.append(grid); A.enlazarRefs(caja); return caja; }
     const otros = el('div.serv', el('h4', 'Más servicios'));
     if (S.prota === 'piloto') otros.append(el('div.serv-fila', el('span', 'Rellenar el Aire'), el('b', '1'), el('button.btn.mini', { type: 'button', disabled: S.chatarra < 1 || S.aire >= 6, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -1, 'rellenar Aire'); S.aire = 6; M.log(S, 'Aire al máximo.', ['r136']); }) }, 'Rellenar')));
-    if (S.prota !== 'nativo') otros.append(el('div.serv-fila', el('span', 'Rellenar la Energía'), el('b', '1'), el('button.btn.mini', { type: 'button', disabled: S.chatarra < 1 || S.energia >= 6, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -1, 'rellenar Energía'); S.energia = 6; M.log(S, 'Energía al máximo.', ['r136']); }) }, 'Rellenar')));
+    const costeE = S.prota === 'mente' ? 2 : 1;
+    if (S.prota !== 'nativo') otros.append(el('div.serv-fila', el('span', 'Rellenar la Energía'), el('b', String(costeE)), el('button.btn.mini', { type: 'button', disabled: S.chatarra < costeE || S.energia >= 6, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -costeE, 'rellenar Energía (r160)'); S.energia = 6; M.log(S, 'Energía al máximo.', ['r136']); }) }, 'Rellenar')));
     otros.append(el('div.serv-fila', el('span', { html: `Sanador: cura 2 Heridas ${T.ref('r163')}` }), el('b', quilla ? '2 o Rac.' : '2'), el('button.btn.mini', { type: 'button', disabled: S.heridas === 0, onclick: () => A.hacer((S) => { if (quilla && S.chatarra < 2) M.cambiar(S, 'raciones', -2, 'sanador de Quilla'); else M.cambiar(S, 'chatarra', -2, 'sanador'); M.curar(S, 2, 'sanador'); }) }, 'Curar')));
     otros.append(el('div.serv-fila', el('span', 'Sanador: baja 2 de Canto'), el('b', '3'), el('button.btn.mini', { type: 'button', disabled: S.canto === 0 || S.chatarra < 3, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -3, 'sanador'); M.cambiar(S, 'canto', -2, 'sanador'); }) }, 'Pagar')));
     otros.append(el('div.serv-fila', el('span', { html: `Rumores: una Pista ${T.ref('r164')}` }), el('b', '1'), el('button.btn.mini', { type: 'button', disabled: S.chatarra < 1 || !!S.hoy.rumor, title: S.hoy.rumor ? 'Una vez por visita (r164)' : '', onclick: rumor }, S.hoy.rumor ? 'Ya escuchaste' : 'Escuchar')));
@@ -877,7 +884,7 @@
       if (S.hoy.regateo === 'ok') { p = Math.max(1, p - 1); S.hoy.regateo = 'usado'; }
       if (S.hoy.regateo === 'mal') { A.aviso('Hoy ya no te venden más: el regateo salió mal (r161).'); return; }
       M.cambiar(S, 'chatarra', -p, 'compra: ' + n);
-      if (tipo === 'raciones') M.cambiar(S, 'raciones', 2, 'compra');
+      if (tipo === 'raciones') M.cambiar(S, 'raciones', 1, 'compra');
       else if (tipo.startsWith('pieza:')) M.cambiar(S, tipo, 1, 'compra');
       else M.objeto(S, n);
     });
@@ -920,7 +927,7 @@
     pasos.append(el('li.' + (estado(0) || 'x'), el('b', 'El Reloj baja 1'), el('span', { html: T.ref('r131') }), e.paso > 0 && L[0] ? el('small', L[0]) : null));
     pasos.append(el('li.' + (estado(0) || 'x'), el('b', 'Supervivencia'), el('span', { html: T.ref('r136') }), e.paso > 0 ? el('ul.sub', (e.superv || []).map((x) => el('li' + (x.mal ? '.mal' : ''), { html: `${esc(x.t)} ${T.ref(x.r)}` }))) : el('small', 'Comer, respirar, recargar.')));
     if (S.region === 7) pasos.append(el('li.' + (estado(0) || 'x'), el('b', 'Las Torres'), el('span', { html: T.ref('r131') }), el('small', '+1 Canto al amanecer aquí.')));
-    pasos.append(el('li.' + (estado(1) || 'x'), el('b', 'Pulso del Canto'), el('span', { html: T.ref('r131') }), el('small', e.pulso ? e.pulso : `Tira 1d6: con un ${S.region === 7 ? '5 o 6 (estás en las Torres)' : '6'}, el Canto te visita.`)));
+    pasos.append(el('li.' + (estado(1) || 'x'), el('b', 'Pulso del Canto'), el('span', { html: T.ref('r131') }), el('small', e.pulso ? e.pulso : `Tira 1d6: con ${S.region === 7 ? '4, 5 o 6 (estás en las Torres)' : '5 o 6'}, el Canto te visita.`)));
     cont.append(pasos);
     const bot = el('div.botones-fase');
     if (e.paso === 0) bot.append(el('button.btn.primario.grande', { type: 'button', onclick: amanecer1 }, el('span', { html: `${T.ico('sol')} Amanecer` })));
@@ -941,7 +948,7 @@
     });
   }
   async function amanecerPulso() {
-    const r = await A.tirarDados('Pulso del Canto (1d6)', 1, 'x', { regla: 'r131', explicar: `Con ${A.S.region === 7 ? '5–6' : 'un 6'}, el Canto te visita.` });
+    const r = await A.tirarDados('Pulso del Canto (1d6)', 1, 'x', { regla: 'r131', explicar: `Con ${A.S.region === 7 ? '4–6' : '5–6'}, el Canto te visita.` });
     if (!r) return;
     const S = A.S;
     const hp = M.hayPulso(S, r.dados[0]);
@@ -1021,7 +1028,8 @@
     if (g) cont.append(g);
     const R = M.reg(S);
     cont.append(cab('mapa', `Día ${S.dia} · Viajar`, '¿Hacia dónde?', `Desde ${R.n} puedes ir a una región vecina (${T.ref('r151')}).`));
-    const vec = R.vec;
+    const vec = M.destinosViaje(S);
+    if (M.criticoSolo(S)) cont.append(el('p.ayuda-mini', 'Estás en Crítico, sin compañero ni vehículo: solo puedes Viajar hacia la Cicatriz (r106).'));
     cont.append(el('div.mapa-mesa.grande', H().mapa(S, { elegibles: vec, alElegir: viajar })));
     const lista = el('div.destinos');
     vec.forEach((r) => {
@@ -1114,7 +1122,7 @@
     if (hall.length) hall.forEach((h) => grid.append(op('a', h.n, `Lo anotaste al preparar la partida. ${h.ev ? '→ ' + T.ref(h.ev) : ''}`, () => A.hacer((S) => { if (h.k === 'tripu') S.tripu[h.t].estado = 'perdido'; Me._jugar(S, h.ev, 'accion'); }))));
     else grid.append(op('a', 'Tu lista de Hallazgos', 'Nada de lo que anotaste está en esta región.', null, false));
     grid.append(op('b', 'Un pecio o una ruina', `Se explora sala a sala (${T.ref('r170')}).${[6, 7].includes(S.region) ? ' Aquí siempre es un Arca de los Antiguos.' : S.region === 2 ? ' En el Cementerio tiras dos veces el tipo y eliges.' : ''}`, () => A.hacer((S) => (S.escena = { tipo: 'pecio', fase: 'tipo' }))));
-    grid.append(op('c', 'Forrajear', S.prota === 'mente' ? '+1 Energía.' : `+${S.prota === 'nativo' ? 3 : 2} Raciones${M.tiene(S, 'COLONO') ? ' (+1 por Hijo de colonos)' : ''}, o +1 Energía.`, () => A.hacer((S) => { M.forrajear(S); entrarAnochecer(S); })));
+    grid.append(op('c', 'Forrajear', S.prota === 'mente' ? '+1 Energía.' : `+${S.prota === 'nativo' ? 3 : 1} ${S.prota === 'nativo' ? 'Raciones' : 'Ración'}${M.tiene(S, 'COLONO') ? ' (+1 por Hijo de colonos)' : ''}, o +1 Energía.`, () => A.hacer((S) => { M.forrajear(S); entrarAnochecer(S); })));
     grid.append(op('d', 'Un encuentro tranquilo', `Tabla de la región en la <b>columna 1</b>, sea cual sea tu Alerta (${T.ref(R.tabla)}).`, () => encuentro(S.region, 1)));
     grid.append(op('e', 'Rebuscar', `${e.pleno ? 3 : 2} piezas de ${R.piezas.map((p) => D.PIEZAS[p]).join(' o ')} (${T.ref('r201')}).`, () => rebuscar(e.pleno)));
     cont.append(grid);
@@ -1144,13 +1152,14 @@
     cont.append(cab('martillo', `Día ${S.dia} · La Cicatriz`, 'Trabajar en la nave', `Elige una tarea (${T.ref('r181')}). Si no hay nada que hacer, vuelve atrás y elige otra acción.`));
     const caja = el('div.tareas');
     const llevados = D.SISTEMAS.concat(['Personal']).filter((s) => S.sistemas[s].estado === 'llevado');
-    llevados.forEach((s) => caja.append(el('div.tarea', el('div', el('b', `Instalar el ${s === 'Personal' ? S.sistemas.Personal.n : s}`), el('small', `${S.sistemas[s].cal} · Ingenio · 9. Éxito pleno: +1 calidad. Fallo: −1 Chatarra y reintentas otro día.`)), el('button.btn.primario', { type: 'button', onclick: () => instalar(s) }, 'Instalar'))));
+    llevados.forEach((s) => caja.append(el('div.tarea', el('div', el('b', `Instalar el ${s === 'Personal' ? S.sistemas.Personal.n : s}`), el('small', `${S.sistemas[s].cal} · Ingenio · 11. Éxito pleno: +1 calidad. Fallo: −1 Chatarra y reintentas otro día.`)), el('button.btn.primario', { type: 'button', onclick: () => instalar(s) }, 'Instalar'))));
     if (!llevados.length) caja.append(el('p.vacio', 'No llevas ningún sistema para instalar.'));
     D.SISTEMAS.concat(['Personal']).filter((s) => S.sistemas[s].estado === 'instalado' && S.sistemas[s].cal !== 'Excelente').forEach((s) => caja.append(el('div.tarea', el('div', el('b', `Mejorar el ${s === 'Personal' ? S.sistemas.Personal.n : s}`), el('small', `${S.sistemas[s].cal} → ${D.CALIDADES[D.CALIDADES.indexOf(S.sistemas[s].cal) + 1]} · 3 Chatarra e Ingenio · 11`)), el('button.btn.secundario', { type: 'button', disabled: S.chatarra < 3, onclick: () => mejorar(s) }, 'Mejorar'))));
     if (M.tiene(S, 'BALIZA_ACTIVA')) caja.append(el('div.tarea', el('div', el('b', 'Apagar la baliza'), el('small', 'Ingenio · 9 ◉. Éxito: BALIZA_MUDA (la Alerta ya puede bajar de 2). Fallo: +1 Alerta.')), el('button.btn.secundario', { type: 'button', onclick: apagarBaliza }, 'Intentarlo')));
     cont.append(caja);
     // gestión gratis
     const gest = el('div.gestion', el('h4', 'Sin gastar el día'));
+    if (S.prota === 'mente' && S.energia < 6) gest.append(el('button.btn.mini.secundario', { type: 'button', disabled: S.chatarra < 2, onclick: () => A.hacer((S) => { M.cambiar(S, 'chatarra', -2, 'recargar Energía (r104)'); S.energia = 6; M.log(S, 'Recargas la Energía por completo.', ['r104', 'r182']); }) }, 'Recargar la Energía (2 Chatarra)'));
     if (S.raciones > 0) gest.append(el('button.btn.mini.secundario', { type: 'button', onclick: () => A.hacer((S) => { S.raciones -= 1; S.despensa += 1; M.log(S, 'Dejas 1 Ración en la despensa.', ['r182']); }) }, 'Dejar 1 Ración en la despensa'));
     for (const t in S.tripu) {
       if (S.tripu[t].estado === 'contigo') gest.append(el('button.btn.mini.secundario', { type: 'button', onclick: () => A.hacer((S) => { S.tripu[t].estado = 'cicatriz'; M.log(S, `${t} se queda en la Cicatriz.`, ['r182']); }) }, `${t}: quedarse en la Cicatriz`));
@@ -1164,10 +1173,9 @@
     const S = A.S;
     const sug = [];
     if (M.compas(S).includes('Noemí') || S.tripu['Noemí'].estado === 'cicatriz') sug.push({ t: 'Noemí: Ventaja para instalar', modo: 'V', r: 'r181' });
-    if (S.prota === 'mente') sug.push({ t: 'La Mente da Ventaja al instalar', modo: 'V', r: 'r181' });
     if (S.habilidades.includes('Mecánico de campaña')) sug.push({ t: 'Mecánico de campaña: Ventaja', modo: 'V', r: 'r190' });
     if (M.tiene(S, 'MORRO_ENTERO') && !M.instalados(S).length) sug.push({ t: 'MORRO_ENTERO: tu primer sistema será más fácil', modo: 'V', r: 'e002' });
-    const r = await A.tirar({ titulo: `Instalar el ${s}`, attr: 'Ingenio', dif: 9, sugerencias: sug, regla: 'r181', modo: sug.some((x) => x.modo === 'V') ? 'V' : null, cancelable: true });
+    const r = await A.tirar({ titulo: `Instalar el ${s}`, attr: 'Ingenio', dif: 11, sugerencias: sug, regla: 'r181', modo: sug.some((x) => x.modo === 'V') ? 'V' : null, cancelable: true });
     if (!r) return;
     A.hacer((S) => { const x = M.instalar(S, s, r.res); if (x.ok) { entrarAnochecer(S); } else entrarAnochecer(S); });
     if (r.res !== 'fa') { A.aviso(`¡${s} instalado! Es un hito: elige una mejora (r190).`, 'bien'); Me.mejora(); }
@@ -1453,7 +1461,7 @@
     pasos.append(el('li.hecho', el('b', 'Descanso'), el('span', { html: T.ref('r133') }), e.lineas.length ? el('ul.sub', e.lineas.map((x) => el('li', { html: `${esc(x.t)} ${T.ref(x.r)}` }))) : el('small', S.hoy.descanso ? 'Nada que curar.' : 'Sin descanso, no te curas.')));
     let pendiente = false;
     if (e.intemperie) {
-      pasos.append(el('li.' + (e.noche ? 'hecho' : 'ahora'), el('b', 'Noche a la intemperie'), el('span', { html: T.ref('r133') }), el('small', e.noche || 'Tira 2d6: con 10 o más, algo te encuentra de noche.')));
+      pasos.append(el('li.' + (e.noche ? 'hecho' : 'ahora'), el('b', 'Noche a la intemperie'), el('span', { html: T.ref('r133') }), el('small', e.noche || `Tira 2d6: con ${S.equipo.some((o) => /Capa de sal/.test(o)) ? 10 : 9} o más, algo te encuentra de noche.`)));
       if (!e.noche) pendiente = true;
     } else if (e.centinela) pasos.append(el('li.hecho', el('b', 'Modo centinela'), el('span', { html: T.ref('e726') }), el('small', 'Sin tirada nocturna (1 Energía extra).')));
     else pasos.append(el('li.hecho', el('b', 'A cubierto'), el('span', { html: T.ref('r133') }), el('small', S.region === 1 ? 'Duermes en la Cicatriz: no hay tirada nocturna.' : S.hoy.cubierto ? 'Duermes en el asentamiento.' : 'No dormiste a la intemperie.')));
@@ -1475,7 +1483,7 @@
   function rumorGratis() { return Me.rumor({ gratis: true }); }
   async function noche() {
     const S = A.S;
-    const umbral = S.equipo.some((o) => /Capa de sal/.test(o)) ? 10 : 10;
+    const umbral = S.equipo.some((o) => /Capa de sal/.test(o)) ? 10 : 9;
     const r = await A.tirarDados('La noche (2d6)', 2, 'x', { regla: 'r133', explicar: `Con ${umbral} o más, algo te encuentra.${S.clima && S.clima.n === 'Noche helada' ? ' Noche helada: sin refugio, +1 Herida (r155).' : ''}` });
     if (!r) return;
     if (r.suma >= umbral) {

@@ -1,6 +1,6 @@
 ## Pulsos del Canto
 
-*Se leen al amanecer (r131), con un 6 en el dado del pulso.*
+*Se leen al amanecer (r131), con 5–6 en el dado del pulso.*
 
 <a id="e020"></a>
 ### e020 · La canción de cuna

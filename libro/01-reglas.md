@@ -132,7 +132,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Recursos:** Energía 6. No usas Aire ni Raciones. **Blindaje 2.** Tienes 4 niveles de Daño en lugar de Heridas.
 - **Protocolos:** elige 2 del catálogo ([e725](#e725)–[e732](#e732)).
 - **Enlace:** puedes hablar con las máquinas. Contra enemigos [Máquina] puedes usar la maniobra Hablar con Ingenio en lugar de Voluntad.
-- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra (puedes hacerlo al descansar). En la Cicatriz, la primera reparación del día es gratis. Gastas 1 Energía cada amanecer; recargas por completo en la Cicatriz o en un asentamiento.
+- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra (puedes hacerlo al descansar). En la Cicatriz, la primera reparación del día es gratis. Gastas 1 Energía cada amanecer fuera de la Cicatriz (en ella, en cambio, recuperas 1) y 1 más cada vez que Viajas sin vehículo; sin Energía, 1 Daño. Recargar por completo cuesta 2 Chatarra, en la Cicatriz o en un asentamiento (r136).
 - **Eco:** para ti, el Canto es la Red que te reclama. Funciona igual (r137).
 - **Contador: MEMORIA** (empieza en 0, de 0 a 6). Sube al recuperar recuerdos. Al llegar a 6 → [e825](#e825).
 - **Historia:** con el Reloj en 50, 40, 30, 20 y 10 → [e820](#e820), [e821](#e821), [e822](#e822), [e823](#e823) y [e824](#e824).
@@ -182,7 +182,7 @@ Elige uno o tira 1d6. Cada Origen da una **habilidad**, un **objeto** y una **Ma
 
 Anota en tu hoja:
 
-- **Heridas** (o Daño): una casilla por nivel: *Rasguño*, *Herido* (−1 a todas las pruebas), *Grave* (−2) y *Crítico* (−2 y no puedes Viajar sin un compañero o un vehículo). Si recibes una Herida más estando en Crítico, **caes** (r195).
+- **Heridas** (o Daño): una casilla por nivel: *Rasguño*, *Herido* (−1 a todas las pruebas), *Grave* (−2) y *Crítico* (−2; sin compañero ni vehículo, solo puedes Viajar a la Cicatriz). Si recibes otra Herida en Crítico, **caes** (r195).
 - **Aire, Energía, Raciones:** de 0 a 6 (Raciones hasta 8).
 - **Canto** (r137): de 0 a 6. Empieza en 0.
 - **Temple** (r122): de 0 a 3. Empieza en 2.
@@ -194,7 +194,7 @@ Anota en tu hoja:
 - **Pistas** (r192): hasta 5.
 - **Marcas** (r191): sin límite.
 - **Equipo:** sin límite para objetos comunes. **Reliquias** (r193): máximo 6.
-- **Arma:** Puños (+0). **Protección:** Traje de vuelo (Blindaje 0). La Mente no lleva traje: su chasis ya tiene Blindaje 2 (r104).
+- **Arma:** Puños (+0). **Protección:** Traje de vuelo, Blindaje 0 (el chasis de la Mente da 2).
 - **Piezas:** Cobre, Hueso, Cristal y Luz fría, en 0. **Planos:** los de tu protagonista (r202).
 
 <a id="r107"></a>
@@ -238,6 +238,8 @@ Lo que anotaste en los pasos 2 y 3 son **Hallazgos**: cuando explores una regió
 - **Estándar:** las reglas tal cual.
 - **Desesperado:** el Reloj empieza en 40 y la Alerta en 2. Las historias personales se leen con el Reloj en 35, 28, 20, 12 y 5.
 - **Náufrago:** no hay Reloj; los Recolectores no vienen. En cambio, el Canto sube 1 cada 5 días. Lleva el Reloj igual (para las historias y los eventos), pero se para en 0 y no pasa nada. Para ganar, debes despegar con al menos 3 tripulantes.
+
+En Desesperado y en la Partida corta (r211), cuando una historia nombre el Reloj en 50, 40, 30, 20 o 10, entiende la primera, segunda… quinta fecha de tu modo.
 
 Si es tu primera partida, el modo Estándar es el más equilibrado: los otros dos cambian mucho la experiencia.
 
@@ -304,7 +306,7 @@ Cada día tiene tres fases:
 1. **El Reloj baja 1.** Si llega a 0 → [e919](#e919).
 2. **Supervivencia** (r136).
 3. **Las Torres:** si amaneces en las Torres del Canto, +1 Canto ♫.
-4. **Pulso del Canto:** tira 1d6. Con un 6 (o con 5–6 si estás en las Torres del Canto), tira otro d6 y lee [e020](#e020)–[e025](#e025): 1 = e020, 2 = e021, y así sucesivamente.
+4. **Pulso del Canto:** tira 1d6. Con 5–6 (o con 4–6 si estás en las Torres del Canto), tira otro d6 y lee [e020](#e020)–[e025](#e025): 1 = e020, 2 = e021, y así sucesivamente.
 
 Es también el mejor momento para repasar la Hoja: qué te falta, qué te sobra y adónde ir hoy.
 
@@ -331,7 +333,7 @@ Elige **una**:
 
 **Al anochecer:**
 - Si hoy **descansaste**: recuperas 1 Herida (2 en la Cicatriz o en un asentamiento) y 1 Temple. En la Cicatriz, además, bajas 1 de Canto.
-- Si descansaste **a la intemperie** (fuera de la Cicatriz y de los asentamientos), tira 2d6: con 10 o más, algo te encuentra de noche. Tira en la tabla de encuentros de la región (r154).
+- Si descansaste **a la intemperie** (fuera de la Cicatriz y de los asentamientos), tira 2d6: con 9 o más, algo te encuentra de noche. Tira en la tabla de encuentros de la región (r154).
 - Comprueba si hoy toca leer un evento de tu historia personal (r102–r104). Si el Reloj se saltó esa cifra, léelo hoy igual.
 
 <a id="r134"></a>
@@ -359,13 +361,13 @@ Cada amanecer:
 |---|---|---|
 | Piloto | 1 Ración y 1 Aire (el Aire solo fuera de la Cicatriz y de los asentamientos) | 1 Herida por cada recurso que falte |
 | Nativo | 1 Ración | 1 Herida |
-| Mente | 1 Energía | 1 Daño |
+| Mente | 1 Energía (r104) | 1 Daño |
 
 Cada **compañero** que vaya contigo consume 1 Ración al amanecer. Si no tienes, pierde 1 de Lealtad (r186).
 
 **En la Cicatriz** no gastas tus Raciones: comes de la **despensa** de la nave mientras le quede algo (r182).
 
-**Recuperar:** en la Cicatriz, el Piloto rellena su Aire y la Mente su Energía gratis. En un asentamiento, 1 Chatarra rellena el Aire o la Energía. Las Raciones se compran (r161) o se forrajean (r153).
+**Recuperar:** en la Cicatriz, el Piloto rellena su Aire gratis; en un asentamiento, por 1 Chatarra. La Mente recarga su Energía como dice r104. Las Raciones se compran (r161) o se forrajean (r153).
 
 <a id="r137"></a>
 ### r137 · Canto
@@ -515,7 +517,7 @@ Exploras la región en la que estás: `[Ingenio · 9]`.
 **Hallazgo**, elige uno:
 - **a)** Algo de tu lista de Hallazgos (r108) que esté en esta región (táchalo): un sistema → [e560](#e560)–[e569](#e569) (según el sistema, ver r180); un tripulante → su primer evento (r185).
 - **b)** Un **pecio o ruina** (r170).
-- **c)** **Forrajear:** +2 Raciones (el Nativo, +3) o +1 Energía.
+- **c)** **Forrajear:** +1 Ración (el Nativo, +3) o +1 Energía.
 - **d)** Tira en la tabla de encuentros de la región, en la **columna 1**, sea cual sea tu Alerta.
 - **e)** **Rebuscar:** 2 piezas del tipo de la región, o 3 con un Éxito pleno (r201).
 
@@ -568,7 +570,7 @@ Caribdis es grande, pero los caminos son pocos. Hay tres figuras que se cruzará
 
 Al visitar un asentamiento, lee su evento de entrada. Allí podrás usar sus **servicios** (cualquier número de ellos en el mismo día) y una **actividad especial**. Visitar consume el día.
 
-**Servicios comunes:** comprar y vender (r161), rellenar Aire o Energía (1 Chatarra), sanador (r163), rumores (r164) y pasar la noche a cubierto: ese día cuenta también como **descanso** (r133), sin tirada nocturna.
+**Servicios comunes:** comprar y vender (r161), rellenar Aire o Energía (1 Chatarra; la Mente, 2), sanador (r163), rumores (r164) y pasar la noche a cubierto: ese día cuenta también como **descanso** (r133), sin tirada nocturna.
 
 Si tu Reputación con la facción del asentamiento es **−2 o menos**, no te dejan entrar: lee la entrada «**Rechazado**» de su evento.
 
@@ -580,7 +582,7 @@ Cada asentamiento tiene su carácter: lo que en uno es barato, en otro puede ser
 
 | Objeto | Precio | Notas |
 |---|---|---|
-| 2 Raciones | 1 | 1 por amanecer (r136) |
+| 1 Ración | 1 | 1 por amanecer (r136) |
 | Botiquín | 3 | Cura 2 Heridas, 1 uso |
 | Célula de energía | 2 | +3 Energía |
 | Bombona de aire | 2 | +3 Aire |
@@ -723,7 +725,7 @@ Cuando consigas un sistema, anótalo en la Hoja de la nave como **«llevado»**,
 
 Solo en la Cicatriz. Elige una:
 
-- **Instalar** un sistema que lleves: `[Ingenio · 9]`. Noemí y la Mente dan Ventaja. Con un Éxito pleno, se instala con +1 de calidad (máximo Excelente). Con un Éxito, se instala con su calidad. Con un Fallo, no se instala, pierdes 1 Chatarra y lo puedes reintentar otro día.
+- **Instalar** un sistema que lleves: `[Ingenio · 11]`. Noemí da Ventaja. Con un Éxito pleno, se instala con +1 de calidad (máximo Excelente). Con un Éxito, se instala con su calidad. Con un Fallo, no se instala, pierdes 1 Chatarra y lo puedes reintentar otro día.
 - **Mejorar** un sistema instalado: gasta 3 Chatarra y haz `[Ingenio · 11]`. Con un Éxito, sube 1 de calidad.
 - **Apagar la baliza:** `[Ingenio · 9]` ◉. Con un Éxito, borra `BALIZA_ACTIVA` y anota `BALIZA_MUDA`. Con un Fallo, la Alerta sube 1.
 
@@ -731,11 +733,11 @@ Solo en la Cicatriz. Elige una:
 ### r182 · La Cicatriz
 
 Tu campamento, junto al casco de tu nave. Allí:
-- El Piloto rellena el Aire y la Mente la Energía.
+- El Piloto rellena el Aire gratis. La Mente recupera 1 Energía cada amanecer, o recarga del todo por 2 Chatarra.
 - Descansar cura 2 Heridas y baja 1 de Canto.
 - Si estás en las Dunas de Óxido al amanecer o al anochecer, estás en la Cicatriz: no tiras la nocturna ni gastas Aire.
 - Puedes guardar objetos y reliquias sin límite.
-- **La despensa.** La nave guardaba raciones de emergencia: empieza con **15**. Anótala en la Hoja de la nave. Cada amanecer en la Cicatriz, tu Ración (y la de los compañeros que van contigo) sale de la despensa. Cuando se vacíe, comes de lo que lleves. Puedes dejar Raciones en ella.
+- **La despensa.** La nave guardaba raciones de emergencia: empieza con **8**. Anótala en la Hoja de la nave. Cada amanecer en la Cicatriz, tu Ración (y la de los compañeros que van contigo) sale de la despensa. Cuando se vacíe, comes de lo que lleves. Puedes dejar Raciones en ella.
 - Los compañeros que dejes en la Cicatriz se apañan con poco y no gastan nada, pero no te acompañan ni cuentan como compañeros.
 
 <a id="r183"></a>
@@ -776,7 +778,7 @@ Puedes llevar **2 compañeros** a la vez. Los demás esperan en la Cicatriz (r18
 
 Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2.
 - Si llega a **0**, se va: tacha su ficha y anota `PERDIDO_` seguido de su nombre. (Si eres el Piloto, +1 Culpa.)
-- Si llega a **3**, ve a su evento de lealtad la próxima vez que descanses: Iria [e602](#e602), Bruno [e607](#e607), Amara [e612](#e612), Noemí [e617](#e617), Tadeo [e622](#e622), Lio [e627](#e627).
+- La primera vez que llegue a **3**, ve a su evento de lealtad la próxima vez que descanses: Iria [e602](#e602), Bruno [e607](#e607), Amara [e612](#e612), Noemí [e617](#e617), Tadeo [e622](#e622), Lio [e627](#e627).
 - Al despegar, cada compañero a bordo cuenta para tu final.
 
 ---
@@ -786,7 +788,7 @@ Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2.
 <a id="r190"></a>
 ### r190 · Hitos y mejoras
 
-Cada vez que **instales un sistema**, **un compañero llegue a Lealtad 3** o superes un evento **★**, elige una mejora:
+Cada vez que **instales un sistema** o superes un evento **★** (los de lealtad de r186 también lo son), elige una mejora:
 
 - +1 a un atributo (máximo 6).
 - +1 Temple máximo (máximo 4, con cualquier bonificación).
@@ -797,7 +799,7 @@ Cada vez que **instales un sistema**, **un compañero llegue a Lealtad 3** o sup
 |---|---|
 | **Piloto** | **Sangre fría:** una vez al día, ignora la Desventaja · **Mecánico de campaña:** Ventaja al instalar · **Líder:** los compañeros empiezan con Lealtad 3 · **Tirador:** +1 al Ataque a distancia · **Pulmón de hierro:** el Aire se gasta cada 2 días · **Regreso:** al despegar, +1 a todas las pruebas |
 | **Nativo** | **Lengua de bestias:** puedes Hablar con [Bestia] · **Paso de duna:** viajas como si tuvieras un vehículo, con un solo encuentro · **Piel vieja:** Blindaje +1 · **Raíz:** el Canto no te sube en las Torres al amanecer · **Ojo de sal:** Ventaja al explorar · **Voz de la tribu:** +1 de Reputación con los Hijos del Pecio cuando ganes cualquier Reputación (sin enemistad) |
-| **Mente** | **Sobrecarga:** gasta 2 Energía para +3 a una prueba · **Copia de seguridad:** si caes, vuelves en la Cicatriz con Daño 3 (una vez) · **Cortafuegos:** Ventaja contra el Canto · **Taller interno:** reparar 1 Daño cuesta 0 Chatarra una vez al día · **Enjambre de reparación:** +1 de calidad al instalar · **Voz de la nave:** puedes Hablar con cualquier enemigo con Ingenio |
+| **Mente** | **Sobrecarga:** gasta 2 Energía para +3 a una prueba · **Copia de seguridad:** si caes, vuelves en la Cicatriz sin gastar Temple (una vez) · **Cortafuegos:** Ventaja contra el Canto · **Taller interno:** reparar 1 Daño cuesta 0 Chatarra una vez al día · **Enjambre de reparación:** +1 de calidad al instalar · **Voz de la nave:** puedes Hablar con cualquier enemigo con Ingenio |
 
 <a id="r191"></a>
 ### r191 · Marcas
@@ -854,7 +856,7 @@ Cuatro facciones: **Hijos del Pecio** (Quilla), **Desguaces** (Puerto Chatarra),
 <a id="r195"></a>
 ### r195 · Caer
 
-Si recibes una Herida estando en Crítico, caes. Gasta **1 Temple**: despiertas en Crítico donde estabas, el Reloj baja 2 y pierdes todas las Raciones y la Chatarra que llevas (alguien te ha registrado). Si no tienes Temple → [e920](#e920).
+Si recibes una Herida estando en Crítico, caes. Gasta **1 Temple**: despiertas en Grave donde estabas, el Reloj baja 2 y alguien te registra: pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Si no tienes Temple → [e920](#e920).
 
 <a id="r196"></a>
 ### r196 · Fin de la partida
@@ -1043,7 +1045,7 @@ Para que cada partida sea distinta, tira 1d6 al preparar la partida y aplica el 
 
 | 1d6 | Estación | Efecto |
 |---|---|---|
-| 1 | **Año de óxido** | Un 5 en el dado del pulso (r131) trae una tormenta de óxido (r155) hasta el día siguiente |
+| 1 | **Año de óxido** | Un 4 en el dado del pulso (r131) trae una tormenta de óxido (r155) hasta el día siguiente |
 | 2 | **Sol bajo** | En el Polo y las Salinas, toda noche a la intemperie es Noche helada (r155) |
 | 3 | **Corona inquieta** | +1 Alerta ◉ al amanecer con el Reloj en 50, 40, 30, 20 y 10 |
 | 4 | **Coro en procesión** | En el Bosque y la Ciudad, tira dos veces en los encuentros y usa el que tenga [Cantor], si lo hay |

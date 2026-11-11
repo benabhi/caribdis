@@ -733,3 +733,6 @@ ol, ul { break-before: auto; }
 @page hoja:left { @top-left { content: none; } }
 @page hoja:right { @top-right { content: none; } }
 .h-num-hoja { display: inline-block; width: 11mm; height: 5.5mm; border: .9pt solid var(--tinta); vertical-align: middle; margin-left: 1.5mm; background: rgba(255,255,255,.3); }
+
+/* p. 20: aire entre las columnas de r141 y la tabla de r142 */
+section#r142 { padding-top: 2.5mm; }

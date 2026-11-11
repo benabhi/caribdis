@@ -31,9 +31,7 @@ Un agujero perfecto en el hielo, de cien metros de diámetro. Las paredes son li
 
 En el borde, restos de campamentos de muchas épocas. Todos abandonados con prisa.
 
-El viento silba al pasar por el borde.
-
-1. **Mirar hacia abajo.** `[Voluntad · 9]` ♫. *Éxito:* al fondo, muy al fondo, ves una luz azul que parpadea **al ritmo de tu corazón**. Gana `FRAGMENTO_EL_POZO`. *Fallo:* +2 Canto. Das un paso hacia el borde sin darte cuenta: `[Reflejos · 9]` o caes → [e291](#e291).
+1. **Mirar hacia abajo.** `[Voluntad · 9]` ♫. *Éxito:* al fondo, muy al fondo, ves una luz azul que parpadea **al ritmo de tu corazón**. Gana `FRAGMENTO_EL_POZO` y `LO_VISTE`. *Fallo:* +2 Canto. Das un paso hacia el borde sin darte cuenta: `[Reflejos · 9]` o caes → [e291](#e291).
 2. **Registrar los campamentos.** +3 Raciones, 3 Chatarra y una bombona de aire. Tira 1d6: con un 6, encuentras un **traje térmico**: cuenta como refugio contra el frío del Polo y como Blindaje 1.
 3. **Bajar con cuerdas.** Necesitas cuerda y garfio y `[Reflejos · 11]` ⚔. *Éxito:* a cuarenta metros hay una cornisa con una puerta de los Antiguos → [e288](#e288). *Fallo:* 2 Heridas y vuelves arriba.
 4. **Tirar algo al Pozo.** Una Chatarra, una ración, lo que sea. Nunca oyes que toque fondo. Pero un minuto después, del Pozo sube flotando algo distinto: una reliquia sin identificar. Solo funciona una vez por partida: anota `OFRENDA_AL_POZO`.
@@ -161,7 +159,7 @@ Es la nave colonia de la que descienden los Hijos del Pecio.
 - **Si eres el Nativo:** sientes que te tiembla la piel. Si tienes el **Mapa del primer pecio**, ve a [e813](#e813) si no lo has hecho ya; si no, sigue aquí.
 
 1. **Entrar por una escotilla.** Explora un pecio (r170) de tipo **Nave colonia**, de hasta 6 salas en lugar de 4. En la cuarta sala, en lugar de tirar → anota `PUENTE_DE_UR`: has llegado al puente.
-2. **Si tienes `PUENTE_DE_UR`:** la IA de la *Esperanza* todavía funciona. Está loca. Repite un mensaje de socorro de hace mil años, **con la misma frecuencia que el Canto**. Gana `FRAGMENTO_LA_ESPERANZA`. Si eres la Mente, puedes intentar hablar con ella: `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y te regala algo que guardaba desde hacía mil años: **Navegación Excelente**. **★** *Fallo:* +3 Canto ♫.
+2. **Si tienes `PUENTE_DE_UR`:** la IA de la *Esperanza* todavía funciona. Está loca. Repite un mensaje de socorro de hace mil años, **con la misma frecuencia que el Canto**. Gana `FRAGMENTO_LA_ESPERANZA`. Si eres la Mente, puedes intentar hablar con ella: `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y te regala **Navegación Excelente**. **★** *Fallo:* +3 Canto ♫. Con el Secreto 5, cualquiera puede intentar callarla: `[Ingenio · 13]`; con un Éxito, anota `LA_ESPERANZA_CALLA`.
 3. **Arrancar la aleta.** Imposible. Pero puedes arrancar placas: **Casco Sólido** si lo necesitas (`[Vigor · 11]`).
 
 ---

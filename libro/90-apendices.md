@@ -97,9 +97,9 @@
 ## Tablas resumidas
 
 ### El día
-1. **Amanecer:** Reloj −1 · Supervivencia (Piloto: 1 Ración y 1 Aire; Nativo: 1 Ración; Mente: 1 Energía; compañeros: 1 Ración) · Pulso: 1d6 = 6 (5–6 en las Torres) → e020–e025.
+1. **Amanecer:** Reloj −1 · Supervivencia (Piloto: 1 Ración y 1 Aire; Nativo: 1 Ración; Mente: 1 Energía fuera de la Cicatriz, y 1 al Viajar a pie; compañeros: 1 Ración) · Pulso: 1d6 = 5–6 (4–6 en las Torres) → e020–e025.
 2. **Acción:** Viajar · Explorar · Visitar · Trabajar en la nave · Descansar · Ocultarte · Seguir una Pista · Ensamblar.
-3. **Anochecer:** descanso · tirada nocturna a la intemperie (10+) · historia (50/40/30/20/10).
+3. **Anochecer:** descanso · tirada nocturna a la intemperie (9+) · historia (50/40/30/20/10).
 
 ### Pruebas
 2d6 + atributo · Fácil 7 · Normal 9 · Dura 11 · Extrema 13 · Pleno = +3 · Ventaja/Desventaja: 3d6, quédate 2.

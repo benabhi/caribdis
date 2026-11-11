@@ -218,7 +218,7 @@ Planos pequeños para el taller (r200). Cada uno indica su **receta**, la prueba
 
 <a id="e765"></a>
 ### e765 · Capa de sal
-**Receta:** 2 Cristal + 1 Hueso · `[Ingenio · 9]`. Una capa de cuero incrustada de sal que devuelve el color del suelo. Si descansas a la intemperie, algo te encuentra de noche solo con 11 o más. *Maestra:* al Ocultarte, la Alerta baja 2 en lugar de 1.
+**Receta:** 2 Cristal + 1 Hueso · `[Ingenio · 9]`. Una capa de cuero incrustada de sal que devuelve el color del suelo. Si descansas a la intemperie, algo te encuentra de noche solo con 10 o más. *Maestra:* al Ocultarte, la Alerta baja 2 en lugar de 1.
 
 <a id="e766"></a>
 ### e766 · Trampa de chapa

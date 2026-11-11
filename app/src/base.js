@@ -193,7 +193,7 @@ CB.D = {
     'Chasis': { bl: 2 },
   },
   TIENDA: [
-    ['2 Raciones', 1, 'raciones'], ['Botiquín', 3, 'obj'], ['Célula de energía', 2, 'obj'], ['Bombona de aire', 2, 'obj'],
+    ['1 Ración', 1, 'raciones'], ['Botiquín', 3, 'obj'], ['Célula de energía', 2, 'obj'], ['Bombona de aire', 2, 'obj'],
     ['Navaja', 2, 'arma'], ['Pistola de clavos', 4, 'arma'], ['Hacha de casco', 4, 'arma'], ['Rifle de rescate', 7, 'arma'],
     ['Placas improvisadas', 4, 'prot'], ['Cuerda y garfio', 1, 'obj'], ['Antídoto de esporas', 2, 'obj'],
     ['Cobre', 1, 'pieza:cobre'], ['Hueso', 1, 'pieza:hueso'], ['Cristal', 2, 'pieza:cristal'],

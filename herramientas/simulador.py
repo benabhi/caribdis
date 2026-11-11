@@ -203,7 +203,7 @@ class Partida:
         self.stats = Counter(); self.fin = None; self.danos = None; self.canto6 = 0; self.caidas = 0
         self.dia_sistemas = {}
         self.reglas_v2 = estrategia != 'v1'
-        self.despensa = 15 if self.reglas_v2 else 0
+        self.despensa = 8 if self.reglas_v2 else 0
         self.max_compas = {'normal': 1, 'sola': 0, 'grupo': 2}.get(estrategia, 1)
 
     # ----- utilidades
@@ -258,8 +258,9 @@ class Partida:
         if self.temple <= 0:
             self.fin = 'muerte'; self.muerte_por = fuente
             raise Muerte()
-        self.temple -= 1; self.reloj -= 2; self.raciones = 0; self.chatarra = 0
-        self.log('cae y se despierta en Crítico')
+        # r195: despiertas en Grave, pierdes la mitad (redondeando hacia arriba)
+        self.temple -= 1; self.reloj -= 2; self.raciones //= 2; self.chatarra //= 2; self.her = 3
+        self.log('cae y se despierta en Grave')
 
     def subir_alerta(self, n=1):
         for _ in range(max(0, n)):
@@ -477,6 +478,9 @@ class Partida:
 
     def viajar(self, destino):
         self.stats['acc_viajar'] += 1
+        if self.p == 'mente':                                             # r104: Viajar gasta 1 Energía
+            if self.energia > 0: self.energia -= 1
+            else: self.herir(1, 'sin energía'); self.stats['sin_energia'] += 1
         if self.p == 'nativo':
             ok = True
         else:
@@ -517,7 +521,7 @@ class Partida:
                 self.cicatriz.append(t)
             self.log('encuentra a', t)
         elif self.p != 'mente' and self.raciones <= 2:
-            self.raciones = min(8, self.raciones + (3 if self.p == 'nativo' else 2))
+            self.raciones = min(8, self.raciones + (3 if self.p == 'nativo' else 1))
         else:
             self.pecio()
 
@@ -572,7 +576,7 @@ class Partida:
         if en_cicatriz: self.canto = max(0, self.canto - 1)
         if 'Tadeo' in self.compas: self.canto = max(0, self.canto - 1)
         for c in self.compas: self.comp_her[c] = 0
-        if not cubierto and self.d2() >= 10:
+        if not cubierto and self.d2() >= 9:
             self.encuentro()
 
     def visitar(self):
@@ -582,11 +586,11 @@ class Partida:
         # comprar comida/aire
         if self.p != 'mente':
             while self.raciones < 5 and self.chatarra >= 1:
-                self.chatarra -= 1; self.raciones += 2 if reg != 4 else 4
+                self.chatarra -= 1; self.raciones += 1 if reg != 4 else 2   # r161: 1 Ración por Chatarra; Quilla, 2
         if self.p == 'piloto' and reg != 4:
             if self.aire < 6 and self.chatarra >= 1: self.chatarra -= 1; self.aire = 6
-        if self.p != 'nativo' and self.energia < 6 and self.chatarra >= 1:
-            self.chatarra -= 1; self.energia = 6
+        if self.p != 'nativo' and self.energia < 6 and self.chatarra >= (2 if self.p == 'mente' else 1):
+            self.chatarra -= (2 if self.p == 'mente' else 1); self.energia = 6
         # sanador
         while self.her >= 2 and self.chatarra >= 2 and self.p != 'mente':
             self.chatarra -= 2; self.her = max(0, self.her - 2)
@@ -633,8 +637,8 @@ class Partida:
     def instalar(self):
         self.stats['acc_instalar'] += 1
         s = next(k for k, v in self.sis.items() if v[0] == 'llevado')
-        modo = 'V' if ('Noemí' in self.compas or 'Noemí' in self.cicatriz or self.p == 'mente') else None
-        r = self.prueba('Ingenio', 9, modo)
+        modo = 'V' if ('Noemí' in self.compas or 'Noemí' in self.cicatriz or False) else None
+        r = self.prueba('Ingenio', 11, modo)                         # r181: Instalar es Dura
         if r == 'fa':
             self.chatarra = max(0, self.chatarra - 1); return
         cal = self.sis[s][1]
@@ -693,9 +697,12 @@ class Partida:
         if self.reloj <= 0:
             self.fin = 'recolectores'; return
         if self.p == 'piloto' and self.dia == 11:
-            self.hall[self.r.randint(1, 8)].append('personal')       # e800: la Caja negra
+            dos = (self.r.randint(1, 8), self.r.randint(1, 8))           # e800: tira dos veces y elige
+            self.hall[min(dos, key=lambda x: dist(1, x))].append('personal')
         if self.p == 'mente' and self.reloj <= 30 and not self.__dict__.get('nucleo'):
-            self.nucleo = True; self.hall[self.r.randint(1, 8)].append('personal')   # e822
+            self.nucleo = True                                            # e822: dos tiradas y elige
+            dos = (self.r.randint(1, 8), self.r.randint(1, 8))
+            self.hall[min(dos, key=lambda x: dist(self.region, x))].append('personal')
         if self.p == 'nativo' and self.reloj <= 30 and 'Personal' not in self.sis:
             self.conseguir('Personal', 'Sólida' if self.quilla else 'Precaria', 'e812')
         cobijo = self.region == 1 or (self.region in (2, 4, 6, 7) and self.ultimo == 'visitar')
@@ -715,7 +722,9 @@ class Partida:
                 if self.aire > 0: self.aire -= 1
                 else: self.herir(1, 'asfixia'); self.stats['asfixia'] += 1
         if self.p == 'mente':
-            if self.region == 1: self.energia = 6
+            if self.region == 1:                                          # r104: en la Cicatriz recupera 1; recargar del todo cuesta 1 Chatarra
+                if self.energia < 4 and self.chatarra >= 2: self.chatarra -= 2; self.energia = 6
+                elif self.energia < 6: self.energia += 1
             elif self.energia > 0: self.energia -= 1
             else: self.herir(1, 'sin energía'); self.stats['sin_energia'] += 1
         for c in list(self.compas if comen_fuera else []):
@@ -728,7 +737,7 @@ class Partida:
         if self.region == 1 and self.p == 'piloto':
             self.aire = 6
         pulso = self.r.randint(1, 6)
-        if pulso == 6 or (pulso == 5 and self.region == 7):
+        if pulso >= 5 or (pulso == 4 and self.region == 7):
             self.stats['pulsos'] += 1
             self.evento(f'e02{self.r.randint(0, 5)}')
 
@@ -772,6 +781,9 @@ class Partida:
             return 'instalar'
         if en_dunas and self.baliza and self.estr != 'baliza' and self.dia > 1 and self.dia < 25:
             return 'baliza'
+        sin_cura = (self.p == 'mente' and self.chatarra == 0) or (self.p != 'mente' and self.raciones == 0)
+        if self.her >= 3 and not en_dunas and sin_cura:
+            return 'ir:1'      # herido y sin con qué curarte: vuelve a la Cicatriz (r106 lo permite)
         if self.her >= 3 or (self.her >= 2 and en_dunas):
             if self.region in (2, 4, 6) and self.rep_ok():
                 return 'visitar'
