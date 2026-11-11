@@ -15,8 +15,8 @@
 ╠══════════════════════════════════════════════════════════════╣
 ║  HERIDAS / DAÑO  □ Rasguño □ Herido(−1) □ Grave(−2) □ Crítico║
 ║  TEMPLE  □ □ □ (□)        CANTO  0 1 2 3 4 5 6               ║
-║  AIRE    0 1 2 3 4 5 6    ENERGÍA 0 1 2 3 4 5 6              ║
-║  RACIONES 0 1 2 3 4 5 6 7 8         CHATARRA [      ]        ║
+║  AIRE    0 1 2 3 4 5 6 (7 8)  ENERGÍA 0 1 2 3 4 5 6 (7 8)    ║
+║  RACIONES 0 1 2 3 4 5 6 7 8 (+)     CHATARRA [      ]        ║
 ║  CONTADOR: ____________  0 1 2 3 4 5 6                       ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  RELOJ: 60 ... (tacha)   ALERTA: 1 2 3 4                     ║
@@ -79,8 +79,9 @@
 ║  Lio            [   ]   □ perdido □ contigo □ Cicatriz 0123 □□ ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  PASAJEROS: _________________________________________________║
-║  PLAZAS: 6 (+2 sitio, +2 módulo)   DAÑOS DE NAVE: □□□□□      ║
-║  GUARDADO EN LA CICATRIZ: ___________________________________║
+║  PLAZAS: 6 (+2 sitio, +2/+3 mód.) DAÑOS DE NAVE: □□□□□       ║
+║  GUARDADO EN LA CICATRIZ: ________ DESPENSA (empieza 8): [ ] ║
+║  PLANOS: ________________________ OBRAS: _______ □I □II □III ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 

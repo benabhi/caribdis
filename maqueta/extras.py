@@ -202,7 +202,7 @@ Con Desventaja, con 5 + 2 = **7**. Ventaja y Desventaja a la vez se anulan: tira
     'r130': ('ayuda', 'Un día en Caribdis', """
 **Amanecer.** El Reloj baja 1, gastas tus recursos y tiras el pulso del Canto.
 
-**Acción.** Haces *una sola* cosa: viajar, explorar, visitar, trabajar en la nave, descansar, ocultarte o seguir una Pista.
+**Acción.** Haces *una sola* cosa: viajar, explorar, visitar, trabajar en la nave, descansar, ocultarte, seguir Pista o ensamblar.
 
 **Anochecer.** Descansas si toca, tiras por la noche a la intemperie y miras si hoy hay historia personal.
 """),
@@ -212,7 +212,7 @@ Alerta 4, con lo que caza a los curiosos. Si ya estás en 4 y vuelve a subir, el
 """),
     'r137': ('consejo', 'Antes de ir a las Torres', """
 Descansa en la Cicatriz y baja el Canto todo lo que puedas. Con 3 o más tendrás Desventaja justo
-cuando más falta te hace la Voluntad, y en las Torres los pulsos llegan con 5 o 6.
+cuando más falta te hace la Voluntad, y en las Torres los pulsos llegan con 4 a 6.
 """),
     'r141': ('ejemplo', 'Una ronda de combate', """
 Luchas con **Vigor 3** y una navaja (+1) contra un *Carroñero de pecio* (Ataque 3 · Blind. 1 · Heridas 2).
@@ -228,8 +228,8 @@ Explorar es la forma más segura de encontrar los **Hallazgos** que anotaste al 
 Si ya sabes dónde está el sistema que buscas, ve a esa región y explórala hasta dar con él.
 """),
     'r186': ('recuerda', 'Plazas a bordo', """
-La nave tiene **6 plazas** (8 si haces sitio). Cuenta a tu tripulación y a tus pasajeros antes de
-despegar: quien no quepa, se queda en Caribdis.
+La nave tiene **6 plazas** (+2 si haces sitio; +2/+3 con módulo). Cuenta a tu tripulación y pasajeros
+antes de despegar: quien no quepa, se queda en Caribdis.
 """),
     'r200': ('recuerda', 'Cada día cuenta', """
 **Rebuscar cuesta un día**: un día que no pasas buscando sistemas ni tripulación. Empieza por lo pequeño
@@ -370,14 +370,14 @@ RECORDATORIOS = [
     ('Recuerda · Descanso', 'Descansar en la Cicatriz cura 2 Heridas y 1 Temple, y baja 1 el Canto (r133).'),
     ('Recuerda · Defender', 'Defender da +2 a tu tirada. Si ganas, no haces daño, pero tampoco lo recibes (r141).'),
     ('Recuerda · Botín', 'Ganar a un [Náufrago] o a una [Máquina] da 1d6 ÷ 2 de Chatarra y 1 pieza (r146).'),
-    ('Recuerda · La noche', 'Si duermes a la intemperie, tira 2d6: con 10 o más, algo te encuentra (r133).'),
+    ('Recuerda · La noche', 'Si duermes a la intemperie, tira 2d6: con 9 o más, algo te encuentra (r133).'),
     ('Recuerda · Ocultarte', 'Ocultarte ocupa el día y baja la Alerta 1. En las Torres no puedes (r135).'),
     ('Recuerda · Huir', 'Huir es `[Reflejos · 9]`. Si fallas, recibes 1 Herida y el combate sigue (r141).'),
     ('Recuerda · Raciones', 'Cada compañero come 1 Ración al amanecer. Si no tienes, pierde 1 de Lealtad (r136).'),
     ('Recuerda · Las reglas', 'Si una regla y un evento se contradicen, manda el evento (r004).'),
     ('Recuerda · Cantores', 'Contra un [Cantor], cada ronda que pierdas sube 1 tu Canto (r142).'),
     ('Recuerda · Canto 6', 'Al llegar a Canto 6, lee el evento de tu protagonista. Después el Canto baja a 4 (r137).'),
-    ('Recuerda · Las Torres', 'Si amaneces en las Torres del Canto, +1 Canto, y el pulso salta con 5 o 6 (r131).'),
+    ('Recuerda · Las Torres', 'Si amaneces en las Torres del Canto, +1 Canto, y el pulso salta con 4 a 6 (r131).'),
 ]
 
 
@@ -398,8 +398,8 @@ PANELES = [
                            ('6', 'evento de tu protagonista; luego baja a 4')], 'Baja al descansar en la Cicatriz (r137).'),
     ('alerta', 'La Alerta', [('Sube', 'con ◉, el ruido y lo antiguo'), ('Baja', 'ocultándote: −1'),
                              ('En 4 y sube', 'el Reloj baja 2')], 'Marca la columna de los encuentros (r135).'),
-    ('herida', 'Descansar', [('Intemperie', '+1 Herida, +1 Temple'), ('Asentamiento', '+2 Heridas, +1 Temple'),
-                             ('Cicatriz', '+2 Heridas, +1 Temple, −1 Canto')], 'A la intemperie, 2d6: con 10 o más, algo te encuentra (r133).'),
+    ('herida', 'Descansar', [('Intemperie', 'Cura 1 Herida y 1 Temple'), ('Asentamiento', 'Cura 2 Heridas y 1 Temple'),
+                             ('Cicatriz', 'Cura 2 Her., 1 Temple, −1 Canto')], 'A la intemperie, 2d6: con 9 o más, algo te encuentra (r133).'),
 ]
 
 # Icono del ornamento según el capítulo
@@ -415,7 +415,7 @@ TIRAS = [
     ('combate', 'Maniobras', 'Defender +2 · Huir `[Reflejos · 9]` · Hablar `[Voluntad · 11]`.'),
     ('canto', 'Canto', 'Con 3 o más, Desventaja en Voluntad contra el Canto. Con 6, tu evento.'),
     ('alerta', 'Alerta', 'Ocultarte: −1. Si ya está en 4 y sube, el Reloj baja 2.'),
-    ('herida', 'Descanso', 'Cicatriz: +2 Heridas, +1 Temple, −1 Canto. Intemperie: 2d6, con 10+ te encuentran.'),
+    ('herida', 'Descanso', 'Cicatriz: cura 2 Her., +1 Temple, −1 Canto. Intemperie: 2d6, con 9+ te encuentran.'),
     ('tiempo', 'Reloj', 'Baja 1 cada amanecer. Si llega a 0, los Recolectores llegan (e919).'),
     ('herida', 'Compañeros', '+1 al Ataque cada uno (Bruno +2). Aguantan 2 Heridas.'),
 ]

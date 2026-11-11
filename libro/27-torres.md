@@ -61,7 +61,7 @@ El zumbido te hace cosquillas en los dientes.
 
 - **Si tienes `SALUDO_DEL_CORO` o Reputación +1 o más con el Coro:** te saludan con una inclinación y te dejan pasar.
 
-**Encuentro (r300).** Precio: 1 punto de Canto (súbelo voluntariamente para «unirte al coro un momento»). Botín: una **lanza vibrante** (+2 Ataque; contra [Cantor], +3).
+**Encuentro (r300).** Precio: 1 de Canto (súbelo para «unirte al coro»). Botín: una **lanza vibrante** (cuerpo a cuerpo, silenciosa, +2 Ataque; +3 contra [Cantor]).
 
 - **Si ganas:** −2 de Reputación con el Coro. Bajo la túnica de uno hay una lista de nombres: la gente que el Coro ha «acogido». Si buscas a Tadeo, su nombre está: anota `RASTRO_DE_TADEO`: Ventaja para encontrarlo.
 

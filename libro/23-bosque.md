@@ -101,7 +101,7 @@ Huelen a pan recién hecho. Ninguno parpadea, y los hilos dorados de sus brazos 
 
 1. **Aceptar la espora.** Se te mete bajo la piel. Ganas una mutación de la familia del micelio: *Raíces* ([e719](#e719)) si eres el Nativo; si no, anota `MICELIO_DENTRO`: Ventaja contra el Canto, pero gastas el doble de Raciones (la Mente, de Energía) y no puedes recibir implantes nuevos. +1 de Reputación con los Hijos del Pecio.
 2. **Rechazarla con respeto.** `[Voluntad · 9]`. *Éxito:* se apartan y uno te señala el camino al Santuario: gana la Pista `Bosque · El Santuario · e261`. *Fallo:* insisten. Te pinchan con la espora sin permiso → como la opción 1, y además 1 Herida.
-3. **Apartarlos a la fuerza.** *Injertados · Ataque 3 · Blind. 1 · Heridas 4 · [Enjambre]*. Combate. *Si ganas:* el micelio entero sabe lo que has hecho: hasta que salgas del bosque, Desventaja al explorar aquí.
+3. **Apartarlos a la fuerza.** *Injertados · Ataque 3 · Blind. 1 · Heridas 4 · [Náufrago][Enjambre]*. Combate. *Si ganas:* el micelio entero sabe lo que has hecho: hasta que salgas del bosque, Desventaja al explorar aquí.
 
 ---
 

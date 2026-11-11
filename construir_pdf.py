@@ -41,7 +41,7 @@ ANCLAS = set()   # se llena al leer el libro
 
 
 RE_CRIATURA = re.compile(
-    r'(?P<em>\*{1,2})?(?P<nombre>[A-ZÁÉÍÓÚÑ¿][^·*.,:;()\[\]\n|]{1,60}?)(?P<em2>\*{1,2})? · Ataque (?P<a>\d+) · '
+    r'(?P<em>\*{1,2})?(?P<nombre>[A-ZÁÉÍÓÚÑ¿](?:[^·*.,:;()\[\]\n|]|,\s+[a-záéíóúñ]){1,60}?)(?P<em2>\*{1,2})? · Ataque (?P<a>\d+) · '
     r'Blind\. (?P<b>\d+) · Heridas (?P<h>\d+)(?P<tags>(?: · )?(?:\[[^\]\n]+\])*)(?P<cierre>\*{1,2})?')
 
 
@@ -778,8 +778,11 @@ def hoja_protagonista(ancla):
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
                       for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico'))
-    recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
-                       for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
+    recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}{ex}</div></div>'
+                       for t, ic, m, ex in (
+                           ('Aire', 'canto', 6, '<span class="n c ext">7</span><span class="n c ext">8</span>'),
+                           ('Energía', 'hito', 6, '<span class="n c ext">7</span><span class="n c ext">8</span>'),
+                           ('Raciones', 'objeto', 8, '')))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'
                    + ''.join(f'<span class="n">{v}</span>' for v in ('−3', '−2', '−1', '0', '+1', '+2', '+3')) + '</div></div>'
                    for t, e in (('Hijos del Pecio', 'hijos'), ('Desguaces', 'desguaces'), ('Coro', 'coro'), ('Vigías', 'vigias')))
@@ -847,10 +850,10 @@ def hoja_nave(ancla):
  <table class="hs"><tr><th>Tripulante</th><th>Región</th><th>Estado</th><th>Lealtad</th><th>Her.</th></tr>{crew}</table>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("ayuda")} Pasajeros</div>{lineas(2)}
-    <div class="h-rec"><b>Plazas</b> 6 <span class="h-nota">(+2 si haces sitio · +2 módulo de pasaje)</span></div>
+    <div class="h-rec"><b>Plazas</b> 6 <span class="h-nota">(+2 si haces sitio · +2/+3 módulo de pasaje)</span></div>
     <div class="h-rec"><b>Daños de nave</b> {casillas(5, "c gr")}</div></div>
   <div class="h-bloque"><div class="h-rot">{icono("reliquia")} Guardado en la Cicatriz</div>{lineas(2)}
-    <div class="h-rec"><b>Despensa</b> <span class="h-nota">empieza en 15 Raciones (r182)</span><div class="h-caja"></div></div></div>
+    <div class="h-rec"><b>Despensa</b> <span class="h-nota">empieza en 8 Raciones (r182)</span><div class="h-caja"></div></div></div>
  </div>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("ejemplo")} Planos conocidos</div>{lineas(2)}</div>
@@ -871,7 +874,7 @@ def pagina_diario(k):
 
 
 def contratapa():
-    datos = [('tiempo', '60 días'), ('nave', '6 sistemas'), ('mapa', '8 regiones'), ('ejemplo', '350 eventos'), ('fin', '12 finales')]
+    datos = [('tiempo', '60 días'), ('nave', '6 sistemas'), ('mapa', '8 regiones'), ('ejemplo', '350 eventos'), ('fin', '15 finales')]
     fila = ''.join(f'<div class="ct-dato">{icono(i)}<span>{esc(t)}</span></div>' for i, t in datos)
     return f'''
 <section class="contratapa">

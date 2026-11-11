@@ -153,7 +153,7 @@ La encuentras **dibujando**. Sentada en una ruina, con un cuaderno en la rodilla
 
 1. **Llevarla contigo.** Se une como compañera. Habla todo el tiempo de los Antiguos.
 2. **Preguntarle qué hace aquí.** Se sonroja. «*Tengo que confesarte algo. La ruta de la nave... no fue un error. Yo pagué para que pasáramos cerca de este planeta. Sabía que estaba aquí. No sabía lo del Canto.*» Si eres el Piloto, elige: perdonarla (+1 Lealtad) o no (−1 Lealtad, +1 `CULPA` para ti: «*nadie es culpable salvo yo*»). Gana `FRAGMENTO_LA_EXPEDICION`.
-3. **Pedirle que lea algo.** Si tienes la Pista de la puerta ([e288](#e288)) o pasaste por la antena ([e211](#e211)) o el espejo del cielo ([e250](#e250)), te traduce lo que viste: gana su `FRAGMENTO_` (`LA_PUERTA`, `LA_ANTENA` o `LA_ESPIRAL`).
+3. **Pedirle que lea algo.** Con la Pista de [e288](#e288), o si viste [e211](#e211) o [e250](#e250), lo traduce: gana `FRAGMENTO_LA_PUERTA`, `FRAGMENTO_LA_ANTENA` o `FRAGMENTO_LA_ESPIRAL`.
 
 **Mientras esté contigo:** al ganar tu tercer `FRAGMENTO_`, en lugar de ir a [e840](#e840) ve primero a [e611](#e611).
 

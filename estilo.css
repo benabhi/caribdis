@@ -192,7 +192,7 @@ small { font-size: .82em; }
 .epigrafe { margin: 0 0 3mm; padding: 0 0 0 4mm; border-left: 1.4pt solid var(--oxido); max-width: 110mm; }
 .epigrafe p { font: italic 500 11.5pt/1.3 var(--cita); text-align: left; margin: 0 0 1mm; color: var(--tinta-2); }
 .epigrafe cite { font: 600 6.8pt var(--rotulo); text-transform: uppercase; letter-spacing: .2em; color: var(--azul); font-style: normal; }
-.cap-intro p { font-style: italic; color: var(--tinta-2); }
+.cap-intro p { font-style: italic; color: var(--tinta-2); letter-spacing: -.003em; }
 .cap-intro em { font-style: italic; }
 
 /* ---------- Flujo de texto ---------- */
@@ -604,10 +604,10 @@ table.hs td { padding: .9mm 1.5mm; }
 .entrada.mente .prueba .ico { color: var(--oxido); }
 
 /* bestiario */
-.bt-cab { margin: 5mm 0 2.5mm; border-bottom: 1.6pt solid var(--tinta); padding-bottom: 1mm; break-after: avoid; }
+.bt-cab { margin: 3.8mm 0 1.8mm; border-bottom: 1.6pt solid var(--tinta); padding-bottom: 1mm; break-after: avoid; }
 .bt-cab h3 { font: 900 15pt/1 var(--plantilla); text-transform: uppercase; color: var(--oxido); margin: 0 0 .8mm; letter-spacing: .03em; }
 .bt-cab p { font: italic 500 10pt/1.25 var(--cita); color: var(--tinta-2); margin: 0; text-align: left; }
-.bt-ficha { display: block; break-inside: avoid; padding: 1.6mm 0 1.8mm; border-bottom: .5pt solid rgba(43,32,27,.25); font-size: 8pt; }
+.bt-ficha { display: block; break-inside: avoid; padding: 1.25mm 0 1.35mm; border-bottom: .5pt solid rgba(43,32,27,.25); font-size: 8pt; }
 .bt-ficha .cr-n { display: block; margin-bottom: .8mm; }
 .bt-ficha .bt-st { margin-bottom: .6mm; }
 .bt-ficha .bt-en { font-size: 7.2pt; margin-top: .4mm; }
@@ -734,5 +734,11 @@ ol, ul { break-before: auto; }
 @page hoja:right { @top-right { content: none; } }
 .h-num-hoja { display: inline-block; width: 11mm; height: 5.5mm; border: .9pt solid var(--tinta); vertical-align: middle; margin-left: 1.5mm; background: rgba(255,255,255,.3); }
 
-/* p. 20: aire entre las columnas de r141 y la tabla de r142 */
-section#r142 { padding-top: 2.5mm; }
+/* p. 13 y p. 20: aire entre las columnas de r106/r141 y las tablas de r107/r142 */
+section#r106, section#r106 ul { margin-bottom: 0; }
+section#r106 li { orphans: 1; widows: 1; }
+section#r107 { padding-top: 3.8mm; }
+section#r141, section#r141 ul { margin-bottom: 0; }
+section#r141 + aside.caja { margin-bottom: 0; }
+section#r142 { padding-top: 4.5mm; }
+section#e004 ol.opciones > li:nth-child(3) { letter-spacing: -.002em; }

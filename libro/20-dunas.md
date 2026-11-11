@@ -64,7 +64,7 @@ Una hondonada llena de restos masticados: alerones, tuberías y un asiento de pi
 
 - Si tienes `RATAS_AMIGAS`, te dejan bajar → opción 4.
 
-1. **Asaltar el nido.** Combate: *Ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si el Casco no está instalado, cuenta como **Casco Precario**; si ya lo está, +3 Chatarra.
+1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si el Casco no está instalado, cuenta como **Casco Precario**; si ya lo está, +3 Chatarra.
 2. **Ahumarlas.** Necesitas 1 Ración (grasa) y `[Ingenio · 9]` ◉. *Éxito:* huyen y saqueas el nido tranquilo: como en la opción 1, pero sin combatir. *Fallo:* salen todas a la vez → combate como en la 1, con Emboscada.
 3. **Marcharte.** Las ratas te siguen a distancia: esta noche, aunque estés en las Dunas, tira la nocturna (r133); te encuentran con 8 o más.
 4. **Bajar como amigo.** Ofrece 1 Chatarra. La reina del nido, una rata del tamaño de un perro con una antena en la cabeza, te deja coger lo que quieras: **Casco Precario** o 4 Chatarra.

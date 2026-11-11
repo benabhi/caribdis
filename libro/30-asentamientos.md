@@ -12,9 +12,9 @@
 
 Un portanaves de guerra de dos kilómetros, tumbado de lado en un cráter. Dentro, una ciudad de cinco mil almas: calles que son pasillos, plazas que son hangares y casas hechas con cabinas. Huele a soldadura, a aceite frito y a gente. Todo está en venta. Todo tiene precio.
 
-- **Si tu Reputación con los Desguaces es −2 o menos** → [e407](#e407).
-- **Si tienes `TRABAJO_DEL_CONTABLE` y llevas una reliquia de los Antiguos**, o `ENCARGO_DEL_SUBASTADOR` con `TOMO_DE_LUZ` → [e406](#e406) (no gasta tu actividad).
-- **Si tienes `PAQUETE_DE_MENDANA`**: aquí no es; es en Quilla.
+- **Con Reputación −2 o menos** → [e407](#e407).
+- **Con `TRABAJO_DEL_CONTABLE` y una reliquia**, o `ENCARGO_DEL_SUBASTADOR` y `TOMO_DE_LUZ` → [e406](#e406) (no gasta actividad).
+- **Entregas** (bórralas): `FICHA_DESGUACE` (+1 Rep., moto), `DESGUACE_HELADO` (+2 Rep.), `NIÑO_DEL_HUMO` (+1 Rep., +1 Temple). `PAQUETE_DE_MENDANA`: en Quilla.
 
 **Servicios:** comprar y vender (r161; los precios de armas, −1), rellenar Aire o Energía, sanador (r163), rumores (r164), descanso a cubierto y **taller** (r162).
 
@@ -154,8 +154,8 @@ La aldea está construida **dentro de un casco de nave antigua** encajado en la 
 
 Por las ventanillas del casco asoman ropa tendida, macetas y caras curiosas. El humo de las cocinas sube por la pared del cañón, y huele a raíces asadas y a algo dulce que no sabes nombrar. Los niños te siguen a distancia, imitando tu forma de andar.
 
-- **Si tienes `MATASTE_A_LA_MADRE` o −2 o menos con los Hijos del Pecio** → [e415](#e415).
-- **Si tienes `PAQUETE_DE_MENDANA`:** lo entregas. Ganas 5 Chatarra. Borra la Marca.
+- **Con `MATASTE_A_LA_MADRE` o −2 o menos** → [e415](#e415).
+- **Entregas** (bórralas): `PAQUETE_DE_MENDANA` (+5 Chatarra), `NIÑO_DEL_HUMO`, `NIÑO_DE_QUILLA`, `NIÑA_DEL_CORO` o `CAJA_DE_SEMILLAS`.
 - **Reloj en 30 o menos** (una vez) → [e417](#e417).
 
 **Servicios:** comprar y vender (r161; las Raciones, 2 por cada Chatarra; no venden armas de distancia), sanador (r163, acepta Raciones), rumores (r164) y descanso a cubierto. El Piloto **no** puede rellenar Aire aquí; la Mente sí puede recargar (tienen paneles de luz fría).
@@ -398,7 +398,7 @@ No es un asentamiento: no hay comercio. Pero si te dejan entrar, hay **talleres*
 **Actividad especial (elige una):**
 1. **Hablar con Custodio Primo** → [e431](#e431).
 2. **El reactor** (si te falta el Motor) → [e432](#e432).
-3. **Pedir un encargo** → [e433](#e433).
+3. **Encargo** (`ENCARGO_DE_PRIMO`) → [e433](#e433).
 
 ---
 

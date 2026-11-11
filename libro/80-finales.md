@@ -6,7 +6,7 @@
 
 Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está lista, o casi. Sube a bordo quien vaya a subir. Siéntate. Respira.
 
-**Paso 0 · Quién viene.** Anota quién va a bordo: tus compañeros, los tripulantes que esperan en la Cicatriz y los pasajeros que ganaste con Marcas (`MIRASOLES_A_BORDO` cuenta como 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` cuentan como 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
+**Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
 - Si tienes `TADEO_SE_QUEDA`, o Tadeo está a bordo y tienes `TADEO_CREE` (en [e622](#e622) le dijiste que quizá era Dios) → [e623](#e623) antes de seguir.
 - Si eres el Nativo con `ARRAIGO` 6 y elegiste «pedir tiempo» en [e816](#e816), o tienes `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
 - Con el Secreto 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
@@ -20,7 +20,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 | 1 | **Motor:** el encendido | Ingenio | Noemí: Ventaja. `MOTOR_DEL_NODO`: +1 Canto |
 | 2 | **Casco:** atravesar la atmósfera | Reflejos | Piloto: Ventaja (Manos de piloto) |
 | 3 | **Navegación:** salir por donde el Canto no llega | Ingenio | `RUTA_DE_SALIDA`, `CARTA_DE_LOS_MIRASOLES`, `CARTAS_ROBADAS`, `POSICION_CONOCIDA`: Ventaja (no se acumulan) |
-| 4 | **El Canto:** no darte la vuelta | Voluntad | Dificultad = 7 + tu Canto (6 + Canto con `CAMARA_DE_SILENCIO`, 5 si salió *Maestra*). `TADEO_SE_QUEDA`, `BENDICION_DEL_CORO`: Éxito automático. `LA_ESPERANZA_CALLA`: 7 |
+| 4 | **El Canto:** no darte la vuelta | Voluntad | Dif. 7 + Canto (6 + Canto con `CAMARA_DE_SILENCIO`; 5 *Maestra*). `LA_PEREGRINA_A_BORDO`: Ventaja. `TADEO_SE_QUEDA`, `BENDICION_DEL_CORO`: auto. `LA_ESPERANZA_CALLA`: 7 |
 | 5 | **Soporte vital:** sobrevivir a la Corona | Vigor | Iria: Ventaja |
 | 6 | **Combustible:** alcanzar la velocidad de escape | Ingenio | `REGULADOR_DE_NOEMI`: repite una vez |
 | 7 | **Sistema personal:** que la nave te reconozca | Piloto: Reflejos · Nativo: Voluntad · Mente: Ingenio | La Mente con el Núcleo y `VUELVE_A_SER_LA_NAVE` ([e824](#e824)): Ventaja en todas |
@@ -174,8 +174,8 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - Con el cuaderno de Amara (aunque Amara no esté): *«Llevas el cuaderno a una universidad. Les cambia la historia.»*
 
 **Sobre los que se quedaron:**
-- Por cada tripulante que no subió: *«(Nombre) se queda en Caribdis.»*
-- Con `PASAJERO_EL_CONTABLE` y sin él a bordo: *«La gente del Contable te busca durante años. Cobra siempre.»*
+- Por cada tripulante que no subió (o `PERDIDO_` / `PERDIDO_BRUNO`): *«(Nombre) se queda en Caribdis.»*
+- Con `PASAJERO_EL_CONTABLE` sin él a bordo: *«La gente del Contable te busca. Cobra siempre.»*
 - Con `HALCYON`: *«No vuelves a por los dormidos del Halcyon. Siete luces verdes, en un cementerio de naves. Siempre te preguntarás.»*
 
 **Lo que hiciste por el camino** (lee las que tengas):
@@ -193,7 +193,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - `ALIMENTASTE_EL_CORAZON` o `JARDIN_A_BORDO`: *«Llevas un pedazo del bosque contigo. Florece en tu ventana, dorado.»*
 - `IRIA_JARDINERA`: *«En el Santuario hay una Jardinera nueva que cura a quien llega herido. Tiene manos de médica.»*
 - `HERMANO_A_BORDO`: *«Tu hermano aprende a leer en un idioma de otro mundo. Te lo lee en voz alta.»* · `PROMESA_AL_HERMANO`: *«Le prometiste volver. Ahorras para una nave.»*
-- `HIJA_DEL_SALINERO` o `EL_PACIENTE`: *«Alguien que no tenía que salir, salió gracias a ti.»*
+- `HIJA_DEL_SALINERO`, `EL_PACIENTE` o `LA_PEREGRINA_A_BORDO`: *«Salió de Caribdis gracias a ti.»*
 - `PROMESA_A_BRUNO` sin Bruno a bordo: *«Prometiste ayudarle con su carga. No pudiste. Lo cuentas siempre como la promesa que rompiste.»*
 - `PROMESA_AL_CORO`: *«El Coro te espera. Cada vez que oyes interferencias, sabes que te recuerdan.»*
 - `MUERTO_EN_LOS_PAPELES`: *«En el libro del Contable figuras como muerto. Te parece justo.»*

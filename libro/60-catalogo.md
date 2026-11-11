@@ -47,7 +47,7 @@ Chirría al doblar el codo y huele a grasa vieja, pero no se cansa nunca.
 
 ### Mutaciones (el Nativo)
 
-*Al tirar mutaciones, usa 1d12 (o 1d6 + 1d6 par/impar: impar = 1–6, par = 7–12). Las mutaciones 10–12 son **defectos**: si te salen al empezar, elige si te las quedas a cambio de +1 Temple máximo o vuelves a tirar.*
+*Al tirar mutaciones, usa 1d12 (dos d6: si el segundo sale 4–6, suma 6 al primero, r002). Las mutaciones 10–12 son **defectos**: si te salen al empezar, elige si te las quedas a cambio de +1 Temple máximo o vuelves a tirar.*
 
 <a id="e710"></a>
 ### e710 · 1 · Piel de cuarzo
@@ -160,7 +160,7 @@ Una esfera tibia. Si la plantas en la Cicatriz, cuando el Reloj baje 5 (anota el
 
 <a id="e744"></a>
 ### e744 · Lezna cantora
-Una aguja que vibra. Como arma: +2 Ataque, silenciosa; contra [Cantor] y [Antiguo], +3 e ignora el Blindaje extra de [Antiguo].
+Una aguja que vibra. Arma cuerpo a cuerpo: +2 Ataque, silenciosa; contra [Cantor] y [Antiguo], +3 e ignora el Blindaje extra de [Antiguo].
 
 <a id="e745"></a>
 ### e745 · Piel de espejo
@@ -218,7 +218,7 @@ Planos pequeños para el taller (r200). Cada uno indica su **receta**, la prueba
 
 <a id="e765"></a>
 ### e765 · Capa de sal
-**Receta:** 2 Cristal + 1 Hueso · `[Ingenio · 9]`. Una capa de cuero incrustada de sal que devuelve el color del suelo. Si descansas a la intemperie, algo te encuentra de noche solo con 10 o más. *Maestra:* al Ocultarte, la Alerta baja 2 en lugar de 1.
+**Receta:** 2 Cristal + 1 Hueso · `[Ingenio · 9]`. Protección (Blindaje 0): cuero incrustado de sal que devuelve el color del suelo. Si descansas a la intemperie, algo te encuentra de noche solo con 10 o más. *Maestra:* al Ocultarte, la Alerta baja 2 en lugar de 1.
 
 <a id="e766"></a>
 ### e766 · Trampa de chapa

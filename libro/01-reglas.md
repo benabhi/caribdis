@@ -19,7 +19,7 @@ Cuando un texto dice **→ e030**, ve al evento e030 y léelo. Cuando dice **(r1
 <a id="r002"></a>
 ### r002 · Qué necesitas
 
-- **Tres dados de seis caras** (d6). «2d6» significa tirar dos y sumarlos. «d66» significa tirar dos dados distintos: el primero son las decenas y el segundo las unidades (de 11 a 66).
+- **Tres dados de seis caras** (d6). «1d6» es tirar uno; «2d6» significa tirar dos y sumarlos; con Ventaja o Desventaja tiras los tres dados y te quedas con dos (r121).
 - **1d8 y 1d12 con dados de seis.** Para «1d12», tira dos d6: si el segundo sale 4–6, suma 6 al primero. Para «1d8», tira dos d6: el segundo da de 1 a 4 (con 5–6, vuelve a tirarlo), y suma 4 si el primero sale 4–6.
 - La **Hoja de protagonista** y la **Hoja de la nave** (Apéndices) y un lápiz.
 - Un papel aparte para tus **Marcas** (r191).
@@ -194,7 +194,7 @@ Anota en tu hoja:
 - **Pistas** (r192): hasta 5.
 - **Marcas** (r191): sin límite.
 - **Equipo:** sin límite para objetos comunes. **Reliquias** (r193): máximo 6.
-- **Arma:** Puños (+0). **Protección:** Traje de vuelo, Blindaje 0 (el chasis de la Mente da 2).
+- **Arma:** Puños (+0). **Protección:** Traje de vuelo, Blindaje 0 (la Mente: Blindaje 2 fijo, no suma armadura).
 - **Piezas:** Cobre, Hueso, Cristal y Luz fría, en 0. **Planos:** los de tu protagonista (r202).
 
 <a id="r107"></a>
@@ -926,13 +926,13 @@ Hay cuatro tipos de pieza. Anótalas en tu hoja como cuatro contadores.
 **Llevar piezas:** puedes llevar **10 piezas** en total. En la Cicatriz puedes guardar todas las que quieras.
 
 **Conseguir piezas:**
-- **Rebuscar:** al explorar, elige el Hallazgo **e)** (r153). Ganas **2 piezas** del tipo de la región (o 3 con un Éxito pleno). En las regiones con dos tipos, eliges.
+- **Rebuscar:** al explorar, elige el Hallazgo **e)** (r153). Ganas **2 piezas** del tipo de la región (o 3 con un Éxito pleno). En los Cañones (dos tipos), eliges.
 - **Botín:** tras ganar un combate, además del botín normal, ganas 1 pieza: Cobre de [Máquina] o [Náufrago], Hueso de [Bestia] y Luz fría de [Antiguo] (si tiene dos, eliges).
 - **Pecios:** en una sala de **Restos** (r172), puedes cambiar la Chatarra por el mismo número de Cobre.
 - **Comprar:** en cualquier asentamiento, Cobre y Hueso cuestan 1 Chatarra cada uno, y Cristal 2. La Luz fría solo se compra en el Nodo, a 3.
 - **Desmontar** (r206).
 
-Al ganar **Luz fría** (no baterías), +1 Canto ♫, sea una pieza o varias. Todavía cantan.
+Al ganar **Luz fría** (no baterías, que dan 6 Energía o valen 6 Chatarra), +1 Canto ♫, sea una o varias.
 
 <a id="r202"></a>
 ### r202 · Planos
