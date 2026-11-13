@@ -977,7 +977,12 @@ def medir_fincols(documento):
 def desbordados(documento):
     """Rellenos que han acabado al principio de una página o de una columna: ya no tapan ningún hueco."""
     from weasyprint.formatting_structure import boxes as B
-    malos = set()
+    malos = []
+
+    def agregar(ident):
+        if ident and ident not in malos:
+            malos.append(ident)
+
     for pagina in documento.pages:
         caja = pagina._page_box
         tope = caja.content_box_y()
@@ -988,16 +993,15 @@ def desbordados(documento):
             ident = (el.get('id') or '') if el is not None else ''
             if ident.startswith('rm-') and isinstance(b, (B.BlockBox, B.FlexBox)) and \
                     ((b.position_y - tope) * PX_MM < 4 or not visto_texto):
-                malos.add(ident)
+                agregar(ident)
             if isinstance(b, (B.LineBox, B.ReplacedBox)) and not (ident.startswith('rm-')):
-                anc = b
                 visto_texto = True
             if getattr(b, 'is_column', False):
                 hijos = [h for h in b.descendants() if isinstance(h, (B.LineBox, B.ReplacedBox)) or
                          (getattr(h, 'element', None) is not None and (h.element.get('id') or '').startswith('rc-'))]
                 if hijos and not isinstance(hijos[0], (B.LineBox, B.ReplacedBox)) \
                         and 'vacia' not in (hijos[0].element.get('class') or ''):
-                    malos.add(hijos[0].element.get('id'))
+                    agregar(hijos[0].element.get('id'))
     return malos
 
 
@@ -1368,16 +1372,20 @@ def main():
         f = re.sub(r'@@REMATE(\d+)@@', lambda m: '<div class="remate-marca"></div>' + piezas[f'rm-{m.group(1)}'], doc)
         return re.sub(r'@@FINCOL(\d+)@@', lambda m: piezas[f'rc-{m.group(1)}'], f)
     # 3.ª pasada (y siguientes): un relleno que se ha ido arriba de la página o de la columna siguiente sobra
-    for vuelta in range(4):
+    for vuelta in range(12):
         final = montar()
         render_ = HTML(string=final.replace('@@DIARIO@@', ''), base_url=RAIZ).render()
         sobran = desbordados(render_)
         n = len(render_.pages)
         if not sobran:
             break
-        print(f'  vuelta {vuelta + 1}: se quitan {len(sobran)} rellenos desplazados: {" ".join(sorted(sobran))}')
-        for ident in sobran:
-            piezas[ident] = ''
+        # Quitar solo el primero: un relleno desplazado puede empujar al siguiente y hacerlo
+        # parecer desplazado también. Al quitarlos todos a la vez se perdían rellenos válidos
+        # (así desaparecía la viñeta de la p. 40 con el recorte de r-polo).
+        ident = sobran[0]
+        print(f'  vuelta {vuelta + 1}: se quita 1 relleno desplazado: {ident}'
+              + (f' (quedan {len(sobran) - 1} por revisar)' if len(sobran) > 1 else ''))
+        piezas[ident] = ''
     faltan = PAGINAS - n
     if faltan < 0:
         print(f'AVISO: el libro tiene {n} páginas, {-faltan} más de las {PAGINAS} previstas')

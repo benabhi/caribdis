@@ -12,7 +12,7 @@
 - **364 cabeceras** de entrada, todas en la misma página que antes.
 - **0 enlaces rotos, 0 IDs duplicados, 0 entradas huérfanas** (`verificar.py`).
 - **Índice de Marcas regenerado** (276 marcas; incluye las nuevas y elimina `RUTA_SALINAS`, que era un ejemplo).
-- **Imágenes:** se mantienen las ilustraciones de capítulo y las viñetas; **falta una viñeta en la página 40** (`r-polo.jpg`). Es el único punto visual pendiente y queda anotado en el commit.
+- **Imágenes:** se mantienen las ilustraciones de capítulo y las viñetas; la viñeta de la página 40 (`r-polo.jpg`) se recuperó después (ver §4).
 
 ---
 
@@ -66,9 +66,10 @@
 
 ---
 
-## 4. Pendiente conocido
+## 4. Imagen de la página 40 (resuelta)
 
-- **Imagen p40 (`r-polo.jpg`)**: la viñeta de cierre de «Variantes» no se está generando en el nuevo reflow. Hay que revisar el sistema de remates para que vuelva a colocarla en la página 40 sin cambiar el número de páginas. **No se ha tocado la maquetación para forzarla.**
+La viñeta de cierre de «Variantes» (`r-polo.jpg`) vuelve a estar en la página 40. La causa estaba en la pasada que retira los rellenos desplazados: el cambio de texto de la auditoría hizo que en el pie de la página 39 se generara una franja de consulta (`rm-26`) que no cabía y saltaba al principio de la página 40. Eso empujaba la viñeta `rm-27` a la página 41, y `desbordados()` veía las dos fuera de su hueco y las borraba **en la misma pasada**. Ahora se retira un solo relleno por pasada y se vuelve a componer: al quitar `rm-26`, `rm-27` recupera su hueco. El PDF entregado conserva la paginación y el texto de las 200 páginas; solo cambia la página 40.
+
 - **Revisión final de moderados/menores**: el informe `docs/auditoria-completa.md` sigue siendo la referencia completa; algunos puntos de estilo y precios menores quedan para una segunda pasada.
 
 ---
