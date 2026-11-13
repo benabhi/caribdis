@@ -18,7 +18,7 @@ La encuentras sentada contra una roca, con el maletín médico en el regazo, tom
 
 1. **Llevarla contigo.** Se une como compañera. Si eres el Piloto, −1 `CULPA`.
 2. **Llevarla a la Cicatriz** para que descanse. Se une, pero se queda en la Cicatriz (r182). Allí, cada vez que descanses en la Cicatriz, curas 1 Herida extra.
-3. **Preguntarle por la infección.** «*Las esporas responden al Canto. Cuando sube, crecen. Necesito una muestra del corazón del bosque, o una seta muy especial que creo que existe aquí.*» Gana las Pistas `Bosque · El corazón del bosque · e271` y `Bosque · La seta de la Madre · e267`.
+3. **Preguntarle por la infección.** «*Las esporas responden al Canto. Cuando sube, crecen. Necesito una seta muy especial que creo que existe aquí.*» Gana la Pista `Bosque · La seta de la Madre · e267`.
 
 **Mientras esté contigo:** cada vez que tu Canto suba a 4 o más, tira 1d6. Con 1–2 → [e601](#e601).
 
@@ -103,7 +103,7 @@ La niña tiene el pelo blanco de sal y una pulsera de plástico con un número.
 
 1. **Despertarla.** `[Ingenio · 9]` (Iria: Ventaja). *Éxito:* abre los ojos. No habla tu idioma. Tiene en la muñeca un código de barras: la vendían. Bruno se la carga a la espalda. «*Ya no tengo contrato. Ahora tengo esto.*» Anota `LA_NIÑA_DE_LA_CAPSULA` (pasajera para tu final). +1 Lealtad de Bruno. **★** *Fallo:* no despierta. Bruno la lleva igualmente: anota `NIÑA_DORMIDA`; con un sanador o con Iria, cámbiala por la otra Marca.
 2. **Dejar que Bruno decida.** Bruno cierra la cápsula. «*Mi contrato era entregarla. La entregaré. Pero a mí.*» Como el Éxito de la 1, pero anota `NIÑA_DORMIDA` (como en el Fallo).
-3. **Avisar al comprador.** El nombre está en la cápsula: es el Contable. Te pagaría 15 Chatarra. Bruno te mira. Si eliges esto, Bruno te ataca: *Bruno · Ataque 6 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, la entregas: 15 Chatarra, `PERDIDO_BRUNO`, y −2 Temple.
+3. **Avisar al comprador.** El nombre está en la cápsula: es el Contable. Te pagaría 15 Chatarra. Bruno te mira. Si eliges esto, Bruno te ataca: *Bruno · Ataque 6 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, la entregas: 15 Chatarra, `PERDIDO_BRUNO`, y −2 Temple. Si eres el Piloto, +2 `CULPA`.
 
 ---
 
@@ -133,7 +133,7 @@ Bruno coge el rifle y se pone de pie.
 
 Las alarmas no paran. Por la escotilla entra un viento caliente que huele a ozono, y el casco entero tiembla con cada disparo de fuera.
 
-1. **Dejarle ir.** Bruno sale. La puerta se cierra. Lo oyes disparar hasta que dejas de oírlo. Tu prueba de huida en la secuencia de despegue es un Éxito **automático**. Bruno no despega. Si eres el Piloto, la Culpa no cambia: él lo eligió.
+1. **Dejarle ir.** Bruno sale. La puerta se cierra. Lo oyes disparar hasta que dejas de oírlo. Tu prueba de huida en la secuencia de despegue es un Éxito **automático**. Bruno no despega: anota `PERDIDO_BRUNO`. Si eres el Piloto, la Culpa no cambia: él lo eligió.
 2. **Sujetarlo.** `[Vigor · 13]`. *Éxito:* no le dejas. «*Idiota.*» Te abraza. Sigue a bordo, y la prueba de huida es normal. *Fallo:* te aparta como a un niño y sale. Como la opción 1.
 
 
@@ -234,7 +234,7 @@ Se queda callada un rato largo. Fuera, el viento hace sonar una chapa suelta del
 - Si llevas a Amara, Amara palidece: fue ella quien pagó.
 
 1. **Perdonarla.** «*Todos tenemos algo.*» +1 Lealtad. Si eres el Piloto, −1 `CULPA`: no fue culpa tuya.
-2. **No perdonarla.** −1 Lealtad. Noemí trabaja el doble: anota `INSTALACION_GRATIS` (próxima instalación automática).
+2. **No perdonarla.** −1 Lealtad. Noemí trabaja el doble: anota `INSTALACION_GRATIS` (próxima instalación automática, con +1 de calidad).
 3. **Preguntarle quién pagó.** Si no llevas a Amara: «*Una mujer. Arqueóloga, creo.*» Gana `FRAGMENTO_EL_GRADO`. Si llevas a Amara, gana `FRAGMENTO_EL_GRADO` y Amara pierde 1 Lealtad.
 
 ---
@@ -262,8 +262,8 @@ Algo cruje en la sala de máquinas. Noemí ya está corriendo, con la llave del 
 
 «¡Sigue! ¡Yo lo aguanto!»
 
-1. **Confiar en ella.** La prueba que acabas de fallar cuenta como Éxito. Tira 1d6: con un 1, Noemí no sale de la sala de máquinas cuando se cierra la compuerta. No despega. Si eres el Piloto, +1 `CULPA`.
-2. **Ir tú.** Repite la prueba con tu Ingenio y con Ventaja.
+1. **Confiar en ella.** La prueba que acabas de fallar cuenta como Éxito. Tira 1d6: con un 1, Noemí no sale de la sala de máquinas cuando se cierra la compuerta. No despega: anota `PERDIDO_NOEMI`. Si eres el Piloto, +1 `CULPA`.
+2. **Ir tú.** Repite la misma prueba, con Ventaja, usando su atributo.
 
 ---
 
@@ -326,7 +326,7 @@ Tadeo te espera junto a la rampa. Viste la túnica blanca del Coro. Tiene paz en
 «Vete. Yo me quedo a cantarles a los que vengan después. Alguien tiene que decirles que no están solos.»
 
 1. **Dejarle quedarse.** Anota `TADEO_SE_QUEDA`. Te bendice. En la secuencia de despegue, la primera prueba de Voluntad o de Canto que hagas es un Éxito automático. Tadeo no despega, pero cuenta como «tripulante en paz» en tu final (no suma Culpa).
-2. **Llevarlo a la fuerza.** `[Vigor · 9]`. *Éxito:* despega contigo; borra `TADEO_SE_QUEDA`. En el epílogo no te lo perdonará, pero estará vivo. *Fallo:* se suelta y corre hacia las Torres.
+2. **Llevarlo a la fuerza.** `[Vigor · 9]`. *Éxito:* despega contigo; borra `TADEO_SE_QUEDA`. En el epílogo no te lo perdonará, pero estará vivo. *Fallo:* se suelta y corre hacia las Torres: anota `PERDIDO_TADEO`.
 
 ---
 
@@ -341,7 +341,7 @@ Te das cuenta demasiado tarde de que te falta algo: pierdes 1 Chatarra. Detrás 
 «¿Qué? Tú no sabías que yo iba a bordo. Así que esto no es robar. Es... compensación.»
 
 1. **Pedirle que te las devuelva.** Te las devuelve. Y te da 2 más que ha robado a otros. «*Interés.*» Se une como compañero.
-2. **Preguntarle de quién huía en la nave.** «*De nadie.*» Si insistes, `[Voluntad · 9]`. *Éxito:* «*De mi padre. Era el oficial de seguridad. Está muerto, ¿no? Dime que está muerto.*» Gana `EL_PADRE_DE_LIO` (ver [e626](#e626)). *Fallo:* se cierra.
+2. **Preguntarle de quién huía en la nave.** «*De nadie.*» Si insistes, `[Voluntad · 9]`. *Éxito:* «*De mi padre. Era el oficial de seguridad. Está muerto, ¿no? Dime que está muerto.*» Gana `EL_PADRE_DE_LIO` (ver [e626](#e626)); se une como compañero. *Fallo:* se cierra.
 3. **Dejarle que se quede las monedas y venga contigo.** Se une con Lealtad 3: ya te quiere. (Lee [e627](#e627) la próxima vez que descanses.)
 
 ---
@@ -350,7 +350,7 @@ Te das cuenta demasiado tarde de que te falta algo: pierdes 1 Chatarra. Detrás 
 ### e626 · El padre de Lio
 *Donde estés · ⌛ 0*
 
-*Si tienes `EL_PADRE_DE_LIO`, cuando salga cualquier encuentro con [Náufrago], tira 1d6: con un 1, en lugar del encuentro, lee esto.*
+*Si tienes `EL_PADRE_DE_LIO` y Lio está contigo, cuando salga cualquier encuentro con [Náufrago], tira 1d6: con un 1, en lugar del encuentro, lee esto.*
 
 Un hombre con uniforme de seguridad de tu nave, rapado, con cicatrices. Se ha unido a una banda de saqueadores. Cuando ve a Lio, sonríe.
 
@@ -358,8 +358,8 @@ Un hombre con uniforme de seguridad de tu nave, rapado, con cicatrices. Se ha un
 
 Lio se esconde detrás de ti, temblando.
 
-1. **Plantarle cara.** *Kessan, el padre · Ataque 5 · Blind. 2 · Heridas 4 · [Náufrago]*. *Si ganas:* huye. Lio te mira como si fueras un gigante. +2 Lealtad.
-2. **Negociar.** `[Voluntad · 11]`. *Éxito:* se va: «*No vale la pena.*» *Fallo:* combate con Emboscada.
+1. **Plantarle cara.** *Kessan, el padre · Ataque 5 · Blind. 2 · Heridas 4 · [Náufrago]*. *Si ganas:* huye. Lio te mira como si fueras un gigante. +2 Lealtad (máximo 3).
+2. **Negociar.** `[Voluntad · 11]`. *Éxito:* se va: «*No vale la pena.*» *Fallo:* combate con Emboscada. *Si ganas:* huye como en la opción 1.
 3. **Entregar a Lio.** Te paga 6 Chatarra. `PERDIDO_LIO`. −3 Temple. Si eres el Piloto, +2 `CULPA`.
 
 ---

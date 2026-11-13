@@ -67,7 +67,7 @@ En combate, una vez: **Usar** para soltar una nube de esporas: en la siguiente r
 
 <a id="e714"></a>
 ### e714 · 5 · Segundo corazón
-Tienes un nivel de Heridas más (un segundo Crítico).
+Tienes una casilla de Crítico más; solo caes al llenar la segunda.
 
 <a id="e715"></a>
 ### e715 · 6 · Oído profundo
@@ -202,7 +202,7 @@ Planos pequeños para el taller (r200). Cada uno indica su **receta**, la prueba
 
 <a id="e761"></a>
 ### e761 · Bombona o célula
-**Receta:** 1 Cobre + 1 Cristal · `[Ingenio · 7]`. Al ensamblarla, elige: una bombona (+3 Aire) o una célula (+3 Energía). Un uso. *Maestra:* +5 en lugar de +3.
+**Receta:** 1 Cobre · `[Ingenio · 7]`. Al ensamblarla, elige: una bombona (+3 Aire) o una célula (+3 Energía). Un uso. *Maestra:* +5 en lugar de +3.
 
 <a id="e762"></a>
 ### e762 · Lanza de hueso

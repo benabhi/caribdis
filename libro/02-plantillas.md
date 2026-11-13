@@ -33,7 +33,7 @@ Quieren comerciar. Puedes comprar en la tabla r161 con un recargo de +1 por obje
 
 ### r302 · Información
 
-Comparten lo que saben. Tira 2d6 en la tabla de rumores (r164) y gana esa Pista gratis. **Si pasas.**
+Comparten lo que saben. Tira 2d6 en la tabla de rumores (r164) y gana esa Pista gratis (si sale 7, gana la Ventaja de la fila). **Si pasas.**
 
 <a id="r303"></a>
 ### r303 · Desconfianza

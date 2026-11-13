@@ -10,7 +10,7 @@
 | 2 | [e310](#e310) | [e310](#e310) | [e310](#e310) | [e048](#e048) |
 | 3 | [e308](#e308) | [e308](#e308) | [e306](#e306) | [e306](#e306) |
 | 4 | [e301](#e301) | [e311](#e311) | [e039](#e039) | [e303](#e303) |
-| 5 | [e302](#e302) | [e302](#e302) | [e302](#e302) | [e306](#e306) |
+| 5 | [e302](#e302) | [e057](#e057) | [e302](#e302) | [e306](#e306) |
 | 6 | [e034](#e034) | [e034](#e034) | [e303](#e303) | [e303](#e303) |
 | 7 | [e304](#e304) | [e304](#e304) | [e304](#e304) | [e307](#e307) |
 | 8 | [e305](#e305) | [e305](#e305) | [e307](#e307) | [e307](#e307) |
@@ -99,7 +99,7 @@ Una piedra cae a tus pies. Luego otra. En lo alto de las paredes, una docena de 
 
 **Encuentro (r300).** Precio: 3 Chatarra. Botín: 5 Chatarra y una **cuerda y garfio**.
 
-- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio.
+- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio. · **Si pasas:** pagas 3 Chatarra y te dejan seguir.
 - Si eres el Nativo con `GUERRERO`, no se atreven contigo: pasas sin tirar.
 
 ---

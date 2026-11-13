@@ -16,7 +16,7 @@
 | 8 | [e036](#e036) | [e228](#e228) | [e228](#e228) | [e230](#e230) |
 | 9 | [e054](#e054) | [e044](#e044) | [e031](#e031) | [e031](#e031) |
 | 10 | [e231](#e231) | [e231](#e231) | [e035](#e035) | [e035](#e035) |
-| 11 | [e038](#e038) | [e056](#e056) | [e047](#e047) | [e047](#e047) |
+| 11 | [e038](#e038) | [e058](#e058) | [e047](#e047) | [e047](#e047) |
 | 12 | [e222](#e222) | [e222](#e222) | [e059](#e059) | [e222](#e222) |
 
 ---
@@ -30,7 +30,7 @@ Una columna de humo negro que no se mueve con el viento. Debajo, un cráter de c
 Desde lejos se oyen martillos, motores y una música de cuerdas que nadie diría que existe aquí.
 
 1. **Ir directamente.** Gana la Pista `Cementerio · Puerto Chatarra · e400`. Síguela mañana para visitarlo sin encuentro: los chatarreros dejan pasar a quien llega por la pista de las grúas.
-2. **Observar desde lejos.** `[Ingenio · 9]`. *Éxito:* ves quién entra y quién sale, y en una grúa, colgando de los tobillos, a alguien con el uniforme de tu nave. Elige un tripulante no encontrado: su región pasa a ser el Cementerio: anota `EN_PUERTO_CHATARRA` con su nombre (ver su evento). *Fallo:* un vigía te ve. Al visitar Puerto Chatarra, pagas 1 Chatarra de «aduana».
+2. **Observar desde lejos.** `[Ingenio · 9]`. *Éxito:* ves quién entra y quién sale, y en una grúa, colgando de los tobillos, a alguien con el uniforme de tu nave. Elige un tripulante no encontrado (Iria, Bruno, Amara o Noemí): su región pasa a ser el Cementerio: anota `EN_PUERTO_CHATARRA` con su nombre (ver su evento). *Fallo:* un vigía te ve. Al visitar Puerto Chatarra, pagas 1 Chatarra de «aduana».
 3. **Rodear la ciudad.** No hay nada para ti allí. Exploras las naves de los alrededores: un pecio (r170), tirando dos veces el tipo y eligiendo uno.
 
 ---
@@ -42,8 +42,8 @@ Desde lejos se oyen martillos, motores y una música de cuerdas que nadie diría
 Una nave colonia enorme, intacta salvo por la proa. Dentro, una sala con ochocientas **cámaras de criosueño**. La mayoría están oscuras. Siete brillan todavía en verde.
 
 1. **Despertar a uno.** `[Ingenio · 9]`. *Éxito:* sale una mujer de hace trescientos años, que habla un idioma antiguo y es ingeniera. Te ayuda un día: tu próxima instalación tiene Ventaja y +1 de calidad. Luego se va a Quilla a buscar a sus descendientes. +1 de Reputación con los Hijos del Pecio. *Fallo:* la cámara se abre y lo que sale no está vivo: *Colono hueco · Ataque 3 · Blind. 0 · Heridas 2 · [Cantor]*. Combate.
-2. **Llevarte las baterías de las cámaras.** +6 Energía o 4 Chatarra. Las siete luces se apagan una a una. −2 Temple. Anota `APAGASTE_EL_HALCYON`.
-3. **Buscar el soporte vital de la nave.** Si tu Soporte vital no está conseguido: `[Ingenio · 11]`. *Éxito:* **Soporte vital Sólido** (no es pesado), pero apagas las siete cámaras; si no quieres apagarlas, te vas sin nada. *Fallo:* no sabes desconectarlo sin matarlos.
+2. **Llevarte las baterías de las cámaras.** +6 Energía o 6 Chatarra. Las siete luces se apagan una a una. −2 Temple. Anota `APAGASTE_EL_HALCYON`.
+3. **Buscar el soporte vital de la nave.** Si tu Soporte vital no está conseguido: `[Ingenio · 11]`. *Éxito:* **Soporte vital Sólido** (no es pesado), pero apagas las siete cámaras; si no quieres apagarlas, te vas sin nada. Si eres el Piloto, +1 `CULPA`; anota `APAGASTE_EL_HALCYON`. *Fallo:* no sabes desconectarlo sin matarlos.
 4. **Marcar la nave en tu mapa.** Si algún día despegas, podrías volver a por ellos… o no. Anota `HALCYON`.
 
 ---
@@ -161,7 +161,7 @@ Dos matones con trajes de vuelo pintados de dorado te cortan el paso. Detrás de
 - **Si llegaste aquí siguiendo la Pista *Lo que te robaron*** (desde [e210](#e210)): tiene tu sistema. Opciones 1 a 3 para recuperarlo; si no, se lo queda.
 - **Si tienes `DEUDAS`:** «*Ah, tú. Tienes una cuenta abierta.*» Paga 4 Chatarra o elige la opción 3.
 
-1. **Pagar.** 3 Chatarra (o el sistema robado vuelve a tus manos por 4). +1 de Reputación con los Desguaces.
+1. **Pagar.** 4 Chatarra: recuperas el sistema robado. Si no vienes por el sistema, 3 Chatarra y +1 de Reputación con los Desguaces.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* te contrata: anota `TRABAJO_DEL_CONTABLE` (trae 1 reliquia de los Antiguos a Puerto Chatarra y ganas 6 Chatarra y +2 de Reputación con los Desguaces; o el sistema robado). *Fallo:* te quitan 2 Chatarra «por las molestias».
 3. **Pelear.** *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. *Si ganas:* recuperas lo tuyo, el Contable huye y −3 de Reputación con los Desguaces. Anota `ENEMIGO_DEL_CONTABLE`.
 4. **Ofrecerle información.** Si tienes alguna `FRAGMENTO_`, se la vendes: 4 Chatarra por cada una que le cuentes (no la pierdes, pero cada una se vende una vez). Él escribe todo en su libro con una letra minúscula.
@@ -178,7 +178,7 @@ Una nave de rescate de hace cincuenta años, el **Argo Pálido**, casi reparada.
 
 Han pintado el nombre a mano, siete veces, cada una con una letra distinta. En la cubierta han plantado un huerto.
 
-1. **Unir fuerzas.** Les das un sistema que tengas (llevado o instalado). A cambio, en tu final, **puedes despegar con ellos** si el Argo llega antes que tu nave: anota `PASAJE_EN_EL_ARGO`. Si tienes esta Marca y el Reloj llega a 5, puedes ir a [e906](#e906).
+1. **Unir fuerzas.** Les das un sistema que tengas **llevado** (no instalado). A cambio, en tu final, **puedes despegar con ellos** si el Argo llega antes que tu nave (Reloj 5 o menos): anota `PASAJE_EN_EL_ARGO`. Si tienes esta Marca y el Reloj llega a 5, puedes ir a [e906](#e906).
 2. **Venderles algo.** Pagan bien: un sistema Sólido vale 8 Chatarra; uno Excelente, 11 (`SEÑAS_DE_LOS_SORDOS`: +2).
 3. **Robarles.** `[Reflejos · 13]`. *Éxito:* te llevas el sistema que tú quieras de su nave (con calidad Sólida). Anota `ROBASTE_AL_ARGO`. Si algún día vuelven a verte… *Fallo:* combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*. Si ganas, el sistema es tuyo y el Argo no despegará nunca.
 4. **Pedirles que se queden con tu tripulación.** Si llevas un compañero, puedes dejárselo: lo cuidarán, y si el Argo despega, ese tripulante estará a salvo (cuenta como salvado en tu final). Anota `TRIPULANTE_EN_EL_ARGO`.

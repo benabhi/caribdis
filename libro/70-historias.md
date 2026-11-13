@@ -82,7 +82,7 @@ Si te sobran promesas, tendrás que dejar a alguien.
 
 1. **Decidirlo ahora.** Anota en tu Hoja quién viene y quién no. Si dejas a alguien de tu tripulación, +1 `CULPA` por cada uno. Si a todos les cabe, −1 `CULPA`. **★**
 2. **Decidirlo en el último momento.** Lo harás en la secuencia de despegue. +1 Temple, porque todavía hay esperanza.
-3. **Hacer sitio quitando peso.** Puedes renunciar a la calidad de un sistema para hacer sitio: baja 1 de calidad el Casco o el Soporte vital y ganas 2 plazas más.
+3. **Hacer sitio quitando peso.** Puedes renunciar a la calidad de un sistema para hacer sitio: baja 1 de calidad el Casco o el Soporte vital (si ya está en Precaria, no puedes) y ganas 2 plazas más; anota `HIZO_SITIO`.
 
 ---
 
@@ -226,7 +226,7 @@ Te esperan junto al fuego grande, con las caras pintadas de ceniza. No sonríen.
 
 1. **Aceptar.** Si lo haces, tu final será **Hogar** ([e914](#e914)), pero con todo lo que conseguiste: puedes **enviar la nave** con tu tripulación sin ti. Cuenta como victoria.
 2. **Rechazar.** Te miran con tristeza. «*Entonces llévate a alguien.*» Anota `MIRASOLES_A_BORDO` si no lo tenías.
-3. **Pedir tiempo.** Te lo dan. Decidirás en el despegue.
+3. **Pedir tiempo.** Te lo dan. Decidirás en el despegue. Anota `PIDIO_TIEMPO`.
 
 ---
 
@@ -293,7 +293,7 @@ Y dijiste que sí. Cambiaste el rumbo 1,4 grados. Luego te asustaste y lo borras
 Si despegas, ¿quién pilota? ¿Tú, metida en un dron, conectada por cables? ¿O tú, **reinstalada en la nave**, siendo otra vez la nave?
 
 1. **Volver a ser la nave.** Anota `VUELVE_A_SER_LA_NAVE`. En la secuencia de despegue, si tienes el Núcleo de memoria instalado, todas las pruebas de sistemas tienen Ventaja: eres tú quien vuela. Pero en el epílogo, ya no serás el dron: serás la nave.
-2. **Seguir siendo el dron.** Te gusta flotar. +1 Temple.
+2. **Seguir siendo el dron.** Te gusta flotar. +1 Temple. Anota `SIGUE_EN_EL_DRON`.
 3. **Dejar una copia en Caribdis.** Te copias en un Vigía, en el Nodo, en una terminal. Una parte de ti se quedará aquí. Anota `COPIA_EN_CARIBDIS`. Tu epílogo cambiará.
 
 ---

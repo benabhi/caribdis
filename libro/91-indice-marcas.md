@@ -12,7 +12,7 @@
 | `ALGUIEN_LO_LOGRO` | [r212](#r212) |
 | `ALIADO_DE_QUILLA` | [e640](#e640) · [e910](#e910) |
 | `ALIMENTASTE_EL_CORAZON` | [e271](#e271) · [e910](#e910) |
-| `AMARA_TENIA_RAZON` | [e611](#e611) · [e910](#e910) |
+| `AMARA_TENIA_RAZON` | [e611](#e611) · [e910](#e910) · [r196](#r196) |
 | `AMIGO_DE_UN_VIGIA` | [e324](#e324) · [e433](#e433) |
 | `ANILLO_DE_LA_ANCIANA` | [e348](#e348) · [e910](#e910) |
 | `APAGASTE_EL_HALCYON` | [e222](#e222) · [e910](#e910) |
@@ -47,7 +47,7 @@
 | `CONOCES_A_LA_PEREGRINA` | [e060](#e060) · [e062](#e062) |
 | `CONTRABANDO` | [e011](#e011) · [e403](#e403) |
 | `COPIA_EN_CARIBDIS` | [e824](#e824) · [e910](#e910) |
-| `CULPA` | [e002](#e002) · [e031](#e031) · [e038](#e038) · [e051](#e051) · [e070](#e070) · [e208](#e208) · [e261](#e261) · [e285](#e285) · [e433](#e433) · [e566](#e566) · [e600](#e600) · [e603](#e603) · [e605](#e605) · [e610](#e610) · [e616](#e616) · [e618](#e618) · [e621](#e621) · [e626](#e626) · [e628](#e628) · [e800](#e800) · [e801](#e801) · [e802](#e802) · [e803](#e803) · [e804](#e804) · [e900](#e900) · [e906](#e906) · [e910](#e910) |
+| `CULPA` | [e002](#e002) · [e031](#e031) · [e038](#e038) · [e051](#e051) · [e070](#e070) · [e208](#e208) · [e222](#e222) · [e261](#e261) · [e285](#e285) · [e433](#e433) · [e566](#e566) · [e567](#e567) · [e600](#e600) · [e603](#e603) · [e605](#e605) · [e606](#e606) · [e610](#e610) · [e616](#e616) · [e618](#e618) · [e621](#e621) · [e626](#e626) · [e628](#e628) · [e800](#e800) · [e801](#e801) · [e802](#e802) · [e803](#e803) · [e804](#e804) · [e900](#e900) · [e906](#e906) · [e910](#e910) |
 | `CURAS_DOBLE` | [e602](#e602) |
 | `DEDOS_HELADOS` | [e569](#e569) |
 | `DESERTOR` | [r105](#r105) |
@@ -65,7 +65,7 @@
 | `EL_VIGIA_APRENDE` | [e327](#e327) · [e910](#e910) |
 | `ENCARGO_DEL_SUBASTADOR` | [e228](#e228) · [e400](#e400) · [e406](#e406) |
 | `ENCARGO_DE_PRIMO` | [e433](#e433) |
-| `ENCARGO_DE_REPARAR` | [e433](#e433) |
+| `ENCARGO_DE_REPARAR` | [e324](#e324) · [e433](#e433) |
 | `ENEMIGO_DEL_CONTABLE` | [e230](#e230) · [e405](#e405) · [e900](#e900) · [e901](#e901) |
 | `ENGAÑASTE_A_LA_SONDA` | [e048](#e048) · [e842](#e842) · [e902](#e902) · [e910](#e910) |
 | `EN_PUERTO_CHATARRA` | [e221](#e221) · [e600](#e600) · [e605](#e605) · [e610](#e610) · [e615](#e615) |
@@ -74,7 +74,7 @@
 | `ESTIBADORA` | [e046](#e046) · [r105](#r105) · [r180](#r180) |
 | `ESTRELLA_FUGAZ` | [e908](#e908) |
 | `EXILIADO` | [r105](#r105) |
-| `EXPULSADO_DE_LOS_CAÑONES` | [e641](#e641) |
+| `EXPULSADO_DE_LOS_CAÑONES` | [e410](#e410) · [e641](#e641) |
 | `FAVOR_DESGUACE` | [e050](#e050) · [e210](#e210) · [e405](#e405) |
 | `FICHA_DESGUACE` | [e205](#e205) · [e400](#e400) |
 | `FRAGMENTO_AL_REVES` | **6** · [e283](#e283) |
@@ -174,6 +174,7 @@
 | `HERISTE_EL_CORAZON` | [e271](#e271) · [e910](#e910) |
 | `HERMANO_A_BORDO` | [e811](#e811) · [e900](#e900) · [e910](#e910) |
 | `HIJA_DEL_SALINERO` | [e247](#e247) · [e900](#e900) · [e910](#e910) |
+| `HIZO_SITIO` | [e804](#e804) · [e900](#e900) |
 | `INJERTADOS_ALERTA` | [e266](#e266) |
 | `INSTALACION_GRATIS` | [e413](#e413) · [e616](#e616) |
 | `IRIA_CURADA` | [e601](#e601) · [e603](#e603) · [e910](#e910) |
@@ -183,7 +184,7 @@
 | `JARDIN_A_BORDO` | [e261](#e261) · [e910](#e910) |
 | `LANZADERA_DE_UR` | [e264](#e264) · [e813](#e813) |
 | `LA_ESPERANZA_CALLA` | [e290](#e290) · [e813](#e813) · [e845](#e845) · [e900](#e900) · [e903](#e903) |
-| `LA_NIÑA_DE_LA_CAPSULA` | [e606](#e606) · [e900](#e900) · [e910](#e910) |
+| `LA_NIÑA_DE_LA_CAPSULA` | [e606](#e606) · [e900](#e900) · [e910](#e910) · [r163](#r163) |
 | `LA_PEREGRINA_A_BORDO` | [e063](#e063) · [e900](#e900) · [e910](#e910) |
 | `LA_SEÑAL_PUEDE_CALLAR` | [e431](#e431) · [e507](#e507) · [e511](#e511) · [e751](#e751) · [e841](#e841) · [e902](#e902) |
 | `LINEA_AISLADA` | [e821](#e821) · [e832](#e832) |
@@ -196,7 +197,7 @@
 | `MEDICA` | [r105](#r105) |
 | `MEMORIA` | [e004](#e004) · [e056](#e056) · [e211](#e211) · [e226](#e226) · [e229](#e229) · [e261](#e261) · [e284](#e284) · [e290](#e290) · [e323](#e323) · [e327](#e327) · [e431](#e431) · [e509](#e509) · [e820](#e820) · [e821](#e821) · [e822](#e822) · [e823](#e823) · [e826](#e826) · [e832](#e832) |
 | `MICELIO_DENTRO` | [e265](#e265) |
-| `MIRASOL` | [r105](#r105) |
+| `MIRASOL` | [e071](#e071) · [r105](#r105) |
 | `MIRASOLES_A_BORDO` | [e071](#e071) · [e413](#e413) · [e816](#e816) · [e900](#e900) · [e910](#e910) |
 | `MODULO_DE_PASAJE` | [e778](#e778) · [e900](#e900) |
 | `MORRO_ENTERO` | [e002](#e002) · [e329](#e329) |
@@ -206,7 +207,7 @@
 | `NAVE_DE_LOS_ABUELOS` | [e209](#e209) · [e813](#e813) |
 | `NAVE_VIVA` | [e515](#e515) · [e910](#e910) |
 | `NIÑA_DEL_CORO` | [e347](#e347) · [e410](#e410) |
-| `NIÑA_DORMIDA` | [e606](#e606) |
+| `NIÑA_DORMIDA` | [e606](#e606) · [e910](#e910) · [r163](#r163) |
 | `NIÑO_DEL_HUMO` | [e031](#e031) · [e400](#e400) · [e410](#e410) |
 | `NIÑO_DE_QUILLA` | [e403](#e403) · [e410](#e410) |
 | `NOTA_DEL_PILOTO` | [e208](#e208) · [e426](#e426) |
@@ -219,13 +220,16 @@
 | `PASAJERO_EL_CONTABLE` | [e406](#e406) · [e642](#e642) · [e900](#e900) · [e901](#e901) · [e910](#e910) |
 | `PASAJE_EN_EL_ARGO` | [e231](#e231) · [e906](#e906) |
 | `PAZ_DEL_CONTABLE` | [e642](#e642) · [e901](#e901) |
-| `PERDIDO_BRUNO` | [e606](#e606) · [e910](#e910) |
+| `PERDIDO_BRUNO` | [e606](#e606) · [e608](#e608) · [e910](#e910) |
 | `PERDIDO_LIO` | [e626](#e626) · [e628](#e628) |
-| `PERDIDO_TADEO` | [e621](#e621) |
+| `PERDIDO_NOEMI` | [e618](#e618) |
+| `PERDIDO_TADEO` | [e424](#e424) · [e621](#e621) · [e623](#e623) |
 | `PERMISO_DE_PRIMO` | [e431](#e431) · [e432](#e432) · [e433](#e433) · [e646](#e646) · [e901](#e901) · [e902](#e902) |
 | `PERRO_DE_LATON` | [e064](#e064) · [e065](#e065) · [e066](#e066) · [e067](#e067) |
 | `PERRO_SILENCIOSO` | [e067](#e067) |
+| `PIDIO_TIEMPO` | [e816](#e816) |
 | `POSICION_CONOCIDA` | [e250](#e250) · [e286](#e286) · [e513](#e513) · [e564](#e564) · [e613](#e613) · [e900](#e900) |
+| `PRECIOS_DE_SOCIO` | [e642](#e642) |
 | `PRIMERO_EN_LLEGAR` | [e003](#e003) · [e006](#e006) |
 | `PROFANADOR` | [e208](#e208) · [e910](#e910) |
 | `PROMESA_AL_CORO` | [e426](#e426) · [e910](#e910) |
@@ -241,11 +245,10 @@
 | `RESCATADOR` | [e807](#e807) · [r105](#r105) |
 | `ROBASTE_AL_ARGO` | [e231](#e231) · [e900](#e900) · [e901](#e901) |
 | `ROBASTE_A_UNA_NIÑA` | [e043](#e043) · [e910](#e910) |
-| `RUTA_BOSQUE` | [e321](#e321) |
+| `RUTA_BOSQUE` | [e321](#e321) · [r191](#r191) |
 | `RUTA_CIUDAD` | [e268](#e268) |
 | `RUTA_DE_SALIDA` | [e351](#e351) · [e900](#e900) |
 | `RUTA_POLO` | [e321](#e321) · [e342](#e342) |
-| `RUTA_SALINAS` | [r191](#r191) |
 | `SABES_DE_LAS_TORRETAS` | [e309](#e309) |
 | `SABE_DE_SAL` | [e247](#e247) · [e251](#e251) · [e568](#e568) |
 | `SABE_ESCONDERSE` | [e308](#e308) · [e919](#e919) |
@@ -255,9 +258,10 @@
 | `SAL_EN_LA_PIEL` | [e245](#e245) · [e251](#e251) · [e569](#e569) |
 | `SECRETO_DESCUBIERTO` | [e840](#e840) · [e900](#e900) · [e903](#e903) · [r196](#r196) |
 | `SEGUIDO` | [r308](#r308) |
-| `SEÑAL_EN_ROCA` | [e037](#e037) |
+| `SEÑAL_EN_ROCA` | [e037](#e037) · [r186](#r186) |
 | `SEÑAS_DE_LOS_SORDOS` | [e231](#e231) · [e346](#e346) |
 | `SEÑUELO` | [e776](#e776) · [e902](#e902) |
+| `SIGUE_EN_EL_DRON` | [e824](#e824) |
 | `SIN_REGISTRO` | [r105](#r105) |
 | `SOBRESCRITA` | [e832](#e832) |
 | `TADEO_CREE` | [e622](#e622) · [e900](#e900) |
@@ -272,6 +276,7 @@
 | `TRIPULANTE_EN_EL_ARGO` | [e231](#e231) · [e906](#e906) |
 | `TUNELES_DE_LA_SOMBRA` | [e325](#e325) · [e434](#e434) |
 | `TUNELES_DUNAS` | [e207](#e207) |
+| `TUNICA_BENDITA` | [e425](#e425) |
 | `TU_TUMBA` | [e042](#e042) · [e846](#e846) |
 | `UNIDAD_DE_PRIMO` | [e431](#e431) · [e842](#e842) · [e915](#e915) |
 | `VETERANO` | [e309](#e309) · [e506](#e506) · [r105](#r105) |

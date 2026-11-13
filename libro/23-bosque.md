@@ -14,7 +14,7 @@
 | 6 | [e052](#e052) | [e266](#e266) | [e266](#e266) | [e266](#e266) |
 | 7 | [e264](#e264) | [e052](#e052) | [e052](#e052) | [e055](#e055) |
 | 8 | [e034](#e034) | [e034](#e034) | [e268](#e268) | [e268](#e268) |
-| 9 | [e261](#e261) | [e268](#e268) | [e033](#e033) | [e035](#e035) |
+| 9 | [e261](#e261) | [e268](#e268) | [e033](#e033) | [e030](#e030) |
 | 10 | [e037](#e037) | [e270](#e270) | [e047](#e047) | [e047](#e047) |
 | 11 | [e049](#e049) | [e038](#e038) | [e031](#e031) | [e263](#e263) |
 | 12 | [e270](#e270) | [e267](#e267) | [e271](#e271) | [e271](#e271) |
@@ -35,7 +35,7 @@ Los Jardineros no hablan. Te miran con unos ojos que parecen gotas de resina, y 
 
 1. **Pedirles un esqueje** para el **Soporte vital** de tu nave (no con `TIRASTE_LA_NAVE`). Los Jardineros te miran sin parpadear. Piden algo a cambio. Elige:
    - *Tu sangre:* 2 Heridas. Te dan el esqueje: **Soporte vital Excelente** (no pesado; anota `JARDIN_A_BORDO`). **★**
-   - *Un recuerdo:* −1 Temple máximo (permanente). Te dan **Soporte vital Sólido**. Si eres la Mente, −1 `MEMORIA` en lugar de Temple.
+   - *Un recuerdo:* −1 Temple máximo (permanente; mínimo 1). Te dan **Soporte vital Sólido**. Si eres la Mente, −1 `MEMORIA`; si ya está en 0, −1 Temple máximo en su lugar.
    - *Un compañero que se quede:* deja a un compañero aquí para siempre (táchalo; si eres el Piloto, +1 `CULPA`). Te dan **Soporte vital Excelente** y te bendicen: −3 Canto.
 2. **Robar el esqueje.** `[Reflejos · 11]`. *Éxito:* **Soporte vital Precario**: sin los Jardineros, el esqueje enferma. *Fallo:* las raíces te atrapan. *Jardineros · Ataque 4 · Blind. 2 · Heridas 5 · [Bestia]*. Combate. Si ganas, el esqueje muere contigo dentro del claro: no consigues nada y anota `QUEMASTE_EL_JARDIN`.
 3. **Escucharlos.** `[Voluntad · 9]` ♫. *Éxito:* el micelio te habla: *«Nosotros también oímos el Canto. Nosotros le respondemos que no.»* Gana `FRAGMENTO_EL_MICELIO`. −2 Canto.
@@ -131,7 +131,7 @@ Las flores se giran hacia ti al oír tus pasos. Huele a carne y a miel.
 2. **Calmar a las flores.** `[Voluntad · 11]` (Nativo: Ventaja). *Éxito:* se cierran y la coges sin daño. *Fallo:* como en la 1.
 3. **Dejarla para alguien que la necesite más.** +1 Temple. Gana la Pista `Bosque · La seta de la Madre · e267`.
 
-**La seta de la Madre** (un uso; no vuelve a crecer): cura todas tus Heridas, o borra `ESPORAS`, o cura a Iria por completo ([e603](#e603)), o baja tu Canto a 0. Si la llevas a la Madre Óxida en Quilla, te la cambia por cualquier cosa que tenga Quilla (incluido un sistema).
+**La seta de la Madre** (un uso; no vuelve a crecer): cura todas tus Heridas, o borra `ESPORAS`, o cura a Iria por completo ([e603](#e603)), o baja tu Canto a 0. Si la llevas a la Madre Óxida en Quilla, te la cambia por un Motor o Soporte vital Excelente ([e411](#e411)).
 
 ---
 
@@ -189,7 +189,7 @@ El aire está tibio y húmedo, como un aliento.
 
 1. **Escuchar.** `[Voluntad · 9]`. *Éxito:* entiendes: el micelio lleva milenios **cantando en contra** del Canto para que no llegue más allá del Bosque. Gana `FRAGMENTO_LA_CONTRAMELODIA` y −3 Canto. **★** *Fallo:* el contraste te marea. 1 Herida.
 2. **Llevarte un trozo.** `[Vigor · 11]` ◉. *Éxito:* ganas un **Corazón dorado**, una reliquia (identificada): una vez por partida, anula un evento de Canto 6 (no lo lees), y en las Torres no te sube el Canto al amanecer. Pero el bosque se debilita: anota `HERISTE_EL_CORAZON`. *Fallo:* el micelio te expulsa. 2 Heridas.
-3. **Ofrecerle tu Canto.** Pon la mano en el corazón. Baja tu Canto a 0 y suma esa cantidad a… algo, en algún lado. Si tienes 4 o más de Canto al hacerlo, el corazón late más fuerte: anota `ALIMENTASTE_EL_CORAZON`.
+3. **Ofrecerle tu Canto.** Pon la mano en el corazón. Baja tu Canto a 0 y recupera 1 Temple por cada 2 puntos que bajes (redondeando hacia arriba). Si tenías 4 o más, el corazón late más fuerte: anota `ALIMENTASTE_EL_CORAZON`.
 
 Cuando subes de nuevo a la superficie, el bosque entero suena distinto. Tardas horas en dejar de oír el latido.
 

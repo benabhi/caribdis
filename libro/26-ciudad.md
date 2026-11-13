@@ -72,7 +72,7 @@ Un Vigía tumbado en mitad de la calle, con una pierna arrancada. Intenta levant
 
 Su ojo parpadea en rojo, pidiéndote algo que no sabe decir. Te sigue con el ojo hasta que te alejas. Le falta un trozo de la placa del pecho, y dentro se ve una luz que va y viene.
 
-1. **Repararlo.** `[Ingenio · 11]`, 2 Chatarra (Mente, Noemí: Ventaja). *Éxito:* se levanta. Te hace una reverencia y se va. +2 de Reputación con los Vigías y gana `AMIGO_DE_UN_VIGIA`: una vez, en un combate contra Vigías, puedes terminarlo inmediatamente mostrando su número de serie. *Fallo:* se apaga. −1 de Reputación con los Vigías.
+1. **Repararlo.** `[Ingenio · 11]`, 2 Chatarra (Mente, Noemí: Ventaja). *Éxito:* se levanta. Te hace una reverencia y se va. +2 de Reputación con los Vigías y gana `AMIGO_DE_UN_VIGIA`: una vez, en un combate contra Vigías, puedes terminarlo inmediatamente mostrando su número de serie. Si tienes `ENCARGO_DE_REPARAR`, esta reparación cuenta para el encargo: +1 de Reputación extra. *Fallo:* se apaga. −1 de Reputación con los Vigías.
 2. **Desmontarlo.** `[Vigor · 9]` ◉. *Éxito:* 5 Chatarra y una **coraza de Vigía** (Blind. 2). −2 de Reputación con los Vigías. *Fallo:* se defiende con lo que le queda. *Vigía caído · Ataque 3 · Blind. 2 · Heridas 2 · [Máquina][Antiguo]*.
 3. **Dejarlo.** La luz pasa a rojo. Cuando te alejas, oyes que emite un pitido largo, como un suspiro.
 
@@ -90,7 +90,7 @@ Hablan en susurros, aunque no haya nadie más. Su piel brilla un poco en la oscu
 
 **Encuentro (r300).** Precio: 2 Raciones (no aceptan Chatarra: quieren comida de la superficie). Botín: una **lanza de luz fría** (+3 Ataque, +1 Canto por combate).
 
-- **Si pasas:** si les diste comida o comerciaste, te dejan dormir en sus túneles esta noche (descanso sin tirada nocturna) y te cuentan cómo evitar a los Vigías: anota `TUNELES_DE_LA_SOMBRA` (Ventaja para huir de los Vigías en la Ciudad).
+- **Si pasas:** si les diste comida o comerciaste, te dejan dormir en sus túneles esta noche (descanso sin tirada nocturna) y te cuentan cómo evitar a los Vigías: anota `TUNELES_DE_LA_SOMBRA` (Ventaja para huir de los Vigías en la Ciudad). · **Si ganas:** Botín.
 
 ---
 
@@ -101,8 +101,6 @@ Hablan en susurros, aunque no haya nadie más. Su piel brilla un poco en la oscu
 Una plaza con doce estatuas de los Antiguos, altas, delgadas, de cuatro brazos y cabeza alargada sin cara. Todas miran hacia arriba, hacia el techo de polvo, con los brazos extendidos. En el pedestal de cada una hay un hueco del tamaño de una mano.
 
 El polvo del techo cae sobre ellas como nieve, y ninguna lo sacude. Huele a polvo y a cera vieja.
-
-Tus pasos resuenan como en una iglesia vacía.
 
 1. **Poner la mano en un hueco.** +1 Canto ♫. La estatua baja un brazo y te señala una dirección. Tira 1d6: con 1–3, hacia el Polo (gana la Pista `Polo · El Pozo · e281`); con 4–6, hacia las Torres (gana la Pista `Torres · La cima · e351`).
 2. **Poner una reliquia en un hueco.** La reliquia se identifica sola (r193): elige su función en la fila de 12–13.

@@ -30,10 +30,10 @@ Tres torres de destilación oxidadas, conectadas por tuberías que se hunden en 
 En la puerta, un cartel en cuatro idiomas: *PELIGRO · NO DESPERTAR AL CAPATAZ*.
 
 1. **Entrar por la puerta principal.** Te recibe el capataz: un autómata minero de cuatro metros, con una pala en lugar de mano. *Capataz · Ataque 5 · Blind. 2 · Heridas 4 · [Máquina][Grande]*.
-   - *Hablar* (Mente: Ventaja; o mostrando `CODIGO_VIGIA`): `[Ingenio · 11]` o `[Voluntad · 11]`. *Éxito:* te toma por el nuevo turno de trabajo → [e242](#e242). *Fallo:* combate.
+   - *Hablar* (Mente: Ventaja; o mostrando `CODIGO_VIGIA` o el **Casco de minero**: Ventaja): `[Ingenio · 11]` o `[Voluntad · 11]`. *Éxito:* te toma por el nuevo turno de trabajo → [e242](#e242). *Fallo:* combate.
    - *Si ganas el combate* → [e242](#e242). Gana 4 Chatarra.
 2. **Entrar por las tuberías.** `[Reflejos · 9]` (Lio: Ventaja). *Éxito:* llegas a la sala de control sin que el capataz te vea → [e242](#e242). *Fallo:* te quedas atascado y el capataz te saca de un tirón. 1 Herida y combate.
-3. **Robar lo que gotea.** Pasa la noche llenando una cantimplora. Ganas una **célula de combustible** (+4 Energía, o se vende por 4). Gana la Pista `Salinas · La refinería · e241`.
+3. **Robar lo que gotea.** Pasa la noche llenando una cantimplora. Ganas una **célula de energía** (+3 Energía, o se vende por 2). Gana la Pista `Salinas · La refinería · e241`.
 
 ---
 
@@ -171,7 +171,7 @@ Tras una lluvia rara, una lámina de agua de un centímetro cubre la sal. El cie
 
 1. **Estudiar las estrellas.** `[Ingenio · 9]` (Mente con `NAVEGANTE`: automático). *Éxito:* calculas tu posición exacta en la galaxia: si tu Navegación está instalada, sube 1 de calidad. Si no, anota `POSICION_CONOCIDA` (Ventaja para instalar la Navegación). *Fallo:* ves cosas que no deberían estar: las seis luces, más cerca de lo que creías. El Reloj baja 1.
 2. **Buscar el anillo de restos en el reflejo.** En el espejo, la Corona es una espiral perfecta, como la escritura de los Antiguos. No es basura: es un mensaje, escrito con naves muertas. Gana `FRAGMENTO_LA_ESPIRAL`. +1 Canto ♫.
-3. **Tumbarte en el agua y descansar.** Hoy puedes descansar aquí como en un asentamiento: recuperas 2 Heridas y 1 Temple, sin tirada nocturna.
+3. **Tumbarte en el agua y descansar.** Hoy puedes descansar aquí como en un asentamiento: recuperas 2 Heridas y 1 Temple, sin tirada nocturna. Esto consume tu acción de hoy.
 
 ---
 

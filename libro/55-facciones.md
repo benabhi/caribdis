@@ -29,7 +29,7 @@ Los Hijos del Pecio han decidido que eres una amenaza. Seis cazadores con lanzas
 
 1. **Luchar.** Combate. *Si ganas:* huyen, pero volverán: anota `CAZADO_EN_LOS_CAÑONES`. Cada vez que entres en los Cañones, tira 1d6: con 1–2, repite este evento.
 2. **Huir.** `[Reflejos · 11]`. *Fallo:* combate con Emboscada.
-3. **Rendirte y pedir juicio.** Te llevan ante la Madre Óxida. `[Voluntad · 13]`. *Éxito:* te perdona: tu Reputación con los Hijos del Pecio vuelve a −1. *Fallo:* te expulsan de los Cañones: anota `EXPULSADO_DE_LOS_CAÑONES`. No puedes volver a entrar en los Cañones (salvo de paso, con un vehículo).
+3. **Rendirte y pedir juicio.** Te llevan ante la Madre Óxida. `[Voluntad · 13]`. *Éxito:* te perdona: tu Reputación con los Hijos del Pecio vuelve a −1; borra `CAZADO_EN_LOS_CAÑONES` y `EXPULSADO_DE_LOS_CAÑONES`. *Fallo:* te expulsan de los Cañones: anota `EXPULSADO_DE_LOS_CAÑONES`. No puedes volver a entrar en los Cañones (salvo de paso, con un vehículo).
 
 ---
 
@@ -41,8 +41,8 @@ El Contable cierra su libro de cuentas y te mira con algo parecido al respeto.
 
 «Has hecho más dinero para mi ciudad en semanas que la mitad de mis hombres en años. Te propongo algo. Te ayudo a irte. Y tú me llevas contigo.»
 
-1. **Aceptar.** Anota `PASAJERO_EL_CONTABLE`. Te da **un sistema a tu elección, calidad Excelente**, y 10 Chatarra. En la secuencia de despegue, los Desguaces no te atacarán. **★**
-2. **Rechazar, pero mantener la amistad.** Te da 10 Chatarra y los precios de Puerto Chatarra quedan a mitad para ti (hacia arriba, mínimo 1, sin regatear) el resto de la partida.
+1. **Aceptar.** Anota `PASAJERO_EL_CONTABLE`. Te da **un sistema a tu elección (no el personal), calidad Excelente**, y 10 Chatarra. En la secuencia de despegue, los Desguaces no te atacarán. **★**
+2. **Rechazar, pero mantener la amistad.** Te da 10 Chatarra y los precios de Puerto Chatarra quedan a mitad para ti (hacia arriba, mínimo 1, sin regatear) el resto de la partida; anota `PRECIOS_DE_SOCIO`.
 3. **Pedirle que deje en paz a los Hijos del Pecio.** Se ríe. «*¿Por qué haría eso?*» `[Voluntad · 11]`. *Éxito:* acepta un pacto. +2 de Reputación con los Hijos del Pecio. Anota `PAZ_DEL_CONTABLE`. **★**
 
 ---
@@ -57,7 +57,7 @@ Tu cara está en carteles por todo el Cementerio: *SE BUSCA · VIVO O EN PIEZAS 
 
 1. **Luchar.** Combate. *Si ganas:* sus armas valen 6 Chatarra. Pero vendrán más: anota `CAZADO_EN_EL_CEMENTERIO`. Cada vez que estés en el Cementerio, tira 1d6; con 1–2, repite este evento.
 2. **Pagarles.** 10 Chatarra y te dejan en paz (esta vez).
-3. **Fingir tu muerte.** `[Ingenio · 13]`. *Éxito:* les entregas un cadáver con tu ropa. Ya no te buscan: tu Reputación con los Desguaces vuelve a −1. Anota `MUERTO_EN_LOS_PAPELES`. *Fallo:* te descubren. Combate con Emboscada.
+3. **Fingir tu muerte.** `[Ingenio · 13]`. *Éxito:* les entregas un cadáver con tu ropa. Ya no te buscan: tu Reputación con los Desguaces vuelve a −1; borra `CAZADO_EN_EL_CEMENTERIO` y anota `MUERTO_EN_LOS_PAPELES`. *Fallo:* te descubren. Combate con Emboscada.
 
 ---
 
@@ -85,7 +85,7 @@ No vienen con armas. Vienen cantando. Treinta cantores con la boca cosida forman
 
 1. **Resistir.** `[Voluntad · 13]` ♫. *Éxito:* el círculo se rompe. Los cantores caen al suelo, agotados. *Fallo:* +3 Canto. Si llegas a 6, ve a tu evento de Canto 6.
 2. **Romper el círculo a golpes.** *Círculo de cantores · Ataque 4 · Blind. 0 · Heridas 6 · [Cantor][Enjambre]*. Combate. *Si ganas:* ◉ +1 Alerta, y vuelven: anota `CAZADO_EN_LAS_TORRES`. Cada vez que estés en las Torres, tira 1d6; con 1–2, repite este evento.
-3. **Cantar más fuerte que ellos.** `[Voluntad · 11]`. Si tienes `FRAGMENTO_LA_CONTRAMELODIA`, Ventaja. *Éxito:* el círculo se deshace en confusión. Tu Reputación con el Coro vuelve a −1: les has impresionado. *Fallo:* +2 Canto ♫.
+3. **Cantar más fuerte que ellos.** `[Voluntad · 11]`. Si tienes `FRAGMENTO_LA_CONTRAMELODIA`, Ventaja. *Éxito:* el círculo se deshace en confusión. Tu Reputación con el Coro vuelve a −1: les has impresionado; borra `CAZADO_EN_LAS_TORRES`. *Fallo:* +2 Canto ♫.
 
 ---
 
@@ -97,7 +97,7 @@ Custodio Primo se levanta de su trono por primera vez en diez mil años.
 
 «*UNIDAD VALIOSA. ORDEN NUEVA: PROTEGER A LA UNIDAD.*»
 
-1. **Aceptar la protección.** Anota `PERMISO_DE_PRIMO` y `ESCOLTA_VIGIA`. Un Vigía te acompaña como compañero (no cuenta para el límite; +2 Ataque; [Máquina]). En la secuencia de despegue, los Vigías te escoltan. **★**
+1. **Aceptar la protección.** Anota `PERMISO_DE_PRIMO` y `ESCOLTA_VIGIA`. Un Vigía te acompaña como compañero (no cuenta para el límite; +2 Ataque; no consume Raciones; [Máquina]). En la secuencia de despegue, los Vigías te escoltan. **★**
 2. **Pedirle el reactor.** **Motor Excelente** (pesado; anota `MOTOR_DEL_NODO`).
 3. **Pedirle la verdad.** «*ACCESO CONCEDIDO.*» Ve a [e840](#e840) inmediatamente, aunque no tengas 3 `FRAGMENTO_`.
 
@@ -113,4 +113,4 @@ Tres Vigías de combate, más grandes que los de patrulla, con cañones de luz f
 
 1. **Luchar.** Combate. *Si ganas:* sus restos valen 8 Chatarra y una batería de luz fría. Anota `CAZADO_POR_LOS_VIGIAS`: cada vez que estés en la Ciudad o en el Polo, tira 1d6; con un 1, repite este evento.
 2. **Huir al Bosque.** Los Vigías no entran en el Bosque (el micelio los ataca). Si estás en una región vecina al Bosque, `[Reflejos · 11]` para llegar allí; si lo consigues, viajas al Bosque sin encuentro.
-3. **Enlazarte** (Mente): `[Ingenio · 13]`. *Éxito:* borras tu imagen de su memoria. Tu Reputación con los Vigías vuelve a −1. *Fallo:* combate, y te atacan con +2 en la primera ronda.
+3. **Enlazarte** (Mente): `[Ingenio · 13]`. *Éxito:* borras tu imagen de su memoria. Tu Reputación con los Vigías vuelve a −1; borra `CAZADO_POR_LOS_VIGIAS`. *Fallo:* combate, y te atacan con +2 en la primera ronda.

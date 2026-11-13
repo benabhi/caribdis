@@ -10,7 +10,7 @@
 
 Una cámara frigorífica que todavía funciona. Dentro, a −20 °C, cajas de comida de lujo de otro mundo: quesos, frutas en almíbar, carne curada. Y en una esquina, envuelto en plástico, **alguien**.
 
-1. **Llevarte la comida.** +6 Raciones (son pesadas: mientras tengas más de 6, −1 a Reflejos).
+1. **Llevarte la comida.** +6 Raciones (hasta un máximo de 8; son pesadas: mientras tengas más de 6, −1 a Reflejos).
 2. **Desenvolver el bulto.** Es un hombre congelado vivo, en hibernación de emergencia. `[Ingenio · 11]` (Iria: Ventaja) para despertarlo. *Éxito:* es un **contrabandista** que te paga con un mapa: gana `RUTA_` hacia dos regiones y una Pista a tu elección de la tabla de rumores. *Fallo:* muere al despertar. −1 Temple.
 3. **Desmontar el compresor.** 4 Chatarra. Si te falta el Soporte vital, el compresor sirve: **Soporte vital Precario**.
 
@@ -168,7 +168,7 @@ Un piano de cola blanco, intacto, en un salón cuyo techo se abrió y deja ver l
 Una sala circular con cien nichos en las paredes. En cada nicho, un Antiguo **dormido**, de pie, con los ojos cerrados y cubierto de una película de luz. Respiran muy despacio. Uno de ellos abre los ojos.
 
 1. **No moverte.** `[Voluntad · 11]` ♫. *Éxito:* te mira, ladea la cabeza y vuelve a cerrar los ojos. Gana `FRAGMENTO_LOS_DORMIDOS`. *Fallo:* +3 Canto ♫ y sales corriendo.
-2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫, y si tienes 2 `FRAGMENTO_` o más → [e840](#e840).
+2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫, y si tienes 3 `FRAGMENTO_` o más → [e840](#e840).
 3. **Despertarlos a todos.** No sabes cómo. Pero si eres la Mente: `[Ingenio · 13]` ◉ ◉. *Éxito:* la luz se apaga, los nichos se abren y los Antiguos salen. Te miran. Y **se deshacen en polvo azul**, uno tras otro. Algo, muy lejos, en el Polo, grita. El Reloj baja 5 y gana `DESPERTASTE_A_LOS_DORMIDOS`. *Fallo:* la sala se sella. Tienes que salir del pecio.
 
 ---
@@ -207,7 +207,7 @@ Una cadena de montaje parada: brazos mecánicos, moldes y medio Vigía colgado d
 En el centro del pecio, una sala que **late**. Las paredes son de carne y metal, entrelazados. Esta nave estaba viva. Quizá lo está todavía.
 
 1. **Tocar la pared.** +2 Canto ♫. La nave te habla, sin palabras: estaba perdida, oyó el Canto, vino. Como tú. Gana `FRAGMENTO_LA_NAVE_VIVA`.
-2. **Cortar un trozo de su corazón.** `[Vigor · 11]` ⚔. *Éxito:* gana un **órgano de nave viva**: si lo instalas en tu nave, tu **Motor** o tu **Soporte vital** suben 1 de calidad (eliges), y anota `NAVE_VIVA`: en el final tu nave te hablará. *Fallo:* la nave se defiende: *Defensas de la nave viva · Ataque 5 · Blind. 1 · Heridas 4 · [Bestia]*.
+2. **Cortar un trozo de su corazón.** `[Vigor · 11]` ⚔. *Éxito:* gana un **órgano de nave viva**: si lo instalas en tu nave, tu **Motor** o tu **Soporte vital** suben 1 de calidad (eliges), y anota `NAVE_VIVA`: en el final tu nave te hablará. *Fallo:* la nave se defiende: *Defensas de la nave viva · Ataque 5 · Blind. 1 · Heridas 4 · [Bestia]*. *Si ganas:* como en el Éxito.
 3. **Dejarla en paz.** Al salir, el pecio se cierra detrás de ti, como una flor. +1 Temple.
 
 ---
@@ -344,7 +344,7 @@ Tiene la voz ronca de quien lleva años sin usarla.
 
 1. **Aceptar.** Te llevas el soporte vital: **Soporte vital Sólido**. El joven se convierte en pasajero: anota `EL_PACIENTE` (cuenta como un pasajero en tu final; espera en la Cicatriz; no consume Raciones allí).
 2. **Dejarle el soporte vital** para que cuide a los otros. +2 Temple. No consigues nada.
-3. **Llevártelo y dejar al joven aquí.** **Soporte vital Sólido**. −2 Temple.
+3. **Llevártelo y dejar al joven aquí.** **Soporte vital Sólido** y 3 Chatarra. −2 Temple. Si eres el Piloto, +1 `CULPA`.
 
 ---
 

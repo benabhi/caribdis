@@ -25,7 +25,7 @@ Y luego están **los Recolectores**. Seis luces en el cielo, cada noche un poco 
 | Lealtad de los guardias | 12 | 1 por cabeza y día | Subir a 2 si se acercan las luces |
 | Niño de Quilla, devuelto a su madre | 1 | 0 | No apuntar. Que no se entere nadie |
 | Silencio del Coro sobre el asunto de la rampa | — | 8 | Pagado. Nunca más |
-| Pérdidas: tormenta de óxido | 3 trepadores | — | Y Mendieta. Mendieta no tenía precio |
+| Pérdidas: tormenta de óxido | 3 trepadores | — | Y Mendaña. Mendaña no tenía precio |
 
 *Saldo de la estación: positivo. Saldo de lo demás: no se lleva en este libro.*
 

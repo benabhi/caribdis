@@ -6,14 +6,14 @@
 
 Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está lista, o casi. Sube a bordo quien vaya a subir. Siéntate. Respira.
 
-**Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Piloto: +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
+**Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si tienes `HIZO_SITIO`; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si no lo decidiste en [e804](#e804), Piloto: +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
 - Si tienes `TADEO_SE_QUEDA`, o Tadeo está a bordo y tienes `TADEO_CREE` (en [e622](#e622) le dijiste que quizá era Dios) → [e623](#e623) antes de seguir.
 - Si eres el Nativo con `ARRAIGO` 6 y elegiste «pedir tiempo» en [e816](#e816), o tienes `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
 - Con `SECRETO_DESCUBIERTO` 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
 
 **Paso 1 · Antes de encender.** Si tienes `DEUDA_CON_EL_CONTABLE`, `ENEMIGO_DEL_CONTABLE`, Reputación −3 con cualquier facción o `ROBASTE_AL_ARGO` → [e901](#e901), y luego vuelve aquí.
 
-**Paso 2 · Las pruebas.** Haz una prueba por cada sistema, en este orden. La **dificultad** depende de la calidad del sistema: Precaria 11, Sólida 9, Excelente 7. Una vez empiezas no hay vuelta atrás: tira en orden y sin saltarte ninguna.
+**Paso 2 · Las pruebas.** Haz una prueba por cada sistema, más la del Canto, en este orden. La **dificultad** depende de la calidad del sistema: Precaria 11, Sólida 9, Excelente 7. Una vez empiezas no hay vuelta atrás: tira en orden y sin saltarte ninguna.
 
 | # | Sistema | Atributo | Ayudas |
 |---|---|---|---|
@@ -34,7 +34,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 
 **Paso 4 · Resultado.** Cuenta los Daños de nave:
 - **0–2:** lo consigues → [e903](#e903).
-- **3–4:** lo consigues por los pelos. Cada pasajero o tripulante a bordo tira 1d6: con un 1, no sobrevive al viaje (si eres el Piloto, +1 `CULPA` por cada uno). → [e903](#e903).
+- **3–4:** lo consigues por los pelos. Cada pasajero o tripulante a bordo tira 1d6: con un 1, no sobrevive al viaje (anota `MURIO_EN_EL_VIAJE_<nombre>`; si es tripulante, tacha su ficha; si eres el Piloto, +1 `CULPA` por cada uno). → [e903](#e903).
 - **5 o más:** la nave no aguanta → [e908](#e908).
 
 ---
@@ -49,7 +49,7 @@ Por cada causa que tengas, haz un combate o paga:
 - **`DEUDA_CON_EL_CONTABLE`:** paga 12 Chatarra o combate contra *Cobradores · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*.
 - **`ENEMIGO_DEL_CONTABLE` o −3 con los Desguaces:** combate contra *Banda del Contable · Ataque 5 · Blind. 2 · Heridas 6 · [Náufrago]*.
 - **−3 con los Hijos del Pecio:** combate contra *Cazadores de Quilla · Ataque 5 · Blind. 1 · Heridas 5 · [Náufrago]*.
-- **−3 con el Coro:** prueba `[Voluntad · 13]` ♫; si fallas, +3 Canto (prueba 4 del despegue; las Ayudas la anulan como un ataque).
+- **−3 con el Coro:** prueba `[Voluntad · 13]` ♫; si fallas, +3 Canto (prueba 4 del despegue; las Ayudas la anulan).
 - **−3 con los Vigías:** combate contra *Vigías de eliminación · Ataque 6 · Blind. 3 · Heridas 6 · [Máquina][Antiguo]*.
 - **`ROBASTE_AL_ARGO`:** la tripulación del Argo Pálido te bloquea la pista. Combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*, o devuélveles el sistema (baja 1 de calidad el sistema que les robaste).
 
@@ -101,12 +101,10 @@ Detrás, Caribdis se hace pequeña: un punto rojo con un anillo brillante. Desde
 ### e905 · Despegue desesperado
 *La Cicatriz · ⌛ día*
 
-No tienes todo. No tienes tiempo. Tienes un casco, un motor y combustible, y un cielo que se está llenando de formas negras.
+Tienes casco, motor y combustible; el cielo se llena de formas negras.
 
 Haz la secuencia de despegue ([e900](#e900)), pero:
-- Los sistemas que te falten cuentan como **Fallos automáticos** (1 Daño de nave cada uno).
-- Solo caben 3 personas además de ti.
-- Si llegas a [e903](#e903), solo puedes elegir el final **Regreso** ([e910](#e910)), y tu epílogo empieza con una línea: *«Nadie sabe cómo llegaste.»*
+- Cada sistema que falte: **Fallo automático** (1 Daño). Solo caben 3 personas además de ti. En [e903](#e903) solo puedes elegir **Regreso** ([e910](#e910)); el epílogo empieza con *«Nadie sabe cómo llegaste.»*
 
 ---
 
@@ -118,7 +116,7 @@ Haz la secuencia de despegue ([e900](#e900)), pero:
 
 Orla Venn te espera en la rampa del Argo, con el brazo de grúa levantado en señal de saludo. «Dijimos que si llegabas, subías. Pues sube.»
 
-1. **Subir al Argo.** Te llevas a 2 personas (compañeros, tripulantes de la Cicatriz o pasajeros). Los demás se quedan. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Haz solo las pruebas 4 (Canto) y 7 (sistema personal; si no lo tienes, es un Fallo) del despegue, y la huida ([e902](#e902)) si corresponde. Con 0–1 Fallos → [e910](#e910). Con 2 o más → [e908](#e908).
+1. **Subir al Argo.** Te llevas a 2 personas (compañeros, tripulantes de la Cicatriz o pasajeros). Los demás se quedan. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Haz solo la prueba 4 (Canto) del despegue, y la huida ([e902](#e902)) si corresponde. Con 0–1 Fallos → [e910](#e910). Con 2 o más → [e908](#e908).
 2. **Quedarte y seguir con tu nave.** Orla asiente. «*Suerte.*» El Argo despega sin ti. Si tenías `TRIPULANTE_EN_EL_ARGO`, ese tripulante se salva.
 
 ---
@@ -154,15 +152,16 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 **Lee tu epílogo.** Lee solo las líneas que se apliquen.
 
 **Sobre ti:**
-- *Piloto:* con `CULPA` 0–2: *«Vuelves a volar. Cada vez que despegas, sonríes, y esta vez sabes por qué.»* Con `CULPA` 3–4: *«Nunca vuelves a pilotar. Pero sueñas con el cielo rojo, y no siempre es una pesadilla.»* Con `CULPA` 5–6: *«Llegas a casa. Nadie sabe que has llegado: no se lo dices a nadie.»*
+- *Piloto:* con `CULPA` 0–2: *«Vuelves a volar (o ves a Orla volar, si te fuiste en el Argo). Cada vez que despegas, sonríes, y esta vez sabes por qué.»* Con `CULPA` 3–4: *«Nunca vuelves a pilotar. Pero sueñas con el cielo rojo, y no siempre es una pesadilla.»* Con `CULPA` 5–6: *«Llegas a casa. Nadie sabe que has llegado: no se lo dices a nadie.»*
 - *Piloto con `BORRASTE_LA_CAJA`:* *«Nunca sabrás qué grabó la caja. A veces, eso es lo único que te deja dormir.»*
 - *Nativo:* con `ARRAIGO` 4 o más: *«Eres el primero de tu pueblo en ver otro sol. Lo describes en tu lengua, en un mensaje que tarda años en llegar a Quilla.»* Con `ARRAIGO` 2 o menos: *«En los mundos de los hombres te llaman mutante. Tú les dices que no: que eres un hijo de Caribdis.»*
 - *Mente:* con `VUELVE_A_SER_LA_NAVE`: *«Eres la nave. Llevas a tu tripulación a todas partes, y cuando duermen, les cantas en voz baja tu propia canción.»* Si seguiste en el dron: *«Te quedas en el dron. Te gusta flotar. Te gusta tener nombre.»* Con `COPIA_EN_CARIBDIS`: *«Y en Caribdis, una parte de ti sigue esperando a los siguientes que caigan, para enseñarles el camino.»*
 
 **Sobre los que vinieron:**
-- Por cada tripulante a bordo: *«(Nombre) vive.»* Y añade:
+- Si un pasajero o tripulante tiene `MURIO_EN_EL_VIAJE_<nombre>`, no leas su línea.
+- Por cada tripulante a bordo que no esté muerto: *«(Nombre) vive.»* Y añade:
   - *Iria* con `IRIA_CURADA`: *«…y nunca vuelve a soñar con su hija. Aprende a recordarla despierta.»*
-  - *Bruno* con `LA_NIÑA_DE_LA_CAPSULA`: *«…y cría a la niña de la cápsula como si fuera suya. Lo es.»*
+  - *Bruno* con `LA_NIÑA_DE_LA_CAPSULA` o `NIÑA_DORMIDA`: *«…y cría a la niña de la cápsula como si fuera suya. Lo es.»*
   - *Amara*: *«…y publica su trabajo. Nadie la cree. A ella le da igual.»*
   - *Noemí*: *«…y nunca vuelve a aceptar un contrato que no entiende.»*
   - *Tadeo*: *«…y deja los hábitos. Dice que ya encontró a Dios y que no le gustó.»*
@@ -204,6 +203,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 **Sobre el Secreto** (solo si lo descubriste):
 - Si descubriste que el Secreto es **2** y no tienes `ENGAÑASTE_A_LA_SONDA` ni `MAPA_DE_LOS_RECOLECTORES`: *«Un año después, seis luces aparecen en el cielo de tu mundo.»*
 - Si el Secreto es **4**: *«Cuentas lo que sabes. Nadie te cree. Pero algunos dejan de responder a las llamadas de socorro de los sistemas que no salen en las cartas.»*
+- Si el Secreto es **1, 3 o 5**: *«Lo que descubriste no tiene nombre, pero cambia cómo miras las estrellas.»*
 - Si el Secreto es **6**: *«A veces, cuando oyes interferencias en una radio, te parece oír tu propia voz.»*
 - Si no descubriste el Secreto: *«Nunca supiste qué era el Canto. Quizá sea mejor así.»*
 
@@ -217,7 +217,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 
 Antes de que el planeta desaparezca a tu espalda, enciendes la baliza una última vez. Grabas un mensaje y apuntas la antena **hacia atrás**: hacia el Canto, hacia el bucle, hacia ti mismo hace tanto tiempo.
 
-¿Qué dices? `[Ingenio · 11]` (con Amara o la Mente a bordo: Ventaja; con `FRAGMENTO_LA_CUENTA`: Ventaja).
+¿Qué dices? `[Ingenio · 11]` (con Amara a bordo, o si eres la Mente: Ventaja; con `FRAGMENTO_LA_CUENTA`: Ventaja).
 
 - *Éxito:* el mensaje es claro. «*No vengas. Gira 1,4 grados a babor. No vengas.*» Y en algún lugar del pasado, una nave gira. En la Corona, durante un instante, desaparece una estrella. **Has roto el bucle.** Lee también [e910](#e910), pero cambia la última línea del Secreto por: *«Y nunca vuelves a oír tu voz en la radio.»*
 - *Fallo:* el mensaje sale distorsionado. Al llegar al pasado, alguien lo oirá como un canto. Lee [e910](#e910). La última línea es: *«Y en algún lugar, una nave que es la tuya acaba de oír cantar a alguien.»*
@@ -271,7 +271,9 @@ No despegas. Sabes lo que pasa si una nave sale de Caribdis: el mundo de origen 
 
 Si eres la Mente con `UNIDAD_DE_PRIMO`: *«Te conviertes en el Vigía número diez mil uno. Primo te da la bienvenida. Juntos mantenéis la orden: que nadie salga. Pero ahora también tenéis otra: que los que caen no estén solos.»*
 
-Si no: *«Vives en Caribdis el resto de tu vida. Envejeces. A veces, de noche, miras las estrellas y piensas en todos los mundos que siguen a salvo porque tú te quedaste. Nadie lo sabrá nunca. Tú sí.»*
+Si eres la Mente sin `UNIDAD_DE_PRIMO`: *«Te quedas en Caribdis, una esfera vieja que enseña a los que caen.»*
+
+Si no eres la Mente: *«Vives en Caribdis el resto de tu vida. Envejeces. A veces, de noche, miras las estrellas y piensas en todos los mundos que siguen a salvo porque tú te quedaste. Nadie lo sabrá nunca. Tú sí.»*
 
 *Fin. Es una victoria, aunque no lo parezca.*
 
@@ -312,7 +314,7 @@ Subes a la cima de la torre más alta. Te sientas en el trono. Y te vas, hacia d
 
 El Polo se abre. El hielo estalla en una columna que llega hasta la Corona. Y de debajo sale algo tan grande que no lo entiendes: un ojo, una boca, un horizonte vivo.
 
-- **Si el Secreto es 3** (si no lo sabías, cuéntalo: [e840](#e840)) **y estás en la secuencia de despegue** (o despegas antes de que el Reloj baje 3, mientras el planeta se rompe; si no, es una derrota): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) y añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
+- **Si el Secreto es 3** (si no lo sabías, cuéntalo: [e840](#e840)) **y estás en la secuencia de despegue** (o despegas antes de que el Reloj baje 3, mientras el planeta se rompe; si no, es una derrota): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910), pero ignora las líneas que hablan de Quilla, la Cicatriz y el Santuario: ya no existen. Añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
 - **Si no:** *«La Bestia despierta hambrienta. Y tú estás encima.»* **Es una derrota.**
 
 *Fin.*
@@ -342,7 +344,7 @@ El último baja sobre la Cicatriz. Tu nave, tan cerca de estar lista, brilla un 
 ### e920 · Polvo rojo
 *Final · Derrota · Has caído*
 
-Te quedas tumbado en la arena roja. Escila es enorme sobre ti. El Canto te susurra que no pasa nada, que descanses, que nadie se va de Caribdis.
+Te quedas tumbado en la arena roja (si eres la Mente, tu esfera se apaga). Escila es enorme sobre ti. El Canto te susurra que no pasa nada, que descanses, que nadie se va de Caribdis.
 
 Por una vez, le crees.
 

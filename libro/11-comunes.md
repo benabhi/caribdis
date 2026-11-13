@@ -230,7 +230,7 @@ Al moverse tintinean como una lámpara de cristales. Huelen a piedra mojada. Uno
 1. **Quedarte muy quieto.** Son ciegos y se guían por la vibración. `[Voluntad · 9]`. *Éxito:* pasan. *Fallo:* combate.
 2. **Lanzarles algo de comer lejos.** Pierdes 1 Ración y pasan.
 3. **Cazar uno.** Combate. *Si ganas:* +2 Raciones. Las piedras de su estómago son cristal de los Antiguos: +2 Chatarra y +1 Canto ♫.
-4. **Calmarlos** (Nativo o `DOMADOR`): `[Voluntad · 9]`. *Éxito:* uno te sigue un rato como un perro. Hasta mañana, Ventaja en orientación.
+4. **Calmarlos** (`DOMADOR` o *Lengua de bestias*): `[Voluntad · 9]`. *Éxito:* uno te sigue un rato como un perro. Hasta mañana, Ventaja en orientación.
 
 ---
 
@@ -268,7 +268,7 @@ Un túmulo de piedras. Una placa de metal. Tu nombre. Tu fecha de nacimiento. La
 
 1. **Cavar.** `[Vigor · 7]`. *Éxito:* dentro hay un traje como el tuyo, vacío, doblado con cuidado, y en el bolsillo 3 Chatarra y una reliquia sin identificar. +1 Canto ♫. Anota `TU_TUMBA`.
 2. **Escribir la fecha.** Elige un número del Reloj y escríbelo en la placa. Anota ese número. Si el Reloj llega a ese número y sigues en Caribdis, ganas 2 Temple: «hoy no».
-3. **Destrozarla.** +1 Temple. Pero esa noche, tira 2d6 en la tabla de encuentros con +1 aunque no descanses a la intemperie.
+3. **Destrozarla.** +1 Temple. Pero esa noche, tira 2d6 en la tabla de encuentros contando el resultado como un punto más alto (máximo 12), aunque no descanses a la intemperie.
 
 ---
 
@@ -325,7 +325,7 @@ Un desprendimiento ha dejado a la vista una veta de cristal azul pálido. Pulsa 
 
 Al acercarte, notas un frío que no viene del aire.
 
-1. **Arrancar un trozo.** `[Vigor · 9]` ♫ ◉. *Éxito:* ganas una **batería de luz fría** (cuenta como 6 de Energía, o se vende por 6 Chatarra). +1 Canto y +1 Alerta. *Fallo:* el cristal se rompe en polvo azul que respiras. +2 Canto.
+1. **Arrancar un trozo.** `[Vigor · 9]` ♫ ◉. *Éxito:* ganas una **batería de luz fría** (cuenta como 6 de Energía, o se vende por 6 Chatarra). +1 Alerta. *Fallo:* el cristal se rompe en polvo azul que respiras. +2 Canto.
 2. **Tocarla con la mano desnuda.** +2 Canto ♫. Ves, durante un instante, una ciudad entera iluminada desde dentro, de pie, viva. Gana `FRAGMENTO_LA_CIUDAD_VIVA`.
 3. **Taparla y marcar el sitio.** Gana la Pista `esta región · La veta azul · e046` (puedes volver con mejores herramientas). Si vuelves con Noemí o con `ESTIBADORA`, la extracción es automática y sin Alerta.
 
@@ -454,7 +454,7 @@ Se ríen entre ellos en voz baja, sin dejar de mirarte.
 
 **Encuentro (r300).** Precio: 4 Chatarra. Botín: 1d6 Chatarra y un **hacha de casco**.
 
-- **Si ganas:** quédate el Botín. Nadie les echará de menos: +1 de Reputación con los Desguaces y con los Hijos del Pecio.
+- **Si ganas:** quédate el Botín. Nadie les echará de menos: +1 de Reputación con los Desguaces y con los Hijos del Pecio. · **Si pasas:** pagas 4 Chatarra y te dejan seguir.
 
 ---
 
@@ -491,7 +491,7 @@ El cadáver de un **cardador**, una bestia de seis patas grande como un camión,
 
 Una cúpula de emergencia de alguna colonia de hace siglos, medio enterrada pero sellada. La puerta tiene un panel numérico y una nota pegada: *el código es el número de los que se quedaron*.
 
-1. **Probar números.** `[Ingenio · 11]`. *Éxito:* el código es 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones y puedes descansar aquí hoy como en un asentamiento. Gana la Pista `esta región · El refugio · e058`; seguirla no la borra. *Fallo:* nada.
+1. **Probar números.** `[Ingenio · 11]`. *Éxito:* el código es 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones y puedes descansar aquí hoy como en un asentamiento. Gana la Pista `esta región · El refugio · e058`. *Fallo:* nada.
 2. **Forzar la puerta.** `[Vigor · 11]` ◉. *Éxito:* entras, pero el sello se rompe y el refugio ya no sirve para volver. +3 Raciones. *Fallo:* 1 Herida.
 3. **Leer las paredes.** Hay nombres grabados, cientos, y al final una frase: *«Nos fuimos todos al Canto. Allí no se muere.»* Gana la Pista `esta región · El refugio · e058`. Si vuelves algún día con Amara, ella reconoce los nombres de una colonia que desapareció hace cuatro siglos: gana `FRAGMENTO_LOS_QUE_SE_FUERON`.
 
@@ -510,4 +510,4 @@ Nadie le sigue. Nadie le espera.
 1. **Despertarlo.** `[Voluntad · 9]`. *Éxito:* se despierta aterrorizado. Te da todo lo que lleva (3 Chatarra y 2 Raciones) a cambio de que lo lleves a un asentamiento: si visitas uno en los próximos 3 días, +1 de Reputación con los Desguaces. *Fallo:* te araña la cara y sigue. 1 Herida.
 2. **Atarlo.** Anota `DORMIDO_ATADO`. Si lo llevas a la Cicatriz, al día siguiente despierta: es un mecánico. Te ayuda a instalar un sistema con Ventaja y se marcha.
 3. **Dejarle seguir.** Lo ves alejarse. +1 Canto ♫, pero ganas 1 Temple: la decisión no era tuya.
-4. **Quitarle la mochila.** +3 Chatarra y 2 Raciones. No se da cuenta. Tú sí.
+4. **Quitarle la mochila.** +1 Chatarra y 1 Ración. No se da cuenta. Tú sí.

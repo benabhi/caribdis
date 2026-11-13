@@ -18,7 +18,7 @@ Tira 2d6. La columna es tu **Alerta**.
 | 8 | [e206](#e206) | [e037](#e037) | [e203](#e203) | [e202](#e202) |
 | 9 | [e208](#e208) | [e208](#e208) | [e055](#e055) | [e210](#e210) |
 | 10 | [e037](#e037) | [e207](#e207) | [e047](#e047) | [e047](#e047) |
-| 11 | [e031](#e031) | [e031](#e031) | [e035](#e035) | [e035](#e035) |
+| 11 | [e040](#e040) | [e031](#e031) | [e035](#e035) | [e035](#e035) |
 | 12 | [e038](#e038) | [e038](#e038) | [e038](#e038) | [e055](#e055) |
 
 ---
@@ -66,8 +66,8 @@ Una hondonada llena de restos masticados: alerones, tuberías y un asiento de pi
 
 1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si el Casco no está instalado, cuenta como **Casco Precario**; si ya lo está, +3 Chatarra.
 2. **Ahumarlas.** Necesitas 1 Ración (grasa) y `[Ingenio · 9]` ◉. *Éxito:* huyen y saqueas el nido tranquilo: como en la opción 1, pero sin combatir. *Fallo:* salen todas a la vez → combate como en la 1, con Emboscada.
-3. **Marcharte.** Las ratas te siguen a distancia: esta noche, aunque estés en las Dunas, tira la nocturna (r133); te encuentran con 8 o más.
-4. **Bajar como amigo.** Ofrece 1 Chatarra. La reina del nido, una rata del tamaño de un perro con una antena en la cabeza, te deja coger lo que quieras: **Casco Precario** o 4 Chatarra.
+3. **Marcharte.** Las ratas te siguen a distancia: esta noche, si estás fuera de la Cicatriz, tira la nocturna (r133); te encuentran con 9 o más.
+4. **Bajar como amigo** (solo con `RATAS_AMIGAS`). Ofrece 1 Chatarra. La reina del nido, una rata del tamaño de un perro con una antena en la cabeza, te deja coger lo que quieras: **Casco Precario** o 4 Chatarra.
 
 ---
 
@@ -169,7 +169,7 @@ Huele a metal cortado y a goma quemada. Las bengalas tiñen de rojo la arena, y 
 1. **Defender la nave.** Combate. *Si ganas:* recuperas todo y les quitas 4 Chatarra. *Si pierdes o huyes:* pierden la paciencia y se llevan un **sistema instalado** a tu elección (lo tachas: tendrás que conseguirlo otra vez) o 6 Chatarra.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* se llevan solo 2 Chatarra. *Fallo:* combate con Emboscada.
 3. **Dejarles y seguirles.** Se llevan un sistema (o 6 Chatarra). Gana la Pista `Cementerio · Lo que te robaron · e230`. Allí podrás recuperarlo.
-4. **Si hay compañeros en la Cicatriz:** luchan contigo, y cada uno da +1 al Ataque. Tira 1d6 por cada uno: con un 1, recibe 1 Herida.
+4. **Si hay compañeros contigo:** luchan contigo, y cada uno da +1 al Ataque. Tira 1d6 por cada uno: con un 1, recibe 1 Herida.
 
 ---
 

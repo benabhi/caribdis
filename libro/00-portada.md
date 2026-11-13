@@ -53,4 +53,4 @@
 | [e800](#e800)–[e846](#e846) | Historias personales y el Canto |
 | [e900](#e900)–[e920](#e920) | Despegue y finales |
 
-**Apéndices**: Hoja de personaje · Hoja de la nave · Mapa · Tablas resumidas · Índice de Marcas
+**Apéndices**: Hoja de protagonista · Hoja de la nave · Mapa · Bestiario · Tablas resumidas · Índice de Marcas

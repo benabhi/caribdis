@@ -777,7 +777,7 @@ def hoja_protagonista(ancla):
     attrs = ''.join(f'<div class="h-attr"><div class="h-attr-n">{a}</div><div class="h-attr-v"></div></div>'
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
-                      for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico'))
+                      for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico −2'))
     recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
                        for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'
@@ -799,7 +799,7 @@ def hoja_protagonista(ancla):
   <div class="h-bloque">{recursos}<div class="h-rec">{icono("objeto")}<b>Chatarra</b><div class="h-caja"></div></div>
      <div class="h-rec">{icono("marca")}<b>Contador</b><div class="h-campo mini"></div><div class="h-esc">{escala(0, 6)}</div></div></div>
  </div>
- <div class="h-rot">{icono("tiempo")} Reloj de los Recolectores <span class="h-nota">tacha un número cada amanecer · los marcados son días de historia</span></div>
+ <div class="h-rot">{icono("tiempo")} Reloj de los Recolectores <span class="h-nota">tacha un número cada amanecer · los marcados son días de historia · Clemencia: 70</span></div>
  <div class="h-reloj">{reloj}</div>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("alerta")} Alerta</div><div class="h-esc">{escala(1, 4)}</div>

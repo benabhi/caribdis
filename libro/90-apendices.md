@@ -13,13 +13,13 @@
 ╠══════════════════════════════════════════════════════════════╣
 ║  VIGOR [  ]   REFLEJOS [  ]   INGENIO [  ]   VOLUNTAD [  ]   ║
 ╠══════════════════════════════════════════════════════════════╣
-║  HERIDAS / DAÑO  □ Rasguño □ Herido(−1) □ Grave(−2) □ Crítico║
+║  HERIDAS / DAÑO  □ Rasguño □ Herido(−1) □ Grave(−2) □ Crítico(−2)║
 ║  TEMPLE  □ □ □ (□)        CANTO  0 1 2 3 4 5 6               ║
 ║  AIRE    0 1 2 3 4 5 6    ENERGÍA 0 1 2 3 4 5 6              ║
 ║  RACIONES 0 1 2 3 4 5 6 7 8         CHATARRA [      ]        ║
 ║  CONTADOR: ____________  0 1 2 3 4 5 6                       ║
 ╠══════════════════════════════════════════════════════════════╣
-║  RELOJ: 60 ... (tacha)   ALERTA: 1 2 3 4                     ║
+║  RELOJ: 60 ... (tacha; Clemencia empieza en 70)  ALERTA: 1 2 3 4 ║
 ║  Días de historia: □50 □40 □30 □20 □10                       ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  REPUTACIÓN       −3 −2 −1  0 +1 +2 +3                       ║
@@ -98,27 +98,27 @@
 ## Tablas resumidas
 
 ### El día
-1. **Amanecer:** Reloj −1 · Supervivencia (Piloto: 1 Ración y 1 Aire; Nativo: 1 Ración; Mente: 1 Energía fuera de la Cicatriz, y 1 al Viajar a pie; compañeros: 1 Ración) · Pulso: 1d6 = 5–6 (4–6 en las Torres) → e020–e025.
-2. **Acción:** Viajar · Explorar · Visitar · Trabajar en la nave · Descansar · Ocultarte · Seguir una Pista · Ensamblar.
+1. **Amanecer:** Reloj −1 · Supervivencia (Piloto: 1 Ración y 1 Aire solo fuera de la Cicatriz y asentamientos; Nativo: 1 Ración; Mente: 1 Energía fuera de la Cicatriz, y 1 al Viajar a pie; compañeros: 1 Ración) · Torres: +1 Canto ♫ · Pulso: 1d6 = 5–6 (4–6 en las Torres) → e020–e025.
+2. **Acción:** Viajar · Explorar · Visitar · Trabajar en la nave · Descansar · Ocultarte · Seguir una Pista · Ensamblar · Despegar.
 3. **Anochecer:** descanso · tirada nocturna a la intemperie (9+) · historia (50/40/30/20/10).
 
 ### Pruebas
 2d6 + atributo · Fácil 7 · Normal 9 · Dura 11 · Extrema 13 · Pleno = +3 · Ventaja/Desventaja: 3d6, quédate 2.
 
 ### Combate
-2d6 + Ataque contra 2d6 + Ataque · diferencia 1–3 → 1 · 4–6 → 2 · 7+ → 3 · −Blindaje (mínimo 1 con diferencia 4+) · Maniobras: Atacar / Defender (+2, no hace daño) / Huir [Ref 9] / Hablar [Vol 11] / Usar.
+2d6 + Ataque contra 2d6 + Ataque · empate: nadie golpea · diferencia 1–3 → 1 · 4–6 → 2 · 7+ → 3 · −Blindaje (mínimo 1 con diferencia 4+) · Maniobras: Atacar / Defender (+2, no hace daño) / Huir [Ref 9] / Hablar [Vol 11] / Usar.
 
 ### Regiones (1d8)
 1 Dunas (e200) · 2 Cementerio (e220) · 3 Salinas (e240) · 4 Cañones (e300) · 5 Bosque (e260) · 6 Ciudad (e320) · 7 Torres (e340) · 8 Polo (e280).
 
 ### Secreto
-El que más repiten tus `FRAGMENTO_` (e840): 1 e841 · 2 e842 · 3 e843 · 4 e844 · 5 e845 · 6 e846.
+El que más repiten tus `FRAGMENTO_` (e840): 1 e841 · 2 e842 · 3 e843 · 4 e844 · 5 e845 · 6 e846 · empate: la del último fragmento anotado; sin fragmentos, 1d6.
 
 ### Alerta
-Sube con ◉ y combates ruidosos · elige la columna · a 4, cada subida extra resta 2 al Reloj · `BALIZA_ACTIVA`: llegada a 2, ya no baja · Ocultarte: −1.
+Sube con ◉, combates ruidosos y combates de más de 3 rondas · elige la columna · a 4, cada subida extra resta 2 al Reloj · `BALIZA_ACTIVA`: llegada a 2, ya no baja · Ocultarte: −1.
 
 ### Taller
-Piezas: Cobre · Hueso · Cristal · Luz fría (+1 Canto) · llevas 10 · Rebuscar = Hallazgo e) · Ensamblar: 2 planos pequeños o 1 fase · Fallo: pierdes 1 pieza o defecto (1d6) · Improvisar: 2 piezas por 1, siempre con defecto.
+Piezas: Cobre · Hueso · Cristal · Luz fría (+1 Canto) · llevas 10 · Rebuscar = Hallazgo e) · Ensamblar: 2 planos pequeños o 1 fase · Fallo: pierdes 1 pieza o defecto (1d6) · Improvisar: 2 piezas por 1, siempre con defecto; la Luz fría no se sustituye.
 
 ### Canto
 Sube con ♫ · a 3+, Desventaja contra el Canto · a 6, evento personal (e830/e831/e832) y baja a 4 (o lo que diga) · baja descansando en la Cicatriz.

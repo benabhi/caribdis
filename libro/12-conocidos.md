@@ -71,7 +71,7 @@ La arena a su alrededor no tiene huellas.
 
 1. **Llevarla a bordo.** Ocupa una plaza en el despegue (como un pasajero). Anota `LA_PEREGRINA_A_BORDO`. Al despegar, en la prueba 4 de [e900](#e900), tienes Ventaja: ella canta por encima del Canto.
 2. **Acompañarla al Polo.** Si viajas al Polo Helado antes de que el Reloj baje 5, ella entra sola en el Pozo y te deja lo único que tenía: gana `FRAGMENTO_LA_PEREGRINA`. Si no llegas a tiempo, se va sin ti.
-3. **Preguntarle por el Secreto.** Te mira largo rato. «Ya lo sabes. Solo te falta oírlo.» Si tienes al menos 2 `FRAGMENTO_`, ve a [e840](#e840) ahora. Si no, +1 Pista (r164, tirando 2d6).
+3. **Preguntarle por el Secreto.** Te mira largo rato. «Ya lo sabes. Solo te falta oírlo.» Si tienes al menos 3 `FRAGMENTO_`, ve a [e840](#e840) ahora. Si no, +1 Pista (r164, tirando 2d6).
 
 Cuando terminas de hablar, la Peregrina se pone otra vez la máscara y mira tu nave un rato largo, en silencio.
 
@@ -213,7 +213,7 @@ La matriarca te encuentra a ti, por primera vez. Viene sola, a pie, con las gafa
 
 —Cuatro generaciones dando vueltas —dice—. Mi abuela decía que algún día alguien arreglaría una nave y nos sacaría de aquí. Yo no me lo creía. Mi nieta sí.
 
-Si tienes `DEUDA_DE_LOS_MIRASOLES` o `LOS_MIRASOLES_TE_CONOCEN`:
+Si tienes `DEUDA_DE_LOS_MIRASOLES`, `LOS_MIRASOLES_TE_CONOCEN` o `MIRASOL`:
 1. **Prometerles plazas.** Anota `MIRASOLES_A_BORDO` (cuentan como 2 pasajeros en [e900](#e900)). A cambio, te ayudan en la nave: la próxima vez que instales un sistema, sube 1 de calidad.
 2. **Decirles la verdad:** no hay sitio. Ella asiente. «Entonces guíanos el camino.» Gana `CARTA_DE_LOS_MIRASOLES` si no la tenías; si ya la tenías, +3 al Reloj: la caravana distrae a las luces cuando despegues.
 
