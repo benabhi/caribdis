@@ -759,3 +759,5 @@ section#e004 ol.opciones > li:nth-child(3) { letter-spacing: -.002em; }
 .rl.opcional { border-color: rgba(43,32,27,.25); color: rgba(43,32,27,.45); }
 
 .h-dia-alt { display: inline-block; width: 6mm; margin-left: 1mm; border-bottom: .5pt solid rgba(43,32,27,.45); vertical-align: -.4mm; }
+
+.h-campos-sin-linea { display: flex; justify-content: space-between; font: 600 6.5pt var(--rotulo); text-transform: uppercase; letter-spacing: .16em; color: var(--cobre); margin-bottom: 2mm; }
