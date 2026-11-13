@@ -778,8 +778,9 @@ def hoja_protagonista(ancla):
     attrs = ''.join(f'<div class="h-attr"><div class="h-attr-n">{a}</div><div class="h-attr-v"></div></div>'
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
-                      for t in ('Rasguño', 'Herido −1', 'Grave −2'))
-    heridas += '<div class="h-her h-her-critico"><span class="c"></span>Crítico −2 <span class="c"></span>2.º</div>'
+                      for t in ('Rasguño', 'Herido −1'))
+    heridas += '<div class="h-her h-her-vacia"></div>'
+    heridas += ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>' for t in ('Grave −2', 'Crítico −2', 'Crítico 2'))
     recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
                        for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'

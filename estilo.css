@@ -492,8 +492,8 @@ h3.g-caja { font: 700 9pt var(--rotulo); text-transform: uppercase; letter-spaci
   margin: 2.2mm 0 1.6mm; padding-bottom: .5mm; }
 .h-rot .ico { color: var(--oxido); }
 .h-nota { font: italic 400 7pt var(--serif); text-transform: none; letter-spacing: 0; color: var(--tinta-2); margin-left: 2mm; }
-.h-her { display: inline-block; width: 43%; margin-bottom: 1mm; font-weight: 600; }
-.h-her-critico { width: 55%; }
+.h-her { display: inline-block; width: 31%; margin-bottom: 1mm; font-weight: 600; }
+.h-her-vacia { visibility: hidden; }
 .h-esc .n { display: inline-block; width: 4.6mm; height: 4.6mm; border: .8pt solid var(--tinta); border-radius: 50%; text-align: center;
   font: 700 7pt/4.6mm var(--plantilla); margin-right: .9mm; }
 .h-esc.rep .n { width: 5.2mm; border-radius: 1mm; font-size: 6.4pt; }
