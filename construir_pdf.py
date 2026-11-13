@@ -849,9 +849,9 @@ def hoja_nave(ancla):
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("ayuda")} Pasajeros</div>{lineas(2)}
     <div class="h-rec"><b>Plazas</b> 6 <span class="h-nota">(+2 si haces sitio · +2/+3 módulo de pasaje)</span></div>
-    <div class="h-rec"><b>Daños de nave</b> {casillas(5, "c gr")}</div></div>
+    <div class="h-rec h-danos"><b>Daños de nave</b> <span class="h-danos-circulos">{casillas(5, "c gr")}</span></div></div>
   <div class="h-bloque"><div class="h-rot">{icono("reliquia")} Guardado en la Cicatriz</div>{lineas(2)}
-    <div class="h-rec"><b>Despensa</b> <span class="h-nota">empieza en 8 Raciones (r182)</span><div class="h-caja"></div></div></div>
+    <div class="h-rec h-despensa"><b>Despensa</b> <span class="h-nota">empieza en 8 Raciones (r182)</span><div class="h-caja"></div></div></div>
  </div>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("ejemplo")} Planos conocidos</div>{lineas(2)}</div>

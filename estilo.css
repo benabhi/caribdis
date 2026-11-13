@@ -548,6 +548,8 @@ table.hs td { padding: .9mm 1.5mm; }
 .h-campo.grande { height: 9mm; }
 .h-cab2 { break-before: page; }
 .hoja-nave .h-rot { margin: 1.4mm 0 1mm; }
+.h-danos-circulos { margin-left: 4mm; }
+.h-despensa .h-nota { position: relative; left: -2mm; }
 .tabla-env.larga.partible { break-inside: auto; }
 .tabla-env tr { break-inside: avoid; }
 
