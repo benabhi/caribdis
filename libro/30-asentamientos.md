@@ -155,7 +155,7 @@ La aldea está construida **dentro de un casco de nave antigua** encajado en la 
 Por las ventanillas del casco asoman ropa tendida, macetas y caras curiosas. El humo de las cocinas sube por la pared del cañón, y huele a raíces asadas y a algo dulce que no sabes nombrar. Los niños te siguen a distancia, imitando tu forma de andar.
 
 - **Con `MATASTE_A_LA_MADRE` o −2 o menos** → [e415](#e415).
-- **Entregas** (bórralas): `PAQUETE_DE_MENDANA` (+5 Chatarra), `NIÑO_DEL_HUMO`, `NIÑO_DE_QUILLA`, `NIÑA_DEL_CORO` o `CAJA_DE_SEMILLAS`.
+- **Entregas** (bórralas): `PAQUETE_DE_MENDANA` (+5 Chatarra), `NIÑO_DEL_HUMO` (+1 Rep., +1 Temple), `NIÑO_DE_QUILLA` (+3 Rep.), `NIÑA_DEL_CORO` / `CAJA_DE_SEMILLAS` (+3 Rep., ★).
 - **Reloj en 30 o menos** (una vez) → [e417](#e417).
 
 **Servicios:** comprar y vender (r161; las Raciones, 2 por cada Chatarra; no venden armas de distancia), sanador (r163, acepta Raciones), rumores (r164) y descanso a cubierto. El Piloto **no** puede rellenar Aire aquí; la Mente sí puede recargar (tienen paneles de luz fría).
@@ -398,7 +398,7 @@ No es un asentamiento: no hay comercio. Pero si te dejan entrar, hay **talleres*
 **Actividad especial (elige una):**
 1. **Hablar con Custodio Primo** → [e431](#e431).
 2. **El reactor** (si te falta el Motor) → [e432](#e432).
-3. **Encargo** (`ENCARGO_DE_PRIMO`) → [e433](#e433).
+3. **Pedir un encargo** → [e433](#e433).
 
 ---
 
@@ -439,10 +439,10 @@ El calor no viene del reactor: viene de la luz, que se te pega a la piel como po
 
 Quieren que traigas al Vigía que reza ([e327](#e327)).
 
-1. **Aceptar.** Anota `ENCARGO_DE_PRIMO` y la Pista `Ciudad · El Vigía que reza · e327`. Si vuelves al Nodo con el Vigía sin dueño como compañero (opción 2 de [e327](#e327)), te dan **un sistema a tu elección, calidad Sólida**, y +2 de Reputación con los Vigías. El Vigía será «reprogramado». Si eres la Mente, −1 Temple: sabes lo que eso significa.
+1. **Aceptar.** Anota `ENCARGO_DE_PRIMO` y la Pista `Ciudad · El Vigía que reza · e327`. Si vuelves con el Vigía sin dueño como compañero (opción 2 de [e327](#e327)), te dan **un sistema Sólido a tu elección** y +2 de Reputación con los Vigías; borra `ENCARGO_DE_PRIMO`. El Vigía será «reprogramado». Si eres la Mente, −1 Temple.
 2. **Rechazar.** «*ANOTADO.*» −1 de Reputación con los Vigías.
 3. **Preguntar qué le harán.** «*BORRADO.*» Si después de saberlo traes al Vigía igualmente, +1 `CULPA` si eres el Piloto, −1 Temple si no.
-4. **Ofrecer otro encargo.** Si tienes `AMIGO_DE_UN_VIGIA`, Primo te encarga en cambio reparar a tres Vigías caídos: anota `ENCARGO_DE_REPARAR` y cuenta los que repares en [e324](#e324) (+1 de Reputación extra cada uno). Al tercero, gana `PERMISO_DE_PRIMO`.
+4. **Ofrecer otro encargo.** Con `AMIGO_DE_UN_VIGIA`, Primo te encarga reparar a tres Vigías caídos: anota `ENCARGO_DE_REPARAR` y cuenta los que repares en [e324](#e324) (+1 Rep. extra cada uno). Al tercero, gana `PERMISO_DE_PRIMO` y borra `ENCARGO_DE_REPARAR`.
 
 ---
 
@@ -454,7 +454,7 @@ Las luces de la esfera se ponen rojas. Doce Vigías giran la cabeza a la vez.
 
 «*INTRUSO. EXPULSIÓN.*»
 
-Sus pasos resuenan en la esfera, perfectamente sincronizados. No hay rabia en sus voces; solo un procedimiento que se ha repetido mil veces, con la misma calma, contra todos los que entraron antes que tú.
+Sus pasos resuenan en la esfera, sincronizados. No hay rabia en sus voces.
 
 1. **Huir.** `[Reflejos · 11]` (`TUNELES_DE_LA_SOMBRA`: Ventaja). *Éxito:* escapas. ◉ +1 Alerta. *Fallo:* combate contra *Vigías de expulsión · Ataque 5 · Blind. 3 · Heridas 5 · [Máquina][Antiguo]*.
 2. **Rendirte.** Te sacan en volandas y te dejan en la frontera de la Ciudad. Te quitan todo lo que sea de los Antiguos (reliquias, células, lanzas). Viajas a una región vecina a tu elección, sin encuentro.

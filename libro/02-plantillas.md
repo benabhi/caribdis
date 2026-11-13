@@ -3,7 +3,7 @@
 <a id="r300"></a>
 ### r300 · Cómo usar las plantillas
 
-Algunos eventos dicen «**Encuentro (r300)**» y te presentan a alguien o algo con su línea de combate y, a veces, un **Precio** (P, r318) y un **Botín** (r146). En lugar de una lista de opciones:
+Algunos eventos dicen «**Encuentro (r300)**» y te presentan a alguien o algo con su línea de combate y, a veces, un **Precio** (P: lo que cuesta pasar o negociar; si no se indica, 2 Chatarra, r318) y un **Botín** (lo que ganas al vencer; se anota en «Si ganas», r146). En lugar de una lista de opciones:
 
 1. Elige tu **postura**: **Hablar**, **Esquivar**, **Luchar** o **Estudiar**.
 2. Tira **1d6** y busca la plantilla en la tabla.
@@ -20,7 +20,7 @@ Algunos eventos dicen «**Encuentro (r300)**» y te presentan a alguien o algo c
 
 **Modificadores:**
 - Contra [Bestia], solo puedes elegir Hablar con `DOMADOR` o *Lengua de bestias*.
-- Contra [Máquina], la Mente puede elegir Hablar y resta 1 al dado (mínimo 1).
+- Contra [Máquina], la Mente puede Hablar con Ingenio y resta 1 al dado (mínimo 1). Con *Voz de la nave* o *Voz de los Antiguos* puedes Hablar con [Máquina] o [Antiguo] (r190, e825).
 - Con *Piel de camaleón*, *Piel de espejo* o Lio como compañero, al Esquivar resta 1 al dado.
 - Con Alerta 3 o 4, suma 1 al dado (máximo 6), salvo al Esquivar.
 
@@ -28,8 +28,6 @@ Algunos eventos dicen «**Encuentro (r300)**» y te presentan a alguien o algo c
 ### r301 · Trueque
 
 Quieren comerciar. Puedes comprar en la tabla r161 con un recargo de +1 por objeto, o venderles lo que quieras por su precio completo (no la mitad). Luego cada uno sigue su camino. **Si pasas.**
-
-A veces un trueque sale mejor de lo esperado: lo que para ti es chatarra puede ser un tesoro para otro.
 
 <a id="r302"></a>
 
@@ -60,7 +58,7 @@ Les caes encima antes de que reaccionen. **Sorpresa** (r144) y combate (r140). *
 <a id="r308"></a>
 ### r308 · Te siguen
 
-Te escabulles, pero no del todo. Anota `SEGUIDO`. La próxima vez que tires en una tabla de encuentros, en lugar de tirar repites este encuentro, empezando en r304, y borras `SEGUIDO`. Por ahora, **Si pasas**.
+Te escabulles, pero no del todo. Anota `SEGUIDO`. La próxima vez que tires en una tabla de encuentros, en lugar de tirar repites este encuentro, empezando en r304, y borras `SEGUIDO`. Por ahora, **Si pasas**. (En el Prólogo, e006, ignóralo.)
 
 <a id="r309"></a>
 ### r309 · Pasas de largo

@@ -6,10 +6,10 @@
 
 Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está lista, o casi. Sube a bordo quien vaya a subir. Siéntate. Respira.
 
-**Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
+**Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si en [e804](#e804) hiciste sitio; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Piloto: +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
 - Si tienes `TADEO_SE_QUEDA`, o Tadeo está a bordo y tienes `TADEO_CREE` (en [e622](#e622) le dijiste que quizá era Dios) → [e623](#e623) antes de seguir.
 - Si eres el Nativo con `ARRAIGO` 6 y elegiste «pedir tiempo» en [e816](#e816), o tienes `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
-- Con el Secreto 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
+- Con `SECRETO_DESCUBIERTO` 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
 
 **Paso 1 · Antes de encender.** Si tienes `DEUDA_CON_EL_CONTABLE`, `ENEMIGO_DEL_CONTABLE`, Reputación −3 con cualquier facción o `ROBASTE_AL_ARGO` → [e901](#e901), y luego vuelve aquí.
 

@@ -325,8 +325,8 @@ Tadeo te espera junto a la rampa. Viste la túnica blanca del Coro. Tiene paz en
 
 «Vete. Yo me quedo a cantarles a los que vengan después. Alguien tiene que decirles que no están solos.»
 
-1. **Dejarle quedarse.** Te bendice. En la secuencia de despegue, la primera prueba de Voluntad o de Canto que hagas es un Éxito automático. Tadeo no despega, pero cuenta como «tripulante en paz» en tu final (no suma Culpa).
-2. **Llevarlo a la fuerza.** `[Vigor · 9]`. *Éxito:* despega contigo. En el epílogo no te lo perdonará, pero estará vivo. *Fallo:* se suelta y corre hacia las Torres.
+1. **Dejarle quedarse.** Anota `TADEO_SE_QUEDA`. Te bendice. En la secuencia de despegue, la primera prueba de Voluntad o de Canto que hagas es un Éxito automático. Tadeo no despega, pero cuenta como «tripulante en paz» en tu final (no suma Culpa).
+2. **Llevarlo a la fuerza.** `[Vigor · 9]`. *Éxito:* despega contigo; borra `TADEO_SE_QUEDA`. En el epílogo no te lo perdonará, pero estará vivo. *Fallo:* se suelta y corre hacia las Torres.
 
 ---
 

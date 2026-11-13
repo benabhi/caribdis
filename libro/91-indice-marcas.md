@@ -64,7 +64,7 @@
 | `EL_VIEJO_ESPERA` | [e045](#e045) · [e900](#e900) · [e910](#e910) |
 | `EL_VIGIA_APRENDE` | [e327](#e327) · [e910](#e910) |
 | `ENCARGO_DEL_SUBASTADOR` | [e228](#e228) · [e400](#e400) · [e406](#e406) |
-| `ENCARGO_DE_PRIMO` | [e430](#e430) · [e433](#e433) |
+| `ENCARGO_DE_PRIMO` | [e433](#e433) |
 | `ENCARGO_DE_REPARAR` | [e433](#e433) |
 | `ENEMIGO_DEL_CONTABLE` | [e230](#e230) · [e405](#e405) · [e900](#e900) · [e901](#e901) |
 | `ENGAÑASTE_A_LA_SONDA` | [e048](#e048) · [e842](#e842) · [e902](#e902) · [e910](#e910) |
@@ -253,7 +253,7 @@
 | `SALTASTE` | [e311](#e311) · [e910](#e910) |
 | `SALUDO_DEL_CORO` | [e033](#e033) · [e268](#e268) · [e343](#e343) · [e420](#e420) |
 | `SAL_EN_LA_PIEL` | [e245](#e245) · [e251](#e251) · [e569](#e569) |
-| `SECRETO_DESCUBIERTO` | [e840](#e840) · [e903](#e903) · [r196](#r196) |
+| `SECRETO_DESCUBIERTO` | [e840](#e840) · [e900](#e900) · [e903](#e903) · [r196](#r196) |
 | `SEGUIDO` | [r308](#r308) |
 | `SEÑAL_EN_ROCA` | [e037](#e037) |
 | `SEÑAS_DE_LOS_SORDOS` | [e231](#e231) · [e346](#e346) |

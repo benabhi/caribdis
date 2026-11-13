@@ -142,7 +142,7 @@ Los arenadores avanzan despacio, levantando una nube blanca que se ve desde kil�
 > **Escoltas del convoy** · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]
 
 1. **Asaltar el convoy.** Combate. *Si ganas:* **Combustible Sólido** (pesado) y −2 de Reputación con los Desguaces. ◉
-2. **Ofrecerte de escolta.** Viajas con ellos hasta el Cementerio (como un viaje, sin encuentro). Al llegar, te pagan 3 Chatarra. Tira 1d6: con un 1, os atacan por el camino → combate contra *Saqueadores · Ataque 4 · Blind. 1 · Heridas 3 · [Náufrago]*; si ganas, te dan además un bidón: **Combustible Precario**.
+2. **Ofrecerte de escolta.** Viajas con ellos hasta el Cementerio: cuenta como tu viaje del día, sin encuentro. Al llegar, te pagan 3 Chatarra. Tira 1d6: con un 1, os atacan por el camino → combate contra *Saqueadores · Ataque 4 · Blind. 1 · Heridas 3 · [Náufrago]*; si ganas, te dan además un bidón: **Combustible Precario**.
 3. **Sabotear un bidón y seguirlos.** `[Reflejos · 11]`. *Éxito:* el bidón pierde y tienen que dejarlo atrás. Lo recoges y lo arreglas: **Combustible Precario**, sin que nadie lo sepa. *Fallo:* te ven. Combate con Emboscada.
 4. **Dejarlos pasar.** Nada.
 

@@ -7,3 +7,8 @@ app/dist/
 app/src-tauri/
 .DS_Store
 Thumbs.db
+
+# Entorno local de compilación (dependencias, fuentes temporales y scripts de apoyo).
+.local/
+.deps/
+.venv/

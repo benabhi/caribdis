@@ -778,11 +778,8 @@ def hoja_protagonista(ancla):
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
                       for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico'))
-    recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}{ex}</div></div>'
-                       for t, ic, m, ex in (
-                           ('Aire', 'canto', 6, '<span class="n c ext">7</span><span class="n c ext">8</span>'),
-                           ('Energía', 'hito', 6, '<span class="n c ext">7</span><span class="n c ext">8</span>'),
-                           ('Raciones', 'objeto', 8, '')))
+    recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
+                       for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'
                    + ''.join(f'<span class="n">{v}</span>' for v in ('−3', '−2', '−1', '0', '+1', '+2', '+3')) + '</div></div>'
                    for t, e in (('Hijos del Pecio', 'hijos'), ('Desguaces', 'desguaces'), ('Coro', 'coro'), ('Vigías', 'vigias')))
@@ -874,7 +871,7 @@ def pagina_diario(k):
 
 
 def contratapa():
-    datos = [('tiempo', '60 días'), ('nave', '6 sistemas'), ('mapa', '8 regiones'), ('ejemplo', '350 eventos'), ('fin', '15 finales')]
+    datos = [('tiempo', '60 días'), ('nave', '6 sistemas'), ('mapa', '8 regiones'), ('ejemplo', '350 eventos'), ('fin', '12 finales')]
     fila = ''.join(f'<div class="ct-dato">{icono(i)}<span>{esc(t)}</span></div>' for i, t in datos)
     return f'''
 <section class="contratapa">

@@ -239,7 +239,7 @@ Lo que anotaste en los pasos 2 y 3 son **Hallazgos**: cuando explores una regió
 - **Desesperado:** el Reloj empieza en 40 y la Alerta en 2. Las historias personales se leen con el Reloj en 35, 28, 20, 12 y 5.
 - **Náufrago:** no hay Reloj; los Recolectores no vienen. En cambio, el Canto sube 1 cada 5 días. Lleva el Reloj igual (para las historias y los eventos), pero se para en 0 y no pasa nada. Para ganar, debes despegar con al menos 3 tripulantes.
 
-En Desesperado y en la Partida corta (r211), cuando una historia nombre el Reloj en 50, 40, 30, 20 o 10, entiende la primera, segunda… quinta fecha de tu modo.
+En Desesperado y en la Partida corta (r211), cuando una historia o un evento nombre el Reloj en 50, 40, 30, 20 o 10, entiende la primera, segunda… quinta fecha de tu modo.
 
 Si es tu primera partida, el modo Estándar es el más equilibrado: los otros dos cambian mucho la experiencia.
 
@@ -498,7 +498,7 @@ Caribdis se divide en **ocho regiones**. Viajar te lleva a una región **vecina*
 2. **Orientación:** `[Ingenio · 9]`. El Nativo no tira. Con un vehículo o con `RUTA_` hacia esa región, tienes Ventaja.
    - **Éxito:** llegas.
    - **Fallo:** tira 1d6. Con 1–3, llegas agotado: pierdes 1 Ración o 1 Energía extra. Con 4–6, te desvías: sigues en tu región, pero sufres igualmente el encuentro del paso 3 en ella.
-3. **Encuentro:** tira en la tabla de la región donde estés (r154).
+3. **Encuentro:** tira en la tabla de la región donde estés (r154). **Mente:** cada Viaje sin vehículo gasta 1 Energía extra (r104); sin Energía, 1 Daño.
 
 <a id="r152"></a>
 ### r152 · Vehículos
@@ -709,7 +709,7 @@ Tu nave necesita seis sistemas para despegar. Cada uno se consigue por **vías**
 | **Sólida** | La prueba es Normal (9) |
 | **Excelente** | La prueba es Fácil (7) |
 
-| Sistema | Rescate (pecio sorteado en r108) | Otras vías |
+| Sistema | Rescate (pecio sorteado en r108) | Otras vías (ejemplos) |
 |---|---|---|
 | **Casco** | [e560](#e560) | Puerto Chatarra ([e404](#e404)) · Aleación antigua ([e329](#e329)) |
 | **Motor** | [e562](#e562) | Forja de Quilla ([e414](#e414)) · Reactor del Nodo ([e432](#e432)) |
@@ -804,7 +804,7 @@ Cada vez que **instales un sistema** o superes un evento **★** (los de lealtad
 <a id="r191"></a>
 ### r191 · Marcas
 
-Las Marcas son palabras clave en `VERSALITAS`. Anótalas cuando el libro lo diga y bórralas cuando el libro lo diga. Muchos eventos cambian si tienes (o no tienes) una Marca: «**Si tienes `DEUDAS`…**».
+Las Marcas son palabras clave en `VERSALITAS`. Anótalas o bórralas cuando el libro lo diga; muchos eventos cambian si las tienes: «**Si tienes `DEUDAS`…**».
 
 Una Marca escrita con un guion bajo al final, como `RUTA_` o `FRAGMENTO_`, es una familia: vale cualquier Marca que empiece así. Cuando ganes una, complétala al anotarla (por ejemplo, `RUTA_SALINAS` para una ruta a las Salinas Blancas). Cuando el libro pida `RUTA_` hacia una región, vale cualquiera que lleve a ella.
 
@@ -815,7 +815,7 @@ Las Marcas que empiezan por `FRAGMENTO_` son pedazos de la verdad sobre el Canto
 
 Una Pista es un destino que conoces: `Región · Nombre · eXXX`. Puedes tener **5** como máximo. Si consigues una sexta, borra otra.
 
-**Seguir una Pista** (acción del día): si estás en la región de la Pista, ve directamente a su evento sin tirar encuentro. Después, bórrala, salvo que el evento diga lo contrario.
+**Seguir una Pista** (acción del día): en su región, ve a su evento sin tirar encuentro. Después, bórrala, salvo que el evento diga lo contrario.
 
 <a id="r193"></a>
 ### r193 · Reliquias sin identificar
@@ -850,13 +850,13 @@ La **primera vez que la uses** (en cualquier momento, como acción gratuita), ti
 Cuatro facciones: **Hijos del Pecio** (Quilla), **Desguaces** (Puerto Chatarra), **Coro** (el Atrio) y **Vigías** (el Nodo). Cada una de −3 a +3.
 
 - Al llegar a **+3** con una facción, la próxima vez que estés en su asentamiento → evento de aliado (una vez): Hijos [e640](#e640), Desguaces [e642](#e642), Coro [e644](#e644), Vigías [e646](#e646).
-- Al llegar a **−3**, la próxima vez que estés en su región tira 1d6 (solo esa vez). Con 1–3 → su evento de enemigo: Hijos [e641](#e641), Desguaces [e643](#e643), Coro [e645](#e645), Vigías [e647](#e647).
-- **Enemistades:** cada vez que ganes Reputación con el Coro, pierdes 1 con los Hijos del Pecio, y al revés (si el evento no lo hace ya). Lo mismo entre Desguaces y Vigías.
+- Al llegar a **−3**, tira 1d6 la próxima vez que estés en su región, y repite la tirada si sacas 4–6 o si evitas el combate sin cambiar tu Reputación. Con 1–3 → su evento de enemigo: Hijos [e641](#e641), Desguaces [e643](#e643), Coro [e645](#e645), Vigías [e647](#e647).
+- **Enemistades:** +1 con el Coro es −1 con los Hijos, y al revés; igual entre Desguaces y Vigías (si el evento no lo hace ya).
 
 <a id="r195"></a>
 ### r195 · Caer
 
-Si recibes una Herida estando en Crítico, caes. Gasta **1 Temple**: despiertas en Grave donde estabas, el Reloj baja 2 y alguien te registra: pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Si no tienes Temple → [e920](#e920).
+Si recibes una Herida en Crítico, caes. Gasta **1 Temple**: despiertas en Grave, el Reloj baja 2 y pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Sin Temple → [e920](#e920).
 
 <a id="r196"></a>
 ### r196 · Fin de la partida
@@ -879,19 +879,19 @@ Sela juega con **el Piloto**. Es el **día 3**: el Reloj está en 58, la Alerta 
 
 **Acción (r132).** Necesita el Casco. Decide **explorar** las Dunas: `[Ingenio · 9]`. Tira 2d6 y saca 4 y 3. Suma su Ingenio (3) y resta 1 por estar Herida: 4 + 3 + 3 − 1 = 9. Es un **Éxito**, pero justo. Gana un Hallazgo.
 
-Su lista de Hallazgos (r108) dice que su tripulante Iria está en las Salinas, no aquí, así que elige **b) un pecio** (r170). En el Cementerio podría tirar dos veces el tipo, pero en las Dunas no: saca un 1, **Carguero**.
+Su lista de Hallazgos (r108) dice que su tripulante Iria está en las Salinas, no aquí, así que elige **b) un pecio** (r170). En las Dunas no tira dos veces el tipo: saca un 1, **Carguero**.
 
 **El pecio.** Tira 2d6 para la primera sala: 6, **Restos**, 2 Chatarra (y +1, porque los Cargueros dan más en Restos). Decide seguir: saca un 2, **Guardián**. Son las *Ratas de óxido · Ataque 2 · Blind. 0 · Heridas 3 · [Bestia][Enjambre]*.
 
-**Combate (r140).** Sela pelea con una pistola de clavos (+1) y usa Reflejos. En la primera ronda saca 2d6 = 8, +4 de Reflejos, +1 de la pistola y −1 por la herida: **12**. Las ratas sacan 7 + 2 = **9**. La diferencia es 3: les hace 1 Herida (quedan 2). En la segunda ronda Sela saca 11 y las ratas 13. Recibe 1 Herida y pasa a **Grave** (−2). Ahora tiene miedo de verdad.
+**Combate (r140).** Sela pelea con una pistola de clavos (+1) y usa Reflejos. En la primera ronda saca 8 +4 +1 −1 = **12**. Las ratas sacan 7 + 2 = **9**. La diferencia es 3: les hace 1 Herida (quedan 2). En la segunda ronda Sela saca 11 y las ratas 13. Recibe 1 Herida y pasa a **Grave** (−2).
 
-Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cuarta vuelve a atacar y gana por 5, pero las ratas son un **[Enjambre]**: su daño nunca pasa de 1 (r142). Quedan 1. En la quinta las remata. Gana 1 Hueso por vencer a una [Bestia] (r201) y, como el combate ha durado más de 3 rondas, la Alerta sube a 2 (r145).
+Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cuarta vuelve a atacar y gana por 5, pero las ratas son un **[Enjambre]**: su daño nunca pasa de 1 (r142). En la quinta las remata. Gana 1 Hueso por vencer a una [Bestia] (r201) y, como el combate ha durado más de 3 rondas, la Alerta sube a 2 (r145).
 
-**Salir (r170).** Por vencer al guardián, la siguiente sala sería de Equipo (r172). Es tentador, pero con Grave otra sala sería una locura. Sale con 3 Chatarra más: ya tiene 6.
+**Salir (r170).** Por vencer al guardián, la siguiente sala sería de Equipo (r172). Con Grave, otra sala sería una locura. Sale con 3 Chatarra más: ya tiene 6.
 
 **Anochecer (r133).** No ha descansado, así que no se cura. Duerme en la Cicatriz, así que no hay tirada nocturna. Mañana descansará para curarse, y pasado viajará a las Salinas (vecinas de las Dunas) para explorar allí en busca de Iria.
 
-> El primer día cuentas lo que tienes. El décimo, lo que te falta. Sela todavía cuenta lo que tiene: seis de Chatarra, un hueso y tres Heridas. Es más de lo que tenía ayer.
+> El primer día cuentas lo que tienes. El décimo, lo que te falta. Sela cuenta seis de Chatarra, un hueso y tres Heridas.
 
 ---
 
@@ -902,7 +902,7 @@ Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cu
 
 *Caribdis está hecha de cosas rotas. Quien sabe mirar no ve basura: ve piezas.*
 
-Cada pieza que recojas puede acabar convertida en un arma silenciosa, en una venda que te salva la vida o, si te tomas el tiempo, en una **gran obra** que cambie tu despegue. Nadie te obliga a pisar el taller. Pero quien lo hace rara vez se arrepiente.
+Cada pieza que recojas puede acabar convertida en un arma silenciosa, en una venda que te salva la vida o, si te tomas el tiempo, en una **gran obra** que cambie tu despegue.
 
 Funciona así:
 - Recoges **piezas** de cuatro tipos (r201).
@@ -927,7 +927,7 @@ Hay cuatro tipos de pieza. Anótalas en tu hoja como cuatro contadores.
 
 **Conseguir piezas:**
 - **Rebuscar:** al explorar, elige el Hallazgo **e)** (r153). Ganas **2 piezas** del tipo de la región (o 3 con un Éxito pleno). En los Cañones (dos tipos), eliges.
-- **Botín:** tras ganar un combate, además del botín normal, ganas 1 pieza: Cobre de [Máquina] o [Náufrago], Hueso de [Bestia] y Luz fría de [Antiguo] (si tiene dos, eliges).
+- **Botín:** tras ganar un combate, además del botín normal, ganas 1 pieza: Cobre de [Máquina] o [Náufrago], Hueso de [Bestia] o [Cantor] y Luz fría de [Antiguo] (si tiene dos, eliges).
 - **Pecios:** en una sala de **Restos** (r172), puedes cambiar la Chatarra por el mismo número de Cobre.
 - **Comprar:** en cualquier asentamiento, Cobre y Hueso cuestan 1 Chatarra cada uno, y Cristal 2. La Luz fría solo se compra en el Nodo, a 3.
 - **Desmontar** (r206).
