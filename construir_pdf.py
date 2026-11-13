@@ -787,7 +787,8 @@ def hoja_protagonista(ancla):
     reloj = ''.join(f'<span class="rl{" hito" if i in (50, 40, 30, 20, 10) else ""}">{i}</span>' for i in range(60, 0, -1))
     return f'''
 <section class="hoja" id="{ancla}" data-titulo="Hoja de protagonista">
- <div class="h-cab"><div class="h-tit">Hoja de protagonista</div>
+ <div class="bm-hojas" data-marca="Hojas de juego"></div>
+ <div class="h-cab"><div class="h-tit" data-marca="Hoja de protagonista">Hoja de protagonista</div>
    <div class="h-protas"><span class="c"></span>Piloto <span class="c"></span>Nativo <span class="c"></span>Mente</div></div>
  <div class="h-fila2"><div class="h-campo"><label>Nombre</label></div><div class="h-campo"><label>Origen</label></div></div>
  <div class="h-attrs">{attrs}</div>
@@ -812,7 +813,7 @@ def hoja_protagonista(ancla):
  <div class="h-dias">{''.join(f'<span><span class="c"></span>Día {d}</span>' for d in (50, 40, 30, 20, 10))}</div>
  <div class="h-rot">{icono("asentamiento")} Viejos conocidos <span class="h-nota">r156 · marca cada encuentro</span></div>
  <div class="h-dias">{''.join(f'<span>{t} {casillas(4)}</span>' for t in ('Peregrina', 'Perro de latón', 'Mirasoles'))}</div>
- <div class="h-cab h-cab2"><div class="h-tit">Equipo y registro</div><div class="h-protas">Nombre: ____________________</div></div>
+ <div class="h-cab h-cab2"><div class="h-tit" data-marca="Equipo y registro">Equipo y registro</div><div class="h-protas">Nombre: ____________________</div></div>
  <div class="h-dos h-pag2">
   <div class="h-bloque"><div class="h-rot">{icono("reliquia")} Reliquias <span class="h-nota">máx. 6 · aspecto → función</span></div>{lineas(6)}
      <div class="h-rot">{icono("objeto")} Equipo</div>{lineas(6)}
@@ -839,7 +840,7 @@ def hoja_nave(ancla):
     lineas = lambda k: ''.join('<div class="h-linea"></div>' for _ in range(k))
     return f'''
 <section class="hoja hoja-nave" id="{ancla}" data-titulo="Hoja de la nave">
- <div class="h-cab"><div class="h-tit">Hoja de la nave</div>{icono("nave", "h-ico-nave")}</div>
+ <div class="h-cab"><div class="h-tit" data-marca="Hoja de la nave">Hoja de la nave</div>{icono("nave", "h-ico-nave")}</div>
  <div class="h-campo grande"><label>Nombre de la nave</label></div>
  <div class="h-rot">{icono("objeto")} Sistemas</div>
  <table class="hs"><tr><th>Sistema</th><th>Pecio (región)</th><th>Estado</th><th>Calidad</th></tr>{sist}</table>
@@ -893,7 +894,7 @@ def contratapa():
 
 
 def pagina_mapa():
-    return (f'<section class="pagina-mapa" id="mapa" data-titulo="Mapa de Caribdis"><div class="pm-tit">Caribdis</div>'
+    return (f'<section class="pagina-mapa" id="mapa" data-titulo="Mapa de Caribdis"><div class="pm-tit" data-marca="Mapa de Caribdis">Caribdis</div>'
             f'<div class="pm-sub">Las ocho regiones y sus sendas · toca una región para ir a su tabla de encuentros</div>'
             f'{svg_mapa("mapa mapa-grande")}'
             f'<div class="pm-pie">Viajar te lleva a una región vecina (r151). La Cicatriz está en las Dunas de Óxido.</div></section>')

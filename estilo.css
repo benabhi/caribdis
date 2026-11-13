@@ -460,6 +460,7 @@ h3.g-caja { font: 700 9pt var(--rotulo); text-transform: uppercase; letter-spaci
 .mapa-col svg { width: 100%; height: 86mm; }
 .pagina-mapa { page: limpia; break-before: page; break-after: page; text-align: center; string-set: capitulo attr(data-titulo); }
 .pm-tit { font: 900 40pt var(--plantilla); text-transform: uppercase; color: var(--oxido); letter-spacing: .1em; margin-top: 4mm; }
+.pm-tit { bookmark-level: 3; bookmark-label: attr(data-marca); }
 .pm-sub { font: italic 500 11pt var(--cita); color: var(--tinta-2); margin-bottom: 8mm; }
 .mapa-grande { width: 136mm; height: auto; }
 .pm-pie { font: 500 7.5pt var(--rotulo); text-transform: uppercase; letter-spacing: .14em; color: var(--tinta-2); margin-top: 8mm; }
@@ -468,6 +469,8 @@ h3.g-caja { font: 700 9pt var(--rotulo); text-transform: uppercase; letter-spaci
 .hoja { page: hoja; break-before: page; break-after: page; font-family: var(--rotulo); font-size: 8pt; string-set: capitulo attr(data-titulo), ent "", sep ""; }
 .h-cab { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2.4pt solid var(--tinta); padding-bottom: 1.5mm; margin-bottom: 3mm; }
 .h-tit { font: 900 22pt/1 var(--plantilla); text-transform: uppercase; color: var(--oxido); letter-spacing: .04em; }
+.hoja .h-tit { bookmark-level: 3; bookmark-label: attr(data-marca); }
+.bm-hojas { bookmark-level: 2; bookmark-label: attr(data-marca); height: 0; margin: 0; padding: 0; font-size: 0; line-height: 0; }
 .h-protas { font: 600 8.5pt var(--rotulo); text-transform: uppercase; letter-spacing: .12em; }
 .h-ico-nave { width: 10mm; height: 10mm; color: var(--oxido); }
 .c { display: inline-block; width: 3mm; height: 3mm; border: .8pt solid var(--tinta); margin: 0 1.2mm 0 0; vertical-align: -.5mm; background: rgba(255,255,255,.35); }
