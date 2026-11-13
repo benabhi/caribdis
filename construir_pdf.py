@@ -787,7 +787,13 @@ def hoja_protagonista(ancla):
                    + ''.join(f'<span class="n">{v}</span>' for v in ('−3', '−2', '−1', '0', '+1', '+2', '+3')) + '</div></div>'
                    for t, e in (('Hijos del Pecio', 'hijos'), ('Desguaces', 'desguaces'), ('Coro', 'coro'), ('Vigías', 'vigias')))
     lineas = lambda k: ''.join('<div class="h-linea"></div>' for _ in range(k))
-    reloj = ''.join(f'<span class="rl{" hito" if i in (50, 40, 30, 20, 10) else ""}">{i}</span>' for i in range(60, 0, -1))
+    def caja_reloj(i, opcional=False):
+        clase = 'rl opcional' if opcional else 'rl'
+        if i in (50, 40, 30, 20, 10):
+            clase += ' hito'
+        return f'<span class="{clase}">{i}</span>'
+    reloj = ''.join(caja_reloj(i) for i in range(60, 0, -1))
+    reloj += ''.join(caja_reloj(i, True) for i in range(70, 60, -1))
     return f'''
 <section class="hoja" id="{ancla}" data-titulo="Hoja de protagonista">
  <div class="bm-hojas" data-marca="Hojas de juego"></div>
@@ -806,14 +812,15 @@ def hoja_protagonista(ancla):
  <div class="h-reloj">{reloj}</div>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("alerta")} Alerta</div><div class="h-esc">{escala(1, 4)}</div>
-     <div class="h-rot">{icono("reputacion")} Reputación</div>{facc}</div>
+     <div class="h-rot">{icono("reputacion")} Reputación</div>{facc}
+     </div>
   <div class="h-bloque"><div class="h-rot">{icono("combate")} Arma y protección</div>
-     <div class="h-campo"><label>Arma (+ )</label></div><div class="h-campo"><label>Protección (Blindaje )</label></div>
-     <div class="h-rot">{icono("ejemplo")} Implantes · Mutaciones · Protocolos</div>{lineas(2)}
+     <div class="h-linea-campos"><div class="h-campo"><label>Arma (+ )</label></div><div class="h-campo"><label>Blind.</label></div></div>
+     <div class="h-rot">{icono("ejemplo")} Implantes · Mutaciones · Protocolos</div>{lineas(3)}
      <div class="h-rot">{icono("consejo")} Habilidades</div>{lineas(2)}</div>
  </div>
  <div class="h-rot">{icono("tiempo")} Historia personal <span class="h-nota">marca cada evento de historia leído</span></div>
- <div class="h-dias">{''.join(f'<span><span class="c"></span>Día {d}</span>' for d in (50, 40, 30, 20, 10))}</div>
+ <div class="h-dias">{''.join(f'<span><span class="c"></span>Día {d}<span class="h-dia-alt"></span></span>' for d in (50, 40, 30, 20, 10))}</div>
  <div class="h-rot">{icono("asentamiento")} Viejos conocidos <span class="h-nota">r156 · marca cada encuentro</span></div>
  <div class="h-dias">{''.join(f'<span>{t} {casillas(4)}</span>' for t in ('Peregrina', 'Perro de latón', 'Mirasoles'))}</div>
  <div class="h-cab h-cab2"><div class="h-tit" data-marca="Equipo y registro">Equipo y registro</div><div class="h-protas">Nombre: ____________________</div></div>
