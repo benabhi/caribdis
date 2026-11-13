@@ -327,7 +327,7 @@ Al acercarte, notas un frío que no viene del aire.
 
 1. **Arrancar un trozo.** `[Vigor · 9]` ♫ ◉. *Éxito:* ganas una **batería de luz fría** (cuenta como 6 de Energía, o se vende por 6 Chatarra). +1 Alerta. *Fallo:* el cristal se rompe en polvo azul que respiras. +2 Canto.
 2. **Tocarla con la mano desnuda.** +2 Canto ♫. Ves, durante un instante, una ciudad entera iluminada desde dentro, de pie, viva. Gana `FRAGMENTO_LA_CIUDAD_VIVA`.
-3. **Taparla y marcar el sitio.** Gana la Pista `esta región · La veta azul · e046` (puedes volver con mejores herramientas). Si vuelves con Noemí o con `ESTIBADORA`, la extracción es automática y sin Alerta.
+3. **Taparla y marcar el sitio.** Gana la Pista `esta región · La veta azul · e046` (puedes volver una sola vez). Si vuelves con Noemí o con `ESTIBADORA`, la extracción es automática y sin Alerta.
 
 ---
 

@@ -134,7 +134,7 @@ Entonces la arena se mueve. Algo pequeño, con demasiadas patas y una boca que e
 *Tu primer combate (r140). Cada ronda, tira 2d6 + Vigor (o Reflejos si tienes arma de distancia) + tu arma, contra 2d6 + 2.*
 
 1. **Pelear.** Combate.
-   - *Si ganas:* la desmontas. Dentro, entre los dientes, hay restos de otras naves: gana 2 Chatarra → [e008](#e008).
+   - *Si ganas:* la desmontas. Dentro, entre los dientes, hay restos de otras naves: gana 2 Chatarra → [e008](#e008). *Si huyes:* → [e008](#e008).
 2. **Ahuyentarla con fuego** (con un trapo empapado en el aceite del motor): se va. Pero vuelve con más ratas. Gana la Pista `Dunas · El nido · e203` → [e008](#e008).
 3. **Dejar que se coma un trozo de casco que ya no sirve.** Mientras mastica, la estudias. Gana `RATAS_AMIGAS` (en el futuro, las ratas de óxido no te atacarán si les ofreces 1 Chatarra) → [e008](#e008).
 

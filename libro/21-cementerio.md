@@ -100,9 +100,9 @@ Los mapas cubren cada centímetro: suelo, techo, mandos. Algunos son de regiones
 Te ofrece té de un termo abollado. Está frío, y sabe a tinta, pero es el primer té que te ofrecen en Caribdis.
 
 1. **Comprar un mapa.** 2 Chatarra por cada `RUTA_` hacia la región que quieras.
-2. **Comprar el mapa grande.** 6 Chatarra. Anota `MAPA_DEL_CIEGO`: nunca te pierdes al viajar (como el Nativo). Si ya eres el Nativo, el mapa marca además el lugar de un sistema que buscas: Ventaja al explorar para encontrarlo.
+2. **Comprar el mapa grande.** 6 Chatarra. Con este mapa nunca te pierdes al viajar (como el Nativo). Si ya eres el Nativo, el mapa marca además el lugar de un sistema que buscas: Ventaja al explorar para encontrarlo.
 3. **Preguntarle qué oye.** «*Oigo una cosa debajo del Polo que respira. Oigo a alguien de tu nave llorando en la Ciudad. Oigo que te quedan pocos días.*» Si tienes un tripulante cuya región es la Ciudad, Ventaja al Explorar allí.
-4. **Si eres la Mente:** le ofreces tus mapas a cambio. Te da `MAPA_DEL_CIEGO` gratis, y él gana algo que no ha tenido nunca: una imagen del planeta desde arriba. Llora. +1 `MEMORIA`.
+4. **Si eres la Mente:** le ofreces tus mapas a cambio. Te da el mapa gratis, y él gana algo que no ha tenido nunca: una imagen del planeta desde arriba. Llora. +1 `MEMORIA`.
 
 ---
 

@@ -37,7 +37,7 @@ Los Jardineros no hablan. Te miran con unos ojos que parecen gotas de resina, y 
    - *Tu sangre:* 2 Heridas. Te dan el esqueje: **Soporte vital Excelente** (no pesado; anota `JARDIN_A_BORDO`). **★**
    - *Un recuerdo:* −1 Temple máximo (permanente; mínimo 1). Te dan **Soporte vital Sólido**. Si eres la Mente, −1 `MEMORIA`; si ya está en 0, −1 Temple máximo en su lugar.
    - *Un compañero que se quede:* deja a un compañero aquí para siempre (táchalo; si eres el Piloto, +1 `CULPA`). Te dan **Soporte vital Excelente** y te bendicen: −3 Canto.
-2. **Robar el esqueje.** `[Reflejos · 11]`. *Éxito:* **Soporte vital Precario**: sin los Jardineros, el esqueje enferma. *Fallo:* las raíces te atrapan. *Jardineros · Ataque 4 · Blind. 2 · Heridas 5 · [Bestia]*. Combate. Si ganas, el esqueje muere contigo dentro del claro: no consigues nada y anota `QUEMASTE_EL_JARDIN`.
+2. **Robar el esqueje.** `[Reflejos · 11]`. *Éxito:* **Soporte vital Precario** (Sólido con `JARDINERO`): sin los Jardineros, el esqueje enferma. *Fallo:* las raíces te atrapan. *Jardineros · Ataque 4 · Blind. 2 · Heridas 5 · [Bestia]*. Combate. Si ganas, el esqueje muere contigo dentro del claro: no consigues nada y anota `QUEMASTE_EL_JARDIN`.
 3. **Escucharlos.** `[Voluntad · 9]` ♫. *Éxito:* el micelio te habla: *«Nosotros también oímos el Canto. Nosotros le respondemos que no.»* Gana `FRAGMENTO_EL_MICELIO`. −2 Canto.
 Elijas lo que elijas, **gana la Pista** `Bosque · El Santuario · e261` (puedes volver sin explorar).
 

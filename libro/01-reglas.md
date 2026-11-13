@@ -854,7 +854,7 @@ Cuatro facciones: **Hijos del Pecio** (Quilla), **Desguaces** (Puerto Chatarra),
 <a id="r195"></a>
 ### r195 · Caer
 
-Si recibes una Herida en Crítico (o, si eres la Mente, llenas tus cuatro niveles de Daño), caes. Gasta **1 Temple**: despiertas en Grave (la Mente, con 2 Daño), el Reloj baja 2 y pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Sin Temple → [e920](#e920).
+Si recibes una Herida en Crítico (salvo con Segundo corazón, e714; o, si eres la Mente, llenas tus cuatro niveles de Daño), caes. Gasta **1 Temple**: despiertas en Grave (la Mente, con 2 Daño), el Reloj baja 2 y pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Sin Temple → [e920](#e920).
 
 <a id="r196"></a>
 ### r196 · Fin de la partida

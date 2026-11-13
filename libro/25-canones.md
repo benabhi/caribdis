@@ -142,7 +142,7 @@ En la rampa, un cartel en tu idioma: *ZONA DE CUARENTENA · NO ENTRAR*.
 
 1. **Entrar por la rampa.** El crucero te recibe: *Torretas de defensa · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina]*. Combate. *Si ganas:* explora un pecio (r170) de tipo **Nave militar** de hasta 6 salas. En la última, el **motor de salto del crucero**: **Motor Excelente** (pesado). **★**
 2. **Hackear las torretas.** `[Ingenio · 11]` (Mente: Ventaja; `VETERANO`: Ventaja). *Éxito:* entras sin combatir y explora como en la 1. *Fallo:* combate con Emboscada.
-3. **Leer el registro de cuarentena** (en la rampa). `[Ingenio · 9]`. *Éxito:* «*Tripulación expuesta al Canto. Todos se fueron caminando hacia el este. La nave sigue operativa. No la uséis. Ella también lo oye.*» Gana `FRAGMENTO_EL_CRUCERO` y `SABES_DE_LAS_TORRETAS` (Ventaja contra las torretas).
+3. **Leer el registro de cuarentena** (en la rampa). `[Ingenio · 9]`. *Éxito:* «*Tripulación expuesta al Canto. Todos se fueron caminando hacia el este. La nave sigue operativa. No la uséis. Ella también lo oye.*» Gana `FRAGMENTO_EL_CRUCERO` y Ventaja contra las torretas de este pecio.
 4. **Marcar la ubicación.** Gana la Pista `Cañones · El crucero dormido · e309` y vete.
 
 ---

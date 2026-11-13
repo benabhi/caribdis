@@ -319,7 +319,7 @@ Las manos que te sujetan son cálidas, callosas, de gente que ha trabajado mucho
 Hace años que nadie te cogía la mano. Nadie te pregunta de dónde vienes. Por una vez, no importa.
 
 1. **Dejarte llevar.** +3 Canto ♫. Pero recuperas todas tus Heridas y todo tu Temple. Y ves algo, dentro del Canto: gana `FRAGMENTO_LA_COMUNION`. +1 de Reputación con el Coro.
-2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte. Ves cómo funciona, de dónde viene, qué quiere. Si tienes 2 `FRAGMENTO_` o más → [e840](#e840). Si no, gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
+2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte. Ves cómo funciona, de dónde viene, qué quiere. Si tienes 3 `FRAGMENTO_` o más → [e840](#e840). Si no, gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
 3. **Soltar las manos y salir.** Los cantores te miran con pena. −1 de Reputación con el Coro.
 
 ---
@@ -359,7 +359,7 @@ El Coro acoge a todos, pero no regala nada. A cambio de su favor, puedes **canta
 La túnica que te dan está remendada muchas veces y huele a quien la llevó antes. Los demás penitentes no te miran.
 
 `[Vigor · 9]` y `[Voluntad · 9]` ♫.
-- **Dos Éxitos:** +2 de Reputación con el Coro. +2 Canto. Te regalan una túnica bendita: anota `TUNICA_BENDITA`; mientras la lleves, ningún [Cantor] te ataca y puedes evitar sus combates.
+- **Dos Éxitos:** +2 de Reputación con el Coro. +2 Canto. Te regalan una túnica bendita: anota `TUNICA_BENDITA`; mientras la lleves, un [Cantor] no te ataca una vez.
 - **Uno:** +1 de Reputación con el Coro. +2 Canto.
 - **Ninguno:** caes rendido. 1 Herida y +3 Canto ♫.
 

@@ -172,7 +172,7 @@ La placa pesa más de lo que parece. Está fría, y al pasar los dedos por los s
 
 - Si lees esto el día 30 **sin** haber ido a Quilla, el mapa te lo trae el niño de las alas: Calidad **Precaria** (está incompleto, la Madre no ha podido darte la parte que solo se cuenta en persona).
 
-El Mapa del primer pecio es tu **sistema personal**. Calidad **Sólida** (o Excelente si tu Reputación con los Hijos del Pecio es +3).
+El Mapa del primer pecio es tu **sistema personal**. Calidad **Sólida** si vas a Quilla (o Excelente con Reputación +3); **Precaria** si te lo trae el niño.
 
 1. **Aceptarlo con respeto.** +1 `ARRAIGO`.
 2. **Preguntar por qué nunca lo usaron.** «*Porque los que lo intentaron cayeron. Porque el Canto nos quiere. Porque aquí estamos vivos.*» Gana `FRAGMENTO_LA_MADRE_2`.

@@ -180,7 +180,7 @@
 | `IRIA_CURADA` | [e601](#e601) · [e603](#e603) · [e910](#e910) |
 | `IRIA_JARDINERA` | [e601](#e601) · [e910](#e910) |
 | `IRIA_SE_QUEDA` | [e602](#e602) · [e900](#e900) |
-| `JARDINERO` | [e416](#e416) |
+| `JARDINERO` | [e261](#e261) · [e416](#e416) |
 | `JARDIN_A_BORDO` | [e261](#e261) · [e910](#e910) |
 | `LANZADERA_DE_UR` | [e264](#e264) · [e813](#e813) |
 | `LA_ESPERANZA_CALLA` | [e290](#e290) · [e813](#e813) · [e845](#e845) · [e900](#e900) · [e903](#e903) |
@@ -188,10 +188,10 @@
 | `LA_PEREGRINA_A_BORDO` | [e063](#e063) · [e900](#e900) · [e910](#e910) |
 | `LA_SEÑAL_PUEDE_CALLAR` | [e431](#e431) · [e507](#e507) · [e511](#e511) · [e751](#e751) · [e841](#e841) · [e902](#e902) |
 | `LINEA_AISLADA` | [e821](#e821) · [e832](#e832) |
+| `LIO_EN_EL_CORO` | [e347](#e347) · [e628](#e628) |
 | `LISTA_DE_A_BORDO` | [e004](#e004) |
 | `LOS_MIRASOLES_TE_CONOCEN` | [e068](#e068) · [e069](#e069) · [e071](#e071) |
 | `LO_VISTE` | [e281](#e281) · [e291](#e291) · [e843](#e843) · [e900](#e900) |
-| `MAPA_DEL_CIEGO` | [e226](#e226) |
 | `MAPA_DE_LOS_RECOLECTORES` | [e065](#e065) · [e516](#e516) · [e842](#e842) · [e902](#e902) · [e910](#e910) |
 | `MATASTE_A_LA_MADRE` | [e310](#e310) · [e410](#e410) · [e415](#e415) · [e910](#e910) |
 | `MEDICA` | [r105](#r105) |
@@ -249,7 +249,6 @@
 | `RUTA_CIUDAD` | [e268](#e268) |
 | `RUTA_DE_SALIDA` | [e351](#e351) · [e900](#e900) |
 | `RUTA_POLO` | [e321](#e321) · [e342](#e342) |
-| `SABES_DE_LAS_TORRETAS` | [e309](#e309) |
 | `SABE_DE_SAL` | [e247](#e247) · [e251](#e251) · [e568](#e568) |
 | `SABE_ESCONDERSE` | [e308](#e308) · [e919](#e919) |
 | `SABE_VIVIR` | [e045](#e045) |

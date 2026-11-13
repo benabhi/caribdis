@@ -27,7 +27,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 
 - Puedes gastar **Temple** para repetir pruebas, como siempre.
 - Si **Noemí** está a bordo y fallas una prueba → [e618](#e618) (una vez).
-- Cada **Fallo** es un **Daño de nave**. Anótalo.
+- Cada **Fallo** de sistema es un **Daño de nave**.
 - Si llevas el **Fragmento de la Matriz**, convierte un Fallo en Éxito.
 
 **Paso 3 · La huida.** Si el Reloj está en **15 o menos**, o tienes `BALIZA_ACTIVA` → [e902](#e902), y luego vuelve aquí.
@@ -89,7 +89,7 @@ Detrás, Caribdis se hace pequeña: un punto rojo con un anillo brillante. Desde
 
 | Final | Condición |
 |---|---|
-| **Regreso** → [e910](#e910) | Siempre disponible |
+| **Regreso** → [e910](#e910) | Siempre (Náufrago: 3 tripulantes) |
 | **Romper el bucle** → [e911](#e911) | Secreto 6 y `SECRETO_DESCUBIERTO` |
 | **Silencio** → [e912](#e912) | Secreto 5, `SECRETO_DESCUBIERTO` y `LA_ESPERANZA_CALLA` |
 | **Sabotaje** → [e913](#e913) | Secreto 4, `SECRETO_DESCUBIERTO` y al menos 1 `TORRE_ROTA` |
@@ -158,7 +158,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - *Mente:* con `VUELVE_A_SER_LA_NAVE`: *«Eres la nave. Llevas a tu tripulación a todas partes, y cuando duermen, les cantas en voz baja tu propia canción.»* Si seguiste en el dron: *«Te quedas en el dron. Te gusta flotar. Te gusta tener nombre.»* Con `COPIA_EN_CARIBDIS`: *«Y en Caribdis, una parte de ti sigue esperando a los siguientes que caigan, para enseñarles el camino.»*
 
 **Sobre los que vinieron:**
-- Si un pasajero o tripulante tiene `MURIO_EN_EL_VIAJE_<nombre>`, no leas su línea.
+- Lee solo las líneas de quienes subieron; si alguien tiene `MURIO_EN_EL_VIAJE_<nombre>`, no leas la suya.
 - Por cada tripulante a bordo que no esté muerto: *«(Nombre) vive.»* Y añade:
   - *Iria* con `IRIA_CURADA`: *«…y nunca vuelve a soñar con su hija. Aprende a recordarla despierta.»*
   - *Bruno* con `LA_NIÑA_DE_LA_CAPSULA` o `NIÑA_DORMIDA`: *«…y cría a la niña de la cápsula como si fuera suya. Lo es.»*

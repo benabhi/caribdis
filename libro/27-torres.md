@@ -122,7 +122,7 @@ En una plaza entre las torres, veinte niños cantando en círculo. Tienen los oj
 1. **Escuchar.** Reconoces una canción de tu infancia. +1 Temple. +1 Canto ♫.
 2. **Preguntar a la mujer de dónde son.** «*Huérfanos de Quilla, de los Desguaces. El Canto los quiere más que nadie. Aquí son felices.*» `[Voluntad · 9]` para que te deje hablar con ellos. *Éxito:* uno de los niños, sin abrir los ojos, te dice: «*Nos hemos aprendido todas las canciones de todas las naves que cayeron. Para que no se pierdan.*» Gana `FRAGMENTO_LOS_NIÑOS_QUE_CANTAN`.
 3. **Llevarte a uno.** `[Reflejos · 11]` ☰. *Éxito:* anota `NIÑA_DEL_CORO`: si la llevas a Quilla, +3 de Reputación con los Hijos del Pecio y **★**. −2 de Reputación con el Coro. *Fallo:* la mujer grita. Combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*.
-4. **Si llevas a Lio:** se queda mirando. Luego se une al círculo, cantando una canción que nunca le habías oído. Tienes que sacarlo: `[Voluntad · 9]`. *Fallo:* Lio se queda. Tacha su ficha; puedes volver a buscarlo: gana la Pista `Torres · Lio en el coro · e628`.
+4. **Si llevas a Lio:** se queda mirando. Luego se une al círculo, cantando una canción que nunca le habías oído. Tienes que sacarlo: `[Voluntad · 9]`. *Fallo:* Lio se queda. Anota `LIO_EN_EL_CORO`; puedes buscarlo: gana la Pista `Torres · Lio en el coro · e628`.
 
 ---
 

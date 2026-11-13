@@ -63,7 +63,7 @@ Iria mira la seta blanca en tu mano. Sabe lo que es.
 
 1. **Dársela.** Ella la come. Los hilos dorados se apagan uno a uno. Llora. Ya no está infectada: anota `IRIA_CURADA` (ya no tiras por [e601](#e601)). +1 Lealtad. Si eres el Piloto, −2 `CULPA`. **★**
 2. **Guardarla para otra cosa.** Ella asiente. «*Lo entiendo.*» −1 Lealtad.
-3. **Dársela, pero que la estudie primero.** `[Ingenio · 11]` (con Iria: Ventaja). *Éxito:* Iria la cura y, además, sintetiza una copia: un **antídoto de esporas** de 5 usos y una muestra que vale 6 Chatarra en Quilla. *Fallo:* la estudia, pero tiene que comérsela entera para curarse. Como en la opción 1.
+3. **Dársela, pero que la estudie primero.** `[Ingenio · 11]` (con Iria: Ventaja). *Éxito:* Iria la cura y, además, sintetiza una copia: un **antídoto de esporas** de 5 usos y una muestra que vale 6 Chatarra en Quilla. *Fallo:* la estudia, pero tiene que comérsela entera para curarse. Como la opción 1, sin ★.
 
 ---
 
@@ -91,7 +91,7 @@ No te mira. Mira el horizonte, por donde se fueron.
 
 <a id="e606"></a>
 ### e606 · La carga
-*Salinas Blancas (vais sin tirar encuentros) · ⌛ día*
+*Salinas Blancas (vais sin tirar encuentros) · ⌛ día · Bruno contigo*
 
 La cápsula, abierta entre las estatuas de sal. Dentro, en un gel de estasis que se ha empezado a secar, **una niña**. Seis años. Respira.
 
@@ -152,7 +152,7 @@ La encuentras **dibujando**. Sentada en una ruina, con un cuaderno en la rodilla
 - Si tienes `EN_PUERTO_CHATARRA` con su nombre ([e221](#e221)): los Desguaces la tienen trabajando como traductora para el Contable. La sueltan si les das una reliquia de los Antiguos o 5 Chatarra.
 
 1. **Llevarla contigo.** Se une como compañera. Habla todo el tiempo de los Antiguos.
-2. **Preguntarle qué hace aquí.** Se sonroja. «*Tengo que confesarte algo. La ruta de la nave... no fue un error. Yo pagué para que pasáramos cerca de este planeta. Sabía que estaba aquí. No sabía lo del Canto.*» Si eres el Piloto, elige: perdonarla (+1 Lealtad) o no (−1 Lealtad, +1 `CULPA` para ti: «*nadie es culpable salvo yo*»). Gana `FRAGMENTO_LA_EXPEDICION`.
+2. **Preguntarle qué hace aquí.** Se sonroja. «*Tengo que confesarte algo. La ruta de la nave... no fue un error. Yo pagué para que pasáramos cerca de este planeta. Sabía que estaba aquí. No sabía lo del Canto.*» Si eres el Piloto, elige: perdonarla (+1 Lealtad) o no (−1 Lealtad, +1 `CULPA` para ti: «*nadie es culpable salvo yo*»). Gana `FRAGMENTO_LA_EXPEDICION`. Se une al final.
 3. **Pedirle que lea algo.** Con la Pista de [e288](#e288), o si viste [e211](#e211) o [e250](#e250), lo traduce: gana `FRAGMENTO_LA_PUERTA`, `FRAGMENTO_LA_ANTENA` o `FRAGMENTO_LA_ESPIRAL`.
 
 **Mientras esté contigo:** al ganar tu tercer `FRAGMENTO_`, en lugar de ir a [e840](#e840) ve primero a [e611](#e611).
@@ -381,7 +381,7 @@ Lio te da algo. Un juguete de hojalata, un robot pequeño. Lo ha arreglado él s
 ### e628 · Lio en el coro
 *Torres del Canto · ⌛ día*
 
-*Si Lio se quedó en el coro de niños ([e347](#e347)).*
+*Si tienes `LIO_EN_EL_CORO`.*
 
 Lo encuentras en el círculo, cantando con los demás. Tiene los ojos cerrados. Parece feliz por primera vez desde que lo conoces.
 
