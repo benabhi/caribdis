@@ -132,7 +132,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Recursos:** Energía 6. No usas Aire ni Raciones. **Blindaje 2.** Tienes 4 niveles de Daño en lugar de Heridas.
 - **Protocolos:** elige 2 del catálogo ([e725](#e725)–[e732](#e732)).
 - **Enlace:** puedes hablar con las máquinas. Contra enemigos [Máquina] puedes usar la maniobra Hablar con Ingenio en lugar de Voluntad.
-- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra (puedes hacerlo al descansar). En la Cicatriz, la primera reparación del día es gratis. Gastas 1 Energía cada amanecer fuera de la Cicatriz (en ella, en cambio, recuperas 1) y 1 más cada vez que Viajas sin vehículo; sin Energía, 1 Daño. Recargar por completo cuesta 2 Chatarra, en la Cicatriz o en un asentamiento (r136).
+- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra, también al descansar; en la Cicatriz, la primera del día es gratis. Gastas 1 Energía al amanecer fuera de la Cicatriz (allí recuperas 1) y 1 más por Viaje sin vehículo; sin Energía, 1 Daño. Recargar del todo cuesta 2 Chatarra en la Cicatriz o en un asentamiento (r136).
 - **Eco:** para ti, el Canto es la Red que te reclama. Funciona igual (r137).
 - **Contador: MEMORIA** (empieza en 0, de 0 a 6). Sube al recuperar recuerdos. Al llegar a 6 → [e825](#e825).
 - **Historia:** con el Reloj en 50, 40, 30, 20 y 10 → [e820](#e820), [e821](#e821), [e822](#e822), [e823](#e823) y [e824](#e824).
