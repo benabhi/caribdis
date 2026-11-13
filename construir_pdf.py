@@ -812,12 +812,11 @@ def hoja_protagonista(ancla):
  <div class="h-reloj">{reloj}</div>
  <div class="h-dos">
   <div class="h-bloque"><div class="h-rot">{icono("alerta")} Alerta</div><div class="h-esc">{escala(1, 4)}</div>
-     <div class="h-rot">{icono("reputacion")} Reputación</div>{facc}
-     </div>
+     <div class="h-rot">{icono("ejemplo")} Implantes · Mutaciones · Protocolos</div>{lineas(4)}
+     <div class="h-rot">{icono("consejo")} Habilidades</div>{lineas(2)}</div>
   <div class="h-bloque"><div class="h-rot">{icono("combate")} Arma y protección</div>
      <div class="h-linea-campos"><div class="h-campo"><label>Arma (+ )</label></div><div class="h-campo"><label>Blind.</label></div></div>
-     <div class="h-rot">{icono("ejemplo")} Implantes · Mutaciones · Protocolos</div>{lineas(3)}
-     <div class="h-rot">{icono("consejo")} Habilidades</div>{lineas(2)}</div>
+     <div class="h-rot">{icono("reputacion")} Reputación</div>{facc}</div>
  </div>
  <div class="h-rot">{icono("tiempo")} Historia personal <span class="h-nota">marca cada evento de historia leído</span></div>
  <div class="h-dias">{''.join(f'<span><span class="c"></span>Día {d}<span class="h-dia-alt"></span></span>' for d in (50, 40, 30, 20, 10))}</div>
