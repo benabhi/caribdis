@@ -676,7 +676,8 @@ class Libro:
                                   f'<h3 class="g-tit">{esc(t)}</h3>{cuerpo}</div></div>')
         for nombre, foto in X.TRIPULACION.items():
             if nombre in t.split(',')[0]:
-                return self.ancho(f'<div class="grupo grupo-crew"><div class="medallon">{img(foto)}</div><div>'
+                clase = 'grupo grupo-crew grupo-lio' if nombre == 'Lio' else 'grupo grupo-crew'
+                return self.ancho(f'<div class="{clase}"><div class="medallon">{img(foto)}</div><div>'
                                   f'<div class="g-kicker">Tripulación</div><h3 class="g-tit">{esc(t)}</h3>{cuerpo}</div></div>')
         protas = {'El Piloto': 'piloto.jpg', 'El Nativo': 'nativo.jpg', 'La Mente': 'mente.jpg'}
         if t in protas:
@@ -777,7 +778,8 @@ def hoja_protagonista(ancla):
     attrs = ''.join(f'<div class="h-attr"><div class="h-attr-n">{a}</div><div class="h-attr-v"></div></div>'
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
-                      for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico −2'))
+                      for t in ('Rasguño', 'Herido −1', 'Grave −2'))
+    heridas += '<div class="h-her h-her-critico"><span class="c"></span>Crítico −2 <span class="c"></span>2.º</div>'
     recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
                        for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'

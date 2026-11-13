@@ -321,7 +321,7 @@ table.encuentros a.ref, table.posturas a.ref { font-size: 8.6pt; }
 .grupo { break-inside: avoid; break-after: avoid; margin: 5mm 0 4mm; }
 .grupo-simple .g-tit { font: 800 15pt var(--plantilla); text-transform: uppercase; color: var(--tinta); letter-spacing: .04em; margin: 0 0 1mm;
   border-bottom: 1.2pt solid var(--oxido); padding-bottom: 1mm; }
-.grupo-asent, .grupo-crew { display: flex; align-items: center; background: var(--hueso); padding: 3mm 4mm; border-left: 3pt solid var(--oxido); }
+.grupo-asent, .grupo-crew { display: flex; align-items: center; background: var(--hueso); padding: 3mm 4mm; border-left: 3pt solid var(--oxido); break-inside: avoid; page-break-inside: avoid; }
 .grupo-asent .emblema { width: 15mm; height: 15mm; color: var(--oxido); margin-right: 4mm; flex: none; }
 .g-kicker { font: 600 6.8pt var(--rotulo); letter-spacing: .3em; text-transform: uppercase; color: var(--cobre); }
 .grupo .g-tit { font: 800 17pt/1.05 var(--plantilla); text-transform: uppercase; letter-spacing: .03em; margin: 0; color: var(--tinta); }
@@ -442,7 +442,7 @@ h3.g-caja { font: 700 9pt var(--rotulo); text-transform: uppercase; letter-spaci
 .entrada.final .meta { text-align: center; }
 .entrada.final .texto > p { font-size: 9.4pt; }
 .entrada.final .texto > p:first-child::first-letter { font: 900 16pt/1 var(--plantilla); color: var(--oxido); }
-.entrada.final::after { content: "◆  ◆  ◆"; display: block; text-align: center; font-size: 6pt; color: var(--cobre); letter-spacing: .5em; margin-top: 4mm; }
+.entrada.final::after { content: "◆  ◆  ◆"; display: block; text-align: center; font-size: 5.5pt; color: var(--cobre); letter-spacing: .5em; margin-top: 1.5mm; }
 
 /* ---------- Catálogo e índice de marcas ---------- */
 .col3 .entrada .num { font-size: 12pt; }
@@ -492,7 +492,8 @@ h3.g-caja { font: 700 9pt var(--rotulo); text-transform: uppercase; letter-spaci
   margin: 2.2mm 0 1.6mm; padding-bottom: .5mm; }
 .h-rot .ico { color: var(--oxido); }
 .h-nota { font: italic 400 7pt var(--serif); text-transform: none; letter-spacing: 0; color: var(--tinta-2); margin-left: 2mm; }
-.h-her { display: inline-block; width: 48%; margin-bottom: 1mm; font-weight: 600; }
+.h-her { display: inline-block; width: 43%; margin-bottom: 1mm; font-weight: 600; }
+.h-her-critico { width: 55%; }
 .h-esc .n { display: inline-block; width: 4.6mm; height: 4.6mm; border: .8pt solid var(--tinta); border-radius: 50%; text-align: center;
   font: 700 7pt/4.6mm var(--plantilla); margin-right: .9mm; }
 .h-esc.rep .n { width: 5.2mm; border-radius: 1mm; font-size: 6.4pt; }
@@ -747,3 +748,5 @@ section#r141, section#r141 ul { margin-bottom: 0; }
 section#r141 + aside.caja { margin-bottom: 0; }
 section#r142 { padding-top: 4.5mm; }
 section#e004 ol.opciones > li:nth-child(3) { letter-spacing: -.002em; }
+
+.grupo-lio { break-before: page; }

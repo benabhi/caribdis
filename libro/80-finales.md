@@ -329,9 +329,9 @@ Amanece. Pero Escila no sale sola: a su lado hay seis soles negros.
 
 Los Recolectores han llegado.
 
-No hacen ruido. No disparan. Simplemente **bajan**. Uno se posa sobre el Cementerio de Naves y Puerto Chatarra deja de existir. Otro sobre Quilla. Otro sobre las Torres, y el Canto, por fin, calla.
+No hacen ruido. Simplemente **bajan**. Uno se posa sobre el Cementerio de Naves y Puerto Chatarra deja de existir. Otro sobre Quilla. Otro sobre las Torres, y el Canto, por fin, calla.
 
-El último baja sobre la Cicatriz. Tu nave, tan cerca de estar lista, brilla un instante bajo su sombra.
+El último baja sobre la Cicatriz. Tu nave brilla un instante bajo su sombra.
 
 - Si tienes `SABE_ESCONDERSE` y estás en los Cañones: te escondes como hicieron los Hijos del Pecio hace mil años. Sobrevives. *«Cuando se van, sales de la cueva. No queda casi nada. Pero tú sí. Y tu nave, medio enterrada bajo la arena, sigue allí. Quizá dentro de mil años…»* **Es una derrota, pero estás vivo.**
 - Si no: *«Lo último que ves es una flor negra que se abre.»*
