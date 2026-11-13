@@ -1,6 +1,6 @@
 ## Salas especiales de pecios
 
-*Se llega aquí desde la tabla de salas (r172) con un 11. Al terminar, puedes seguir explorando el pecio o salir.*
+*Se llega desde la tabla de salas (r172) con un 11 (o un 10 en el Pecio sin nombre). Todas: la región del pecio · ⌛ 0. Al terminar, puedes seguir explorando el pecio o salir.*
 
 ### Carguero
 

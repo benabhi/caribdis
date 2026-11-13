@@ -179,7 +179,7 @@ Hay macetas hechas con cascos de soldado y plantas que crecen hacia las ventanil
 1. **Escuchar su historia.** Gana `FRAGMENTO_LA_MADRE`: los Hijos del Pecio descienden de una nave colonia que oyó el Canto hace mil años. Y lo que pasó después, cuando llegaron las luces.
 2. **Pedirle ayuda.** Según tu Reputación con los Hijos del Pecio:
    - **+1 o menos:** «*Gánatela.*» Te encarga algo: elige entre traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Si lo haces, +2 de Reputación.
-   - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección entre Motor y Soporte vital, calidad Sólida.
+   - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección (no el personal) entre Motor y Soporte vital, calidad Sólida.
 3. **Si eres el Nativo:** la Madre te conoce desde que naciste. «*Te vas, ¿verdad? Lo sabía antes que tú.*» Si tu `ARRAIGO` es 4 o más, te pide que lleves contigo a los Mirasoles → [e413](#e413). Si es 3, te pide que cuides de los niños: +1 `ARRAIGO`. Si es 2 o menos, te da la espalda: −1 `ARRAIGO`.
 4. **Si llevas la seta de la Madre:** se la das. La Madre llora. «*Es la seta de mi madre. Creía que se había perdido.*» +3 de Reputación con los Hijos del Pecio y elige un sistema de Quilla: Motor o Soporte vital, calidad Excelente. **★**
 
@@ -390,7 +390,7 @@ Es un asentamiento sin comercio. Pero si te dejan entrar, hay **talleres**.
 - **Si tu Reputación con los Vigías es −2 o menos** → [e434](#e434).
 - **Si no tienes `CODIGO_VIGIA` ni Reputación +1 o más con los Vigías:** `[Voluntad · 11]` para que te dejen pasar (mostrar Luz fría, pieza o batería, da Ventaja). Si fallas → [e434](#e434).
 
-**Servicios:** recargar Energía (la Mente: completa, gratis), **taller** (r162; aquí pueden llevar un sistema de Sólido a Excelente por 6 Chatarra) y descanso a cubierto.
+**Servicios:** recargar Energía (la Mente: completa, 2 Chatarra), **taller** (r162; aquí pueden llevar un sistema de Sólido a Excelente por 6 Chatarra) y descanso a cubierto.
 
 **Actividad especial (elige una):**
 1. **Hablar con Custodio Primo** → [e431](#e431).
@@ -436,7 +436,7 @@ El calor no viene del reactor: viene de la luz, que se te pega a la piel como po
 
 Quieren que traigas al Vigía que reza ([e327](#e327)).
 
-1. **Aceptar.** Anota `ENCARGO_DE_PRIMO` y la Pista `Ciudad · El Vigía que reza · e327`. Si vuelves con el Vigía sin dueño como compañero (opción 2 de [e327](#e327)), te dan **un sistema Sólido a tu elección** y +2 de Reputación con los Vigías; borra `ENCARGO_DE_PRIMO`. El Vigía será «reprogramado». Si eres la Mente, −1 Temple.
+1. **Aceptar.** Anota `ENCARGO_DE_PRIMO` y la Pista `Ciudad · El Vigía que reza · e327`. Si vuelves con el Vigía sin dueño como compañero (opción 2 de [e327](#e327)), te dan **un sistema Sólido a tu elección** (no el personal) y +2 de Reputación con los Vigías; borra `ENCARGO_DE_PRIMO`. El Vigía será «reprogramado». Si eres la Mente, −1 Temple.
 2. **Rechazar.** «*ANOTADO.*» −1 de Reputación con los Vigías.
 3. **Preguntar qué le harán.** «*BORRADO.*» Si después de saberlo traes al Vigía igualmente, +1 `CULPA` si eres el Piloto, −1 Temple si no.
 4. **Ofrecer otro encargo.** Con `AMIGO_DE_UN_VIGIA`, Primo te encarga reparar a tres Vigías caídos: anota `ENCARGO_DE_REPARAR` y cuenta los que repares en [e324](#e324) (+1 Rep. extra cada uno). Al tercero, gana `PERMISO_DE_PRIMO` y borra `ENCARGO_DE_REPARAR`.

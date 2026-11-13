@@ -11,7 +11,7 @@ La Madre Óxida te recibe en la cabina con toda la aldea reunida. Te ponen un co
 «Ya no eres de fuera. Si te vas, te vas como uno de los nuestros. Y si te quedas, tienes casa.»
 
 Elige un regalo:
-1. **Una pieza de la *Esperanza*:** un sistema a tu elección, calidad Excelente, salvo Combustible.
+1. **Una pieza de la *Esperanza*:** un sistema a tu elección (no el personal), calidad Excelente, salvo Combustible.
 2. **Guerreros para el despegue:** anota `GUERREROS_DE_QUILLA`. En la secuencia de despegue, los Hijos del Pecio defienden la Cicatriz: superas automáticamente un ataque de facción.
 3. **Un nombre:** te dan un nombre en su lengua. +1 Temple máximo. Si eres el Nativo, +2 `ARRAIGO`.
 

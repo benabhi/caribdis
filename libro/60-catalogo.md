@@ -55,7 +55,7 @@ Blindaje +1. Inmune a las tormentas de óxido y a la lluvia de cristal.
 
 <a id="e711"></a>
 ### e711 · 2 · Ojos de sombra
-Ves en la oscuridad total. Ventaja en el Polo con Noche helada y en los pecios contra las Trampas.
+Ves en la oscuridad total. Ventaja en el Polo y en los pecios contra las Trampas.
 
 <a id="e712"></a>
 ### e712 · 3 · Brazos largos
@@ -91,7 +91,7 @@ De tus pies salen raíces finas. Cada vez que descanses, `[Vigor · 7]` o pierde
 
 <a id="e720"></a>
 ### e720 · 11 · Voz doble *(defecto)*
-Hablas con dos voces a la vez. Desventaja al Hablar con humanos. Ventaja al Hablar con [Cantor] y con [Bestia].
+Hablas con dos voces a la vez. Desventaja al Hablar con humanos. Ventaja al Hablar con [Cantor] y, si puedes, con [Bestia].
 
 <a id="e721"></a>
 ### e721 · 12 · Luz bajo la piel *(defecto)*

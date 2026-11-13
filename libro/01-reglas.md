@@ -1047,5 +1047,5 @@ Para que cada partida sea distinta, tira 1d6 al preparar la partida y aplica el 
 | 2 | **Sol bajo** | En Polo y Salinas, la noche a la intemperie es Noche helada (r155) |
 | 3 | **Corona inquieta** | +1 Alerta ◉ al amanecer con el Reloj en 50, 40, 30, 20 y 10 |
 | 4 | **Coro en procesión** | En Bosque y Ciudad, tira dos veces y usa el que tenga [Cantor], si lo hay |
-| 5 | **Mercado de pecios** | Cada asentamiento vende un sistema Precario por 12 Chatarra |
+| 5 | **Mercado de pecios** | Cada asentamiento vende un sistema Precario (no el personal) por 12 Chatarra |
 | 6 | **Silencio** | No hay pulso del Canto los días en que el Reloj acaba en 5 |
