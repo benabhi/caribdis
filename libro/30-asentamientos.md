@@ -10,13 +10,14 @@
 ### e400 · Puerto Chatarra
 *Cementerio de Naves · ⌛ día*
 
-Un portanaves de guerra de dos kilómetros, tumbado de lado en un cráter. Dentro, una ciudad de cinco mil almas: calles que son pasillos, plazas que son hangares y casas hechas con cabinas. Huele a soldadura, a aceite frito y a gente. Todo está en venta. Todo tiene precio.
+Un portanaves de guerra, tumbado de lado en un cráter. Dentro, una ciudad de cinco mil almas: calles que son pasillos, plazas que son hangares y casas de cabinas. Huele a soldadura, a aceite frito y a gente. Todo tiene precio.
 
 - **Con Reputación −2 o menos** → [e407](#e407).
 - **Con `TRABAJO_DEL_CONTABLE` y una reliquia**, o `ENCARGO_DEL_SUBASTADOR` y `TOMO_DE_LUZ` → [e406](#e406) (no gasta actividad).
+- **Con `EN_PUERTO_CHATARRA`:** ve al primer evento de ese tripulante (no gasta actividad).
 - **Entregas** (bórralas): `FICHA_DESGUACE` (+1 Rep., moto), `DESGUACE_HELADO` (+2 Rep.), `NIÑO_DEL_HUMO` (+1 Rep., +1 Temple). `PAQUETE_DE_MENDANA`: en Quilla.
 
-**Servicios:** comprar y vender (r161; los precios de armas, −1), rellenar Aire o Energía, sanador (r163), rumores (r164), descanso a cubierto y **taller** (r162).
+**Servicios:** comprar y vender (r161; armas, 1 menos), rellenar Aire o Energía, sanador (r163), rumores (r164), descanso a cubierto y **taller** (r162).
 
 **Actividad especial (elige una):**
 1. **La arena** → [e401](#e401).

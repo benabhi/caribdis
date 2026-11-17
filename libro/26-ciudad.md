@@ -73,7 +73,7 @@ Un Vigía tumbado en mitad de la calle, con una pierna arrancada. Intenta levant
 Su ojo parpadea en rojo, pidiéndote algo que no sabe decir. Te sigue con el ojo hasta que te alejas. Le falta un trozo de la placa del pecho, y dentro se ve una luz que va y viene.
 
 1. **Repararlo.** `[Ingenio · 11]`, 2 Chatarra (Mente, Noemí: Ventaja). *Éxito:* se levanta. Te hace una reverencia y se va. +2 de Reputación con los Vigías y gana `AMIGO_DE_UN_VIGIA`: una vez, en un combate contra Vigías, puedes terminarlo inmediatamente mostrando su número de serie. Si tienes `ENCARGO_DE_REPARAR`, esta reparación cuenta para el encargo: +1 de Reputación extra. *Fallo:* se apaga. −1 de Reputación con los Vigías.
-2. **Desmontarlo.** `[Vigor · 9]`. *Éxito:* 5 Chatarra y una **coraza de Vigía** (Blind. 2). −2 de Reputación con los Vigías. *Fallo:* se defiende con lo que le queda. *Vigía caído · Ataque 3 · Blind. 2 · Heridas 2 · [Máquina][Antiguo]*.
+2. **Desmontarlo.** `[Vigor · 9]`. *Éxito:* 5 Chatarra y una **coraza de Vigía** (Blind. 2). −2 de Reputación con los Vigías. *Fallo:* se defiende. *Vigía caído · Ataque 3 · Blind. 2 · Heridas 2 · [Máquina][Antiguo]*; si ganas, como el Éxito.
 3. **Dejarlo.** La luz pasa a rojo. Cuando te alejas, oyes que emite un pitido largo, como un suspiro.
 
 ---
