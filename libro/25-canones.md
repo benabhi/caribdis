@@ -42,8 +42,8 @@ Algunas huellas son muy pequeñas, de niño. Otras arrastran un pie.
 Un puente de tablas y cuerda de tripa sobre un abismo de trescientos metros. Le faltan tablas. En la otra orilla, un pecio colgado de la pared del cañón, sujeto por raíces.
 
 1. **Cruzar.** `[Reflejos · 9]` ⚔. *Éxito:* llegas al pecio: explóralo (r170). *Fallo:* una tabla se rompe. `[Vigor · 9]` para agarrarte; si fallas, caes: 2 Heridas y acabas en el fondo, junto al río → [e307](#e307).
-2. **Reparar el puente.** 2 Chatarra y `[Ingenio · 9]`. *Éxito:* cruzas sin riesgo, y los Hijos del Pecio usarán este puente: +1 de Reputación con ellos. Anota `PUENTE_REPARADO`. *Fallo:* gastas la Chatarra igual.
-3. **Si tienes `PUENTE_REPARADO`:** cruzas sin tirar. En la otra orilla, alguien ha dejado un regalo de agradecimiento: 2 Raciones y una pluma de cóndor de metal (vale 2 Chatarra), solo la primera vez.
+2. **Reparar el puente.** 2 Chatarra y `[Ingenio · 9]`. *Éxito:* cruzas a salvo y exploras el pecio; los Hijos del Pecio lo usarán: +1 de Reputación con ellos. Anota `PUENTE_REPARADO`. *Fallo:* pierdes la Chatarra.
+3. **Si tienes `PUENTE_REPARADO`:** cruzas sin tirar y exploras el pecio. Al otro lado, alguien te dejó un regalo: 2 Raciones y una pluma de cóndor de metal (vale 2 Chatarra), solo la primera vez.
 4. **Dar la vuelta.** Nada.
 
 ---
