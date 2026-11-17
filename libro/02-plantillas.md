@@ -88,7 +88,7 @@ Observas desde lejos y ves cómo se mueven. Si decides luchar, tienes **Sorpresa
 <a id="r315"></a>
 ### r315 · Lo que llevan
 
-Ves lo que transportan: es el **Botín** del evento o, si no lo indica, 1d6 Chatarra. Puedes luchar con Sorpresa (r144) para quedártelo, o anotarte la Pista para seguirles más tarde (`región actual · Su rastro · este evento`). **Si ganas** o **Si pasas**.
+Ves lo que transportan: es el **Botín** del evento o, si no lo indica, 1d6 Chatarra. Puedes luchar con Sorpresa (r144) para quedártelo, o anotarte la Pista para seguirles más tarde (`esta región · Su rastro ·` y el número de este evento). **Si ganas** o **Si pasas**.
 
 <a id="r316"></a>
 ### r316 · Te descubren

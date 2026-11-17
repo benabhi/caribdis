@@ -25,7 +25,7 @@
 ### e241 · La refinería abandonada
 *Salinas Blancas · ⌛ día*
 
-Tres torres de destilación oxidadas, conectadas por tuberías que se hunden en la sal. Una colonia minera la construyó hace un siglo para sacar combustible del mar enterrado. Las bombas están paradas, pero el depósito central **todavía gotea azul**.
+Tres torres de destilación, conectadas por tuberías que se hunden en la sal. Una colonia minera la construyó para sacar combustible del mar enterrado. Las bombas están paradas, pero el depósito central **todavía gotea azul**. Con `REFINERIA_VOLADA`, solo hay ruinas: 2 Chatarra.
 
 En la puerta, un cartel en cuatro idiomas: *PELIGRO · NO DESPERTAR AL CAPATAZ*.
 
@@ -53,9 +53,9 @@ Haz las tres pruebas. Cuenta los Éxitos:
 - **Tres:** **Combustible Excelente** (pesado). **★**
 - **Dos:** **Combustible Sólido** (pesado).
 - **Uno:** **Combustible Precario** (pesado). Una explosión: 1 Herida.
-- **Ninguno:** explota la torre. 3 Heridas, ◉ +2 Alerta, y la refinería queda destruida: no podrás volver a intentarlo.
+- **Ninguno:** la torre explota: 3 Heridas, ◉ +2 Alerta, refinería rota. Anota `REFINERIA_VOLADA`: en [e241](#e241), solo ruinas y 2 Chatarra.
 
-Si no fue destruida, puedes volver a intentarlo otro día para mejorar el resultado (siguiendo la Pista, si la tienes, o explorando las Salinas).
+Si no fue destruida, puedes volver otro día a mejorar el resultado (siguiendo la Pista o explorando las Salinas): te quedas el mejor.
 
 ---
 
@@ -83,10 +83,11 @@ Si tienes a Amara, lee el nombre: «*El que vuelve*».
 
 De la cubierta cuelgan cuerdas que gotean sal en vez de agua. Algo golpea el casco desde dentro.
 
-1. **Nadar hasta él.** `[Vigor · 11]` ⚔. *Éxito:* a bordo, todo está seco y en orden, como si la tripulación acabara de bajar. En la bodega hay **luz fría embotellada**: una reliquia de los Antiguos (Ventaja en la tabla de identificación, r193). *Fallo:* la salmuera te quema la piel. 2 Heridas.
-2. **Construir una balsa.** `[Ingenio · 9]`, 2 Chatarra. *Éxito:* llegas al barco sin daño. *Fallo:* la balsa se hunde. 1 Herida y lo intentas nadando (opción 1).
+1. **Nadar hasta él.** `[Vigor · 11]` ⚔. *Éxito:* subes a bordo. *Fallo:* la salmuera te quema la piel y te devuelve a la orilla de sal. 2 Heridas.
+2. **Construir una balsa.** `[Ingenio · 9]`, 2 Chatarra. *Éxito:* subes a bordo sin daño. *Fallo:* la balsa se hunde. 1 Herida y lo intentas nadando (opción 1).
 3. **Hacer señales.** Tira 1d6. Con un 6, alguien te responde desde la cubierta con un farol. Pero allí no hay nadie. Gana `FRAGMENTO_EL_BARCO`.
-4. **Si llegas a bordo**, en el timón hay una carta náutica de un mar que ya no existe, y en ella, marcado, el Polo. Gana la Pista `Polo · El Pozo · e281`.
+
+**Si subes a bordo:** todo está seco y en orden, como si la tripulación acabara de bajar. En la bodega hay **luz fría embotellada**: una reliquia sin identificar (Ventaja al identificarla, r193). En el timón, una carta náutica de un mar que ya no existe, con el Polo marcado: gana la Pista `Polo · El Pozo · e281`.
 
 ---
 
@@ -125,7 +126,7 @@ Un campamento. Fogata, tiendas, cacerolas. Y la gente, sentada alrededor del fue
 Una familia de Desguaces con rastrillos enormes, que cosecha sal en montones perfectos. Venden sal, salmuera y salazones.
 
 1. **Comprar.** 1 Chatarra por 3 Raciones de pescado ciego en salazón.
-2. **Ayudarles un día.** `[Vigor · 7]` ⌛. *Éxito:* 3 Chatarra y +1 de Reputación con los Desguaces. Te enseñan dónde no pisar: anota `SABE_DE_SAL` (Ventaja contra Hundimiento, [e251](#e251)).
+2. **Ayudarles un día** (es tu acción de hoy). `[Vigor · 7]`. *Éxito:* 3 Chatarra y +1 de Reputación con los Desguaces. Te enseñan dónde no pisar: anota `SABE_DE_SAL` (Ventaja contra Hundimiento, [e251](#e251)).
 3. **Preguntar por la refinería.** «*El capataz no deja entrar a nadie. Pero se le puede engañar: si le enseñas un casco de minero, cree que eres del turno.*» Te venden uno por 2 Chatarra: **Casco de minero** (Ventaja para Hablar con el capataz en [e241](#e241)).
 4. **Si el Reloj está en 20 o menos:** ya saben lo de los Recolectores. Te ofrecen todo lo que tienen a cambio de un sitio en tu nave para su hija pequeña. Si aceptas (y no la tenías), anota `HIJA_DEL_SALINERO` (cuenta como pasajera en tu final) y te dan 6 Chatarra.
 
@@ -141,9 +142,9 @@ Los arenadores avanzan despacio, levantando una nube blanca que se ve desde kil�
 
 > **Escoltas del convoy** · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]
 
-1. **Asaltar el convoy.** Combate. *Si ganas:* **Combustible Sólido** (pesado) y −2 de Reputación con los Desguaces. ◉
-2. **Ofrecerte de escolta.** Viajas con ellos hasta el Cementerio: cuenta como tu viaje del día, sin encuentro. Al llegar, te pagan 3 Chatarra. Tira 1d6: con un 1, os atacan por el camino → combate contra *Saqueadores · Ataque 4 · Blind. 1 · Heridas 3 · [Náufrago]*; si ganas, te dan además un bidón: **Combustible Precario**.
-3. **Sabotear un bidón y seguirlos.** `[Reflejos · 11]`. *Éxito:* el bidón pierde y tienen que dejarlo atrás. Lo recoges y lo arreglas: **Combustible Precario**, sin que nadie lo sepa. *Fallo:* te ven. Combate con Emboscada.
+1. **Asaltar el convoy.** Combate. *Si ganas:* **Combustible Sólido** (pesado), −2 de Reputación con los Desguaces y ◉ +1 Alerta.
+2. **Ofrecerte de escolta.** Viajas con ellos hasta el Cementerio: cuenta como tu viaje del día, sin encuentro. Al llegar, te pagan 3 Chatarra. Tira 1d6: con un 1, os atacan por el camino → combate contra *Saqueadores · Ataque 4 · Blind. 1 · Heridas 3 · [Náufrago]*; si ganas, te dan además un bidón: **Combustible Precario** (pesado).
+3. **Sabotear un bidón y seguirlos.** `[Reflejos · 11]`. *Éxito:* el bidón pierde y tienen que dejarlo atrás. Lo recoges y lo arreglas: **Combustible Precario** (pesado), sin que nadie lo sepa. *Fallo:* te ven. Combate con Emboscada.
 4. **Dejarlos pasar.** Nada.
 
 ---
@@ -169,7 +170,7 @@ La costra de sal se agrieta y salen pinzas: cangrejos blancos del tamaño de una
 
 Tras una lluvia rara, una lámina de agua de un centímetro cubre la sal. El cielo se refleja en ella perfecto: caminas por encima de la Corona, entre las estrellas.
 
-1. **Estudiar las estrellas.** `[Ingenio · 9]` (Mente con `NAVEGANTE`: automático). *Éxito:* calculas tu posición exacta en la galaxia: si tu Navegación está instalada, sube 1 de calidad. Si no, anota `POSICION_CONOCIDA` (Ventaja para instalar la Navegación). *Fallo:* ves cosas que no deberían estar: las seis luces, más cerca de lo que creías. El Reloj baja 1.
+1. **Estudiar las estrellas.** `[Ingenio · 9]` (Mente con `NAVEGANTE`: automático). *Éxito:* calculas tu posición exacta: si tu Navegación está instalada, sube 1 de calidad. Si no, anota `POSICION_CONOCIDA` (Ventaja en la Navegación del despegue). *Fallo:* ves cosas que no deberían estar: las seis luces, más cerca de lo que creías. El Reloj baja 1.
 2. **Buscar el anillo de restos en el reflejo.** En el espejo, la Corona es una espiral perfecta, como la escritura de los Antiguos. No es basura: es un mensaje, escrito con naves muertas. Gana `FRAGMENTO_LA_ESPIRAL`. +1 Canto ♫.
 3. **Tumbarte en el agua y descansar.** Hoy puedes descansar aquí como en un asentamiento: recuperas 2 Heridas y 1 Temple, sin tirada nocturna. Esto consume tu acción de hoy.
 
@@ -185,7 +186,7 @@ Por un instante todo se queda quieto: el viento, la sal, tu respiración. Luego 
 
 Notas algo duro bajo la suela: una hebilla, un casco, una mano. Hay más gente ahí abajo. La sal guarda todo lo que se traga, y no lo devuelve nunca entero. Te agarras a lo primero que encuentras y no piensas en qué es.
 
-1. **Lanzarte hacia atrás.** `[Reflejos · 11]` (`SABE_DE_SAL`: Ventaja). *Éxito:* te salvas. *Fallo:* caes hasta la cintura. Pierdes 1 objeto pesado (si llevas un sistema pesado, tira 1d6: con 1–3 lo pierdes; si no, otro objeto) y 1 Herida.
+1. **Lanzarte hacia atrás.** `[Reflejos · 11]` (`SABE_DE_SAL`: Ventaja). *Éxito:* te salvas de un salto. *Fallo:* caes hasta la cintura. Pierdes 1 objeto que no sea un arma (o, si llevas un sistema pesado y sacas 1–3 en 1d6, ese sistema) y 1 Herida.
 2. **Agarrarte a lo que haya.** `[Vigor · 11]`. *Éxito:* te sacas a pulso, y de paso sacas algo que estaba atrapado en la salmuera: una reliquia sin identificar. *Fallo:* 2 Heridas, pero sales.
 3. **Dejarte hundir** (si tienes `SAL_EN_LA_PIEL` o eres la Mente). Caes. Abajo hay un mar, oscuro, enorme, y en él flotan miles de cuerpos dormidos. Uno abre los ojos y te empuja hacia arriba. Sales sin daño. Gana `FRAGMENTO_EL_MAR_DE_ABAJO`. +2 Canto ♫.
 

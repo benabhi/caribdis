@@ -18,7 +18,7 @@ Según dónde estés:
 - **Ciudad o Torres:** se arrodilla y apoya la máscara contra el suelo, escuchando. «Aquí debajo cantan más fuerte.» +1 Canto ♫, pero gana la Pista `Torres · La procesión · e345`.
 
 1. **Preguntarle quién es.** «Nadie. Fui del Coro. Ahora voy al Pozo, a devolver lo que me llevé.» Anota `CONOCES_A_LA_PEREGRINA`.
-2. **Intentar quitarle la máscara** (por curiosidad o por miedo). `[Reflejos · 9]`. *Éxito:* debajo no hay cara: hay cristal, como el del Bosque, y dentro algo que se mueve. Ella se cubre con calma y se va. +1 Canto ♫. *Fallo:* te para la muñeca con dos dedos. No vuelves a verla: tacha a la Peregrina.
+2. **Intentar quitarle la máscara** (por curiosidad o por miedo). `[Reflejos · 9]`. *Éxito:* debajo no hay cara: hay cristal, como el del Bosque, y dentro algo que se mueve. Ella se cubre con calma y se va. +1 Canto ♫. *Fallo:* te detiene con dos dedos. No vuelves a verla: tacha a la Peregrina.
 3. **Dejarla pasar.** Ella inclina la cabeza. Parece agradecida de que alguien, por una vez, no quiera nada.
 
 ---
@@ -36,8 +36,8 @@ Es más vieja de lo que recordabas, o quizá más cansada. Las campanillas de su
 Si el Reloj está en **31 o más**, los cuerpos son desconocidos. Si está en **30 o menos**, uno de ellos es un tripulante tuyo que aún no has encontrado (eliges cuál): está aquí, en esta región. Ve a su primer evento (r185) después de este.
 
 1. **Ayudarla a despertarlos uno a uno, lejos del camino.** Pierdes el día (si hoy aún no has hecho tu acción, esta es tu acción). +1 Temple. +1 de Reputación con los Hijos del Pecio y −1 con el Coro.
-2. **Pedirle que te enseñe.** Te pone las campanillas en la mano. `[Voluntad · 11]` ♫. *Éxito:* aprendes el truco: una vez por partida, cuando el Canto vaya a subirte, no sube. Anota `CAMPANILLAS`. *Fallo:* +1 Canto ♫ y te duermes tú también. Despiertas al día siguiente: Reloj −1.
-3. **Registrar a los dormidos.** Nadie te lo impide. Ganas 4 Chatarra y una reliquia sin identificar (r193). La Peregrina no dice nada, pero cuando vuelvas a verla, su primera frase será sobre esto.
+2. **Pedirle que te enseñe.** Te pone las campanillas en la mano. `[Voluntad · 11]` ♫. *Éxito:* aprendes el truco: anota `CAMPANILLAS`. Una vez, cuando el Canto vaya a subirte, no sube: bórrala entonces. *Fallo:* +1 Canto ♫ y te duermes tú también. Despiertas al día siguiente: Reloj −1.
+3. **Registrar a los dormidos.** Nadie te lo impide. Ganas 4 Chatarra y una reliquia sin identificar (r193). La Peregrina no dice nada, pero la máscara no deja de apuntarte. −1 Temple.
 
 ---
 
@@ -71,7 +71,7 @@ La arena a su alrededor no tiene huellas.
 
 1. **Llevarla a bordo.** Ocupa una plaza en el despegue (como un pasajero). Anota `LA_PEREGRINA_A_BORDO`. Al despegar, en la prueba 4 de [e900](#e900), tienes Ventaja: ella canta por encima del Canto.
 2. **Acompañarla al Polo.** Si viajas al Polo Helado antes de que el Reloj baje 5, ella entra sola en el Pozo y te deja lo único que tenía: gana `FRAGMENTO_LA_PEREGRINA`. Si no llegas a tiempo, se va sin ti.
-3. **Preguntarle por el Secreto.** Te mira largo rato. «Ya lo sabes. Solo te falta oírlo.» Si tienes al menos 3 `FRAGMENTO_`, ve a [e840](#e840) ahora. Si no, +1 Pista (r164, tirando 2d6).
+3. **Preguntarle por el Secreto.** Te mira. «Ya lo sabes. Solo te falta oírlo.» Con 2 `FRAGMENTO_` y sin `SECRETO_DESCUBIERTO`, ve a [e840](#e840). Si no, +1 Pista (r164, con 2d6).
 
 Cuando terminas de hablar, la Peregrina se pone otra vez la máscara y mira tu nave un rato largo, en silencio.
 
@@ -88,10 +88,10 @@ Lleva un rato detrás de ti. Lo oyes: clic, clic, clic sobre las piedras. Cuando
 
 Según dónde estés, lleva algo en la boca:
 - **Dunas o Cañones:** un hueso largo. +1 Hueso (si usas el taller, r201), o 1 Ración si lo hierves.
-- **Cementerio, Ciudad o Polo:** un cable de cobre trenzado. +1 Chatarra.
+- **Cementerio, Ciudad o Polo:** un cable de cobre trenzado. +1 Chatarra o +1 Cobre.
 - **Salinas, Bosque o Torres:** una lente rota. Si la miras a contraluz, ves por un momento la región desde arriba: Ventaja en tu próxima prueba de Orientación.
 
-1. **Darle de comer** (1 Ración o 1 Chatarra: come las dos cosas). Mueve la cola, que es una antena. Anota `PERRO_DE_LATON`.
+1. **Darle de comer** (1 Ración o 1 Chatarra: come de todo). Mueve la cola, que es una antena. Anota `PERRO_DE_LATON`.
 2. **Ahuyentarlo.** Se va. Volverá: los perros de latón no entienden las negativas.
 3. **Desmontarlo.** Combate contra *Perro de latón · Ataque 2 · Blind. 2 · Heridas 2 · [Máquina]*. Si ganas, 3 Chatarra y una pieza de Luz fría (+1 Canto ♫, r201). Tacha al Perro. Esa noche, en la tirada nocturna, algo aúlla lejos.
 
@@ -109,7 +109,7 @@ Si tienes `PERRO_DE_LATON`, te sigue sin dudar. Si no, tira 1d6: con 1–3 se ca
 
 Lo que te enseña depende del Reloj:
 - **Reloj 41 o más:** un pecio pequeño medio enterrado. Explóralo (r170), pero la primera sala es siempre de Restos.
-- **Reloj de 21 a 40:** a un náufrago malherido que lleva una pieza de tu nave. Si gastas 1 Botiquín o 2 Raciones en él, te la da: si te falta un sistema, gana el que elijas, **Precario** (r180). Si no te falta ninguno, 5 Chatarra.
+- **Reloj de 21 a 40:** un náufrago malherido con una pieza de tu nave. Si gastas 1 Botiquín o 2 Raciones en él, te la da: si te falta un sistema, gana el que elijas (no el personal), **Precario** (r180). Si no, 5 Chatarra.
 - **Reloj 20 o menos:** una **sonda de los Recolectores** estrellada. Gana `MAPA_DE_LOS_RECOLECTORES` (te da Ventaja en [e902](#e902)), pero +1 Alerta ◉.
 
 
@@ -121,7 +121,7 @@ Huele a aceite y a perro mojado. Mueve la cola de chapa sin parar.
 ### e066 · Los dueños
 *Viejo conocido · ⌛ 0*
 
-Los dueños del perro han venido a buscarlo. Son tres **Desguaces** con chalecos de placas, y uno lleva un mando a distancia hecho con una caja de música.
+Los dueños del perro han venido a buscarlo. Son tres **Desguaces** con chalecos de placas, y uno lleva un mando a distancia hecho con una vieja caja de música, de las que solo tocan una canción.
 
 Llevan las botas cubiertas de grasa y el cansancio de quien ha dormido poco. El más joven sonríe al ver al perro; los otros dos no. La caja de música del mando suena sola un instante, dos notas, y el perro gime.
 
@@ -131,7 +131,7 @@ El perro se esconde detrás de ti.
 
 1. **Pagar por él.** 4 Chatarra. Anota `PERRO_DE_LATON` (si no lo tenías) y ahora es tuyo de verdad: +1 de Reputación con los Desguaces por pagar sin discutir.
 2. **Negarte.** Combate contra *Desguaces del perro · Ataque 3 · Blind. 1 · Heridas 4 · [Náufrago]*. El perro lucha a tu lado: +1 a tu Ataque. Si ganas, −1 de Reputación con los Desguaces.
-3. **Devolverlo.** El de la caja de música te da 3 Chatarra y te guiña un ojo: «Siempre vuelve con quien le da de comer.» Tacha al Perro. Pero si tienes `PERRO_DE_LATON`, tira 1d6: con un 6, a los dos días vuelve solo, con la caja de música en la boca. Vuelve a ser tu compañero y anotas `CAJA_DE_MUSICA`. La caja es su mando: la próxima vez que un evento vaya a quitarte al Perro, das cuerda a la caja, él no se va y borras `CAJA_DE_MUSICA`.
+3. **Devolverlo.** El de la caja de música te da 3 Chatarra y te guiña un ojo: «Siempre vuelve con quien le da de comer.» Tacha al Perro. Pero si tienes `PERRO_DE_LATON`, tira 1d6: con un 6, a los dos días vuelve solo, con la caja de música en la boca: no lo taches, sigue siendo tu compañero, y anota `CAJA_DE_MUSICA`. La caja es su mando: en [e067](#e067), quitarle el emisor será un Éxito automático, sin hacerle daño.
 
 ---
 
@@ -143,7 +143,7 @@ Esta noche el perro no duerme. Está de pie en lo alto de una roca, con la oreja
 
 Lo entiendes de golpe: no es un perro. Es una pieza de algo que vino de arriba, hace mucho, y que se perdió. Y ahora lo están llamando.
 
-Le tocas el lomo: está frío, y debajo del pelo algo late con un ritmo que no es el de un corazón. Te mira como si quisiera despedirse.
+Le tocas el lomo: está frío, y debajo de las placas algo late con un ritmo que no es el de un corazón. Te mira como si quisiera despedirse.
 
 Si no tienes `PERRO_DE_LATON`, el perro se va hacia el horizonte y no vuelve. Fin de la historia. Si lo tienes:
 
@@ -186,7 +186,7 @@ Según el Reloj:
 - **Reloj 31 o más:** es una falsa alarma. Te invitan a cenar con ellos: +1 Temple, +2 Raciones.
 - **Reloj 30 o menos:** no es una falsa alarma. Te dan un **cuaderno de espejos**: los días y las horas a las que las luces se mueven. Gana `CARTA_DE_LOS_MIRASOLES` (Ventaja en la Navegación del despegue).
 
-1. **Ayudarles a desmontar.** Pierdes el día. +1 Temple y, si tienes `LOS_MIRASOLES_TE_CONOCEN`, te regalan un trepador (vehículo, r152: consume 1 Ración extra por viaje).
+1. **Ayudarles a desmontar.** Pierdes el día. +1 Temple y, con `LOS_MIRASOLES_TE_CONOCEN`, te regalan un trepador (vehículo, r152: 1 Ración por viaje; no entra en la Ciudad).
 2. **Seguir tu camino.** La matriarca te desea suerte de la forma de los Mirasoles: escupe en tu bota.
 
 ---
@@ -200,7 +200,7 @@ La caravana ha perdido un trepador en una grieta. Dentro estaba **la nieta de la
 La grieta está aquí. La niña también.
 
 1. **Bajar a por ella.** `[Vigor · 11]`. Cuerda y garfio, Ventaja. Iria, Ventaja. *Éxito:* la sacas. La matriarca vuelve a por vosotros, cosa que no había hecho nunca. Anota `DEUDA_DE_LOS_MIRASOLES`. *Fallo:* la sacas (y anotas la Marca), pero te cuesta 2 Heridas.
-2. **Correr tras la caravana para pedir ayuda.** `[Reflejos · 9]`. *Éxito:* la alcanzas y vuelven entre todos: la niña se salva. +1 Temple. *Fallo:* cuando volvéis, la grieta está vacía. Nadie dice nada. Tacha a los Mirasoles.
+2. **Correr tras la caravana.** `[Reflejos · 9]`. *Éxito:* la alcanzas y entre todos salváis a la niña. +1 Temple y anota la misma Marca. *Fallo:* cuando volvéis, la grieta está vacía. Nadie dice nada. Tacha a los Mirasoles.
 3. **Seguir tu camino.** No es tu familia. Tacha a los Mirasoles. Si eres el Piloto, +1 `CULPA`.
 
 ---
@@ -219,5 +219,5 @@ Si tienes `DEUDA_DE_LOS_MIRASOLES`, `LOS_MIRASOLES_TE_CONOCEN` o `MIRASOL`:
 
 Si no tienes ninguna de esas Marcas, la matriarca solo te mira, se pone las gafas y se va. La caravana sigue dando vueltas sin ti.
 
-Las gafas de la matriarca reflejan las seis luces del cielo. Tiene las manos tranquilas. Antes de irse, te deja un espejo pequeño en la mano, sin explicar para qué.
+Las gafas de la matriarca reflejan las seis luces del cielo. Tiene las manos tranquilas. Antes de irse, te deja en la mano un espejo pequeño: una vez, te da Ventaja al orientarte (r151).
 

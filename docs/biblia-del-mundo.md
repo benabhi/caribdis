@@ -76,7 +76,7 @@ La nave no tiene un nombre fijo: el jugador lo escribe en su hoja.
 | **Dra. Iria Salcedo** | Médica | Cura 1 Herida al día al grupo | Se infectó con esporas en la caída y está cambiando |
 | **Bruno Kessler** | Guardaespaldas | +1 al Ataque del grupo; absorbe 1 Herida por combate | Custodiaba una cápsula sellada que desapareció |
 | **Amara Oyelaran** | Arqueóloga | Lee la escritura de los Antiguos | La expedición era suya: vino a Caribdis a propósito |
-| **Noemí «Grasa» Vidal** | Mecánica | +1 calidad al instalar un sistema | Desvió la ruta de la nave por un contrato secreto |
+| **Noemí «Biela» Vidal** | Mecánica | +1 calidad al instalar un sistema | Desvió la ruta de la nave por un contrato secreto |
 | **Hermano Tadeo** | Capellán | +1 a las pruebas de Voluntad del grupo | Oye el Canto y le gusta lo que le dice |
 | **Lio** | Polizón, 13 años | Pasa por lugares estrechos; roba | Huía de alguien que estaba a bordo |
 

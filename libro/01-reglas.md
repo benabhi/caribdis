@@ -43,6 +43,8 @@ Una goma también viene bien: la Hoja se borra mucho.
 | `MARCA` | Palabra clave en versalitas: anótala en tu hoja (r191) |
 | ★ | Evento hito: al superarlo, ganas una mejora (r190) |
 
+Los símbolos de riesgo solo **avisan** de lo que te juegas: lo que ganas o pierdes lo dice siempre el texto.
+
 Cada evento indica bajo su título la **región** donde ocurre y el **tiempo que consume**:
 - **⌛ 0**: no gasta el día; puedes seguir con tu acción.
 - **⌛ día**: consume tu acción del día (si ya la usaste, el día termina).
@@ -56,7 +58,7 @@ Cada evento indica bajo su título la **región** donde ocurre y el **tiempo que
 3. Elige **antes** de tirar.
 4. Si el libro no dice adónde ir al terminar un evento, **vuelve al mapa**: el día termina (r133).
 5. Si una regla y un evento se contradicen, **manda el evento**.
-6. Lo grande que da un evento (un sistema, calidad, Reloj, Reputación o Temple) se gana **una vez**: anota su número.
+6. Lo grande que da un evento (un sistema, calidad, Reloj, Reputación o Temple) se gana **una vez** (salvo que diga «cada vez»): anota su número.
 
 Todo lo demás lo irás aprendiendo sobre la marcha: cada evento te dice qué tirar, qué anotar y adónde ir después. Si dudas, busca el número de regla que aparece entre paréntesis.
 
@@ -134,6 +136,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Enlace:** puedes hablar con las máquinas. Contra enemigos [Máquina] puedes usar la maniobra Hablar con Ingenio en lugar de Voluntad.
 - **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra, también al descansar; en la Cicatriz, la primera del día es gratis. Gastas 1 Energía al amanecer fuera de la Cicatriz (allí recuperas 1) y 1 más por Viaje sin vehículo; sin Energía, 1 Daño. Recargar del todo cuesta 2 Chatarra en la Cicatriz o en un asentamiento (r136).
 - **Eco:** para ti, el Canto es la Red que te reclama. Funciona igual (r137).
+- **Cuerpo prestado:** el libro habla a un cuerpo de carne; donde diga manos, respirar o dormir, entiende pinzas, sensores y reposo. No comes ni respiras: las Raciones y el Aire que ganes son para tus compañeros, la despensa o el trueque.
 - **Contador: MEMORIA** (empieza en 0, de 0 a 6). Sube al recuperar recuerdos. Al llegar a 6 → [e825](#e825).
 - **Historia:** con el Reloj en 50, 40, 30, 20 y 10 → [e820](#e820), [e821](#e821), [e822](#e822), [e823](#e823) y [e824](#e824).
 - **Sistema personal:** el **Núcleo de memoria**.
@@ -344,11 +347,11 @@ El Reloj empieza en 60. Baja 1 cada amanecer y más con los eventos **⌛ +1** y
 
 La Alerta (de 1 a 4) mide cuánto ruido haces en Caribdis. Todo lo que tiene oídos, sensores o hambre te encuentra antes.
 
-- **Sube** con lo que lleve **◉**, y con los combates ruidosos (r145).
+- **Sube** cuando el texto lo diga (lo avisa un **◉**) y tras los combates ruidosos o largos (r145).
 - **Elige la columna** de las tablas de encuentros: cuanta más Alerta, más peligro.
 - **Si ya está en 4 y vuelve a subir**, se queda en 4, pero el Reloj baja 2: los Recolectores han oído algo.
 - **Mientras tengas `BALIZA_ACTIVA`**, cuando la Alerta llegue a 2 ya no baja de ahí.
-- **Ocultarte** (acción del día): la Alerta baja 1. Pasas el día bajo tierra, entre restos o en silencio. Si te ocultas a la intemperie, también tiras por la noche (r133).
+- **Ocultarte** (acción del día; no es descanso): la Alerta baja 1. Pasas el día bajo tierra, entre restos o en silencio. Si te ocultas a la intemperie, también tiras por la noche (r133).
 
 <a id="r136"></a>
 ### r136 · Supervivencia
@@ -361,9 +364,9 @@ Cada amanecer:
 | Nativo | 1 Ración | 1 Herida |
 | Mente | 1 Energía (r104) | 1 Daño |
 
-Cada **compañero** que vaya contigo consume 1 Ración al amanecer. Si no tienes, pierde 1 de Lealtad (r186).
+Cada **compañero** que llevas contigo come 1 Ración al amanecer; si no hay, pierde 1 de Lealtad (r186).
 
-**En la Cicatriz** no gastas tus Raciones: comes de la **despensa** de la nave mientras le quede algo (r182).
+**En la Cicatriz** no gastas Raciones (comes de la **despensa** mientras le quede algo, r182) y la Mente no gasta Energía.
 
 **Recuperar:** en la Cicatriz, el Piloto rellena su Aire gratis; en un asentamiento, por 1 Chatarra. La Mente recarga su Energía como dice r104. Las Raciones se compran (r161) o se forrajean (r153).
 
@@ -372,7 +375,7 @@ Cada **compañero** que vaya contigo consume 1 Ración al amanecer. Si no tienes
 
 El Canto (de 0 a 6) mide cuánto se ha metido la señal en ti.
 
-- **Sube** con lo que lleve **♫**, con los pulsos, al amanecer en las Torres y al ganar Luz fría (r201).
+- **Sube** cuando el texto lo diga (lo avisa un **♫**), al amanecer en las Torres y al ganar Luz fría (r201).
 - **Con 3 o más:** tienes Desventaja en las pruebas de Voluntad contra el Canto.
 - **Al llegar a 6:** lee el evento de tu protagonista (r102–r104). Después, tu Canto baja a 4 (o a lo que diga el evento).
 - **Baja** al descansar en la Cicatriz, con el Hermano Tadeo y con algunos eventos.
@@ -405,7 +408,7 @@ Cada **ronda**:
 5. Resta el **Blindaje** del que recibe el golpe. Si la diferencia fue de 4 o más, el golpe siempre hace al menos 1 de daño.
 6. **Empate:** nadie golpea.
 
-El enemigo cae cuando sus Heridas llegan a 0. Vuelve al evento y lee «**Si ganas**». Si caes tú (r195), pierdes el combate.
+El enemigo cae cuando sus Heridas llegan a 0. Vuelve al evento y lee «**Si ganas**»: vale para todos los combates de ese evento; si no lo hay, te queda el botín (r146). Si caes tú (r195), pierdes el combate.
 
 <a id="r141"></a>
 ### r141 · Maniobras
@@ -435,7 +438,7 @@ Antes de cada tirada:
 <a id="r143"></a>
 ### r143 · Compañeros en combate
 
-Cada compañero suma **+1** a tu Ataque (Bruno suma +2). Cuando recibas 2 o más Heridas de un golpe, puedes asignar 1 a un compañero. Un compañero aguanta **2 Heridas**. Si recibe una tercera, cae: tira 1d6. Con 1–2 muere; con 3–6 queda fuera de combate hasta que descanses. Al descansar se cura como tú.
+Cada compañero suma **+1** a tu Ataque (Bruno suma +2). Cuando recibas 2 o más Heridas de un golpe, puedes asignar 1 a un compañero. Un compañero aguanta **2 Heridas**. Si recibe una tercera, cae: tira 1d6. Con 1–2 muere (tacha su ficha; Piloto: +1 `CULPA`); con 3–6 queda fuera de combate hasta que descanses. Al descansar se cura como tú.
 
 Decidir a quién le toca cada Herida es una de las elecciones más duras del combate.
 
@@ -508,7 +511,7 @@ Algunos eventos dan un vehículo (moto de arena, trepador, deslizador). Con un v
 
 Exploras la región en la que estás: `[Ingenio · 9]`.
 
-- **Éxito pleno:** un **Hallazgo** y además forrajeas (+1 Ración o +1 Energía).
+- **Éxito pleno:** un **Hallazgo** y además forrajeas (como en **c**).
 - **Éxito:** un **Hallazgo**.
 - **Fallo:** tira en la tabla de encuentros de la región (r154).
 
@@ -592,21 +595,21 @@ Cada asentamiento tiene su carácter: lo que en uno es barato, en otro puede ser
 | Cuerda y garfio | 1 | Ventaja para trepar (1 uso) |
 | Antídoto de esporas | 2 | Anula un veneno o espora |
 
-**Vender:** los objetos se venden a la mitad, redondeando hacia abajo. Una reliquia sin identificar se vende por 4; una identificada, por 6. **Regatear:** `[Voluntad · 9]` al hacer una compra. Con un Éxito, la compra te cuesta 1 menos (mínimo 1). Con un Fallo, ese día no puedes comprar más.
+**Vender:** los objetos se venden a la mitad, redondeando hacia abajo. Una reliquia sin identificar se vende por 4; una identificada, por 6. **Regatear:** `[Voluntad · 9]` al hacer una compra (todo lo que te lleves de una vez). Con un Éxito, el total te cuesta 1 menos (mínimo 1). Con un Fallo, ese día no puedes comprar más.
 
 Cada asentamiento modifica la tabla: lo indica su evento.
 
 <a id="r162"></a>
 ### r162 · Talleres
 
-En Puerto Chatarra y en el Nodo hay talleres. En Puerto Chatarra, por 3 Chatarra, un artesano sube un sistema de Precaria a Sólida, sin tirada. En el Nodo, por 6 Chatarra, lo suben de Sólido a Excelente. Ningún taller hace el otro tramo.
+En Puerto Chatarra y en el Nodo hay talleres. En Puerto Chatarra, por 3 Chatarra, un artesano sube un sistema de calidad Precaria a Sólida, sin tirada. En el Nodo, por 6 Chatarra, lo suben de Sólida a Excelente. Ningún taller hace el otro tramo.
 
 En los talleres también se venden planos (r202) y puedes Ensamblar planos pequeños pagando 1 Chatarra (r203); las grandes obras, solo en la Cicatriz.
 
 <a id="r163"></a>
 ### r163 · Sanador
 
-Por 2 Chatarra, cura 2 Heridas o cambia `NIÑA_DORMIDA` por `LA_NIÑA_DE_LA_CAPSULA`. Por 3 Chatarra, baja 2 de Canto. En Quilla, el sanador acepta Raciones en lugar de Chatarra.
+Por 2 Chatarra, cura 2 Heridas, borra `ESPORAS` o `DEDOS_HELADOS`, o cambia `NIÑA_DORMIDA` por `LA_NIÑA_DE_LA_CAPSULA`. Por 3 Chatarra, baja 2 de Canto. En Quilla, el sanador acepta Raciones en lugar de Chatarra.
 
 <a id="r164"></a>
 ### r164 · Rumores
@@ -650,15 +653,15 @@ Un pecio o una ruina se explora **sala a sala**. Toda la exploración ocupa el d
 | 2 | **Nave colonia** | Colono hueco · Ataque 3 · Blind. 0 · Heridas 2 · [Cantor] | Las salas de Suministros dan el doble |
 | 3 | **Nave militar** | Torreta despierta · Ataque 4 · Blind. 2 · Heridas 2 · [Máquina] | En una sala de Equipo, elige el objeto en lugar de tirar |
 | 4 | **Yate de lujo** | Mayordomo roto · Ataque 2 · Blind. 1 · Heridas 2 · [Máquina] | En una sala de Restos, ganas además 1 objeto vendible por 3 |
-| 5 | **Arca de los Antiguos** | Vigía menor · Ataque 4 · Blind. 2 · Heridas 3 · [Máquina][Antiguo] | +1 Canto al entrar ♫; las salas de Reliquia son el doble de frecuentes (también el 9) |
-| 6 | **Pecio sin nombre** | Lo que vive dentro · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia][Grande] | Nadie sabe de dónde vino. Sala especial también con el 10 |
+| 5 | **Arca de los Antiguos** | Vigía menor · Ataque 4 · Blind. 2 · Heridas 3 · [Máquina][Antiguo] | +1 Canto al entrar ♫; las salas de Reliquia son el doble de frecuentes (el 9 también es Reliquia) |
+| 6 | **Pecio sin nombre** | Lo que vive dentro · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia][Grande] | Nadie sabe de dónde vino. El 10 también es Sala especial |
 
 <a id="r172"></a>
 ### r172 · Salas (2d6)
 
 | 2d6 | Sala | Efecto |
 |---|---|---|
-| 2 | **Guardián** | Combate contra el guardián del tipo (r171). Si ganas, la siguiente sala es de Equipo automáticamente |
+| 2 | **Guardián** | Combate contra el guardián del tipo (r171). Si ganas, la siguiente sala es de Equipo. Si ya lo venciste en este pecio, es una sala Vacía |
 | 3 | **Trampa** | `[Reflejos · 9]` ⚔. Fallo: 1 Herida |
 | 4 | **Derrumbe** | `[Reflejos · 9]` ⚔. Fallo: 1 Herida y tienes que salir |
 | 5 | **Vacía** | Ecos y polvo. Ganas 1 Chatarra |
@@ -716,7 +719,7 @@ Tu nave necesita seis sistemas para despegar. Cada uno se consigue por **vías**
 | **Combustible** | [e568](#e568) | Refinería de las Salinas ([e242](#e242)) · Bidones del Contable ([e405](#e405)) |
 | **Sistema personal** | Tu historia personal (r102–r104) | — |
 
-Cuando consigas un sistema, anótalo en la Hoja de la nave como **«llevado»**, con su calidad. **Motor** y **Combustible** son **pesados**: mientras lleves uno, tienes −1 a Reflejos y no puedes llevar otro pesado (salvo con `ESTIBADORA`): si consigues otro, deja uno donde estés y anota la región; lo recoges al volver. Tienes que llevarlos a la Cicatriz e **instalarlos** (r181).
+Cuando consigas un sistema, anótalo en la Hoja de la nave como **«llevado»**, con su calidad. Un sistema está **conseguido** (lo «tienes») si lo llevas o está instalado. **Motor** y **Combustible** son **pesados**: mientras lleves uno, tienes −1 a Reflejos y no puedes llevar otro pesado (salvo con `ESTIBADORA`): si consigues otro, deja uno donde estés y anota la región; lo recoges al volver. Tienes que llevarlos a la Cicatriz e **instalarlos** (r181).
 
 <a id="r181"></a>
 ### r181 · Trabajar en la nave
@@ -765,7 +768,7 @@ Cuando un Hallazgo te lleve a un tripulante, lee su primer evento:
 | Dra. Iria Salcedo | [e600](#e600) | Al descansar, el grupo recupera 1 Herida extra. Ventaja en pruebas de medicina |
 | Bruno Kessler | [e605](#e605) | +2 Ataque (en lugar de +1). Ventaja en pruebas de Vigor |
 | Amara Oyelaran | [e610](#e610) | Lee lo antiguo: Ventaja en Ingenio con los Antiguos; Ventaja al ensamblar con Luz fría |
-| Noemí «Grasa» Vidal | [e615](#e615) | Ventaja para instalar sistemas y al ensamblar; +1 Chatarra en cada sala de Restos |
+| Noemí «Biela» Vidal | [e615](#e615) | Ventaja para instalar sistemas y al ensamblar; +1 Chatarra en cada sala de Restos |
 | Hermano Tadeo | [e620](#e620) | Ventaja en pruebas de Voluntad; al descansar, −1 de Canto |
 | Lio | [e625](#e625) | Ventaja en sigilo y para huir; puede robar (algunos eventos lo indican) |
 
@@ -775,8 +778,8 @@ Puedes llevar **2 compañeros** a la vez. Los demás esperan en la Cicatriz (r18
 ### r186 · Lealtad
 
 Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2; si tienes `SEÑAL_EN_ROCA` con su nombre, empieza en 3.
-- Si llega a **0**, se va: tacha su ficha y anota `PERDIDO_` seguido de su nombre. (Si eres el Piloto, +1 Culpa.)
-- La primera vez que llegue a **3**, ve a su evento de lealtad la próxima vez que descanses: Iria [e602](#e602), Bruno [e607](#e607), Amara [e612](#e612), Noemí [e617](#e617), Tadeo [e622](#e622), Lio [e627](#e627).
+- Si llega a **0**, se va: tacha su ficha y anota `PERDIDO_` seguido de su nombre. (Si eres el Piloto, +1 `CULPA`.)
+- La primera vez que llegue a **3** (o si empieza en 3), ve a su evento de lealtad la próxima vez que descanses: Iria [e602](#e602), Bruno [e607](#e607), Amara [e612](#e612), Noemí [e617](#e617), Tadeo [e622](#e622), Lio [e627](#e627).
 - Al despegar, cada compañero a bordo cuenta para tu final.
 
 ---
@@ -786,7 +789,7 @@ Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2; si tienes `SEÑAL_EN_R
 <a id="r190"></a>
 ### r190 · Hitos y mejoras
 
-Cada vez que **instales un sistema** o superes un evento **★** (los de lealtad de r186 también lo son), elige una mejora:
+Cada vez que **instales un sistema** o superes un evento o una opción con **★** (ver r003), elige una mejora:
 
 - +1 a un atributo (máximo 6).
 - +1 Temple máximo (máximo 4, con cualquier bonificación).
@@ -813,7 +816,7 @@ Las Marcas que empiezan por `FRAGMENTO_` son pedazos de la verdad sobre el Canto
 
 Una Pista es un destino que conoces: `Región · Nombre · eXXX`. Puedes tener **5** como máximo. Si consigues una sexta, borra otra.
 
-**Seguir una Pista** (acción del día): en su región, ve a su evento sin tirar encuentro. Después, bórrala, salvo que el evento diga lo contrario.
+**Seguir una Pista** (tu acción): en su región, ve a su evento sin encuentro; luego bórrala, salvo que el evento diga otra cosa. Si lleva a un asentamiento, lo Visitas (r160) y su rumor es gratis.
 
 <a id="r193"></a>
 ### r193 · Reliquias sin identificar
@@ -829,7 +832,7 @@ Cuando encuentres una reliquia sin identificar, tira 1d6 en esta tabla para sabe
 | 5 | Una máscara sin agujeros para los ojos |
 | 6 | Un hueso de metal con espirales de puntos |
 
-La **primera vez que la uses** (en cualquier momento, como acción gratuita), tira 2d6 y suma tu Ingenio, y busca la fila. Cada fila tiene dos reliquias: tira 1d6 (1–3, la primera; 4–6, la segunda). Si tu tirada fue de 12 o más, en lugar de eso **eliges** cualquiera de tu fila o de una fila vecina. Luego ve a su entrada ([e740](#e740)–[e751](#e751)):
+La **primera vez que la uses** (en cualquier momento, como acción gratuita), tira 2d6 + Ingenio y busca la fila. Cada fila tiene dos reliquias: tira 1d6 (1–3, la primera; 4–6, la segunda). Con 12 o más, **eliges** cualquiera de tu fila o de una vecina. Luego ve a su entrada ([e740](#e740)–[e751](#e751)):
 
 | 2d6 + Ingenio | Función |
 |---|---|
@@ -848,13 +851,13 @@ La **primera vez que la uses** (en cualquier momento, como acción gratuita), ti
 Cuatro facciones: **Hijos del Pecio** (Quilla), **Desguaces** (Puerto Chatarra), **Coro** (el Atrio) y **Vigías** (el Nodo). Cada una de −3 a +3.
 
 - Al llegar a **+3** con una facción, la próxima vez que estés en su asentamiento → evento de aliado (una vez): Hijos [e640](#e640), Desguaces [e642](#e642), Coro [e644](#e644), Vigías [e646](#e646).
-- Al llegar a **−3**, tira 1d6 la próxima vez que estés en su región, y repite la tirada si sacas 4–6 o si evitas el combate sin cambiar tu Reputación. Con 1–3 → su evento de enemigo: Hijos [e641](#e641), Desguaces [e643](#e643), Coro [e645](#e645), Vigías [e647](#e647).
+- Con **−3**, tira 1d6 cada vez que estés en su región: con 1–3 → su evento de enemigo: Hijos [e641](#e641), Desguaces [e643](#e643), Coro [e645](#e645), Vigías [e647](#e647). Dejas de tirar cuando ese evento te dé su Marca `CAZADO_` (trae su propia tirada) o tu Reputación suba.
 - **Enemistades:** +1 con el Coro es −1 con los Hijos, y al revés; igual entre Desguaces y Vigías (si el evento no lo hace ya).
 
 <a id="r195"></a>
 ### r195 · Caer
 
-Si recibes una Herida en Crítico (salvo con Segundo corazón, e714; o, si eres la Mente, llenas tus cuatro niveles de Daño), caes. Gasta **1 Temple**: despiertas en Grave (la Mente, con 2 Daño), el Reloj baja 2 y pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Sin Temple → [e920](#e920).
+Si recibes una Herida en Crítico (salvo con Segundo corazón, e714), caes; la Mente, igual con su Daño. Gasta **1 Temple**: despiertas en Grave, el Reloj baja 2 y pierdes la mitad (hacia arriba) de tus Raciones y tu Chatarra. Sin Temple → [e920](#e920).
 
 <a id="r196"></a>
 ### r196 · Fin de la partida
@@ -883,13 +886,13 @@ Su lista de Hallazgos (r108) dice que su tripulante Iria está en las Salinas, n
 
 **Combate (r140).** Sela pelea con una pistola de clavos (+1) y usa Reflejos. En la primera ronda saca 8 +4 +1 −1 = **12**. Las ratas sacan 7 + 2 = **9**. La diferencia es 3: les hace 1 Herida (quedan 2). En la segunda ronda Sela saca 11 y las ratas 13. Recibe 1 Herida y pasa a **Grave** (−2).
 
-Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cuarta vuelve a atacar y gana por 5, pero las ratas son un **[Enjambre]**: su daño nunca pasa de 1 (r142). En la quinta las remata. Gana 1 Hueso por vencer a una [Bestia] (r201) y, como el combate ha durado más de 3 rondas, la Alerta sube a 2 (r145).
+Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cuarta vuelve a atacar y gana por 5, pero las ratas son un **[Enjambre]**: el daño que les hace nunca pasa de 1 (r142). En la quinta las remata. Gana 1 Hueso por vencer a una [Bestia] (r201) y, como el combate ha durado más de 3 rondas, la Alerta sube a 2 (r145).
 
 **Salir (r170).** Por vencer al guardián, la siguiente sala sería de Equipo (r172). Con Grave, otra sala sería una locura. Sale con 3 Chatarra más: ya tiene 6.
 
 **Anochecer (r133).** No ha descansado, así que no se cura. Duerme en la Cicatriz, así que no hay tirada nocturna. Mañana descansará para curarse, y pasado viajará a las Salinas (vecinas de las Dunas) para explorar allí en busca de Iria.
 
-> El primer día cuentas lo que tienes. El décimo, lo que te falta. Sela cuenta seis de Chatarra, un hueso y dos Heridas.
+> El primer día cuentas lo que tienes. El décimo, lo que te falta. Sela cuenta seis de Chatarra, un hueso y tres Heridas.
 
 ---
 
@@ -921,7 +924,7 @@ Hay cuatro tipos de pieza. Anótalas en tu hoja como cuatro contadores.
 | **Cristal** | Sal cristalizada, lentes, vidrio de hielo | Salinas, Bosque Petrificado, Polo |
 | **Luz fría** | Fragmentos de tecnología antigua que todavía brillan | Ciudad Enterrada, Torres del Canto |
 
-**Llevar piezas:** puedes llevar **10 piezas** en total. En la Cicatriz puedes guardar todas las que quieras.
+**Llevar piezas:** puedes llevar **10 piezas** en total; lo que pase de ahí se queda donde lo encontraste. En la Cicatriz puedes guardar todas las que quieras.
 
 **Conseguir piezas:**
 - **Rebuscar:** al explorar, elige el Hallazgo **e)** (r153). Ganas **2 piezas** del tipo de la región (o 3 con un Éxito pleno). En los Cañones (dos tipos), eliges.
@@ -955,7 +958,7 @@ Un plano es un objeto que sabes construir. Los planos están en el catálogo: pe
 
 **Ensamblar** es una acción del día (r132). Puedes hacerla en la Cicatriz, o en un taller pagando 1 Chatarra solo para planos pequeños. Las grandes obras, solo en la Cicatriz. En un día puedes construir **hasta dos planos pequeños** o **una fase de una gran obra**.
 
-Gasta las piezas de la receta y haz la prueba que indica el plano, `[Ingenio · N]` ⚙. Noemí da Ventaja. Amara da Ventaja si la receta lleva Luz fría.
+Por cada plano, gasta las piezas de su receta y haz la prueba que indica, `[Ingenio · N]` ⚙. Noemí da Ventaja. Amara da Ventaja si la receta lleva Luz fría.
 
 - **Éxito pleno:** el objeto sale **de obra maestra**: aplica su efecto *Maestra*.
 - **Éxito:** el objeto sale bien.
@@ -1018,12 +1021,12 @@ Antes de leer [e001](#e001), elige cómo de cruel quieres que sea Caribdis. La c
 |---|---|---|---|
 | **Clemencia** | 70 | 3 | Las pruebas Extremas (13) cuentan como Duras (11) |
 | **Superviviente** | 60 | 2 | Las reglas tal como están escritas |
-| **Leyenda** | 50 | 1 | La Alerta nunca baja de 2. Repetir con Temple cuesta 2 |
+| **Leyenda** | 50 | 1 | La Alerta empieza en 2 y nunca baja de ahí. Repetir con Temple cuesta 2 |
 
 <a id="r211"></a>
 ### r211 · Partida corta
 
-Para una tarde: el Reloj empieza en **35**, y las historias (r102–r104) se leen con el Reloj en 30, 25, 20, 15 y 10. Solo hacen falta **cinco sistemas**: el sistema personal se da por instalado con calidad Precaria. Empieza con un tripulante a tu elección esperando en la Cicatriz.
+Para una tarde: el Reloj empieza en **35**, y las historias (r102–r104) se leen con el Reloj en 30, 25, 20, 15 y 10. Solo hacen falta **cinco sistemas**: el sistema personal se da por instalado con calidad Precaria. Empieza con un tripulante a tu elección esperando en la Cicatriz (el Piloto, además del suyo).
 
 <a id="r212"></a>
 ### r212 · Los que vinieron antes
@@ -1031,7 +1034,7 @@ Para una tarde: el Reloj empieza en **35**, y las historias (r102–r104) se lee
 Si ya jugaste una partida y tu nave **no** despegó, esa nave sigue en Caribdis. En la siguiente partida:
 - Al preparar la partida (r108), coloca tu nave anterior en la región donde acabó, como si fuera un **Hallazgo** más.
 - Al encontrarla, explórala como un pecio (r170) de tipo **Nave militar**. Todas sus salas de Restos dan el doble.
-- En la última sala encuentras tu propia Hoja de protagonista. Gana **una Marca** de la partida anterior, la que elijas, y anota `TE_RECUERDAS`.
+- En la última sala encuentras tu propia Hoja de protagonista. Gana **una Marca** de la partida anterior, la que elijas, y +1 Temple: te recuerdas.
 - Si el que cayó fue el Nativo, encuentras su tumba en Quilla en lugar de un pecio: la Marca y +1 de Reputación con los Hijos del Pecio.
 
 Si tu nave **sí** despegó, empieza la nueva partida con la Marca `ALGUIEN_LO_LOGRO`: los asentamientos conocen la historia, y en tu primera visita a cada uno ganas +1 de Reputación con su facción.
@@ -1046,6 +1049,6 @@ Para que cada partida sea distinta, tira 1d6 al preparar la partida y aplica el 
 | 1 | **Año de óxido** | Un 4 en el dado del pulso (r131) trae una tormenta de óxido (r155) hasta el día siguiente |
 | 2 | **Sol bajo** | En Polo y Salinas, la noche a la intemperie es Noche helada (r155) |
 | 3 | **Corona inquieta** | +1 Alerta ◉ al amanecer con el Reloj en 50, 40, 30, 20 y 10 |
-| 4 | **Coro en procesión** | En Bosque y Ciudad, tira dos veces y usa el que tenga [Cantor], si lo hay |
-| 5 | **Mercado de pecios** | Cada asentamiento vende un sistema Precario (no el personal) por 12 Chatarra |
+| 4 | **Coro en procesión** | En Bosque y Ciudad, tira dos veces en la tabla de encuentros y quédate el que tenga [Cantor]; si no lo hay, el primero |
+| 5 | **Mercado de pecios** | Cada asentamiento vende, una sola vez, un sistema a tu elección (no el personal) de calidad Precaria por 12 Chatarra |
 | 6 | **Silencio** | No hay pulso del Canto los días en que el Reloj acaba en 5 |

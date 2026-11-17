@@ -516,7 +516,11 @@ class Libro:
         self.capitulo = {'maqueta': 'region'}
         self.arte_actual = r['arte']
         cita = cita_html(r['cita'], 'cita-region')
-        lema = re.sub(r'^\*(.*)\*$', r'\1', intro.strip())
+        partes = [x.strip() for x in re.split(r'\n\s*\n', intro.strip()) if x.strip()]
+        lema = esc(re.sub(r'^\*(.*)\*$', r'\1', partes[0])) if partes else ''
+        if len(partes) > 1:   # «Regla especial»: se compone como texto, sin cursiva
+            regla = pulir(md.renderInline(inline_previo(' '.join(partes[1:]))))
+            lema += f' <span class="rf-regla">{regla}</span>'
         self.out.append(
             f'<section class="lamina lamina-region" id="{ancla}">{img(r["arte"], r["pos"], "lamina-img")}'
             f'<div class="velo-abajo"></div><div class="region-rot">'
@@ -527,7 +531,7 @@ class Libro:
             f'<div class="region-ficha">'
             f'<div class="rf-num">{r["n"]}</div>'
             f'<div class="rf-datos"><div class="rf-nombre">{esc(nombre)}</div>'
-            f'<div class="rf-lema">{esc(lema)}</div>'
+            f'<div class="rf-lema">{lema}</div>'
             f'<div class="rf-fila">{icono("mapa")}<b>Vecinas</b> {esc(r["vecinas"])}</div>'
             f'<div class="rf-fila">{icono("asentamiento")}<b>Lugar</b> {esc(r["lugar"])}</div></div></div></header>')
         self.region_pendiente = True
@@ -778,9 +782,8 @@ def hoja_protagonista(ancla):
     attrs = ''.join(f'<div class="h-attr"><div class="h-attr-n">{a}</div><div class="h-attr-v"></div></div>'
                     for a in ('Vigor', 'Reflejos', 'Ingenio', 'Voluntad'))
     heridas = ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>'
-                      for t in ('Rasguño', 'Herido −1'))
-    heridas += '<div class="h-her h-her-vacia"></div>'
-    heridas += ''.join(f'<div class="h-her"><span class="c"></span>{t}</div>' for t in ('Grave −2', 'Crítico −2', 'Crítico 2'))
+                      for t in ('Rasguño', 'Herido −1', 'Grave −2', 'Crítico −2'))
+    heridas += '<div class="h-her h-her-2"><span class="c ext"></span>2.º Crítico <span class="h-nota">Segundo corazón</span></div>'
     recursos = ''.join(f'<div class="h-rec">{icono(ic)}<b>{t}</b><div class="h-esc">{escala(0, m)}</div></div>'
                        for t, ic, m in (('Aire', 'canto', 6), ('Energía', 'hito', 6), ('Raciones', 'objeto', 8)))
     facc = ''.join(f'<div class="h-fac">{emblema(e)}<b>{t}</b><div class="h-esc rep">'
@@ -801,16 +804,16 @@ def hoja_protagonista(ancla):
    <div class="h-protas"><span class="c"></span>Piloto <span class="c"></span>Nativo <span class="c"></span>Mente</div></div>
  <div class="h-fila2"><div class="h-campo"><label>Nombre</label></div><div class="h-campo"><label>Origen</label></div></div>
  <div class="h-attrs">{attrs}</div>
- <div class="h-dos">
-  <div class="h-bloque"><div class="h-rot">{icono("herida")} Heridas / Daño</div>{heridas}
+ <div class="h-dos h-par">
+  <div class="h-bloque"><div class="h-rot">{icono("herida")} Heridas / Daño</div><div class="h-heridas">{heridas}</div>
      <div class="h-rot">{icono("ayuda")} Temple</div><div class="h-temple">{casillas(3, "c gr")}<span class="c gr ext"></span></div>
      <div class="h-rot">{icono("canto")} Canto</div><div class="h-esc">{escala(0, 6)}</div></div>
-  <div class="h-bloque">{recursos}<div class="h-rec">{icono("objeto")}<b>Chatarra</b><div class="h-caja"></div></div>
-     <div class="h-rec">{icono("marca")}<b>Contador</b><div class="h-campo mini"></div><div class="h-esc">{escala(0, 6)}</div></div></div>
+  <div class="h-bloque"><div class="h-rot">{icono("objeto")} Recursos</div>{recursos}<div class="h-rec">{icono("objeto")}<b>Chatarra</b><div class="h-caja"></div></div>
+     <div class="h-rot">{icono("marca")} Contador <span class="h-nota">Culpa · Arraigo · Memoria</span></div><div class="h-esc">{escala(0, 6)}</div></div>
  </div>
  <div class="h-rot">{icono("tiempo")} Reloj de los Recolectores <span class="h-nota">tacha un número cada amanecer · los marcados son días de historia · Clemencia: 70</span></div>
  <div class="h-reloj">{reloj}</div>
- <div class="h-dos">
+ <div class="h-dos h-par">
   <div class="h-bloque"><div class="h-rot">{icono("alerta")} Alerta</div><div class="h-esc">{escala(1, 4)}</div>
      <div class="h-rot">{icono("ejemplo")} Implantes · Mutaciones · Protocolos</div>{lineas(4)}
      <div class="h-rot">{icono("consejo")} Habilidades</div>{lineas(2)}</div>

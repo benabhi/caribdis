@@ -48,9 +48,9 @@ El horizonte se hincha. Una ola de arena, como si algo nadara justo debajo, vien
 > **Tragón de duna** · Ataque 6 · Blind. 2 · Heridas 5 · [Bestia][Grande][Rápido]
 
 1. **Quedarte quieto en una roca.** `[Voluntad · 11]`. *Éxito:* pasa por debajo. *Fallo:* te huele. Combate.
-2. **Correr hacia la Cicatriz.** Si estás a un día de ella (siempre lo estás en las Dunas): `[Reflejos · 11]`. *Éxito:* llegas. El tragón choca contra el casco de tu nave y se va con un trozo: **un sistema instalado baja 1 de calidad** (eliges cuál; si no tienes ninguno, nada). *Fallo:* combate.
+2. **Correr hacia la Cicatriz.** Si estás a un día de ella (siempre lo estás en las Dunas): `[Reflejos · 11]`. *Éxito:* llegas. El tragón choca contra el casco de tu nave y se va con un trozo: **un sistema instalado baja 1 de calidad** (eliges uno que no sea Precario; si no hay, nada). *Fallo:* combate.
 3. **Ofrecerle algo metálico.** Pierdes 3 Chatarra o un arma. Se lo traga y se aleja satisfecho.
-4. **Montarlo** (solo el Nativo con `DOMADOR`, o el Nativo con `GUERRERO`): `[Vigor · 13]`. *Éxito:* cabalgas el tragón hasta cualquier región vecina, sin encuentro. Los Hijos del Pecio cantarán sobre esto: +2 de Reputación con ellos y **★**. *Fallo:* 2 Heridas y te escupe.
+4. **Montarlo** (solo el Nativo con `DOMADOR` o `GUERRERO`): `[Vigor · 13]`. *Éxito:* cabalgas el tragón hasta cualquier región vecina, sin encuentro. Los Hijos del Pecio cantarán sobre esto: +2 de Reputación con ellos y **★**. *Fallo:* 2 Heridas y te escupe.
 
 - **Si ganas:** en su estómago hay restos de cinco naves: 6 Chatarra y una reliquia sin identificar. **★**
 
@@ -64,9 +64,9 @@ Una hondonada llena de restos masticados: alerones, tuberías y un asiento de pi
 
 - Si tienes `RATAS_AMIGAS`, te dejan bajar → opción 4.
 
-1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si el Casco no está instalado, cuenta como **Casco Precario**; si ya lo está, +3 Chatarra.
-2. **Ahumarlas.** Necesitas 1 Ración (grasa) y `[Ingenio · 9]` ◉. *Éxito:* huyen y saqueas el nido tranquilo: como en la opción 1, pero sin combatir. *Fallo:* salen todas a la vez → combate como en la 1, con Emboscada.
-3. **Marcharte.** Las ratas te siguen a distancia: esta noche, si estás fuera de la Cicatriz, tira la nocturna (r133); te encuentran con 9 o más.
+1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si no tienes Casco, ganas un **Casco Precario**; si ya lo tenías, +3 Chatarra en piezas.
+2. **Ahumarlas.** Necesitas 1 Ración (grasa) y `[Ingenio · 9]`. *Éxito:* huyen y saqueas el nido tranquilo: como en la opción 1, pero sin combatir. *Fallo:* salen todas a la vez → combate como en la 1, con Emboscada.
+3. **Marcharte.** Las ratas te siguen a distancia, pero no pasan de la Cicatriz. Gana la Pista `Dunas · El nido · e203`: volverás mejor preparado.
 4. **Bajar como amigo** (solo con `RATAS_AMIGAS`). Ofrece 1 Chatarra. La reina del nido, una rata del tamaño de un perro con una antena en la cabeza, te deja coger lo que quieras: **Casco Precario** o 4 Chatarra.
 
 ---
@@ -91,9 +91,9 @@ Una moto de arena de Desguace, con ruedas de globo y un depósito pintado con ll
 
 El motor aún está caliente al tacto.
 
-1. **Llevártela.** `[Ingenio · 9]` para arrancarla. *Éxito:* ganas una **moto de arena** (vehículo, r152; consume 1 Energía o 1 Chatarra por viaje; no sube a las Torres ni entra en la Ciudad). ◉ +1 Alerta: hace un ruido terrible. *Fallo:* gastas 1 Chatarra en piezas y lo vuelves a intentar mañana: gana la Pista `Dunas · La moto · e205`.
+1. **Llevártela.** `[Ingenio · 9]` para arrancarla. *Éxito:* ganas una **moto de arena** (vehículo, r152; consume 1 Energía o 1 Chatarra por viaje; no sube a las Torres ni entra en la Ciudad). Al arrancar ruge: ◉ +1 Alerta, solo esta vez. *Fallo:* gastas 1 Chatarra en piezas y lo vuelves a intentar mañana: gana la Pista `Dunas · La moto · e205`.
 2. **Enterrar al Desguace.** En su bolsillo hay una ficha de Puerto Chatarra: anota `FICHA_DESGUACE`. Al visitar Puerto Chatarra, entrégala: +1 de Reputación con los Desguaces y ellos te regalan la moto ya arreglada.
-3. **Seguir el rastro de la flecha.** `[Ingenio · 9]`. *Éxito:* son cazadores de Quilla que creyeron que era un saqueador. Si eres el Nativo, te reconocen y te dan la moto como «botín de caza» (sin ruido). Si no, te ven y te dejan ir, pero −1 de Reputación con los Hijos del Pecio si te llevas la moto después.
+3. **Seguir el rastro de la flecha.** `[Ingenio · 9]`. *Éxito:* son cazadores de Quilla que creyeron que era un saqueador. Si eres el Nativo, te reconocen y te dan la moto como «botín de caza» (sin ruido). Si no, solo te dejan ir: aún puedes elegir la opción 1, pero con −1 de Reputación con los Hijos del Pecio.
 
 ---
 
@@ -119,7 +119,7 @@ Dentro, un búnker de seis habitaciones. Funciona una sola luz, intermitente.
 
 1. **Recorrerlo con cuidado.** Explóralo como un pecio (r170) de tipo **Nave colonia**, pero sin guardián en la segunda sala.
 2. **Buscar el registro.** `[Ingenio · 9]`. *Éxito:* «*Día 340. Los niños se han ido a las Torres. Los mayores no pudimos seguirlos.*» Gana `FRAGMENTO_LOS_NIÑOS` y en un cajón, un **mapa del subsuelo**: anota `TUNELES_DUNAS` (desde las Dunas puedes viajar al Cementerio sin tirada de orientación ni encuentro). *Fallo:* el registro está borrado.
-3. **Convertirlo en refugio.** `[Ingenio · 9]`, 2 Chatarra. *Éxito:* reactivas los filtros. Gana `BUNKER` y la Pista `Dunas · El búnker · e207`, que seguirla no la borra: aquí puedes descansar como en la Cicatriz, y el Piloto rellena el Aire.
+3. **Convertirlo en refugio.** `[Ingenio · 9]`, 2 Chatarra (con `DESERTOR`, sin tirada: sabes desaparecer). *Éxito:* reactivas los filtros. Gana `BUNKER`: al Ocultarte en las Dunas, la Alerta baja 1 más, y aquí cabría esconderse de lo que viene ([e919](#e919)).
 
 ---
 
@@ -162,14 +162,14 @@ Cuando llegas (aunque estuvieras en otro sitio de las Dunas, ahora estás en la 
 
 Huele a metal cortado y a goma quemada. Las bengalas tiñen de rojo la arena, y las sombras de las seis figuras se alargan hasta tus pies.
 
-- Si tienes `FAVOR_DESGUACE` o Reputación +2 o más con los Desguaces, son Desguaces y se detienen al verte: «*Perdón, creíamos que estaba muerta*». Te devuelven lo que llevaban. Borra `FAVOR_DESGUACE`.
+- Si tienes `FAVOR_DESGUACE` o Reputación +2 o más con los Desguaces, son Desguaces y se detienen al verte: «*Perdón, creíamos que estaba muerta*». Te devuelven lo que llevaban. Borra `FAVOR_DESGUACE`; el evento termina.
+- Los compañeros que esperan en la Cicatriz también luchan: +1 al Ataque cada uno. Tira 1d6 por cada uno: con un 1, recibe 1 Herida.
 
 > **Asaltantes** · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]
 
-1. **Defender la nave.** Combate. *Si ganas:* recuperas todo y les quitas 4 Chatarra. *Si pierdes o huyes:* pierden la paciencia y se llevan un **sistema instalado** a tu elección (lo tachas: tendrás que conseguirlo otra vez) o 6 Chatarra.
+1. **Defender la nave.** Combate. *Si ganas:* recuperas todo y les quitas 4 Chatarra. *Si pierdes o huyes:* pierden la paciencia y se llevan un **sistema instalado** a tu elección (lo tachas y vuelve a faltarte) o, si no hay ninguno, hasta 6 Chatarra.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* se llevan solo 2 Chatarra. *Fallo:* combate con Emboscada.
-3. **Dejarles y seguirles.** Se llevan un sistema (o 6 Chatarra). Gana la Pista `Cementerio · Lo que te robaron · e230`. Allí podrás recuperarlo.
-4. **Si hay compañeros contigo:** luchan contigo, y cada uno da +1 al Ataque. Tira 1d6 por cada uno: con un 1, recibe 1 Herida.
+3. **Dejarles y seguirles.** Se llevan lo mismo que si pierdes. Gana la Pista `Cementerio · Lo que te robaron · e230`. Allí podrás recuperarlo.
 
 ---
 

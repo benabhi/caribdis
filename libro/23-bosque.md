@@ -33,11 +33,11 @@ Respiras y te mareas un poco: hace días que no respiras algo así. Las setas se
 
 Los Jardineros no hablan. Te miran con unos ojos que parecen gotas de resina, y siguen cuidando las setas con unas manos muy lentas.
 
-1. **Pedirles un esqueje** para el **Soporte vital** de tu nave (no con `TIRASTE_LA_NAVE`). Los Jardineros te miran sin parpadear. Piden algo a cambio. Elige:
+1. **Pedirles un esqueje** para el **Soporte vital** de tu nave (no con `TIRASTE_LA_NAVE` ni `QUEMASTE_EL_JARDIN`). Te miran sin parpadear. Piden algo a cambio. Elige:
    - *Tu sangre:* 2 Heridas. Te dan el esqueje: **Soporte vital Excelente** (no pesado; anota `JARDIN_A_BORDO`). **★**
    - *Un recuerdo:* −1 Temple máximo (permanente; mínimo 1). Te dan **Soporte vital Sólido**. Si eres la Mente, −1 `MEMORIA`; si ya está en 0, −1 Temple máximo en su lugar.
    - *Un compañero que se quede:* deja a un compañero aquí para siempre (táchalo; si eres el Piloto, +1 `CULPA`). Te dan **Soporte vital Excelente** y te bendicen: −3 Canto.
-2. **Robar el esqueje.** `[Reflejos · 11]`. *Éxito:* **Soporte vital Precario** (Sólido con `JARDINERO`): sin los Jardineros, el esqueje enferma. *Fallo:* las raíces te atrapan. *Jardineros · Ataque 4 · Blind. 2 · Heridas 5 · [Bestia]*. Combate. Si ganas, el esqueje muere contigo dentro del claro: no consigues nada y anota `QUEMASTE_EL_JARDIN`.
+2. **Robar el esqueje.** `[Reflejos · 11]`. *Éxito:* **Soporte vital Precario** (Sólido con `JARDINERO`): sin los Jardineros, el esqueje enferma. *Fallo:* las raíces te atrapan. *Jardineros · Ataque 4 · Blind. 2 · Heridas 5 · [Bestia]*. Combate. Si ganas, el jardín se marchita a tu alrededor: no consigues nada y anota `QUEMASTE_EL_JARDIN`.
 3. **Escucharlos.** `[Voluntad · 9]` ♫. *Éxito:* el micelio te habla: *«Nosotros también oímos el Canto. Nosotros le respondemos que no.»* Gana `FRAGMENTO_EL_MICELIO`. −2 Canto.
 Elijas lo que elijas, **gana la Pista** `Bosque · El Santuario · e261` (puedes volver sin explorar).
 
@@ -86,8 +86,8 @@ Un hongo petrificado de trescientos metros, con una nave **atravesada** en su so
 El casco de la nave cruje cuando sopla el viento, y de las ventanillas cuelgan hilos dorados que se mueven como algas.
 
 1. **Trepar y entrar.** `[Reflejos · 11]` ⚔ (cuerda y garfio o gancho de casco: Ventaja). *Éxito:* explora un pecio (r170) de tipo **Nave colonia**. Todas las salas de Suministros dan además 1 esqueje de micelio (vale 2 Chatarra en Quilla). *Fallo:* caes. 2 Heridas.
-2. **Cortar las raíces para que caiga.** `[Vigor · 13]` ◉ ◉. *Éxito:* la nave cae entera. Todo el bosque tiembla. Exploras un pecio de tipo **Nave colonia** sin trepar, y con dos salas de Restos garantizadas. Los Jardineros no te lo perdonan: anota `TIRASTE_LA_NAVE`. *Fallo:* te agotas. 1 Herida y ⌛ +1.
-3. **Leer el nombre de la nave.** `[Ingenio · 9]`. *Éxito:* es la *Esperanza de Ur*, la nave colonia de los antepasados de los Hijos del Pecio… o una de sus lanzaderas. Si eres el Nativo: +1 `ARRAIGO` y anota `LANZADERA_DE_UR`.
+2. **Cortar las raíces para que caiga.** `[Vigor · 13]`. *Éxito:* la nave cae entera. Todo el bosque tiembla: ◉ +2 Alerta. Exploras un pecio de tipo **Nave colonia** sin trepar, y con dos salas de Restos garantizadas. Los Jardineros no te lo perdonan: anota `TIRASTE_LA_NAVE`. *Fallo:* te agotas. 1 Herida y ⌛ +1.
+3. **Leer el nombre de la nave.** `[Ingenio · 9]`. *Éxito:* es la *Esperanza de Ur*, la nave colonia de los antepasados de los Hijos del Pecio… o una de sus lanzaderas. Anota `LANZADERA_DE_UR`; si eres el Nativo, +1 `ARRAIGO`.
 
 ---
 
@@ -115,7 +115,7 @@ La nube no hace ruido al caer. Las esporas se te pegan a las pestañas, a los la
 
 1. **Correr bajo un sombrero de piedra.** `[Reflejos · 9]`. *Éxito:* te libras. *Fallo:* anota `ESPORAS` (ver [e052](#e052)).
 2. **Dejar que te cubran.** Anota `ESPORAS`. Pero mientras te cubren, durante un segundo, **sientes el bosque entero**: ves a través de él. Elige: descubre la región de un tripulante no encontrado, o gana una Pista del Bosque (`Bosque · El Santuario · e261` o `Bosque · El ermitaño · e270`).
-3. **Quemarlas** (con 1 Ración de grasa o el arma de la Mente). ◉ +1 Alerta. Te libras, pero los Injertados lo huelen: anota `INJERTADOS_ALERTA`: la próxima vez que tires en esta tabla, sale [e265](#e265) (bórrala).
+3. **Quemarlas** (con 1 Ración de grasa o 1 Energía). ◉ +1 Alerta. Te libras, pero los Injertados lo huelen: anota `INJERTADOS_ALERTA`: la próxima vez que tires en esta tabla, sale [e265](#e265) (bórrala).
 
 ---
 
@@ -188,7 +188,7 @@ Y entre latido y latido, el corazón **canta**, pero no el mismo Canto: una cont
 El aire está tibio y húmedo, como un aliento.
 
 1. **Escuchar.** `[Voluntad · 9]`. *Éxito:* entiendes: el micelio lleva milenios **cantando en contra** del Canto para que no llegue más allá del Bosque. Gana `FRAGMENTO_LA_CONTRAMELODIA` y −3 Canto. **★** *Fallo:* el contraste te marea. 1 Herida.
-2. **Llevarte un trozo.** `[Vigor · 11]` ◉. *Éxito:* ganas un **Corazón dorado**, una reliquia (identificada): una vez por partida, anula un evento de Canto 6 (no lo lees), y en las Torres no te sube el Canto al amanecer. Pero el bosque se debilita: anota `HERISTE_EL_CORAZON`. *Fallo:* el micelio te expulsa. 2 Heridas.
+2. **Llevarte un trozo.** `[Vigor · 11]`. *Éxito:* ganas un **Corazón dorado**, una reliquia (identificada): una vez por partida, anula un evento de Canto 6 (no lo lees), y en las Torres no te sube el Canto al amanecer. Pero el bosque se debilita: anota `HERISTE_EL_CORAZON`. *Fallo:* el micelio te expulsa a latigazos. 2 Heridas.
 3. **Ofrecerle tu Canto.** Pon la mano en el corazón. Baja tu Canto a 0 y recupera 1 Temple por cada 2 puntos que bajes (redondeando hacia arriba). Si tenías 4 o más, el corazón late más fuerte: anota `ALIMENTASTE_EL_CORAZON`.
 
 Cuando subes de nuevo a la superficie, el bosque entero suena distinto. Tardas horas en dejar de oír el latido.

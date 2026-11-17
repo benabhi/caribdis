@@ -8,7 +8,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 
 **Paso 0 · Quién viene.** Anota quién sube: compañeros, tripulantes en la Cicatriz y pasajeros con Marca (`MIRASOLES_A_BORDO` vale 2; `HIJA_DEL_SALINERO`, `LA_NIÑA_DE_LA_CAPSULA`, `LA_PEREGRINA_A_BORDO`, `EL_PACIENTE`, `HERMANO_A_BORDO`, `PASAJERO_EL_CONTABLE` y `EL_VIEJO_ESPERA` valen 1). Hay **6 plazas** además de la tuya (8 si tienes `HIZO_SITIO`; `MODULO_DE_PASAJE` suma otras 2, o 3 si salió *Maestra*). Si hay más gente que plazas, decide quién se queda. Si no lo decidiste en [e804](#e804), Piloto: +1 `CULPA` por cada tripulante que dejes. Con `IRIA_SE_QUEDA` y Canto 4 o más, Iria no sube.
 - Si tienes `TADEO_SE_QUEDA`, o Tadeo está a bordo y tienes `TADEO_CREE` (en [e622](#e622) le dijiste que quizá era Dios) → [e623](#e623) antes de seguir.
-- Si eres el Nativo con `ARRAIGO` 6 y elegiste «pedir tiempo» en [e816](#e816), o tienes `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
+- Si eres el Nativo y tienes `PIDIO_TIEMPO` ([e816](#e816)) o `QUIERES_QUEDARTE`: decide ahora si subes. Si no subes → [e914](#e914).
 - Con `SECRETO_DESCUBIERTO` 2, puedes quedarte → [e915](#e915). Con el 3 y `LO_VISTE`, puedes despertarla → [e918](#e918).
 
 **Paso 1 · Antes de encender.** Si tienes `DEUDA_CON_EL_CONTABLE`, `ENEMIGO_DEL_CONTABLE`, Reputación −3 con cualquier facción o `ROBASTE_AL_ARGO` → [e901](#e901), y luego vuelve aquí.
@@ -27,7 +27,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 
 - Puedes gastar **Temple** para repetir pruebas, como siempre.
 - Si **Noemí** está a bordo y fallas una prueba → [e618](#e618) (una vez).
-- Cada **Fallo** de sistema es un **Daño de nave**.
+- Cada **Fallo**, también el del Canto, es un **Daño de nave**.
 - Si llevas el **Fragmento de la Matriz**, convierte un Fallo en Éxito.
 
 **Paso 3 · La huida.** Si el Reloj está en **15 o menos**, o tienes `BALIZA_ACTIVA` → [e902](#e902), y luego vuelve aquí.
@@ -49,9 +49,9 @@ Por cada causa que tengas, haz un combate o paga:
 - **`DEUDA_CON_EL_CONTABLE`:** paga 12 Chatarra o combate contra *Cobradores · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*.
 - **`ENEMIGO_DEL_CONTABLE` o −3 con los Desguaces:** combate contra *Banda del Contable · Ataque 5 · Blind. 2 · Heridas 6 · [Náufrago]*.
 - **−3 con los Hijos del Pecio:** combate contra *Cazadores de Quilla · Ataque 5 · Blind. 1 · Heridas 5 · [Náufrago]*.
-- **−3 con el Coro:** prueba `[Voluntad · 13]` ♫; si fallas, +3 Canto (prueba 4 del despegue; las Ayudas la anulan).
+- **−3 con el Coro:** cantan contra ti. `[Voluntad · 13]` ♫; si fallas, +3 Canto, que pesará en la prueba 4.
 - **−3 con los Vigías:** combate contra *Vigías de eliminación · Ataque 6 · Blind. 3 · Heridas 6 · [Máquina][Antiguo]*.
-- **`ROBASTE_AL_ARGO`:** la tripulación del Argo Pálido te bloquea la pista. Combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*, o devuélveles el sistema (baja 1 de calidad el sistema que les robaste).
+- **`ROBASTE_AL_ARGO`:** la tripulación del Argo te bloquea la pista. Combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*, o devuélvelo: ese sistema baja 1 de calidad (si era Precario, lo pierdes: Fallo en su prueba).
 
 **Ayudas:** `GUERREROS_DE_QUILLA` o `PAZ_DEL_CONTABLE` anulan uno de estos ataques. `ESCOLTA_VIGIA` o `PERMISO_DE_PRIMO` anulan otro. `TORRETA_DE_LA_CICATRIZ` anula otro más (dos si salió *Maestra*). Si `PASAJERO_EL_CONTABLE` está a bordo, los Desguaces no atacan.
 
@@ -116,7 +116,7 @@ Haz la secuencia de despegue ([e900](#e900)), pero:
 
 Orla Venn te espera en la rampa del Argo, con el brazo de grúa levantado en señal de saludo. «Dijimos que si llegabas, subías. Pues sube.»
 
-1. **Subir al Argo.** Te llevas a 2 personas (compañeros, tripulantes de la Cicatriz o pasajeros). Los demás se quedan. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Haz solo la prueba 4 (Canto) del despegue, y la huida ([e902](#e902)) si corresponde. Con 0–1 Fallos → [e910](#e910). Con 2 o más → [e908](#e908).
+1. **Subir al Argo.** Te llevas a 2 personas (compañeros, tripulantes de la Cicatriz o pasajeros). Los demás se quedan. Si eres el Piloto, +1 `CULPA` por cada tripulante que dejes. Haz solo la prueba 4 (Canto) del despegue y la huida ([e902](#e902)). Si fallas las dos → [e908](#e908); si no → [e910](#e910).
 2. **Quedarte y seguir con tu nave.** Orla asiente. «*Suerte.*» El Argo despega sin ti. Si tenías `TRIPULANTE_EN_EL_ARGO`, ese tripulante se salva.
 
 ---
@@ -127,7 +127,7 @@ Orla Venn te espera en la rampa del Argo, con el brazo de grúa levantado en se�
 
 El motor tose. El casco cruje. Por un momento, flotas en el borde del espacio, entre la Corona y las estrellas.
 
-Desde la cabina ves Caribdis entera por primera vez: las Salinas como una mancha blanca, los Cañones como arrugas, el Polo brillando en la noche. Es más pequeño de lo que creías. Y más hermoso. Las manos se te sueltan de los mandos sin que se lo pidas. La Corona gira a tu alrededor, llena de naves que también quisieron irse.
+Desde la cabina ves Caribdis entera por primera vez: las Salinas como una mancha blanca, los Cañones como arrugas, el Polo brillando en la noche. Es más pequeño de lo que creías. Y más hermoso. Sueltas los mandos sin habértelo propuesto, como quien suelta una cuerda. La Corona gira a tu alrededor, llena de naves que también quisieron irse.
 
 Y entonces oyes el Canto, suave, amable, como una mano en la espalda. **Quédate.**
 
@@ -137,7 +137,7 @@ Esa noche, en Caribdis, alguien mira la Corona y ve caer una estrella que no cae
 
 *Fin. Has caído otra vez.*
 
-Si quieres, la próxima partida puede empezar con una **Marca de legado**: anota `ESTRELLA_FUGAZ` en la nueva Hoja. Al principio de la partida, la nave caída que verás desde la Cicatriz es la tuya, y al explorarla (en las Dunas) encontrarás un sistema tuyo de calidad Sólida.
+Tu nave sigue en Caribdis, caída en las Dunas. En tu próxima partida (r212), colócala al prepararla como un Hallazgo más y explórala como un pecio de tipo **Nave militar**, con el doble en las salas de Restos. En la última sala está tu Hoja: hereda una Marca de esta partida y +1 Temple.
 
 ---
 
@@ -154,7 +154,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 **Sobre ti:**
 - *Piloto:* con `CULPA` 0–2: *«Vuelves a volar (o ves a Orla volar, si te fuiste en el Argo). Cada vez que despegas, sonríes, y esta vez sabes por qué.»* Con `CULPA` 3–4: *«Nunca vuelves a pilotar. Pero sueñas con el cielo rojo, y no siempre es una pesadilla.»* Con `CULPA` 5–6: *«Llegas a casa. Nadie sabe que has llegado: no se lo dices a nadie.»*
 - *Piloto con `BORRASTE_LA_CAJA`:* *«Nunca sabrás qué grabó la caja. A veces, eso es lo único que te deja dormir.»*
-- *Nativo:* con `ARRAIGO` 4 o más: *«Eres el primero de tu pueblo en ver otro sol. Lo describes en tu lengua, en un mensaje que tarda años en llegar a Quilla.»* Con `ARRAIGO` 2 o menos: *«En los mundos de los hombres te llaman mutante. Tú les dices que no: que eres un hijo de Caribdis.»*
+- *Nativo:* con `ARRAIGO` 4 o más: *«Eres el primero de tu pueblo en ver otro sol. Lo describes en tu lengua, en un mensaje que tarda años en llegar a Quilla.»* Con `ARRAIGO` 3 o menos: *«En los mundos de los hombres te llaman mutante. Tú les dices que no: que eres un hijo de Caribdis.»*
 - *Mente:* con `VUELVE_A_SER_LA_NAVE`: *«Eres la nave. Llevas a tu tripulación a todas partes, y cuando duermen, les cantas en voz baja tu propia canción.»* Si seguiste en el dron: *«Te quedas en el dron. Te gusta flotar. Te gusta tener nombre.»* Con `COPIA_EN_CARIBDIS`: *«Y en Caribdis, una parte de ti sigue esperando a los siguientes que caigan, para enseñarles el camino.»*
 
 **Sobre los que vinieron:**
@@ -173,7 +173,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - Con el cuaderno de Amara (aunque Amara no esté): *«Llevas el cuaderno a una universidad. Les cambia la historia.»*
 
 **Sobre los que se quedaron:**
-- Por cada tripulante que no subió (o `PERDIDO_` / `PERDIDO_BRUNO`): *«(Nombre) se queda en Caribdis.»*
+- Por cada tripulante encontrado que no subió, o con su `PERDIDO_`: *«(Nombre) se queda en Caribdis.»* Con `TRIPULANTE_EN_EL_ARGO`: *«(Nombre) salió en el Argo. Te escribe.»*
 - Con `PASAJERO_EL_CONTABLE` sin él a bordo: *«La gente del Contable te busca. Cobra siempre.»*
 - Con `HALCYON`: *«No vuelves a por los dormidos del Halcyon. Siete luces verdes, en un cementerio de naves. Siempre te preguntarás.»*
 
@@ -251,13 +251,13 @@ Desde la órbita apuntas los motores hacia la torre más alta, la de la cima, y 
 
 <a id="e914"></a>
 ### e914 · Hogar
-*Final · Nativo*
+*Final · Victoria · Nativo*
 
-No subes. Miras cómo la nave se eleva con tu tripulación a bordo (o vacía, si nadie quiso ir), y te das la vuelta hacia los Cañones.
+No subes. Miras cómo la nave se eleva con tu tripulación a bordo (o cómo se queda en tierra, si nadie quiso ir), y te das la vuelta hacia los Cañones.
 
-Si la nave despega sin ti, haz la secuencia de despegue (e900) con 3 en todos los atributos en lugar de los tuyos (o con +0 si no hay nadie a bordo), solo para saber si llegan.
+Si sube alguien, haz por ellos la secuencia de despegue ([e900](#e900), desde el paso 1) con 3 en todos los atributos, solo para saber si llegan. Tu final no cambia: **es una victoria**.
 
-*«Tu nave se va. Tú te quedas. Eres el primero que ha tenido la elección, y has elegido. La Madre Óxida te recibe en Quilla con un plato de caldo y no dice nada. Años después, cuando la Madre muere, tú eres la Madre. Cuentas a los niños la historia de la nave que se fue, y de cómo tú la ayudaste a irse. Los niños miran la Corona. Uno de ellos, un día, se irá.»*
+*«La nave ya no es tuya. Tú te quedas. Eres el primero que ha tenido la elección, y has elegido. La Madre Óxida te recibe en Quilla con un plato de caldo y no dice nada. Años después, cuando la Madre muere, tú eres la Madre. Cuentas a los niños la historia de la nave que se fue, y de cómo tú la ayudaste a irse. Los niños miran la Corona. Uno de ellos, un día, se irá.»*
 
 *Fin.*
 
@@ -314,8 +314,8 @@ Subes a la cima de la torre más alta. Te sientas en el trono. Y te vas, hacia d
 
 El Polo se abre. El hielo estalla en una columna que llega hasta la Corona. Y de debajo sale algo tan grande que no lo entiendes: un ojo, una boca, un horizonte vivo.
 
-- **Si el Secreto es 3** (si no lo sabías, cuéntalo: [e840](#e840)) **y estás en la secuencia de despegue** (o despegas antes de que el Reloj baje 3, mientras el planeta se rompe; si no, es una derrota): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910), pero ignora las líneas que hablan de Quilla, la Cicatriz y el Santuario: ya no existen. Añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
-- **Si no:** *«La Bestia despierta hambrienta. Y tú estás encima.»* **Es una derrota.**
+- **Si vienes del paso 0 del despegue**, termina la secuencia sin la huida (paso 3). **Si vienes del Pozo** y el Secreto es 3 (si no lo sabías, cuéntalo: [e840](#e840)), llega a la Cicatriz y despega antes de que el Reloj baje 3. Si lo logras (en el despegue, con 0–4 Daños de nave): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) sin las líneas de Quilla, la Cicatriz, el Santuario y los que se quedaron: ya no existen. Añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
+- **Si no lo logras:** *«La Bestia despierta hambrienta. Y tú estás encima.»* **Es una derrota.**
 
 *Fin.*
 
@@ -333,7 +333,7 @@ No hacen ruido. Simplemente **bajan**. Uno se posa sobre el Cementerio de Naves 
 
 El último baja sobre la Cicatriz. Tu nave brilla un instante bajo su sombra.
 
-- Si tienes `SABE_ESCONDERSE` y estás en los Cañones: te escondes como hicieron los Hijos del Pecio hace mil años. Sobrevives. *«Cuando se van, sales de la cueva. No queda casi nada. Pero tú sí. Y tu nave, medio enterrada bajo la arena, sigue allí. Quizá dentro de mil años…»* **Es una derrota, pero estás vivo.**
+- Si tienes `SABE_ESCONDERSE` y estás en los Cañones, o `BUNKER` y estás en las Dunas: te escondes como hicieron los Hijos del Pecio hace mil años. Sobrevives. *«Cuando se van, sales de tu agujero. No queda casi nada. Pero tú sí. Y tu nave, medio enterrada bajo la arena, sigue allí. Quizá dentro de mil años…»* **Es una derrota, pero estás vivo.**
 - Si no: *«Lo último que ves es una flor negra que se abre.»*
 
 *Fin.*
@@ -348,7 +348,7 @@ Te quedas tumbado en la arena roja (si eres la Mente, tu esfera se apaga). Escil
 
 Por una vez, le crees.
 
-- Si tienes compañeros con Lealtad 3, uno de ellos sigue adelante con tu trabajo. Puedes seguir jugando con él como protagonista: usa sus habilidades, tus sistemas, tu Reloj. Tiene atributos 3 en todo y Temple 1. Si despega, lee [e910](#e910) en su nombre.
+- Si tienes un compañero con Lealtad 3, juegas con él: conserva tu Hoja (Equipo, Marcas, sistemas, Reloj) y su habilidad; tiene 3 en todo, Temple 1, Canto 0, sin Heridas, sin contador ni historia. Si despega, lee [e910](#e910) en su nombre.
 - Si no: *«El viento cubre tu cuerpo en una noche. En un año, los Desguaces encuentran tu nave y la desmontan. Una placa de tu casco acaba en el tejado de una casa de Quilla. Un niño la mira a veces, sin saber por qué, y piensa en irse.»*
 
 *Fin.*

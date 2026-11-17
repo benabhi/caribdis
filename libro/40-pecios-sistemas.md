@@ -12,7 +12,7 @@ Una cámara frigorífica que todavía funciona. Dentro, a −20 °C, cajas de co
 
 1. **Llevarte la comida.** +6 Raciones (hasta un máximo de 8; son pesadas: mientras tengas más de 6, −1 a Reflejos).
 2. **Desenvolver el bulto.** Es un hombre congelado vivo, en hibernación de emergencia. `[Ingenio · 11]` (Iria: Ventaja) para despertarlo. *Éxito:* es un **contrabandista** que te paga con un mapa: gana `RUTA_` hacia dos regiones y una Pista a tu elección de la tabla de rumores. *Fallo:* muere al despertar. −1 Temple.
-3. **Desmontar el compresor.** 4 Chatarra. Si te falta el Soporte vital, el compresor sirve: **Soporte vital Precario**.
+3. **Desmontar el compresor.** 4 Chatarra o, si te falta el Soporte vital, un **Soporte vital Precario**.
 
 ---
 
@@ -63,7 +63,7 @@ Cunas en hileras. Juguetes. Dibujos infantiles en las paredes: casas, árboles, 
 
 Una cámara acorazada con diez mil tubos de cristal: semillas de un mundo entero, preparadas para sembrar otro planeta. Funciona. El frío las ha mantenido vivas siglos.
 
-1. **Llevarte una caja.** Pesada: anota `CAJA_DE_SEMILLAS`. Si la llevas a la Cicatriz: tu **Soporte vital** sube 1 de calidad (o cuenta como Precario si no lo tenías). Si la llevas a Quilla: +3 de Reputación con los Hijos del Pecio y **★**.
+1. **Llevarte una caja.** Pesada como un sistema (r180): anota `CAJA_DE_SEMILLAS`. Si la llevas a la Cicatriz: tu **Soporte vital** sube 1 de calidad (o cuenta como Precario si no lo tenías). Si la llevas a Quilla: +3 de Reputación con los Hijos del Pecio y **★**.
 2. **Desconectar el sistema de refrigeración.** Es un compresor de primera: **Soporte vital Sólido**. Las semillas morirán. −1 Temple.
 3. **Dejarlo como está y marcar el sitio.** Gana la Pista `esta región · El banco de semillas · e504`.
 
@@ -76,7 +76,7 @@ Una cámara acorazada con diez mil tubos de cristal: semillas de un mundo entero
 Una cúpula de cristal intacta, llena de plantas que crecen sin que nadie las cuide desde hace siglos. Hay frutas. El aire huele a verde. Una pequeña máquina jardinera de tres patas pasa regando sin prestarte atención.
 
 1. **Comer y descansar.** +4 Raciones y recuperas 1 Herida y 1 Temple.
-2. **Hablar con la jardinera** (Mente, o `[Ingenio · 11]`). *Éxito:* te pregunta si eres de la tripulación. Si dices que sí, te deja coger lo que quieras: **Soporte vital Sólido** o 6 Raciones y 2 Chatarra. *Fallo:* sigue regando.
+2. **Hablar con la jardinera** (Mente o `COLONO`; si no, `[Ingenio · 11]`). *Éxito:* te pregunta si eres de la tripulación. Si dices que sí, te deja coger lo que quieras: **Soporte vital Sólido** o 6 Raciones y 2 Chatarra. *Fallo:* sigue regando.
 3. **Coger una planta para el camino.** Gana un **brote**: +1 Ración cada vez que descanses (deja de funcionar si recibes 3 Heridas de un golpe).
 
 ---
@@ -89,9 +89,9 @@ Una cúpula de cristal intacta, llena de plantas que crecen sin que nadie las cu
 
 Estanterías de armas detrás de una reja. La reja tiene un lector de huellas, que parpadea.
 
-1. **Forzar la reja.** `[Vigor · 11]` ◉. *Éxito:* elige dos armas de r107 (salvo la lanza de luz fría). *Fallo:* la reja se electrifica. 1 Herida.
+1. **Forzar la reja.** `[Vigor · 11]`. *Éxito:* elige dos armas de r107 (salvo la lanza de luz fría). *Fallo:* la reja se electrifica. 1 Herida.
 2. **Usar la mano de un soldado muerto.** Hay uno en el suelo. `[Vigor · 7]`. Funciona. Elige un arma y unas placas improvisadas. −1 Temple.
-3. **Si tienes `VETERANO`:** tu huella todavía está en el sistema militar. La reja se abre. Elige tres armas y unas placas. **★**
+3. **Si tienes `VETERANO`, `DESERTOR` o `ARMA`:** el sistema militar aún te reconoce. La reja se abre. Elige tres armas y unas placas. **★**
 
 ---
 
@@ -102,8 +102,8 @@ Estanterías de armas detrás de una reja. La reja tiene un lector de huellas, q
 Pantallas rotas, sillas vacías y un holograma táctico que todavía proyecta el último combate de la nave: seis puntos de luz contra veinte naves militares. Las veinte desaparecen una a una.
 
 1. **Ver la grabación completa.** `[Voluntad · 9]`. *Éxito:* ves cómo los Recolectores luchan… y cómo, en el último segundo, **una nave escapa** cuando el Canto se detiene un instante. Gana `FRAGMENTO_LA_BATALLA` y anota `LA_SEÑAL_PUEDE_CALLAR`. *Fallo:* te tiemblan las manos. −1 Temple.
-2. **Descargar el registro de navegación** (Mente, o con `[Ingenio · 11]`). Si tu Navegación no está conseguida, cuenta como **Navegación Precaria**. Si lo está, +1 de calidad.
-3. **Activar la baliza militar.** ◉ ◉. Emite en una frecuencia de emergencia: el Reloj sube 2 (los Recolectores se distraen persiguiendo un fantasma) pero la Alerta sube a 4.
+2. **Descargar el registro de navegación** (Mente, o con `[Ingenio · 11]`). Si no tienes Navegación, ganas una **Navegación Precaria**; si la tienes, +1 de calidad (máximo Excelente).
+3. **Activar la baliza militar.** Emite en una frecuencia de emergencia: el Reloj sube 2 (los Recolectores persiguen un fantasma), pero ◉ la Alerta sube a 4 (si ya lo estaba, no ganas nada).
 
 ---
 
@@ -154,7 +154,7 @@ Detrás de un cuadro, una caja fuerte de las de antes. Dentro, el magnate guarda
 Un piano de cola blanco, intacto, en un salón cuyo techo se abrió y deja ver la Corona. Sobre el atril, una partitura escrita a mano, sin terminar. El título: *Para el Canto*.
 
 1. **Tocar la partitura.** `[Reflejos · 9]`. *Éxito:* la melodía es la del Canto… pero al llegar al final de la partitura, **se detiene**, y el Canto, a lo lejos, se detiene también un segundo. Gana `FRAGMENTO_EL_PIANO` y anota `LA_SEÑAL_PUEDE_CALLAR`. **★** *Fallo:* desafinas. Te ríes. +1 Temple.
-2. **Llevarte la partitura.** Si tienes `PARTITURA_INCOMPLETA`, ahora está completa: gana `FRAGMENTO_PARTITURA`.
+2. **Llevarte la partitura.** Si tienes `PARTITURA_INCOMPLETA`, ahora está completa: gana `FRAGMENTO_PARTITURA`. Si no, anótala.
 3. **Desmontar el piano.** 5 Chatarra en cuerdas y marfil.
 
 ---
@@ -168,8 +168,8 @@ Un piano de cola blanco, intacto, en un salón cuyo techo se abrió y deja ver l
 Una sala circular con cien nichos en las paredes. En cada nicho, un Antiguo **dormido**, de pie, con los ojos cerrados y cubierto de una película de luz. Respiran muy despacio. Uno de ellos abre los ojos.
 
 1. **No moverte.** `[Voluntad · 11]` ♫. *Éxito:* te mira, ladea la cabeza y vuelve a cerrar los ojos. Gana `FRAGMENTO_LOS_DORMIDOS`. *Fallo:* +3 Canto ♫ y sales corriendo.
-2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫, y si tienes 3 `FRAGMENTO_` o más → [e840](#e840).
-3. **Despertarlos a todos.** No sabes cómo. Pero si eres la Mente: `[Ingenio · 13]` ◉ ◉. *Éxito:* la luz se apaga, los nichos se abren y los Antiguos salen. Te miran. Y **se deshacen en polvo azul**, uno tras otro. Algo, muy lejos, en el Polo, grita. El Reloj baja 5 y gana `DESPERTASTE_A_LOS_DORMIDOS`. *Fallo:* la sala se sella. Tienes que salir del pecio.
+2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫ y, sin `SECRETO_DESCUBIERTO`, ve a [e840](#e840). Si ya lo descubriste, +1 Temple.
+3. **Despertarlos a todos.** Solo si eres la Mente: `[Ingenio · 13]`. *Éxito:* la luz se apaga, los nichos se abren y los Antiguos salen. Te miran. Y **se deshacen en polvo azul**, uno tras otro. Algo, muy lejos, en el Polo, grita. El Reloj baja 5, pero gana `DESPERTASTE_A_LOS_DORMIDOS` y **★**. *Fallo:* la sala se sella. Tienes que salir del pecio.
 
 ---
 
@@ -179,7 +179,7 @@ Una sala circular con cien nichos en las paredes. En cada nicho, un Antiguo **do
 
 Una esfera de luz que llena la sala: la galaxia entera en miniatura. Hay un punto rojo que parpadea: Caribdis. Y alrededor, cientos de puntos azules: **otros planetas con torres que cantan**.
 
-1. **Estudiarlo.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* hay más trampas. O más escudos. Caribdis no es la única. Gana `FRAGMENTO_LA_RED`. Y aprendes una ruta que esquiva las torres: si tu Navegación está instalada, +1 de calidad; si no, anota `POSICION_CONOCIDA`. *Fallo:* te pierdes mirando las estrellas. ⌛ +1.
+1. **Estudiarlo.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* hay más trampas. O más escudos. Caribdis no es la única. Gana `FRAGMENTO_LA_RED` y aprendes una ruta que esquiva las torres: si tu Navegación está instalada, +1 de calidad (máximo Excelente); si no, gana `POSICION_CONOCIDA`. *Fallo:* te pierdes mirando las estrellas. ⌛ +1.
 2. **Tocar el punto rojo.** Todo el mapa se apaga, salvo un punto azul muy lejos. Gana `FRAGMENTO_EL_ORIGEN`: es de donde vinieron los Antiguos.
 3. **Buscar tu planeta de origen.** No está. O está, pero sin luz. +1 Canto ♫.
 
@@ -218,7 +218,7 @@ En el centro del pecio, una sala que **late**. Las paredes son de carne y metal,
 
 Un ser de otra especie, de un mundo que no conoces, sentado ante un panel. Muerto hace siglos, pero su cuerpo no se ha descompuesto. En el panel, un mapa de las seis luces de los Recolectores, con anotaciones en su idioma.
 
-1. **Copiar el mapa.** `[Ingenio · 11]` (Mente: automático). *Éxito:* sabes exactamente dónde estarán los Recolectores cada día. Gana `MAPA_DE_LOS_RECOLECTORES`: en la secuencia de despegue tienes Ventaja en la prueba de la huida (lo verás), y una vez, puedes subir el Reloj en 3 ocultándote en el momento justo. *Fallo:* lo borras al tocarlo.
+1. **Copiar el mapa.** `[Ingenio · 11]` (Mente: automático). *Éxito:* sabes exactamente dónde estarán los Recolectores cada día. Gana `MAPA_DE_LOS_RECOLECTORES`: en la secuencia de despegue tienes Ventaja en la prueba de la huida (lo verás), y una vez, al Ocultarte (r135), el Reloj sube 3. *Fallo:* lo borras al tocarlo.
 2. **Llevarte su arma.** Una pistola de cristal: +3 Ataque, distancia, silenciosa. Tira 1d6 cada vez que la uses: con un 1, se rompe.
 3. **Enterrarlo.** No es de aquí. Ninguno de vosotros lo es. +1 Temple.
 
@@ -233,7 +233,7 @@ Una puerta en mitad de una sala, sin pared alrededor. Un marco de metal oscuro. 
 La puerta está fría, aunque el resto de la sala no. Cierras los ojos un momento. Huele a tu casa.
 
 1. **Cruzarla.** +3 Canto ♫. Al otro lado estás en un sitio de Caribdis que no conoces. Tira 1d8: apareces en esa región, al amanecer de **mañana** (el amanecer normal: el Reloj baja 1). Gana `FRAGMENTO_LA_PUERTA_SIN_PARED`.
-2. **Tirar algo a través.** Lo tiras. No sale por el otro lado. Al rato, cae algo distinto a tus pies: una reliquia sin identificar.
+2. **Tirar algo a través.** Pierdes un objeto o 1 Chatarra. Al rato, cae algo distinto a tus pies: una reliquia sin identificar.
 3. **Mirar a través hasta ver algo.** `[Voluntad · 11]`. *Éxito:* en la sala del otro lado entras **tú**, pero más viejo, y te mira. Niega con la cabeza. Gana 2 Temple: es un aviso. *Fallo:* +2 Canto ♫.
 
 ---
@@ -251,7 +251,7 @@ Una nave de transporte del mismo tamaño que la tuya, partida por la mitad, con 
 Pero las placas están soldadas por el calor del impacto, y la nave está habitada: algo anida en la bodega.
 
 1. **Soltar las placas a mano.** `[Vigor · 11]` ⌛ +1. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Casco Precario** y 1 Herida.
-2. **Cortarlas con herramientas.** Necesitas herramientas de los Antiguos, la Mente o a Noemí. `[Ingenio · 9]`. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Precario**.
+2. **Cortarlas.** Solo con herramientas de los Antiguos, Noemí, `CARRONERO` o la Mente. `[Ingenio · 9]`. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Precario**.
 3. **Limpiar primero la bodega** → [e561](#e561).
 
 ---
@@ -277,8 +277,8 @@ En la bodega, un nido de **escarabajos de sal**, grandes como gatos, de caparaz�
 Un motor de salto, todavía montado en los restos de una nave rápida. Brilla con una luz roja tenue: no está muerto del todo. Para sacarlo hay que desconectar el núcleo sin que se descontrole.
 
 1. **Desconectar el núcleo.** `[Ingenio · 11]` (Noemí, la Mente: Ventaja). *Éxito:* **Motor Sólido** (pesado). *Éxito pleno:* **Motor Excelente**. *Fallo:* el núcleo se calienta → [e563](#e563).
-2. **Arrancarlo de cuajo.** `[Vigor · 13]` ◉. *Éxito:* **Motor Precario** (pesado). *Fallo:* 2 Heridas y el núcleo se calienta → [e563](#e563).
-3. **Usar el motor ahí mismo.** Si eres el Piloto: `[Reflejos · 11]`. *Éxito:* lo arrancas y la nave salta tres metros, lo justo para soltarse de las rocas. Así es fácil sacar el motor: **Motor Sólido**. *Fallo:* ◉ ◉ y [e563](#e563).
+2. **Arrancarlo de cuajo.** `[Vigor · 13]`. *Éxito:* **Motor Precario** (pesado). *Fallo:* 2 Heridas y el núcleo se calienta → [e563](#e563).
+3. **Usar el motor ahí mismo.** Si eres el Piloto: `[Reflejos · 11]` (`TEMERARIO`: Ventaja). *Éxito:* lo arrancas y la nave salta tres metros, lo justo para soltarse de las rocas: **Motor Sólido** (pesado). *Fallo:* ◉ +2 Alerta y → [e563](#e563).
 
 ---
 
@@ -291,7 +291,7 @@ El núcleo pasa del rojo al blanco. Las alarmas de la nave muerta chillan. Tiene
 Las luces de emergencia parpadean en rojo y el suelo se calienta bajo tus botas. Algo, muy dentro del casco, empieza a cantar una nota cada vez más aguda. Los paneles crujen como hielo en primavera. No hay tiempo para pensar, solo para elegir.
 
 1. **Correr.** `[Reflejos · 9]`. *Éxito:* te alejas a tiempo. El motor explota y se lleva media colina. ◉ +2 Alerta. No hay motor: tendrás que conseguirlo por otra vía, y tacha el pecio de tu Hoja. *Fallo:* explota igual y la onda te alcanza: 3 Heridas.
-2. **Enfriarlo.** `[Ingenio · 13]` ⚔. *Éxito:* lo estabilizas. **Motor Sólido** y **★**. *Fallo:* 3 Heridas y explota como en la opción 1.
+2. **Enfriarlo.** `[Ingenio · 13]` ⚔. *Éxito:* lo estabilizas. **Motor Sólido** (pesado) y **★**. *Fallo:* 3 Heridas y explota como en la opción 1.
 3. **Sacrificar una lente o una reliquia** (si tienes una). La metes en el núcleo y lo calma. **Motor Excelente** (pesado). +1 Canto ♫.
 
 ---
@@ -327,7 +327,7 @@ Después, puedes elegir la opción 1 o 2 de [e564](#e564).
 Una nave hospital, con la cruz roja medio borrada. Su soporte vital era el mejor de su clase: recicladores, filtros, generador de oxígeno. Funciona. Y mantiene con vida a **tres pacientes** en coma, en sus camillas.
 
 1. **Desconectarlo.** **Soporte vital Excelente** (no pesado). Los pacientes mueren. −2 Temple. Si eres el Piloto, +1 `CULPA`. Anota `APAGASTE_EL_HOSPITAL`.
-2. **Despertar a los pacientes primero.** `[Ingenio · 11]` (Iria: Ventaja). *Éxito:* despiertan los tres. Te dan las gracias y se van hacia Puerto Chatarra. Te llevas el soporte vital: **Soporte vital Sólido** y +1 Temple. *Éxito pleno:* uno es ingeniero médico y te ayuda: **Excelente**. *Fallo:* despierta uno solo → [e567](#e567).
+2. **Despertar a los pacientes primero.** `[Ingenio · 11]` (Iria o `MEDICA`: Ventaja). *Éxito:* despiertan los tres. Te dan las gracias y se van hacia Puerto Chatarra. Te llevas el soporte vital: **Soporte vital Sólido** y +1 Temple. *Éxito pleno:* uno es ingeniero médico y te ayuda: **Excelente**. *Fallo:* despierta uno solo → [e567](#e567).
 3. **Llevarte solo los filtros.** **Soporte vital Precario**. Los pacientes siguen vivos.
 
 ---
@@ -357,7 +357,7 @@ Un tanquero de combustible, enterrado hasta la mitad. Sus depósitos están llen
 El casco está pintado con letras que ya no lee nadie. Huele a dulce, a fruta podrida, y el aire tiembla encima de las escotillas como sobre la chapa al mediodía. Los huesos están en fila, todos con la cabeza hacia el tanquero.
 
 1. **Bombear con cuidado.** `[Ingenio · 11]` ⌛ +1. *Éxito:* **Combustible Sólido** (pesado). *Éxito pleno:* **Excelente**. *Fallo:* una chispa → [e569](#e569).
-2. **Bombear rápido.** `[Reflejos · 9]`. *Éxito:* **Combustible Precario**. *Fallo:* → [e569](#e569).
+2. **Deprisa.** `[Reflejos · 9]`. *Éxito:* **Combustible Precario** (pesado). *Fallo:* → [e569](#e569).
 3. **Estabilizarlo primero.** Necesitas sal de las Salinas (`SABE_DE_SAL`, [e247](#e247)) o la ayuda de Noemí. Entonces bombeas sin riesgo: **Combustible Sólido**.
 
 ---
@@ -370,8 +370,8 @@ El combustible se enciende con una llama azul que no da calor: da **frío**. Se 
 
 La llama no hace ruido. Avanza por el metal como agua, dejando una escarcha azulada que cruje. Los cristales de las ventanillas se rajan uno tras otro con un chasquido seco. Tu aliento se vuelve blanco.
 
-1. **Huir.** `[Reflejos · 11]`. *Éxito:* te salvas. El tanquero arde durante tres días. ◉ +2 Alerta. Tacha el pecio. *Fallo:* 2 Heridas y la congelación te quema los dedos: −1 a Reflejos hasta que te cure un sanador (anota `DEDOS_HELADOS`).
-2. **Cerrar las válvulas.** `[Vigor · 11]` ⚔. *Éxito:* lo apagas. Puedes llevarte **Combustible Precario**. **★** *Fallo:* 3 Heridas, y el tanquero arde como en la opción 1.
-3. **Dejar que arda y aprovechar el frío.** Si eres la Mente o tienes `SAL_EN_LA_PIEL`, el frío no te afecta. Recoges el combustible que se cristaliza al congelarse: **Combustible Sólido**. +1 Canto ♫.
+1. **Huir.** `[Reflejos · 11]`. El tanquero arde durante tres días: ◉ +2 Alerta y tacha el pecio. *Fallo:* además, 2 Heridas y la congelación te quema los dedos: −1 a Reflejos hasta que te cure un sanador (anota `DEDOS_HELADOS`).
+2. **Cerrar las válvulas.** `[Vigor · 11]` ⚔. *Éxito:* lo apagas. Puedes llevarte **Combustible Precario** (pesado). **★** *Fallo:* 3 Heridas, y el tanquero arde como en la opción 1.
+3. **Dejar que arda y aprovechar el frío.** Si eres la Mente o tienes `SAL_EN_LA_PIEL`, el frío no te afecta. Recoges el combustible que se cristaliza al congelarse: **Combustible Sólido** (pesado). +1 Canto ♫.
 
 Cuando todo termina, el tanquero queda cubierto de una capa de hielo azul que no se derrite ni a mediodía. Los chatarreros de la zona lo llaman la Vela Fría y dan un rodeo para no pasar cerca. Dicen que, de noche, todavía se oye crujir el metal por dentro, como si la llama siguiera buscando algo que quemar.
