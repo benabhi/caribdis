@@ -99,7 +99,7 @@ CB.D = {
     Iria: { n: 'Dra. Iria Salcedo', rol: 'médica', ev: 'e600', leal: 'e602', hab: 'Al descansar, el grupo recupera 1 Herida extra. Ventaja en pruebas de medicina', arte: 'crew-iria' },
     Bruno: { n: 'Bruno Kessler', rol: 'guardaespaldas', ev: 'e605', leal: 'e607', hab: '+2 Ataque (en lugar de +1). Ventaja en pruebas de Vigor', arte: 'crew-bruno', atk: 2, ventaja: 'Vigor' },
     Amara: { n: 'Amara Oyelaran', rol: 'arqueóloga', ev: 'e610', leal: 'e612', hab: 'Lee lo antiguo: Ventaja en Ingenio con los Antiguos', arte: 'crew-amara' },
-    Noemí: { n: 'Noemí «Grasa» Vidal', rol: 'mecánica', ev: 'e615', leal: 'e617', hab: 'Ventaja para instalar sistemas; +1 Chatarra en cada sala de Restos', arte: 'crew-noemi' },
+    Noemí: { n: 'Noemí «Biela» Vidal', rol: 'mecánica', ev: 'e615', leal: 'e617', hab: 'Ventaja para instalar sistemas; +1 Chatarra en cada sala de Restos', arte: 'crew-noemi' },
     Tadeo: { n: 'Hermano Tadeo', rol: 'capellán', ev: 'e620', leal: 'e622', hab: 'Ventaja en pruebas de Voluntad; al descansar, −1 de Canto', arte: 'crew-tadeo', ventaja: 'Voluntad' },
     Lio: { n: 'Lio', rol: 'polizón', ev: 'e625', leal: 'e627', hab: 'Ventaja en sigilo y para huir; puede robar', arte: 'crew-lio' },
   },

@@ -55,7 +55,7 @@ Blindaje +1. Inmune a las tormentas de óxido y a la lluvia de cristal.
 
 <a id="e711"></a>
 ### e711 · 2 · Ojos de sombra
-Ves en la oscuridad total. Ventaja en el Polo y en los pecios contra las Trampas.
+Ves en la oscuridad total. Ventaja en la Noche negra ([e282](#e282)) y contra las Trampas y los Derrumbes de los pecios (r172).
 
 <a id="e712"></a>
 ### e712 · 3 · Brazos largos
@@ -75,7 +75,7 @@ Oyes el Canto como lo que es. Ventaja en todas las pruebas de Voluntad ♫. Cuan
 
 <a id="e716"></a>
 ### e716 · 7 · Fotosíntesis
-Si descansas al aire libre de día, no gastas Ración ese amanecer.
+Si tu acción del día es descansar a la intemperie, no gastas Ración al amanecer siguiente.
 
 <a id="e717"></a>
 ### e717 · 8 · Piel de camaleón
@@ -87,7 +87,7 @@ Puedes comer Chatarra como Raciones (1 por 1).
 
 <a id="e719"></a>
 ### e719 · 10 · Raíces *(defecto)*
-De tus pies salen raíces finas. Cada vez que descanses, `[Vigor · 7]` o pierdes media mañana (sin efecto en el juego salvo que viajes al día siguiente: −1 a la orientación). Pero al descansar en el Bosque, recuperas todas las Heridas.
+De tus pies salen raíces finas. Cada vez que descanses, `[Vigor · 7]` o te cuesta media mañana arrancarte del suelo: −1 a tu primera prueba del día siguiente. Pero al descansar en el Bosque, recuperas todas las Heridas.
 
 <a id="e720"></a>
 ### e720 · 11 · Voz doble *(defecto)*
@@ -110,7 +110,7 @@ Al explorar un pecio, mira las dos primeras salas antes de entrar (tira ambas y 
 
 <a id="e726"></a>
 ### e726 · Modo centinela
-Al descansar a la intemperie, no hay tirada nocturna. Gasta 1 Energía extra.
+Al descansar a la intemperie, puedes gastar 1 Energía: esa noche no hay tirada nocturna.
 
 <a id="e727"></a>
 ### e727 · Soldadura de campaña
@@ -130,7 +130,7 @@ Nunca te pierdes al viajar. Al explorar, Ventaja para encontrar sistemas.
 
 <a id="e731"></a>
 ### e731 · Placas de reserva
-*Este protocolo no se elige al empezar: solo como mejora (r190).* Tu carcasa tiene placas de casco de recambio: si tu Casco no está instalado, cuenta como **Casco Precario**. Si lo está, sube 1 de calidad. Después, borra este protocolo.
+*Este protocolo no se elige al empezar: solo como mejora (r190).* Tu carcasa tiene placas de casco de recambio: si aún no has conseguido el Casco, ganas un **Casco Precario** ya instalado. Si lo tienes, sube 1 de calidad (máximo Excelente). Después, borra este protocolo.
 
 <a id="e732"></a>
 ### e732 · Emisor de interferencia
@@ -156,7 +156,7 @@ Un ojo de cristal. Al mirarlo, ves cualquier lugar tal como era hace diez mil a�
 
 <a id="e743"></a>
 ### e743 · Semilla de luz
-Una esfera tibia. Si la plantas en la Cicatriz, cuando el Reloj baje 5 (anota el número) crece un **árbol de luz fría** que da 2 Energía cada amanecer y +1 calidad al Soporte vital. Si la plantas en otra parte, crece en una noche y se va caminando.
+Una esfera tibia. Si la plantas en la Cicatriz, cuando el Reloj baje 5 (anota el número) crece un **árbol de luz fría** que da 2 Energía cada amanecer que pases allí y +1 de calidad a tu Soporte vital (si lo tienes; máximo Excelente). Si la plantas en otra parte, crece en una noche y se va caminando.
 
 <a id="e744"></a>
 ### e744 · Lezna cantora
@@ -176,19 +176,19 @@ Una aguja de hueso que apunta siempre a lo que más necesitas. Al explorar, pued
 
 <a id="e748"></a>
 ### e748 · Corazón de reactor
-Una esfera de luz fría sólida. Instalada en la nave: el **Motor** sube a Excelente (o cuenta como Motor Sólido si no lo tienes). +2 Canto al instalarla.
+Una esfera de luz fría sólida, pesada como un sistema. Llévala a la Cicatriz e instálala sin prueba: tu **Motor** pasa a Excelente o, si no lo tenías, ganas un Motor Sólido instalado. +2 Canto ♫.
 
 <a id="e749"></a>
 ### e749 · Voz embotellada
-Un frasco con una voz dentro. Al abrirlo, habla: es alguien de los Antiguos, que te responde **una pregunta**. Ve a [e840](#e840) inmediatamente, aunque no tengas 3 `FRAGMENTO_`. Se gasta.
+Un frasco con una voz dentro. Al abrirlo, habla: es alguien de los Antiguos, y te lo cuenta todo. Sin `SECRETO_DESCUBIERTO`, ve a [e840](#e840) ahora, aunque no tengas 3 `FRAGMENTO_`; si ya lo tenías, +1 Temple. Se gasta.
 
 <a id="e750"></a>
 ### e750 · Mapa vivo
-Una lámina que muestra Caribdis desde arriba, en tiempo real. Ves dónde está todo: elige un Hallazgo de tu Hoja y descubre exactamente dónde está; al explorar esa región, lo encuentras sin tirar. Además, puedes ver venir a los Recolectores: +3 al Reloj (una vez).
+Una lámina que muestra Caribdis desde arriba, en tiempo real. Ves dónde está todo: elige un Hallazgo de tu lista (r108); la próxima vez que explores su región, lo encuentras sin tirar. Además, puedes ver venir a los Recolectores: +3 al Reloj (una vez).
 
 <a id="e751"></a>
 ### e751 · Fragmento de la Matriz
-Un trozo de cristal que contiene una parte de la mente que emite el Canto. Al tocarlo, gana `FRAGMENTO_LA_MATRIZ`. Si lo destruyes, el Canto calla un día entero en todo el planeta (anota `LA_SEÑAL_PUEDE_CALLAR`). Si lo llevas en el despegue, cuenta como un Éxito automático en cualquier prueba (una vez). No se puede comprar.
+Un trozo de cristal que contiene una parte de la mente que emite el Canto. Al tocarlo, gana `FRAGMENTO_LA_MATRIZ`. Si lo destruyes, el Canto calla un día entero en todo el planeta (anota `LA_SEÑAL_PUEDE_CALLAR`). Si lo llevas en el despegue, convierte un Fallo en Éxito (una vez). No se puede comprar.
 
 Pesa más de lo que debería y está siempre tibio. Si lo acercas al oído, oyes el Canto muy lejos, como el mar dentro de una caracola.
 

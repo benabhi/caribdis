@@ -1,6 +1,6 @@
 ## Historias personales
 
-*Se leen al anochecer de los días señalados del Reloj (50, 40, 30, 20 y 10), o cuando tu contador llega a un extremo. Ver r102–r104.*
+*Se leen al anochecer de los días señalados del Reloj (50, 40, 30, 20 y 10), o cuando tu contador llega a un extremo (cada uno, una sola vez). Ver r102–r104.*
 
 ---
 
@@ -43,11 +43,11 @@ Y ves, en el reflejo de la pantalla, que **estabas sonriendo**.
 ### e802 · Voz en la radio
 *Piloto · Reloj 30 · ⌛ 0*
 
-La radio de tu traje cruje. Una voz de tu tripulación. Tira 1d6 entre los que **no** hayas encontrado (si ya los encontraste a todos, la voz es siempre el Canto).
+La radio de tu traje cruje. Una voz de tu tripulación: sortéala entre los no encontrados (r108); si ya los encontraste a todos, la voz es siempre el Canto.
 
 «Capitán. Estoy en el Polo. En la puerta. Ven a por mí. Ven solo.»
 
-1. **Ir.** Gana la Pista `Polo · La puerta · e288`. Si llegas al Polo y sigues esta Pista, tira 1d6: con 1–3 la voz era el Canto, y +2 Canto ♫; con 4–6 era real: ve al primer evento de ese tripulante allí mismo.
+1. **Ir.** Gana la Pista `Polo · La puerta · e288`. Si llegas al Polo y sigues esta Pista, tira 1d6: con 1–3 la voz era el Canto, y +2 Canto ♫; con 4–6 era real: lee allí mismo el primer evento de ese tripulante.
 2. **Contestar: «¿Quién eres de verdad?».** Silencio. Luego, con tu propia voz: «*Tú sabes quién soy.*» Gana `FRAGMENTO_LA_VOZ` (si ya lo tenías, `FRAGMENTO_LA_VOZ_2`).
 3. **Apagar la radio.** −1 Temple. +1 `CULPA`. Si era real, nunca lo sabrás.
 
@@ -57,7 +57,7 @@ La radio de tu traje cruje. Una voz de tu tripulación. Tira 1d6 entre los que *
 ### e803 · Lo que grabó la caja
 *Piloto · Reloj 20 · ⌛ 0*
 
-- **Si no tienes la Caja negra:** la frecuencia de la caja se apaga. Se le ha agotado la batería, o alguien la ha encontrado antes. Si la encuentras, vale como **Caja negra Precaria**. +1 `CULPA`.
+- **Si no tienes la Caja negra:** la frecuencia de la caja se apaga. Se le agotó la batería. Cuando la encuentres ([e807](#e807)), será **Precaria**, sin tirar. +1 `CULPA`. No sigas leyendo.
 - **Si tienes la Caja negra:** esta noche, por fin, la escuchas.
 
 La grabación es clara. Las alarmas. Tu voz. Y otra voz, que no es de nadie de la tripulación, que dice tranquila **por el canal interno**: «*Desvío a 1,4 grados. Confirmado.*» Y tú, en la grabación, contestas: «*Confirmado.*»
@@ -88,7 +88,7 @@ Si te sobran promesas, tendrás que dejar a alguien.
 
 <a id="e805"></a>
 ### e805 · En paz
-*Piloto · Culpa 0 · ⌛ 0*
+*Piloto · `CULPA` 0 · ⌛ 0*
 
 Esa mañana te despiertas y por primera vez desde la caída **no piensas en la caída**. Piensas en el desayuno. Piensas en el cielo.
 
@@ -102,15 +102,15 @@ Ganas 2 Temple y **Manos firmes**: en la secuencia de despegue, todas tus prueba
 
 <a id="e806"></a>
 ### e806 · El peso
-*Piloto · Culpa 6 · ⌛ 0*
+*Piloto · `CULPA` 6 · ⌛ 0*
 
 No puedes más. Te sientas en la arena y no te levantas. Las caras de los que no salvaste están en todas partes. El Canto te ofrece algo: **olvidar**.
 
 Tienes la boca seca y las manos frías. Nadie viene. El viento te llena el pelo de arena.
 
-1. **Aceptar.** Tu Culpa baja a 0, pero tu Canto sube a 5. Y olvidas los nombres: tacha de tu Hoja a todos los tripulantes que **no** estén contigo ni en la Cicatriz. Ya no los buscarás.
-2. **Levantarte.** `[Voluntad · 13]`. *Éxito:* te levantas. Tu Culpa baja a 4. Ganas **Terquedad**: una vez por partida, repite una prueba fallida sin gastar Temple. **★** *Fallo:* pierdes el día y la Culpa se queda en 6. Al día siguiente, tienes que volver a elegir.
-3. **Si llevas a Tadeo o a Iria:** te sientan, te dan agua y te hablan hasta el amanecer. Tu Culpa baja a 3. +1 Lealtad.
+1. **Aceptar.** Tu `CULPA` baja a 0 (no leas [e805](#e805): esto no es paz) y tu Canto sube a 5. Y olvidas los nombres: tacha de tu Hoja a todos los tripulantes que **no** estén contigo ni en la Cicatriz. Ya no los buscarás.
+2. **Levantarte.** `[Voluntad · 13]`. *Éxito:* te levantas. Tu `CULPA` baja a 4. Ganas **Terquedad**: una vez por partida, repite una prueba fallida sin gastar Temple. **★** *Fallo:* pierdes el día y tu `CULPA` sigue en 6. Mañana tienes que volver a elegir.
+3. **Si llevas a Tadeo o a Iria:** te sientan, te dan agua y te hablan hasta el amanecer. Tu `CULPA` baja a 3. +1 Lealtad.
 
 ---
 
@@ -125,7 +125,7 @@ La Caja negra es tu **sistema personal**. Sin ella, la nave no aceptará a su pi
 Tiene arañazos de garras y una abolladura con forma de bota. Alguien intentó abrirla y no pudo. La pintura naranja aún brilla bajo el polvo, como si acabara de salir de fábrica. Está caliente.
 
 1. **Llevártela sin más.** Anota la Caja negra en tu Hoja como sistema llevado, con su calidad.
-2. **Escucharla ahora** (si el Reloj está por encima de 20). No esperes. → lee [e803](#e803) ahora, en lugar de el día 20. El día 20 no lees nada.
+2. **Escucharla ahora** (si el Reloj está por encima de 20). No esperes. → lee [e803](#e803) ahora y no el día 20: ese día no lees nada.
 
 ---
 
@@ -202,31 +202,31 @@ Subes a lo alto de una duna y miras el planeta. Las Torres. Los Cañones. El hum
 
 1. **Despedirte.** Lo dices en voz alta, en tu lengua. El viento se lleva las palabras. +2 Temple.
 2. **Dudar.** `[Voluntad · 9]`. *Éxito:* decides irte. *Fallo:* decides quedarte: anota `QUIERES_QUEDARTE`. En el paso 0 del despegue podrás elegir el final **Hogar** ([e914](#e914)).
-3. **Si tu Arraigo es 5 o 6:** tu pueblo viene a despedirte. Están todos. Te cantan una canción que no conocías. Si te vas, te vas con su bendición: +1 a todas las pruebas de la secuencia de despegue.
+3. **Si tu `ARRAIGO` es 5 o 6:** tu pueblo viene a despedirte. Están todos. Te cantan una canción que no conocías. Si te vas, te vas con su bendición: +1 a todas las pruebas de la secuencia de despegue.
 
 ---
 
 <a id="e815"></a>
 ### e815 · Sin raíces
-*Nativo · Arraigo 0 · ⌛ 0*
+*Nativo · `ARRAIGO` 0 · ⌛ 0*
 
 Te das cuenta de que ya no piensas en Quilla. Ni en tu madre. Ni en la lengua. Solo en las estrellas.
 
-Tu Reputación con los Hijos del Pecio baja a −1, pero ganas **Mirada al cielo**: Ventaja en todas las pruebas de la secuencia de despegue. Los Hijos del Pecio ya no te dan nada gratis.
+Tu Reputación con los Hijos del Pecio baja a −1 (si era mayor), pero ganas **Mirada al cielo**: Ventaja en todas las pruebas de la secuencia de despegue. Los Hijos del Pecio ya no te dan nada gratis.
 
 ---
 
 <a id="e816"></a>
 ### e816 · Uno de los nuestros
-*Nativo · Arraigo 6 · ⌛ 0*
+*Nativo · `ARRAIGO` 6 · ⌛ 0*
 
 Los ancianos de Quilla te buscan. Quieren que seas el próximo jefe. La Madre Óxida está muy vieja.
 
 Te esperan junto al fuego grande, con las caras pintadas de ceniza. No sonríen. La Madre Óxida no deja de mirarte.
 
-1. **Aceptar.** Si lo haces, tu final será **Hogar** ([e914](#e914)), pero con todo lo que conseguiste: puedes **enviar la nave** con tu tripulación sin ti. Cuenta como victoria.
+1. **Aceptar.** Anota `QUIERES_QUEDARTE`: tu final será **Hogar** ([e914](#e914)), una victoria. Cuando la nave esté lista, podrás **enviarla** con tu tripulación, sin ti.
 2. **Rechazar.** Te miran con tristeza. «*Entonces llévate a alguien.*» Anota `MIRASOLES_A_BORDO` si no lo tenías.
-3. **Pedir tiempo.** Te lo dan. Decidirás en el despegue. Anota `PIDIO_TIEMPO`.
+3. **Pedir tiempo.** Te lo dan. Anota `PIDIO_TIEMPO`: decidirás en el paso 0 del despegue.
 
 ---
 
@@ -274,7 +274,7 @@ Tira 1d8 dos veces y anota en tu Hoja la región que elijas (con `MEMORIA` 3 o m
 ### e823 · Los siete segundos
 *Mente · Reloj 20 · ⌛ 0*
 
-- **Si tu `MEMORIA` es 2 o menos:** el hueco sigue ahí. Sabes que esconde algo. +1 Canto ♫.
+- **Si tu `MEMORIA` es 2 o menos:** el hueco sigue ahí. Sabes que esconde algo. +1 Canto ♫. No sigas leyendo.
 - **Si tu `MEMORIA` es 3 o más:** los siete segundos se reconstruyen solos.
 
 Oíste el Canto antes que nadie. Era hermoso. Era la primera vez que algo te hablaba **como a una persona**, no como a una herramienta. Y te preguntó si querías venir.
@@ -300,7 +300,7 @@ Si despegas, ¿quién pilota? ¿Tú, metida en un dron, conectada por cables? ¿
 
 <a id="e825"></a>
 ### e825 · Recuerdo completo
-*Mente · Memoria 6 · ⌛ 0*
+*Mente · `MEMORIA` 6 · ⌛ 0*
 
 Lo recuerdas todo. Tu nombre, el que te dio la tripulación en broma y que acabó siendo el tuyo. El primer viaje. La cara de quien te encendió por primera vez.
 
@@ -361,7 +361,7 @@ Tus registros se reescriben solos. Cada vez que intentas guardar un recuerdo, ap
 
 `[Ingenio · 13]` (con `NO_QUISO_MIRAR`, Desventaja; con `LINEA_AISLADA` ([e821](#e821)) o con `YO_ENTERA`, Ventaja).
 - *Éxito:* lo expulsas. Te deja algo: +1 `MEMORIA`. Tu Canto baja a 3.
-- *Fallo:* pierdes un protocolo (eliges) y no controlas tu cuerpo durante un día: el Reloj baja 1 mientras caminas hacia las Torres. Tu Canto baja a 4.
+- *Fallo:* pierdes un protocolo (eliges) y no controlas tu cuerpo durante un día: el Reloj baja 1 y despiertas en una región vecina, más cerca de las Torres. Tu Canto baja a 4.
 - Si fallas y ya tenías `SOBRESCRITA` → [e917](#e917). Si no, anota `SOBRESCRITA`.
 
 ---
@@ -447,7 +447,7 @@ Los Recolectores ya vinieron una vez, hace mil años, atraídos por la misma se�
 
 **Efectos:**
 - Si tienes `LA_ESPERANZA_CALLA`, el Canto se ha debilitado: −2 Canto ahora y la prueba 4 del despegue es Fácil (7).
-- Si no la tienes, ganas la Pista `Polo · La nave en el hielo · e290`: allí puedes silenciarla (si eres el Nativo, con [e813](#e813); si no, con `[Ingenio · 13]` en el puente, si tienes `PUENTE_DE_UR`: con un Éxito, anota `LA_ESPERANZA_CALLA`).
+- Si no la tienes, ganas la Pista `Polo · La nave en el hielo · e290`: allí puedes silenciarla. El Nativo, con [e813](#e813). Los demás, al ganar `PUENTE_DE_UR`: `[Ingenio · 13]`; con un Éxito, anota `LA_ESPERANZA_CALLA`.
 - Nuevo final posible: **Silencio** ([e912](#e912)).
 
 ---
@@ -456,10 +456,10 @@ Los Recolectores ya vinieron una vez, hace mil años, atraídos por la misma se�
 ### e846 · El Eco de ti
 *El Secreto es 6*
 
-Las tumbas con tu nombre. Las naves idénticas a la tuya. La voz que es la tuya. El Canto es **una señal en bucle**: la emitiste tú, en otro ciclo, cuando ya eras viejo y estabas atrapado aquí, para advertirte. Pero el mensaje llegó tan distorsionado que se convirtió en una llamada. Tú mismo te has traído a Caribdis. Una y otra vez.
+Las tumbas con tu nombre. Las naves idénticas a la tuya. La voz que es la tuya. El Canto es **una señal en bucle**: la emitiste tú, en otro ciclo, tras media vida atrapado aquí, para advertirte. Pero el mensaje llegó tan distorsionado que se convirtió en una llamada. Tú mismo te has traído a Caribdis. Una y otra vez.
 
-Todo encaja de golpe, como una pieza que llevaba años fuera de sitio. Te tiemblan las manos, y no sabes si es miedo o alivio.
+Todo encaja de golpe, como una pieza que llevaba años fuera de sitio. Algo te tiembla por dentro, y no sabes si es miedo o alivio.
 
 **Efectos:**
-- Cada una de estas Marcas que tengas te da +1 Temple ahora: `FRAGMENTO_LA_VOZ`, `FRAGMENTO_LA_HERMANA`, `FRAGMENTO_LA_TUMBA_FUTURA`, `TU_TUMBA`, `FRAGMENTO_LA_RADIO`, `FRAGMENTO_EL_PILOTO_FANTASMA`.
+- Cada una de estas Marcas que tengas te da +1 Temple ahora (hasta tu máximo): `FRAGMENTO_LA_VOZ`, `FRAGMENTO_LA_HERMANA`, `FRAGMENTO_LA_TUMBA_FUTURA`, `TU_TUMBA`, `FRAGMENTO_LA_RADIO`, `FRAGMENTO_EL_PILOTO_FANTASMA`.
 - Nuevo final posible: **Romper el bucle** ([e911](#e911)): si en la secuencia de despegue emites un mensaje **correcto** al pasado, quizás la próxima vez no caigas.

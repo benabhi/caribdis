@@ -115,10 +115,10 @@
 El que más repiten tus `FRAGMENTO_` (e840): 1 e841 · 2 e842 · 3 e843 · 4 e844 · 5 e845 · 6 e846 · empate: la del último fragmento anotado; sin fragmentos, 1d6.
 
 ### Alerta
-Sube con ◉, combates ruidosos y combates de más de 3 rondas · elige la columna · a 4, cada subida extra resta 2 al Reloj · `BALIZA_ACTIVA`: llegada a 2, ya no baja · Ocultarte: −1.
+Sube cuando el texto lo dice (lo avisa ◉) y tras combates ruidosos o de más de 3 rondas · elige la columna · a 4, cada subida extra resta 2 al Reloj · `BALIZA_ACTIVA`: llegada a 2, ya no baja · Ocultarte: −1.
 
 ### Taller
 Piezas: Cobre · Hueso · Cristal · Luz fría (+1 Canto) · llevas 10 · Rebuscar = Hallazgo e) · Ensamblar: 2 planos pequeños o 1 fase · Fallo: pierdes 1 pieza o defecto (1d6) · Improvisar: 2 piezas por 1, siempre con defecto; la Luz fría no se sustituye.
 
 ### Canto
-Sube con ♫ · a 3+, Desventaja contra el Canto · a 6, evento personal (e830/e831/e832) y baja a 4 (o lo que diga) · baja descansando en la Cicatriz.
+Sube cuando el texto lo dice (lo avisa ♫) · a 3+, Desventaja contra el Canto · a 6, evento personal (e830/e831/e832) y baja a 4 (o lo que diga) · baja descansando en la Cicatriz.
