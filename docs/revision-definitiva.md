@@ -26,7 +26,7 @@ Criterios que se aplicaron a todo el libro:
 
 ## B. Anotaciones del autor
 
-- [x] Apodo de Noemí: «Grasa» → **«Biela»** (libro, citas de la maqueta y biblia del mundo). La app no se tocó en esta pasada: allí sigue «Grasa» hasta que se actualice.
+- [x] Apodo de Noemí: «Grasa» → **«Biela»** (libro, citas de la maqueta y biblia del mundo).
 - [x] e021 (uñas, manos, pantalón): reescrito para que sirva a los tres protagonistas.
 - [x] e049 (charco): la opción pasa a ser «Probarla»; r104 aclara que las Raciones y el Aire que gane la Mente son para compañeros, despensa o trueque.
 - [x] Más casos de la Mente: e007, e010, e025, e056, e060, e067, e284, e846, e908.
@@ -111,5 +111,5 @@ Criterios que se aplicaron a todo el libro:
 - [x] `herramientas/revisar_maqueta.py`: los mismos 2 avisos de título que ya tenía el libro y un hueco grande menos.
 - [x] Simulador (3000 partidas por protagonista): Piloto 71,6 %, Nativo 70,3 %, Mente 67,8 % de victorias (antes 68,0 / 72,7 / 63,1).
 - [x] `Caribdis_Print_Friendly.pdf` regenerado (200 páginas).
-- [=] La app no se actualizó, a pedido del autor.
+- [x] La app se retiró del proyecto (17 de noviembre): el repositorio queda solo con el libro.
 - Nota: el PDF se armó en Linux; si se reconstruye en Windows, algún corte de línea puede variar un poco.

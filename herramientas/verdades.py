@@ -2,7 +2,7 @@
 """A qué verdad del Canto apunta cada FRAGMENTO_ (r191, e840).
 
 1 Cosecha (e841) · 2 Guardián (e842) · 3 Bestia (e843) · 4 Faro (e844) · 5 Nave Madre (e845) · 6 Eco (e846).
-La usan indice_marcas.py (número junto a cada FRAGMENTO_) y la app (CB.D.verdades).
+La usa indice_marcas.py (número junto a cada FRAGMENTO_).
 """
 
 VERDADES = {

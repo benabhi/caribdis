@@ -4,11 +4,10 @@
 
 Juego de rol en solitario de naufragio, ruinas y regreso. Un libro de **UtopIA**.
 
-Este repositorio contiene todo lo necesario para recrear el manual en PDF (A4, 200 páginas) y la app para jugarlo.
+Este repositorio contiene todo lo necesario para recrear el manual en PDF (A4, 200 páginas).
 
 - **Manual:** [`Caribdis.pdf`](Caribdis.pdf) ([descarga directa](https://github.com/benabhi/caribdis/raw/main/Caribdis.pdf)).
 - **Manual Print-Friendly (blanco y negro, ahorro de tinta):** [`Caribdis_Print_Friendly.pdf`](Caribdis_Print_Friendly.pdf) ([descarga directa](https://github.com/benabhi/caribdis/raw/main/Caribdis_Print_Friendly.pdf)).
-- **App:** [benabhi.github.io/caribdis](https://benabhi.github.io/caribdis/), en el navegador, sin instalar nada. Las partidas se guardan en tu navegador.
 
 ## Estructura
 
@@ -27,9 +26,7 @@ caribdis/
 │   └── marca/                 logo de la editorial (UtopIA)
 ├── fuentes/                   tipografías (todas con licencia SIL Open Font)
 ├── herramientas/              verificación y análisis (enlaces, Marcas, maqueta, simulador)
-├── app/                       la app para jugar con el libro (página estática)
 ├── docs/                      diseño (plan, biblia del mundo), auditoría final y archivo
-├── .github/workflows/         publica la app en GitHub Pages
 └── dist/                      salidas que no se versionan
 ```
 
@@ -58,10 +55,6 @@ python3 herramientas/simulador.py         # partidas automáticas para medir la 
 
 Si cambias el texto de un evento, vuelve a correr `indice_marcas.py` y `verificar.py` antes de construir.
 
-## La app
-
-Ver [`app/README.md`](app/README.md). Se construye a partir de `libro/` y `arte/`, y GitHub Actions la publica en GitHub Pages en cada cambio. El botón de descarga del manual enlaza a `Caribdis.pdf` de este repositorio.
-
 ## Para un libro nuevo
 
-Esta misma estructura sirve de plantilla: copia la carpeta, vacía `libro/`, `arte/` y `docs/`, conserva `arte/marca/`, `fuentes/` y `herramientas/`, y ajusta `maqueta/extras.py` (partes, capítulos, láminas y cajas) el nombre del archivo de salida en `construir_pdf.py` y `REPO` en `app/herramientas/construir_app.py`.
+Esta misma estructura sirve de plantilla: copia la carpeta, vacía `libro/`, `arte/` y `docs/`, conserva `arte/marca/`, `fuentes/` y `herramientas/`, y ajusta `maqueta/extras.py` (partes, capítulos, láminas y cajas) y el nombre del archivo de salida en `construir_pdf.py`.
