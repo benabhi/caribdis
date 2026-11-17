@@ -9,7 +9,7 @@
 Te despiertas tarareando una melodía que no conoces. Te la sabes entera. Te la cantaba alguien, hace mucho, en otro mundo. O no.
 
 1. **Seguir tarareando.** Te calma. +1 Temple y +1 Canto ♫.
-2. **Callarte a la fuerza.** `[Voluntad · 9]`. *Éxito:* nada. *Fallo:* te pasas la mañana con ella en la cabeza: hoy, Desventaja en Ingenio.
+2. **Callarte a la fuerza.** `[Voluntad · 9]` ♫. *Éxito:* nada. *Fallo:* te pasas la mañana con ella en la cabeza: hoy, Desventaja en Ingenio.
 3. **Apuntar las notas.** Si tienes `FRAGMENTO_LA_VOZ`, las notas coinciden con algo que ya oíste: gana `FRAGMENTO_PARTITURA`. Si no, anota `PARTITURA_INCOMPLETA`.
 
 ---
@@ -381,7 +381,7 @@ Los dos bandos llevan el mismo tatuaje en el cuello. Hace poco eran un solo clan
 1. **Ayudar a los del este.** Combate contra *Desguace del oeste · Ataque 3 · Blind. 1 · Heridas 3 · [Náufrago]*. *Si ganas:* ◉ +1 Alerta y te dan la mitad de motor: un **Motor Precario** (pesado) o, si ya tienes Motor, 3 Chatarra.
 2. **Ayudar a los del oeste.** Lo mismo, pero contra los del este, que te dan 5 Chatarra y una deuda de favor: anota `FAVOR_DESGUACE`.
 3. **Mediar.** `[Voluntad · 11]`. *Éxito:* parten el motor por la mitad (de verdad) y te dan las piezas sobrantes: 3 Chatarra y +1 de Reputación con los Desguaces. *Fallo:* te disparan los dos bandos. 1 Herida y te retiras.
-4. **Robar el motor mientras discuten.** `[Reflejos · 13]`. *Éxito:* **Motor Precario** (pesado). −2 de Reputación con los Desguaces. *Fallo:* combate contra los dos: *Banda doble · Ataque 4 · Blind. 1 · Heridas 5 · [Náufrago]*.
+4. **Robar el motor mientras discuten.** `[Reflejos · 13]`. *Éxito:* **Motor Precario** (pesado). −2 de Reputación con los Desguaces. *Fallo:* combate: *Banda doble · Ataque 4 · Blind. 1 · Heridas 5 · [Náufrago]*; si ganas, como el Éxito.
 
 Desde el barranco, alguien de un bando te saluda con la mano. No sabes si es una amenaza o una invitación. El viento trae el olor del aceite quemado de los dos motores.
 

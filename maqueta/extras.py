@@ -396,7 +396,7 @@ PANELES = [
      'Cada compañero, 1 Ración más (r136).'),
     ('canto', 'El Canto', [('0 a 2', 'sin efecto'), ('3 a 5', 'Desventaja en Voluntad contra el Canto'),
                            ('6', 'evento de tu protagonista; luego baja a 4')], 'Baja al descansar en la Cicatriz (r137).'),
-    ('alerta', 'La Alerta', [('Sube', 'con ◉ y combates ruidosos o de más de 3 rondas'), ('Baja', 'ocultándote: −1'),
+    ('alerta', 'La Alerta', [('Sube', 'si el texto lo dice (◉) y en combates ruidosos o largos'), ('Baja', 'ocultándote: −1'),
                              ('En 4 y sube', 'el Reloj baja 2')], 'Marca la columna de los encuentros (r135).'),
     ('herida', 'Descansar', [('Intemperie', 'Cura 1 Herida y 1 Temple'), ('Asentamiento', 'Cura 2 Heridas y 1 Temple'),
                              ('Cicatriz', 'Cura 2 Her., 1 Temple, −1 Canto')], 'A la intemperie, 2d6: con 9 o más, algo te encuentra (r133).'),

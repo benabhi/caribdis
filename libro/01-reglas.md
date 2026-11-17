@@ -185,8 +185,8 @@ Elige uno o tira 1d6. Cada Origen da una **habilidad**, un **objeto** y una **Ma
 
 Anota en tu hoja:
 
-- **Heridas** (o Daño): una casilla por nivel: *Rasguño*, *Herido* (−1 a todas las pruebas), *Grave* (−2) y *Crítico* (−2; sin compañero ni vehículo, solo puedes Viajar a la Cicatriz). Si recibes otra Herida en Crítico, **caes** (r195).
-- **Aire, Energía, Raciones:** de 0 a 6 (Raciones hasta 8).
+- **Heridas** (o Daño): una casilla por nivel: *Rasguño*, *Herido* (−1 a todas las pruebas), *Grave* (−2) y *Crítico* (−2; sin compañero ni vehículo, si Viajas, solo hacia la Cicatriz). Si recibes otra Herida en Crítico, **caes** (r195).
+- **Aire, Energía, Raciones:** 0–6 (Raciones, 0–8).
 - **Canto** (r137): de 0 a 6. Empieza en 0.
 - **Temple** (r122): de 0 a 3 (máximo 4 con mejoras). Empieza en 2.
 - **Chatarra:** empieza en 3.
@@ -194,7 +194,7 @@ Anota en tu hoja:
 - **Reputación** (r194): Hijos del Pecio, Desguaces, Coro y Vigías, de −3 a +3. Empiezan en 0 (salvo el Nativo). Hijos y Coro son rivales, igual que Desguaces y Vigías: lo que ganas con uno lo pierdes con su rival.
 - **Alerta** (r135): de 1 a 4. Empieza en 1.
 - **Reloj** (r134): empieza en 60.
-- **Pistas** 5 · **Marcas** sin límite · **Equipo** sin límite · **Reliquias** 6 (r191–r193).
+- **Pistas** 5 · **Marcas** sin límite · **Equipo** sin límite · **Reliquias** 6 (r191–r193). **Objeto común:** todo tu Equipo salvo las armas.
 - **Arma:** Puños (+0). **Protección:** Traje de vuelo, Blindaje 0 (la Mente: Blindaje 2 fijo, no suma armadura).
 - **Piezas:** Cobre, Hueso, Cristal, Luz fría (0). **Planos:** los de tu protagonista (r202).
 
@@ -376,7 +376,7 @@ Cada **compañero** que llevas contigo come 1 Ración al amanecer; si no hay, pi
 El Canto (de 0 a 6) mide cuánto se ha metido la señal en ti.
 
 - **Sube** cuando el texto lo diga (lo avisa un **♫**), al amanecer en las Torres y al ganar Luz fría (r201).
-- **Con 3 o más:** tienes Desventaja en las pruebas de Voluntad contra el Canto.
+- **Con 3 o más:** Desventaja en pruebas de Voluntad contra el Canto (marcadas con ♫).
 - **Al llegar a 6:** lee el evento de tu protagonista (r102–r104). Después, tu Canto baja a 4 (o a lo que diga el evento).
 - **Baja** al descansar en la Cicatriz, con el Hermano Tadeo y con algunos eventos.
 

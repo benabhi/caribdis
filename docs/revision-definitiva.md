@@ -113,3 +113,14 @@ Criterios que se aplicaron a todo el libro:
 - [x] `Caribdis_Print_Friendly.pdf` regenerado (200 páginas).
 - [x] La app se retiró del proyecto (17 de noviembre): el repositorio queda solo con el libro.
 - Nota: el PDF se armó en Linux; si se reconstruye en Windows, algún corte de línea puede variar un poco.
+
+## J. Segunda auditoría externa (6 puntos, 17 de noviembre)
+
+- [x] r106 Crítico: «si Viajas, solo hacia la Cicatriz» (ya no se lee como «Viajar es lo único que puedes hacer»).
+- [x] r106 vuelve a definir el **objeto común** (todo tu Equipo salvo las armas); se había perdido al ajustar la maqueta.
+- [x] Combates de un Fallo sin «Si ganas» propio: e050.4 y e324.2 «como el Éxito», e248.3 «como en la 1». Los otros 15 eventos con ese patrón ya daban un resultado coherente con r140.
+- [x] e918: se llega desde el Polo (e291), no desde el Pozo, y hay 3 días para volver y despegar (a pie da justo).
+- [x] r137: las pruebas contra el Canto son las de Voluntad marcadas con ♫; e020.2 lo lleva. El ◉ de la tercera prueba de e242 solo avisa (r003) y se deja.
+- [x] e400 avisa de `EN_PUERTO_CHATARRA` (ve al primer evento del tripulante).
+- [x] Panel de consulta de la Alerta (`maqueta/extras.py`) con la redacción de r135.
+- [x] PDF rearmado: igual página a página que el anterior (mismas anclas y fondos de columna). Print friendly regenerado.
