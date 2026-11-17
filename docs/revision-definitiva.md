@@ -132,3 +132,13 @@ Criterios que se aplicaron a todo el libro:
 - [x] e302.2 y e302.3: cruzar el puente reparado lleva a explorar el pecio.
 - [=] e610: las tres opciones terminan con Amara en el grupo; la 1 es la forma directa y no hace falta tocarla.
 - [x] PDF rearmado: igual página a página que el anterior. Print friendly regenerado.
+
+## L. Cuarta revisión externa (4 puntos, 17 de noviembre)
+
+- [x] Tripulantes: la regla general ya decía que se unen tras su encuentro, pero ahora cada opción lo dice. e600.3 deja elegir después la 1 o la 2; e610.3, e615.2 y e615.3 dicen «se une»; en e625.2 Lio se une también con Fallo.
+- [x] Bruno: e246.3 da la Pista `Salinas · La carga · e606` si Bruno no va contigo, así e606 se puede jugar aunque la cápsula aparezca antes o después de reclutarlo.
+- [x] Encargo de la Madre (e411.2): da la Pista del encargo elegido (el tragón solo salía con Alerta 4). En e202, con `ENCARGO_DE_LA_MADRE` puedes plantarle cara. Se quitó la condición redundante de e202.2 y «(no el personal)» de e411.2, donde no hacía falta.
+- [=] e035: no necesita opción de atacar; su «Si ganas» vale para los combates de sus Fallos (r140).
+- [x] Primo: e327.2 no baja la Reputación con los Vigías si tienes `ENCARGO_DE_PRIMO` (antes podía cerrarte la puerta del Nodo al ir a entregarlo). El rumor 4 de r164 lleva al Nodo (e430), no a e433.
+- [x] Tirada nocturna: la caja «Un día en Caribdis» y el ejemplo r198 ya no sugieren que se tira cada noche al raso; en el día 3 de r198 la Ración sale de la despensa.
+- [x] PDF rearmado: igual página a página que el anterior. Print friendly regenerado.

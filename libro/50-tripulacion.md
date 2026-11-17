@@ -18,7 +18,7 @@ La encuentras sentada contra una roca, con el maletín médico en el regazo, tom
 
 1. **Llevarla contigo.** Se une como compañera. Si eres el Piloto, −1 `CULPA`.
 2. **Llevarla a la Cicatriz** para que descanse. Se une, pero se queda en la Cicatriz (r182). Allí, cada vez que descanses en la Cicatriz, curas 1 Herida extra.
-3. **Preguntarle por la infección.** «*Las esporas responden al Canto. Cuando sube, crecen. Necesito una seta muy especial que creo que existe aquí.*» Gana la Pista `Bosque · La seta de la Madre · e267`.
+3. **Preguntarle por la infección.** «*Las esporas responden al Canto. Cuando sube, crecen. Necesito una seta muy especial que creo que existe aquí.*» Gana la Pista `Bosque · La seta de la Madre · e267`. Después, elige la 1 o la 2.
 
 **Mientras esté contigo:** cada vez que tu Canto suba a 4 o más, tira 1d6. Con 1–2 → [e601](#e601).
 
@@ -153,7 +153,7 @@ La encuentras **dibujando**. Sentada en una ruina, con un cuaderno en la rodilla
 
 1. **Llevarla contigo.** Se une como compañera. Habla todo el tiempo de los Antiguos.
 2. **Preguntarle qué hace aquí.** Se sonroja. «*Tengo que confesarte algo. La ruta de la nave... no fue un error. Yo pagué para que pasáramos cerca de este planeta. Sabía que estaba aquí. No sabía lo del Canto.*» Si eres el Piloto, elige: perdonarla (+1 Lealtad) o no (−1 Lealtad, +1 `CULPA` para ti: «*nadie es culpable salvo yo*»). Gana `FRAGMENTO_LA_EXPEDICION`. Se une al final.
-3. **Pedirle que lea algo.** Con la Pista de [e288](#e288), o si viste [e211](#e211) o [e250](#e250), lo traduce: gana `FRAGMENTO_LA_PUERTA`, `FRAGMENTO_LA_ANTENA` o `FRAGMENTO_LA_ESPIRAL`.
+3. **Pedirle que lea algo.** Con la Pista de [e288](#e288), o si viste [e211](#e211) o [e250](#e250), lo traduce: gana `FRAGMENTO_LA_PUERTA`, `FRAGMENTO_LA_ANTENA` o `FRAGMENTO_LA_ESPIRAL`. Se une.
 
 **Mientras esté contigo:** al ganar tu tercer `FRAGMENTO_`, en lugar de ir a [e840](#e840) ve primero a [e611](#e611).
 
@@ -214,8 +214,8 @@ Huele a aceite quemado y a café recalentado.
 - Si tienes `EN_PUERTO_CHATARRA` con su nombre ([e221](#e221)): la tienen en un taller de Puerto Chatarra, reparando sin descanso. Su jefe la deja ir por 5 Chatarra… o si ella le arregla algo primero (⌛ +1).
 
 1. **Pasarle la llave.** El motor arranca. Noemí sale de debajo con una sonrisa enorme. Se une como compañera, y además ganas el vehículo: un **arenero de Desguace** (vehículo, r152; consume 1 Chatarra por viaje).
-2. **Preguntarle por la nave.** «*¿Qué sistemas tenemos? ¿Cuáles faltan?*» Te ayuda a planificar: elige un sistema que te falte; ganas Ventaja en tu próxima prueba para conseguirlo.
-3. **Preguntarle por qué estaba tan cerca de la cabina cuando caímos.** Noemí deja de sonreír. → [e616](#e616).
+2. **Preguntarle por la nave.** «*¿Qué sistemas tenemos? ¿Cuáles faltan?*» Te ayuda a planificar: elige un sistema que te falte; ganas Ventaja en tu próxima prueba para conseguirlo. Se une.
+3. **Preguntarle por qué estaba tan cerca de la cabina cuando caímos.** Noemí deja de sonreír. → [e616](#e616) (después, se une).
 
 ---
 
@@ -341,7 +341,7 @@ Te das cuenta demasiado tarde de que te falta algo: pierdes 1 Chatarra. Detrás 
 «¿Qué? Tú no sabías que yo iba a bordo. Así que esto no es robar. Es... compensación.»
 
 1. **Pedirle que te las devuelva.** Te las devuelve. Y te da 2 más que ha robado a otros. «*Interés.*» Se une como compañero.
-2. **Preguntarle de quién huía en la nave.** «*De nadie.*» Si insistes, `[Voluntad · 9]`. *Éxito:* «*De mi padre. Era el oficial de seguridad. Está muerto, ¿no? Dime que está muerto.*» Gana `EL_PADRE_DE_LIO` (ver [e626](#e626)); se une como compañero. *Fallo:* se cierra.
+2. **Preguntarle de quién huía en la nave.** «*De nadie.*» Si insistes, `[Voluntad · 9]`. *Éxito:* «*De mi padre. Era el oficial de seguridad. Está muerto, ¿no? Dime que está muerto.*» Gana `EL_PADRE_DE_LIO` (ver [e626](#e626)). *Fallo:* se cierra. Sea como sea, se une a ti.
 3. **Dejarle que se quede las monedas y venga contigo.** Se une con Lealtad 3: ya te quiere. (Lee [e627](#e627) la próxima vez que descanses.)
 
 ---

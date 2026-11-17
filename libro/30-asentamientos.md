@@ -179,8 +179,8 @@ Hay macetas hechas con cascos de soldado y plantas que crecen hacia las ventanil
 
 1. **Escuchar su historia.** Gana `FRAGMENTO_LA_MADRE`: los Hijos del Pecio descienden de una nave colonia que oyó el Canto hace mil años. Y lo que pasó después, cuando llegaron las luces.
 2. **Pedirle ayuda.** Según tu Reputación con los Hijos del Pecio:
-   - **+1 o menos:** «*Gánatela.*» Anota `ENCARGO_DE_LA_MADRE` y elige: traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Hecho, bórrala: +2 de Reputación.
-   - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección (no el personal) entre Motor y Soporte vital, calidad Sólida.
+   - **+1 o menos:** «*Gánatela.*» Anota `ENCARGO_DE_LA_MADRE` y elige: traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Gana la Pista del que elijas (el niño: e347). Hecho, bórrala: +2 de Reputación.
+   - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección entre Motor y Soporte vital, calidad Sólida.
 3. **Si eres el Nativo:** la Madre te conoce desde que naciste. «*Te vas, ¿verdad? Lo sabía antes que tú.*» Si tu `ARRAIGO` es 4 o más, te pide que lleves contigo a los Mirasoles → [e413](#e413). Si es 3, te pide que cuides de los niños: +1 `ARRAIGO`. Si es 2 o menos, te da la espalda: −1 `ARRAIGO`.
 4. **Si llevas la seta de la Madre:** se la das. La Madre llora. «*Es la seta de mi madre. Creía que se había perdido.*» +3 de Reputación con los Hijos del Pecio y elige un sistema de Quilla: Motor o Soporte vital, calidad Excelente. **★**
 

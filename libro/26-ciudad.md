@@ -117,7 +117,7 @@ En un templo hundido, un Vigía de rodillas. No patrulla. No vigila. **Reza**: j
 «Hermano. Hermana. Lo que seas. ¿Sabes dónde se fueron?»
 
 1. **Preguntarle quiénes.** «Los que nos hicieron. Una mañana dejaron de darnos órdenes. Diez mil años esperando la siguiente.» `[Voluntad · 9]`. *Éxito:* te cuenta lo que vio la última mañana: gana `FRAGMENTO_LA_ULTIMA_MAÑANA`. *Fallo:* se queda en silencio.
-2. **Darle una orden.** «*Levántate.*» Lo hace. Se queda esperando la siguiente. Puedes llevarlo contigo como compañero (no cuenta para el límite de 2): **Vigía sin dueño**, +2 Ataque, no consume Raciones, [Máquina]. Pero los demás Vigías te consideran ladrón: −1 de Reputación con los Vigías (una vez). Te seguirá hasta que le digas que se quede.
+2. **Darle una orden.** «*Levántate.*» Lo hace. Se queda esperando la siguiente. Puedes llevarlo contigo como compañero (no cuenta para el límite de 2): **Vigía sin dueño**, +2 Ataque, no consume Raciones, [Máquina]. Pero los demás Vigías te consideran ladrón: −1 de Reputación con los Vigías (una vez; salvo con `ENCARGO_DE_PRIMO`). Te seguirá hasta que le digas que se quede.
 3. **Rezar con él.** +1 Temple. Y el Vigía te da algo que guardaba: una **llave de los Vigías** (reliquia identificada, [e746](#e746)), solo la primera vez.
 4. **Si eres la Mente:** os reconocéis. Él también es un programa que perdió a su usuario. «*¿Tú también esperas?*» Si contestas que sí, +1 `MEMORIA` y +1 Temple. Si contestas que no, él te mira mucho rato y dice: «*Entonces enséñame.*» Anota `EL_VIGIA_APRENDE`.
 

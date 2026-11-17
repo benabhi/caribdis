@@ -48,11 +48,11 @@ El horizonte se hincha. Una ola de arena, como si algo nadara justo debajo, vien
 > **Tragón de duna** · Ataque 6 · Blind. 2 · Heridas 5 · [Bestia][Grande][Rápido]
 
 1. **Quedarte quieto en una roca.** `[Voluntad · 11]`. *Éxito:* pasa por debajo. *Fallo:* te huele. Combate.
-2. **Correr hacia la Cicatriz.** Si estás a un día de ella (siempre lo estás en las Dunas): `[Reflejos · 11]`. *Éxito:* llegas. El tragón choca contra el casco de tu nave y se va con un trozo: **un sistema instalado baja 1 de calidad** (eliges uno que no sea Precario; si no hay, nada). *Fallo:* combate.
+2. **Correr hacia la Cicatriz.** `[Reflejos · 11]`. *Éxito:* llegas. El tragón choca contra el casco de tu nave y se va con un trozo: **un sistema instalado baja 1 de calidad** (eliges uno que no sea Precario; si no hay, nada). *Fallo:* combate.
 3. **Ofrecerle algo metálico.** Pierdes 3 Chatarra o un arma. Se lo traga y se aleja satisfecho.
 4. **Montarlo** (solo el Nativo con `DOMADOR` o `GUERRERO`): `[Vigor · 13]`. *Éxito:* cabalgas el tragón hasta cualquier región vecina, sin encuentro. Los Hijos del Pecio cantarán sobre esto: +2 de Reputación con ellos y **★**. *Fallo:* 2 Heridas y te escupe.
 
-- **Si ganas:** en su estómago hay restos de cinco naves: 6 Chatarra y una reliquia sin identificar. **★**
+- **Con `ENCARGO_DE_LA_MADRE`,** puedes plantarle cara: combate. **Si ganas:** en su estómago hay restos de cinco naves: 6 Chatarra y una reliquia sin identificar. **★**
 
 ---
 

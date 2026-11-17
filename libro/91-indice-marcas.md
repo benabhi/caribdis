@@ -65,8 +65,8 @@
 | `EL_VIEJO_ESPERA` | [e045](#e045) · [e900](#e900) · [e910](#e910) |
 | `EL_VIGIA_APRENDE` | [e327](#e327) · [e910](#e910) |
 | `ENCARGO_DEL_SUBASTADOR` | [e228](#e228) · [e400](#e400) · [e406](#e406) |
-| `ENCARGO_DE_LA_MADRE` | [e411](#e411) |
-| `ENCARGO_DE_PRIMO` | [e433](#e433) |
+| `ENCARGO_DE_LA_MADRE` | [e202](#e202) · [e411](#e411) |
+| `ENCARGO_DE_PRIMO` | [e327](#e327) · [e433](#e433) |
 | `ENCARGO_DE_REPARAR` | [e324](#e324) · [e433](#e433) |
 | `ENEMIGO_DEL_CONTABLE` | [e230](#e230) · [e405](#e405) · [e900](#e900) · [e901](#e901) |
 | `ENGAÑASTE_A_LA_SONDA` | [e048](#e048) · [e842](#e842) · [e902](#e902) · [e910](#e910) |
