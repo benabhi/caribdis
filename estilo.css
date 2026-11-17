@@ -761,3 +761,20 @@ section#e004 ol.opciones > li:nth-child(3) { letter-spacing: -.002em; }
 .h-dia-alt { display: inline-block; width: 6mm; margin-left: 1mm; border-bottom: .5pt solid rgba(43,32,27,.45); vertical-align: -.4mm; }
 
 .h-campos-sin-linea { display: flex; justify-content: space-between; font: 600 6.5pt var(--rotulo); text-transform: uppercase; letter-spacing: .16em; color: var(--cobre); margin-bottom: 2mm; }
+
+/* Hoja de protagonista: dos columnas iguales que empiezan y acaban a la misma altura */
+.h-par { align-items: stretch; margin-bottom: 0; }
+.h-par .h-bloque { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; }
+.h-par .h-rot { margin: 1.9mm 0 1.3mm; }
+.h-par .h-bloque > .h-rot:first-child { margin-top: 0; }
+.h-par .h-campo { height: 6.4mm; margin-bottom: 1.4mm; }
+.h-heridas { display: flex; flex-wrap: wrap; }
+.h-heridas .h-her { width: 50%; margin-bottom: 1.3mm; }
+.h-heridas .h-her-2 { width: 100%; margin-bottom: 0; }
+.h-heridas .h-nota { margin-left: 1mm; }
+.h-par .h-temple, .h-par .h-rec, .h-par .h-fac { margin-bottom: 0; }
+.h-par .h-rec + .h-rec { margin-top: 1.5mm; }
+.h-par .h-fac + .h-fac { margin-top: 1.2mm; }
+.h-par + .h-rot { margin-top: 3.2mm; }
+.h-reloj + .h-par { margin-top: 2.6mm; }
+.hoja > .h-dias + .h-rot { margin-top: 2.2mm; }
