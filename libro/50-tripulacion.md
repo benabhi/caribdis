@@ -1,6 +1,6 @@
 ## La tripulación
 
-*Cada tripulante tiene cuatro eventos: el **encuentro**, una **crisis**, su momento de **lealtad** (al llegar a Lealtad 3, r186) y un **desenlace**. Cuando un tripulante se una a ti, anota su ficha: Lealtad 2, Heridas 0 de 2.*
+*Cada tripulante tiene cuatro eventos: el **encuentro**, una **crisis**, su momento de **lealtad** (al llegar a Lealtad 3, r186) y un **desenlace**. Cuando un tripulante se una a ti, anota su ficha: Lealtad 2, Heridas 0 de 2. Si la opción que elijas en su encuentro no dice otra cosa, al terminar se une a ti.*
 
 ---
 
@@ -34,7 +34,7 @@ Iria se cae al suelo, convulsionando. Los hilos dorados le han llegado al cuello
 
 1. **Sujetarla y hablarle.** `[Voluntad · 11]` (Tadeo: Ventaja). *Éxito:* vuelve en sí. Te aprieta la mano: +1 Lealtad. Los hilos retroceden un poco. *Fallo:* sus ojos siguen dorados durante horas. Mañana no puede caminar: si quieres seguir con ella, no puedes Viajar mañana.
 2. **Darle algo para el dolor** (botiquín). Gastas el botiquín. Se calma. Nada más.
-3. **Llevarla al Santuario del Bosque.** Gana la Pista `Bosque · El Santuario · e261`. Si llegas con ella, los Jardineros la tocan. Elige: dejarla allí, donde vivirá para siempre como Jardinera (no es una muerte: anota `IRIA_JARDINERA`; si eres el Piloto, la Culpa no cambia), o que los Jardineros detengan la infección a cambio de 2 Heridas tuyas (anota `IRIA_CURADA`: ya no tiras).
+3. **Llevarla al Santuario del Bosque.** Gana la Pista `Bosque · El Santuario · e261`. Si llegas con ella, los Jardineros la tocan. Elige: dejarla allí, donde vivirá para siempre como Jardinera (no es una muerte: anota `IRIA_JARDINERA`; si eres el Piloto, tu `CULPA` no cambia), o que los Jardineros detengan la infección a cambio de 2 Heridas tuyas (anota `IRIA_CURADA`: ya no tiras).
 4. **Si tienes la seta de la Madre:** → [e603](#e603).
 
 ---
@@ -93,7 +93,7 @@ No te mira. Mira el horizonte, por donde se fueron.
 ### e606 · La carga
 *Salinas Blancas (vais sin tirar encuentros) · ⌛ día · Bruno contigo*
 
-La cápsula, abierta entre las estatuas de sal. Dentro, en un gel de estasis que se ha empezado a secar, **una niña**. Seis años. Respira.
+La cápsula, abierta por fin entre las estatuas de sal. Dentro, en un gel de estasis que se ha empezado a secar, **una niña**. Seis años. Respira.
 
 Bruno se arrodilla. No dice nada durante mucho rato.
 
@@ -102,7 +102,7 @@ Bruno se arrodilla. No dice nada durante mucho rato.
 La niña tiene el pelo blanco de sal y una pulsera de plástico con un número.
 
 1. **Despertarla.** `[Ingenio · 9]` (Iria: Ventaja). *Éxito:* abre los ojos. No habla tu idioma. Tiene en la muñeca un código de barras: la vendían. Bruno se la carga a la espalda. «*Ya no tengo contrato. Ahora tengo esto.*» Anota `LA_NIÑA_DE_LA_CAPSULA` (pasajera para tu final). +1 Lealtad de Bruno. **★** *Fallo:* no despierta. Bruno la lleva igualmente: anota `NIÑA_DORMIDA`; con un sanador o con Iria, cámbiala por la otra Marca.
-2. **Dejar que Bruno decida.** Bruno cierra la cápsula. «*Mi contrato era entregarla. La entregaré. Pero a mí.*» Como el Éxito de la 1, pero anota `NIÑA_DORMIDA` (como en el Fallo).
+2. **Dejar que Bruno decida.** Bruno cierra la cápsula. «*Mi contrato era entregarla. La entregaré. Pero a mí.*» No la despertáis: anota `NIÑA_DORMIDA` (como en el Fallo) y +1 Lealtad de Bruno.
 3. **Avisar al comprador.** El nombre está en la cápsula: es el Contable. Te pagaría 15 Chatarra. Bruno te mira. Si eliges esto, Bruno te ataca: *Bruno · Ataque 6 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, la entregas: 15 Chatarra, `PERDIDO_BRUNO`, y −2 Temple. Si eres el Piloto, +2 `CULPA`.
 
 ---
@@ -133,7 +133,7 @@ Bruno coge el rifle y se pone de pie.
 
 Las alarmas no paran. Por la escotilla entra un viento caliente que huele a ozono, y el casco entero tiembla con cada disparo de fuera.
 
-1. **Dejarle ir.** Bruno sale. La puerta se cierra. Lo oyes disparar hasta que dejas de oírlo. Tu prueba de huida en la secuencia de despegue es un Éxito **automático**. Bruno no despega: anota `PERDIDO_BRUNO`. Si eres el Piloto, la Culpa no cambia: él lo eligió.
+1. **Dejarle ir.** Bruno sale. La puerta se cierra. Lo oyes disparar hasta que dejas de oírlo. Tu prueba de huida en la secuencia de despegue es un Éxito **automático**. Bruno no despega: anota `PERDIDO_BRUNO`. Si eres el Piloto, tu `CULPA` no cambia: él lo eligió.
 2. **Sujetarlo.** `[Vigor · 13]`. *Éxito:* no le dejas. «*Idiota.*» Te abraza. Sigue a bordo, y la prueba de huida es normal. *Fallo:* te aparta como a un niño y sale. Como la opción 1.
 
 
@@ -199,7 +199,7 @@ Amara lleva semanas mirando las espirales del cielo, del suelo, de las torres. H
 
 ---
 
-### Noemí «Grasa» Vidal, mecánica
+### Noemí «Biela» Vidal, mecánica
 
 <a id="e615"></a>
 ### e615 · La mecánica que no se rinde
@@ -214,7 +214,7 @@ Huele a aceite quemado y a café recalentado.
 - Si tienes `EN_PUERTO_CHATARRA` con su nombre ([e221](#e221)): la tienen en un taller de Puerto Chatarra, reparando sin descanso. Su jefe la deja ir por 5 Chatarra… o si ella le arregla algo primero (⌛ +1).
 
 1. **Pasarle la llave.** El motor arranca. Noemí sale de debajo con una sonrisa enorme. Se une como compañera, y además ganas el vehículo: un **arenero de Desguace** (vehículo, r152; consume 1 Chatarra por viaje).
-2. **Preguntarle por la nave.** «*¿Qué sistemas tenemos? ¿Cuáles faltan?*» Te ayuda a planificar: elige un sistema que te falte; ganas Ventaja para conseguirlo por cualquier vía.
+2. **Preguntarle por la nave.** «*¿Qué sistemas tenemos? ¿Cuáles faltan?*» Te ayuda a planificar: elige un sistema que te falte; ganas Ventaja en tu próxima prueba para conseguirlo.
 3. **Preguntarle por qué estaba tan cerca de la cabina cuando caímos.** Noemí deja de sonreír. → [e616](#e616).
 
 ---
@@ -247,7 +247,7 @@ Noemí no puede dormir. Te enseña lo que ha estado haciendo con los restos: un 
 
 «Si esto funciona, la nave volará mejor que el día que la fabricaron.»
 
-1. **Probarlo.** `[Ingenio · 9]`. *Éxito:* funciona. En la Cicatriz, un sistema instalado de tu elección sube 1 de calidad. **★** *Fallo:* explota. 1 Herida para ti y para Noemí. Os reís como idiotas.
+1. **Probarlo.** `[Ingenio · 9]`. *Éxito:* funciona. La próxima vez que estés en la Cicatriz, un sistema instalado de tu elección sube 1 de calidad. **★** *Fallo:* explota. 1 Herida para ti y para Noemí. Os reís como idiotas.
 2. **Pedirle que lo guarde para el despegue.** Anota `REGULADOR_DE_NOEMI`: en la secuencia de despegue, puedes repetir una prueba fallida.
 
 ---
@@ -263,7 +263,7 @@ Algo cruje en la sala de máquinas. Noemí ya está corriendo, con la llave del 
 «¡Sigue! ¡Yo lo aguanto!»
 
 1. **Confiar en ella.** La prueba que acabas de fallar cuenta como Éxito. Tira 1d6: con un 1, Noemí no sale de la sala de máquinas cuando se cierra la compuerta. No despega: anota `PERDIDO_NOEMI`. Si eres el Piloto, +1 `CULPA`.
-2. **Ir tú.** Repite la misma prueba, con Ventaja, usando su atributo.
+2. **Ir tú.** Repite la misma prueba, con Ventaja.
 
 ---
 
@@ -325,7 +325,7 @@ Tadeo te espera junto a la rampa. Viste la túnica blanca del Coro. Tiene paz en
 
 «Vete. Yo me quedo a cantarles a los que vengan después. Alguien tiene que decirles que no están solos.»
 
-1. **Dejarle quedarse.** Anota `TADEO_SE_QUEDA`. Te bendice. En la secuencia de despegue, la primera prueba de Voluntad o de Canto que hagas es un Éxito automático. Tadeo no despega, pero cuenta como «tripulante en paz» en tu final (no suma Culpa).
+1. **Dejarle quedarse.** Anota `TADEO_SE_QUEDA`. Te bendice. En la secuencia de despegue, la primera prueba de Voluntad o de Canto que hagas es un Éxito automático. Tadeo no despega, pero cuenta como «tripulante en paz» en tu final (no suma `CULPA`).
 2. **Llevarlo a la fuerza.** `[Vigor · 9]`. *Éxito:* despega contigo; borra `TADEO_SE_QUEDA`. En el epílogo no te lo perdonará, pero estará vivo. *Fallo:* se suelta y corre hacia las Torres: anota `PERDIDO_TADEO`.
 
 ---

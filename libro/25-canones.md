@@ -44,7 +44,7 @@ Un puente de tablas y cuerda de tripa sobre un abismo de trescientos metros. Le 
 1. **Cruzar.** `[Reflejos · 9]` ⚔. *Éxito:* llegas al pecio: explóralo (r170). *Fallo:* una tabla se rompe. `[Vigor · 9]` para agarrarte; si fallas, caes: 2 Heridas y acabas en el fondo, junto al río → [e307](#e307).
 2. **Reparar el puente.** 2 Chatarra y `[Ingenio · 9]`. *Éxito:* cruzas sin riesgo, y los Hijos del Pecio usarán este puente: +1 de Reputación con ellos. Anota `PUENTE_REPARADO`. *Fallo:* gastas la Chatarra igual.
 3. **Si tienes `PUENTE_REPARADO`:** cruzas sin tirar. En la otra orilla, alguien ha dejado un regalo de agradecimiento: 2 Raciones y una pluma de cóndor de metal (vale 2 Chatarra), solo la primera vez.
-4. **Dar la vuelta.** ⌛ +1.
+4. **Dar la vuelta.** Nada.
 
 ---
 
@@ -61,7 +61,7 @@ Sus plumas tintinean al planear, como cubiertos en un cajón.
 1. **Esconderte bajo una cornisa.** `[Reflejos · 9]`. *Fallo:* combate.
 2. **Luchar.** Combate. *Si ganas:* sus plumas valen 4 Chatarra.
 3. **Ofrecerles algo brillante.** Pierdes 1 Chatarra. Se pelean entre ellos por él y te dejan en paz.
-4. **Seguirlos hasta su nido** (Nativo o `DOMADOR`, o con `[Reflejos · 11]`). En lo alto del acantilado, el nido está hecho con **piezas de navegación**. Si la tuya no está conseguida, cuenta como **Navegación Precaria**. Si lo está, ganas 4 Chatarra.
+4. **Seguirlos hasta su nido** (Nativo o `DOMADOR`; si no, `[Reflejos · 11]`, y con un Fallo, combate). En lo alto del acantilado, el nido está hecho con **piezas de navegación**: una **Navegación Precaria** o, si ya tienes Navegación, 4 Chatarra.
 
 ---
 
@@ -71,7 +71,7 @@ Sus plumas tintinean al planear, como cubiertos en un cajón.
 
 Gritas «¡hola!» para probar el eco. El cañón te devuelve «¡hola!». Y después, con tu voz, «¿hay alguien?». Tú no dijiste eso.
 
-1. **Contestar.** «Sí.» El eco: «*Ven.*» Te guía. Tira 1d6: con 1–3, hacia una cueva donde vive algo que imita voces para cazar → combate contra *Imitador · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia]*; con 4–6, hacia alguien de verdad: un tripulante no encontrado (tira entre los que queden), que gritaba pidiendo ayuda. Ve a su primer evento.
+1. **Contestar.** «Sí.» El eco: «*Ven.*» Te guía. Tira 1d6: con 1–3, hacia una cueva donde vive algo que imita voces para cazar → combate contra *Imitador · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia]*; con 4–6, hacia alguien de verdad: un tripulante no encontrado (sortéalo, r108), que gritaba pidiendo ayuda: ve a su primer evento. Si no queda ninguno, un náufrago: 1 rumor (r164).
 2. **Callar y esperar.** El eco sigue hablando solo. Dice nombres. El de alguien de tu tripulación, seguido de una palabra: el nombre de una región. Elige un tripulante no encontrado: su región es la que tú quieras de las vecinas a los Cañones (Dunas, Bosque o Torres). Corrígela en la Hoja.
 3. **Taparte los oídos y seguir.** Nada.
 
@@ -85,7 +85,7 @@ Una garganta estrecha donde han caído una docena de naves y se han quedado **en
 
 1. **Explorar las de abajo.** Pecio (r170) normal.
 2. **Trepar hasta la de arriba.** `[Reflejos · 11]` ⚔. *Éxito:* la nave más alta es la más reciente y nadie la ha tocado: explora un pecio en el que las tres primeras salas son de Restos, Suministros y Equipo (en ese orden). *Fallo:* 2 Heridas y bajas.
-3. **Soltar una para que caiga.** Desde arriba, `[Vigor · 11]` ◉ ◉. *Éxito:* cae con un estruendo que se oye en todo el planeta, y se abre en el fondo como una fruta: +8 Chatarra (una vez). Pero los Hijos del Pecio cazaban ahí: −1 de Reputación con ellos. *Fallo:* casi te caes con ella. 1 Herida.
+3. **Soltar una para que caiga.** Desde arriba, `[Vigor · 11]`. *Éxito:* cae con un estruendo que se oye en todo el planeta (◉ +2 Alerta), y se abre en el fondo como una fruta: +8 Chatarra (una vez). Pero los Hijos del Pecio cazaban ahí: −1 de Reputación con ellos. *Fallo:* casi te caes con ella. 1 Herida.
 
 ---
 
@@ -99,7 +99,7 @@ Una piedra cae a tus pies. Luego otra. En lo alto de las paredes, una docena de 
 
 **Encuentro (r300).** Precio: 3 Chatarra. Botín: 5 Chatarra y una **cuerda y garfio**.
 
-- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio. · **Si pasas:** pagas 3 Chatarra y te dejan seguir.
+- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio. · **Si pasas:** te dejan seguir.
 - Si eres el Nativo con `GUERRERO`, no se atreven contigo: pasas sin tirar.
 
 ---
@@ -126,7 +126,7 @@ Una estrella que cae. Gente que sale de ella. Gente que se cambia: brazos largos
 
 1. **Estudiar las pinturas.** `[Ingenio · 9]` (Amara o el Nativo: Ventaja). *Éxito:* entiendes que **los Recolectores ya vinieron una vez**, hace mil años, y que los Hijos del Pecio sobrevivieron escondiéndose en los Cañones. Gana `FRAGMENTO_LA_CUEVA`. Y te fijas en algo: la última pintura muestra cómo esconderse. Gana `SABE_ESCONDERSE` (Ocultarte baja la Alerta 2 en lugar de 1). *Fallo:* solo ves dibujos bonitos.
 2. **Añadir tu propia pintura.** Pintas tu nave, cayendo. +1 Temple. Si eres el Nativo, +1 `ARRAIGO`: ahora eres parte de la historia.
-3. **Raspar el polvo de luz fría.** 3 Chatarra. −1 de Reputación con los Hijos del Pecio si te ven (tira 1d6: con 1–2 te ven).
+3. **Raspar el polvo de luz fría.** Ganas 3 Chatarra. −1 de Reputación con los Hijos del Pecio si te ven (tira 1d6: con 1–2 te ven).
 
 ---
 
@@ -140,9 +140,9 @@ No hay arena en el casco. No hay óxido en las juntas. El aire alrededor del cru
 
 En la rampa, un cartel en tu idioma: *ZONA DE CUARENTENA · NO ENTRAR*.
 
-1. **Entrar por la rampa.** El crucero te recibe: *Torretas de defensa · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina]*. Combate. *Si ganas:* explora un pecio (r170) de tipo **Nave militar** de hasta 6 salas. En la última, el **motor de salto del crucero**: **Motor Excelente** (pesado). **★**
+1. **Entrar por la rampa.** El crucero te recibe: *Torretas de defensa · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina]*. Combate. *Si ganas:* explora un pecio (r170) de tipo **Nave militar** de hasta 6 salas. Si llegas a la sexta, no tires: es el **motor de salto del crucero**, un **Motor Excelente** (pesado). **★**
 2. **Hackear las torretas.** `[Ingenio · 11]` (Mente: Ventaja; `VETERANO`: Ventaja). *Éxito:* entras sin combatir y explora como en la 1. *Fallo:* combate con Emboscada.
-3. **Leer el registro de cuarentena** (en la rampa). `[Ingenio · 9]`. *Éxito:* «*Tripulación expuesta al Canto. Todos se fueron caminando hacia el este. La nave sigue operativa. No la uséis. Ella también lo oye.*» Gana `FRAGMENTO_EL_CRUCERO` y Ventaja contra las torretas de este pecio.
+3. **Leer el registro de cuarentena** (en la rampa). `[Ingenio · 9]`. *Éxito:* «*Tripulación expuesta al Canto. Todos se fueron caminando hacia el este. La nave sigue operativa. No la uséis. Ella también lo oye.*» Gana `FRAGMENTO_EL_CRUCERO` y Ventaja contra estas torretas. Después, elige otra opción.
 4. **Marcar la ubicación.** Gana la Pista `Cañones · El crucero dormido · e309` y vete.
 
 ---

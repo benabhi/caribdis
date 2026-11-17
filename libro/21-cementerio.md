@@ -29,7 +29,7 @@ Una columna de humo negro que no se mueve con el viento. Debajo, un cráter de c
 
 Desde lejos se oyen martillos, motores y una música de cuerdas que nadie diría que existe aquí.
 
-1. **Ir directamente.** Gana la Pista `Cementerio · Puerto Chatarra · e400`. Síguela mañana para visitarlo sin encuentro: los chatarreros dejan pasar a quien llega por la pista de las grúas.
+1. **Ir directamente.** Gana la Pista `Cementerio · Puerto Chatarra · e400`. Síguela para visitarlo (r192): los chatarreros dejan pasar a quien llega por la pista de las grúas.
 2. **Observar desde lejos.** `[Ingenio · 9]`. *Éxito:* ves quién entra y quién sale, y en una grúa, colgando de los tobillos, a alguien con el uniforme de tu nave. Elige un tripulante no encontrado (Iria, Bruno, Amara o Noemí): su región pasa a ser el Cementerio: anota `EN_PUERTO_CHATARRA` con su nombre (ver su evento). *Fallo:* un vigía te ve. Al visitar Puerto Chatarra, pagas 1 Chatarra de «aduana».
 3. **Rodear la ciudad.** No hay nada para ti allí. Exploras las naves de los alrededores: un pecio (r170), tirando dos veces el tipo y eligiendo uno.
 
@@ -68,7 +68,7 @@ Una grúa de astillero de los Antiguos, adaptada por los Desguaces: la mueven cu
 
 La rueda chirría con cada vuelta y la gente empuja cantando una cuenta rítmica para no perder el paso. Hay niños subidos al brazo de la grúa, gritando avisos. El capataz, una mujer con medio rostro de cerámica, te mide de arriba abajo antes de decir nada. Le sobran palabras y le falta espalda.
 
-1. **Empujar la rueda.** `[Vigor · 9]` ⌛. *Éxito:* al final del día sacáis una **nave entera**. El capataz te paga con 4 Chatarra y te deja coger una pieza: si te falta el Motor o el Combustible, cuenta como **Motor Precario** o **Combustible Precario** (pesado). *Fallo:* te haces daño en la espalda. 1 Herida y 2 Chatarra.
+1. **Empujar la rueda.** `[Vigor · 9]`. *Éxito:* al final del día sacáis una **nave entera**. El capataz te paga con 4 Chatarra y te deja coger una pieza: si te falta el Motor o el Combustible, es un **Motor Precario** o un **Combustible Precario** (pesado); si no, 3 Chatarra más. *Fallo:* te haces daño en la espalda. 1 Herida y 2 Chatarra.
 2. **Manejar los mandos.** `[Ingenio · 11]` (Mente o Noemí: Ventaja). *Éxito:* como el Éxito de la 1, pero además +1 de Reputación con los Desguaces. *Fallo:* la carga se cae. Todos te miran. −1 de Reputación con los Desguaces.
 3. **Aprovechar que están todos ocupados.** Robar en sus tiendas: `[Reflejos · 9]`. *Éxito:* 5 Chatarra. *Fallo:* te pillan. −2 de Reputación con los Desguaces y 1 Herida.
 
@@ -83,7 +83,7 @@ Un carguero abierto en canal. Su carga eran juguetes: miles de pequeños robots 
 1. **Darle cuerda a uno.** Camina tres pasos y dice, con una voz grabada: «*¡Hola, amigo!*». Te hace sonreír. +1 Temple.
 2. **Llevarte una caja.** Son 3 juguetes, y en Quilla los niños no han visto nunca uno: al llevarlos allí, +1 de Reputación con los Hijos del Pecio, y los cambias en su mercado ([e412](#e412)).
 3. **Si Lio está contigo:** coge uno y lo guarda sin decir nada. +1 Lealtad de Lio.
-4. **Buscar el manifiesto.** `[Ingenio · 9]`. *Éxito:* el carguero también llevaba **combustible para la entrega**. Si tu Combustible no está conseguido, encuentras dos bidones: **Combustible Precario** (pesado).
+4. **Buscar el manifiesto.** `[Ingenio · 9]`. *Éxito:* el carguero también llevaba **combustible para la entrega**: dos bidones. Si no tienes Combustible, son un **Combustible Precario** (pesado); si lo tienes, valen 3 Chatarra.
 
 ---
 
@@ -114,7 +114,7 @@ Un río de cobre se mueve por el suelo del cráter: millones de hormigas metáli
 
 > **Marea de hormigas** · Ataque 4 · Blind. 0 · Heridas 4 · [Máquina][Enjambre]
 
-1. **Subir a lo alto de un casco.** `[Reflejos · 9]`. *Éxito:* pasan por debajo durante una hora. *Fallo:* te alcanzan. Pierdes 2 Chatarra y un objeto metálico (eliges).
+1. **Subir a lo alto de un casco.** `[Reflejos · 9]`. *Éxito:* pasan por debajo durante una hora. *Fallo:* te alcanzan. Combate, o les sueltas 2 Chatarra y un objeto metálico (eliges).
 2. **Seguirlas.** `[Ingenio · 11]`. *Éxito:* llevan todo a un **hormiguero** que es una fábrica de los Antiguos. Allí, entre montañas de piezas clasificadas, puedes coger un sistema: si te falta el Casco, cuenta como **Casco Sólido**. Gana `FRAGMENTO_LAS_HORMIGAS` (los Antiguos construyeron a las hormigas para *reciclar* las naves que caían). **★** *Fallo:* te pierdes entre túneles. ⌛ +1.
 3. **Enlazarte** (Mente): `[Ingenio · 9]`. *Éxito:* les ordenas que traigan algo. Te traen 6 Chatarra en piezas perfectas. +1 Canto ♫.
 
@@ -129,9 +129,9 @@ En la plaza de un cráter, sobre un escenario hecho con el ala de un bombardero,
 Tira 1d6 para saber cuál: 1 Casco · 2 Motor · 3 Navegación · 4 Soporte vital · 5 Combustible · 6 elige tú. Es de calidad **Sólida**.
 
 1. **Pujar.** Precio de salida: 6 Chatarra. Tira 1d6 por cada otro postor (son dos): cada uno ofrece 6 más su dado. Si pagas 1 más que la oferta mayor, es tuyo. Si no, se lo lleva otro.
-2. **Pujar con trampas.** `[Voluntad · 11]` para convencer a los otros de que la pieza está rota. *Éxito:* lo consigues por 6. *Fallo:* lo descubren. −1 de Reputación con los Desguaces y no puedes pujar.
+2. **Pujar con trampas.** `[Voluntad · 11]` (`ACTRIZ`: Ventaja) para convencer a los otros de que la pieza está rota. *Éxito:* lo consigues por 6. *Fallo:* lo descubren. −1 de Reputación con los Desguaces y no puedes pujar.
 3. **Robarlo después.** Sigues al ganador: `[Reflejos · 11]`. *Éxito:* es tuyo. −2 de Reputación con los Desguaces si te ven (tira 1d6: con 1–3 te ven). *Fallo:* combate contra *Ganador y sus guardias · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]*. Si ganas, es tuyo.
-4. **Ofrecer un trabajo a cambio.** El subastador te mira. «*Hay algo en la Ciudad que quiero. Tráemelo y la pieza es tuya.*» Anota `ENCARGO_DEL_SUBASTADOR` y la Pista `Ciudad · Biblioteca de luz · e323`. Lleva el `TOMO_DE_LUZ` a Puerto Chatarra ([e406](#e406)) y el sistema es tuyo.
+4. **Ofrecer un trabajo a cambio.** El subastador te mira. «*Hay algo en la Ciudad que quiero. Tráemelo y la pieza es tuya.*» Anota `ENCARGO_DEL_SUBASTADOR`, qué sistema era, y la Pista `Ciudad · Biblioteca de luz · e323`. Lleva el `TOMO_DE_LUZ` a Puerto Chatarra ([e406](#e406)) y el sistema es tuyo.
 
 ---
 
@@ -161,7 +161,7 @@ Dos matones con trajes de vuelo pintados de dorado te cortan el paso. Detrás de
 - **Si llegaste aquí siguiendo la Pista *Lo que te robaron*** (desde [e210](#e210)): tiene tu sistema. Opciones 1 a 3 para recuperarlo; si no, se lo queda.
 - **Si tienes `DEUDAS`:** «*Ah, tú. Tienes una cuenta abierta.*» Paga 4 Chatarra o elige la opción 3.
 
-1. **Pagar.** 4 Chatarra: recuperas el sistema robado. Si no vienes por el sistema, 3 Chatarra y +1 de Reputación con los Desguaces.
+1. **Pagar.** 4 Chatarra: recuperas el sistema robado (lo llevas, con su calidad). Si no vienes por el sistema, 3 Chatarra y +1 de Reputación con los Desguaces.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* te contrata: anota `TRABAJO_DEL_CONTABLE` (trae 1 reliquia de los Antiguos a Puerto Chatarra y ganas 6 Chatarra y +2 de Reputación con los Desguaces; o el sistema robado). *Fallo:* te quitan 2 Chatarra «por las molestias».
 3. **Pelear.** *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. *Si ganas:* recuperas lo tuyo, el Contable huye y −3 de Reputación con los Desguaces. Anota `ENEMIGO_DEL_CONTABLE`.
 4. **Ofrecerle información.** Si tienes alguna `FRAGMENTO_`, se la vendes: 4 Chatarra por cada una que le cuentes (no la pierdes, pero cada una se vende una vez). Él escribe todo en su libro con una letra minúscula.
@@ -179,6 +179,6 @@ Una nave de rescate de hace cincuenta años, el **Argo Pálido**, casi reparada.
 Han pintado el nombre a mano, siete veces, cada una con una letra distinta. En la cubierta han plantado un huerto.
 
 1. **Unir fuerzas.** Les das un sistema que tengas **llevado** (no instalado). A cambio, en tu final, **puedes despegar con ellos** si el Argo llega antes que tu nave (Reloj 5 o menos): anota `PASAJE_EN_EL_ARGO`. Si tienes esta Marca y el Reloj llega a 5, puedes ir a [e906](#e906).
-2. **Venderles algo.** Pagan bien: un sistema Sólido vale 8 Chatarra; uno Excelente, 11 (`SEÑAS_DE_LOS_SORDOS`: +2).
-3. **Robarles.** `[Reflejos · 13]`. *Éxito:* te llevas el sistema que tú quieras de su nave (con calidad Sólida). Anota `ROBASTE_AL_ARGO`. Si algún día vuelven a verte… *Fallo:* combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*. Si ganas, el sistema es tuyo y el Argo no despegará nunca.
+2. **Venderles algo.** Pagan bien: un sistema Precario vale 5 Chatarra; uno Sólido, 8; uno Excelente, 11 (`SEÑAS_DE_LOS_SORDOS`: +2).
+3. **Robarles.** `[Reflejos · 13]`. *Éxito:* te llevas el sistema que tú quieras de su nave (con calidad Sólida). Anota `ROBASTE_AL_ARGO`. Si algún día vuelven a verte… *Fallo:* combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*. Si ganas, el sistema es tuyo y el Argo no despegará nunca. En ambos casos, borra `PASAJE_EN_EL_ARGO`.
 4. **Pedirles que se queden con tu tripulación.** Si llevas un compañero, puedes dejárselo: lo cuidarán, y si el Argo despega, ese tripulante estará a salvo (cuenta como salvado en tu final). Anota `TRIPULANTE_EN_EL_ARGO`.

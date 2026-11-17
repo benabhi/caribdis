@@ -96,8 +96,8 @@ Lo único que funciona perfectamente es la **baliza de socorro**. Parpadea en ro
 1. **Dejarla encendida.** Alguien vendrá. Quizá alguien bueno → [e006](#e006).
 2. **Intentar apagarla.** `[Ingenio · 9]`. *(Así se hace una prueba: tira 2d6, suma tu Ingenio y compáralo con 9.)*
    - *Éxito:* el parpadeo se apaga. Borra `BALIZA_ACTIVA`, anota `BALIZA_MUDA` y ve a [e007](#e007).
-   - *Fallo:* la baliza se defiende como una cosa viva. Sube la Alerta a 2 → [e006](#e006).
-3. **Romperla a golpes.** Anota `BALIZA_ROTA` y borra `BALIZA_ACTIVA`. Ya nadie te oirá, ni amigo ni enemigo. Pero algo que ya venía no necesita oírte más → [e007](#e007).
+   - *Fallo:* la baliza se defiende como una cosa viva. ◉ +1 Alerta → [e006](#e006).
+3. **Romperla a golpes.** Anota `BALIZA_ROTA` y borra `BALIZA_ACTIVA`. Ya nadie te oirá, ni amigo ni enemigo; pero los golpes se oyen lejos: ◉ +1 Alerta → [e007](#e007).
 
 ---
 
@@ -125,7 +125,7 @@ Si tienes `PRIMERO_EN_LLEGAR`, estás tú solo delante de los restos, y ellos lo
 ### e007 · Lo que sale de la arena
 *Prólogo · Dunas de Óxido*
 
-Silencio. Solo el viento, que arrastra el óxido en remolinos que parecen manos. Te sientas junto a la nave y escuchas cómo se enfría el metal.
+Silencio. Solo el viento, que arrastra el óxido en remolinos que parecen manos. Te quedas junto a la nave y escuchas cómo se enfría el metal.
 
 Entonces la arena se mueve. Algo pequeño, con demasiadas patas y una boca que es todo dientes de chapa, sale de debajo del casco y te mira. Viene **a comerse tu nave**.
 
@@ -187,7 +187,7 @@ Tu nave necesita seis sistemas. Tú necesitas no morirte. El planeta es enorme, 
 
 Hace frío y el sol rojo apenas asoma. Abajo, la nave cruje mientras se enfría, y cada crujido suena a pregunta: por dónde, cuánto tiempo, para qué.
 
-Respiras hondo. El aire sabe a polvo y a hierro, pero se puede respirar. Más abajo, entre los restos, algo pequeño se mueve y se esconde.
+Pruebas el aire: sabe a polvo y a hierro, y raspa por dentro. Más abajo, entre los restos, algo pequeño se mueve y se esconde.
 
 Desde lo alto de la Cicatriz se ven tres caminos:
 

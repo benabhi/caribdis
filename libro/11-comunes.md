@@ -18,9 +18,9 @@ Te despiertas tarareando una melodía que no conoces. Te la sabes entera. Te la 
 ### e021 · El minuto robado
 *Pulso · ⌛ 0*
 
-Estás haciendo algo, y de pronto estás haciendo otra cosa. Ha pasado una hora. Tienes las manos manchadas de óxido y has dibujado en el suelo **una espiral de puntos** perfecta.
+Estás haciendo algo, y de pronto estás haciendo otra cosa. Ha pasado una hora. Estás manchado de óxido y has dibujado en el suelo **una espiral de puntos** perfecta.
 
-Te miras las uñas: tienen óxido debajo, como si hubieras escarbado en la chapa con las manos. No te duelen. Lo que te inquieta es que la espiral está bien hecha, más de lo que tú sabrías dibujar. Durante un buen rato no te atreves a cerrar los ojos. Te limpias las manos en el pantalón.
+Hay óxido donde no debería: bajo las uñas, o entre las juntas de tus pinzas, como si hubieras escarbado en la chapa. No duele. Lo que te inquieta es que la espiral está bien hecha, más de lo que tú sabrías dibujar. Durante un buen rato no te atreves a apartar la vista de ella. Te limpias como puedes.
 
 - Si tienes a Amara contigo, la lee: es una **dirección**. Gana la Pista `Polo · La puerta · e288`.
 - Si no, tira 1d6. Con 1–3, pierdes 1 objeto común: no sabes dónde lo dejaste. Con 4–6, encuentras a tus pies 1 Chatarra que no estaba ahí.
@@ -69,7 +69,7 @@ A lo lejos, en fila, caminan hacia el este una docena de figuras. Algunas van de
 
 Por primera vez desde que llegaste, **silencio absoluto**. El viento se detiene. Las bestias no hacen ruido. Es tan perfecto que te duele.
 
-Oyes tu propio corazón por primera vez en días.
+Te oyes por dentro por primera vez en días.
 
 - Baja tu Canto a 0.
 - Durante todo el día, cualquier tirada de pulso o efecto que dé Canto no tiene efecto.
@@ -163,7 +163,7 @@ Tres máquinas de los Antiguos, altas como dos personas, de un metal que no refl
 1. **Quedarte quieto.** `[Voluntad · 11]`. *Éxito:* te escanean y pasan. *Fallo:* combate.
 2. **Mostrarles luz fría** (si llevas una reliquia de los Antiguos): se inclinan ante ti y siguen. +1 de Reputación con los Vigías.
 3. **Enlazarte** (solo la Mente): `[Ingenio · 9]`. *Éxito:* te reconocen como «unidad». Gana `CODIGO_VIGIA` y +1 de Reputación con los Vigías. *Éxito pleno:* además, descargas un mapa: gana la Pista `Ciudad · El Nodo · e430`. *Fallo:* combate, y te atacan con +1.
-4. **Huir.** `[Reflejos · 11]` ◉. *Fallo:* combate.
+4. **Huir.** `[Reflejos · 11]`. *Fallo:* combate.
 
 - **Si ganas:** sus restos valen 4 Chatarra y +1 Canto ♫ (la luz fría se te pega). −2 de Reputación con los Vigías.
 
@@ -177,14 +177,12 @@ Lo oyes antes de verlo: un clac-clac de seis patas de metal. Un **trepador** car
 
 «¡Náufrago! ¡Cliente! ¡Qué alegría! ¿Qué te falta? Lo tengo. Y si no lo tengo, lo tendré.»
 
-El trepador huele a grasa caliente y a fruta pasada. Las patas no paran quietas ni cuando se detiene.
+El trepador huele a grasa caliente y a fruta pasada. Si tienes `DEUDAS`, te conoce: «Tú le debes a alguien que me debe a mí». Paga 2 Chatarra o se va sin atenderte.
 
 1. **Comprar.** Puedes comprar de la tabla r161. Además vende: **Mapa de rutas** (3 Chatarra: gana `RUTA_` a una región a tu elección, r151) y **Reliquia sin identificar** (5 Chatarra).
 2. **Pedirle trabajo.** Necesita que alguien le lleve un paquete a Quilla. Anota `PAQUETE_DE_MENDANA`. Al visitar Quilla con él, ganas 5 Chatarra. No lo abras.
-3. **Abrir el paquete** (si lo tienes). Dentro hay un **ojo humano** en un frasco de gel, todavía vivo. Mira hacia el este. Gana `FRAGMENTO_EL_OJO`, pero borra `PAQUETE_DE_MENDANA` y, la próxima vez que veas a Mendaña, no te venderá nada.
-4. **Preguntarle por otras naves.** Por 1 Chatarra: tira un rumor (r164) con +1.
-
-Si tienes `DEUDAS`, Mendaña te conoce: «Tú le debes a alguien que me debe a mí». Pierdes 2 Chatarra o te vas sin hacer nada.
+3. **Abrir el paquete** (si lo tienes). Dentro hay un **ojo humano** en un frasco de gel, todavía vivo. Mira hacia el este. Gana `FRAGMENTO_EL_OJO`, pero borra `PAQUETE_DE_MENDANA`: ya no cobras el encargo, y −1 de Reputación con los Desguaces.
+4. **Preguntarle por otras naves.** Por 1 Chatarra: tira un rumor (r164) con +1 (máximo 12).
 
 ---
 
@@ -197,7 +195,7 @@ Unas botas del modelo de tu nave. Talla pequeña. La huella del pie izquierdo ar
 Las huellas son de hace poco: el viento todavía no las ha borrado.
 
 Elige un tripulante que no hayas encontrado. Si su región en la Hoja es esta, ve directamente a su primer evento (r185). Si no:
-1. **Seguir las huellas.** `[Ingenio · 9]` ⌛. *Éxito:* descubres que se dirigía a una región vecina: corrige su región en la Hoja (eliges cuál de las vecinas). *Fallo:* las huellas desaparecen en la roca.
+1. **Seguir las huellas.** `[Ingenio · 9]`. *Éxito:* descubres que se dirigía a una región vecina: corrige su región en la Hoja (eliges cuál de las vecinas). *Fallo:* las huellas desaparecen en la roca.
 2. **Dejar una señal.** Pintas el símbolo de la nave en una roca. Anota `SEÑAL_EN_ROCA` con su nombre. Cuando encuentres a ese tripulante, empieza con Lealtad 3.
 
 
@@ -208,11 +206,11 @@ Elige un tripulante que no hayas encontrado. Si su región en la Hoja es esta, v
 ### e038 · La cápsula
 *Cualquier región · ⌛ día*
 
-Medio enterrada, una **cápsula de escape de tu propia nave**. La escotilla está cerrada desde dentro. La pantalla dice: *OCUPANTE: 1 · SOPORTE: 2 %*.
+Medio enterrada, una **cápsula de escape de tu propia nave**. La escotilla está cerrada desde dentro. La pantalla dice: *OCUPANTE: 1 · SOPORTE: 2 %*. (Si ya encontraste a toda tu tripulación, miente: está vacía, con 3 Raciones y una bombona de aire.)
 
 1. **Abrirla ya.** `[Ingenio · 9]` o `[Vigor · 11]`.
-   - *Éxito:* dentro hay un tripulante. Tira 1d6 por los que aún no hayas encontrado y ve a su primer evento (r185), aunque no esté en su región. Si ya los encontraste a todos, la cápsula está vacía y tiene 3 Raciones y una bombona de aire.
-   - *Fallo:* la abres demasiado tarde. Dentro hay alguien muerto. Tira el tripulante igual: tacha su ficha. Si eres el Piloto, +2 `CULPA`.
+   - *Éxito:* dentro hay un tripulante. Sortéalo entre los no encontrados (1d6 en el orden de r108; repite si hace falta) y ve a su primer evento (r185), aunque no sea su región.
+   - *Fallo:* la abres demasiado tarde. Dentro hay alguien muerto. Sortéalo igual y tacha su ficha. Si eres el Piloto, +2 `CULPA`.
 2. **Desmontar la cápsula.** Ganas 4 Chatarra. Si dentro había alguien, nunca lo sabrás. Anota `NO_MIRASTE`.
 
 ---
@@ -256,7 +254,7 @@ Alguien colocó cada piedra con cuidado, una por una, del mismo tamaño. Junto a
 
 1. **Hacer caso.** Anota `ADVERTIDO`.
 2. **Buscar quién lo escribió.** `[Ingenio · 9]`. *Éxito:* un esqueleto con un traje de vuelo de hace dos siglos y un diario. Las últimas palabras: «*La puerta se abre desde dentro. Lo que la abre no quiere salir. Quiere que entres.*» Gana `FRAGMENTO_EL_DIARIO` y la Pista `Polo · La puerta · e288`. *Fallo:* nada.
-3. **Añadir una línea.** Escribes debajo: **POR QUÉ**. La próxima vez que vuelvas a esta región, tira 1d6: con 6, hay una respuesta → [e288](#e288).
+3. **Añadir una línea.** Escribes debajo: **POR QUÉ**. Esa noche sueñas la respuesta: una puerta redonda en el hielo. +1 Canto ♫ y gana la Pista `Polo · La puerta · e288`.
 
 ---
 
@@ -267,7 +265,7 @@ Alguien colocó cada piedra con cuidado, una por una, del mismo tamaño. Junto a
 Un túmulo de piedras. Una placa de metal. Tu nombre. Tu fecha de nacimiento. La fecha de tu muerte está en blanco.
 
 1. **Cavar.** `[Vigor · 7]`. *Éxito:* dentro hay un traje como el tuyo, vacío, doblado con cuidado, y en el bolsillo 3 Chatarra y una reliquia sin identificar. +1 Canto ♫. Anota `TU_TUMBA`.
-2. **Escribir la fecha.** Elige un número del Reloj y escríbelo en la placa. Anota ese número. Si el Reloj llega a ese número y sigues en Caribdis, ganas 2 Temple: «hoy no».
+2. **Escribir la fecha.** Elige un número del Reloj al menos 10 por debajo del actual y escríbelo en la placa. Anótalo. Si el Reloj llega a ese número y sigues en Caribdis, ganas 2 Temple: «hoy no».
 3. **Destrozarla.** +1 Temple. Pero esa noche, tira 2d6 en la tabla de encuentros contando el resultado como un punto más alto (máximo 12), aunque no descanses a la intemperie.
 
 ---
@@ -296,7 +294,7 @@ Le tiembla el cañón de la pistola, pero no baja los brazos.
 Del cielo cae granizo transparente: diminutos fragmentos de los cascos que arden en la Corona. Tintinea al chocar. Corta.
 
 1. **Cubrirte.** Con protección de Blindaje 1 o más, no pasa nada. Sin ella, 1 Herida.
-2. **Recogerlo.** `[Reflejos · 9]` ⚔. *Éxito:* +2 Chatarra en cristal fino. *Fallo:* 1 Herida y +1 Chatarra.
+2. **Recogerlo.** `[Reflejos · 9]` ⚔. *Éxito:* cristal fino: +2 Chatarra o +2 Cristal. *Fallo:* 1 Herida y +1 Chatarra.
 3. **Mirar hacia arriba.** Entre la lluvia ves caer algo más grande, a lo lejos: gana la Pista `esta región · El pecio de la lluvia · e031`.
 
 ---
@@ -313,7 +311,7 @@ Tiene las uñas negras de tanto rascar la piedra. Cuando habla, cuenta con los d
 
 1. **Decirle el número de tu Reloj.** Se ríe. «Eso es lo que *te queda*, no lo que *llevas*. Tú todavía tienes prisa. Qué envidia.» +1 Temple.
 2. **Preguntarle cómo sobrevivió tanto.** «No intenté irme.» Te enseña a vivir del planeta: gana `SABE_VIVIR` (forrajear da +1 Ración).
-3. **Ofrecerle venir contigo.** Te mira mucho tiempo. «Si consigues que esa cosa vuele, vuelve a por mí.» Anota `EL_VIEJO_ESPERA`. Al despegar, si tienes esta Marca y una plaza libre (menos de 6 tripulantes a bordo), puedes llevarlo: cuenta como un tripulante en el final.
+3. **Ofrecerle venir contigo.** Te mira mucho tiempo. «Si consigues que esa cosa vuele, vuelve a por mí.» Anota `EL_VIEJO_ESPERA`. Al despegar, si tienes esta Marca y le das una plaza (e900), viene contigo: cuenta como un tripulante en el final.
 
 ---
 
@@ -353,7 +351,7 @@ Algo baja del cielo sin hacer ruido. Una lágrima de metal negro, del tamaño de
 > **Sonda de los Recolectores** · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina][Rápido]
 
 1. **Esconderte.** `[Reflejos · 11]`. *Éxito:* pasa de largo. *Fallo:* te escanea. El Reloj baja 2.
-2. **Destruirla.** Combate. *Si ganas:* sus restos son de una aleación desconocida: si los llevas a la Cicatriz, tu Casco sube 1 de calidad (si ya está instalado) o cuenta como Casco Sólido si aún no lo tienes. Gana `FRAGMENTO_LA_SONDA`. Y los Recolectores saben ahora que te defiendes: el Reloj baja 3.
+2. **Destruirla.** Combate. *Si ganas:* sus restos son de una aleación desconocida: si ya tienes Casco, sube 1 de calidad (máximo Excelente); si no, cuentan como un Casco Sólido. Gana `FRAGMENTO_LA_SONDA`. Y los Recolectores saben ahora que te defiendes: el Reloj baja 3.
 3. **Enlazarte** (Mente): `[Ingenio · 13]`. *Éxito:* les das datos falsos. El Reloj **sube** 5. Gana `ENGAÑASTE_A_LA_SONDA`. *Fallo:* algo te mira desde muy lejos, a través de la sonda. +3 Canto ♫.
 
 ---
@@ -366,7 +364,7 @@ Un charco. Agua de verdad, clara, en una hondonada de roca. Alrededor, huesos de
 
 El agua está tan quieta que refleja el sol rojo sin una sola onda. Hace días que no ves nada tan limpio.
 
-1. **Beber.** `[Ingenio · 9]` para comprobar si es segura. *Éxito:* es buena. Rellenas: +3 Raciones (agua y algún pez ciego). *Fallo:* sabe a metal. +1 Canto ♫ y +2 Raciones.
+1. **Probarla.** `[Ingenio · 9]` para comprobar si es segura. *Éxito:* es buena. Rellenas: +3 Raciones (agua y algún pez ciego). *Fallo:* sabe a metal. +1 Canto ♫ y +2 Raciones.
 2. **Esperar a ver qué viene a beber.** `[Reflejos · 9]`. *Éxito:* un cardador. Lo cazas: +4 Raciones. *Fallo:* algo más grande → [e039](#e039).
 3. **Anotarlo en tu mapa.** Gana la Pista `esta región · El charco · e049`. Seguir esta Pista no la borra: puedes volver siempre que quieras.
 
@@ -380,7 +378,7 @@ Dos bandas de Desguaces, cada una alrededor de una mitad de motor, se gritan a t
 
 Los dos bandos llevan el mismo tatuaje en el cuello. Hace poco eran un solo clan, y se nota en cómo se insultan.
 
-1. **Ayudar a los del este.** Combate contra *Desguace del oeste · Ataque 3 · Blind. 1 · Heridas 3 · [Náufrago]*. *Si ganas:* te dan la mitad de motor. Si tu Motor no está conseguido, cuenta como **Motor Precario**. ◉
+1. **Ayudar a los del este.** Combate contra *Desguace del oeste · Ataque 3 · Blind. 1 · Heridas 3 · [Náufrago]*. *Si ganas:* ◉ +1 Alerta y te dan la mitad de motor: un **Motor Precario** (pesado) o, si ya tienes Motor, 3 Chatarra.
 2. **Ayudar a los del oeste.** Lo mismo, pero contra los del este, que te dan 5 Chatarra y una deuda de favor: anota `FAVOR_DESGUACE`.
 3. **Mediar.** `[Voluntad · 11]`. *Éxito:* parten el motor por la mitad (de verdad) y te dan las piezas sobrantes: 3 Chatarra y +1 de Reputación con los Desguaces. *Fallo:* te disparan los dos bandos. 1 Herida y te retiras.
 4. **Robar el motor mientras discuten.** `[Reflejos · 13]`. *Éxito:* **Motor Precario** (pesado). −2 de Reputación con los Desguaces. *Fallo:* combate contra los dos: *Banda doble · Ataque 4 · Blind. 1 · Heridas 5 · [Náufrago]*.
@@ -402,7 +400,7 @@ Sobre la mesa, un ojo de cristal te sigue cuando te mueves.
 
 1. **Comprar un implante** (solo el Piloto): 6 Chatarra por uno del catálogo, si tienes ranura libre. Instalarlo: `[Vigor · 9]`. *Fallo:* lo instala mal, 2 Heridas, pero se queda.
 2. **Vender uno tuyo.** Te da 4 Chatarra por cada implante (Piloto), mutación (Nativo: una de las 1–9 del catálogo; la pierdes) o protocolo copiado (Mente: no lo pierdes, +1 Canto ♫, y cada uno se copia una vez).
-3. **Preguntar de dónde saca las piezas.** «De los que ya no las necesitan.» Si insistes, `[Voluntad · 9]`: te enseña un brazo con un tatuaje de tu nave. Elige un tripulante no encontrado: tacha su ficha. Ya no está. (Si eres el Piloto, +2 `CULPA`.) O no insistas.
+3. **Preguntar de dónde saca las piezas.** «De los que ya no las necesitan.» Si insistes, `[Voluntad · 9]`: te enseña un brazo con un tatuaje de tu nave. Elige un tripulante no encontrado y tira 1d6: con 1–2, ya no está: tacha su ficha (Piloto: +2 `CULPA`); con 3–6, vive: su región pasa a ser esta.
 
 ---
 
@@ -425,7 +423,7 @@ El aire se llena de polvo dorado. Huele a pan y a tumba. Las esporas del Bosque 
 Una radio de campaña, sola, encendida en mitad de la nada. Las baterías deberían estar muertas desde hace años. Del altavoz sale tu nombre, una y otra vez, con una voz que es la tuya.
 
 1. **Contestar.** +1 Canto ♫. La voz deja de repetir y dice: *«Ve al Polo. Allí se oye mejor.»* Gana `FRAGMENTO_LA_RADIO`.
-2. **Llevártela.** Es pesada pero útil: mientras la lleves, Ventaja al Explorar en la región de un tripulante, pero +1 Canto cada vez que haya pulso.
+2. **Llevártela.** Es pesada pero útil: mientras la lleves, Ventaja al Explorar en la región de un tripulante no encontrado, pero +1 Canto cada vez que haya pulso.
 3. **Destrozarla.** Calla. Dentro no hay baterías: hay un cristal de luz fría que vale 3 Chatarra.
 
 ---
@@ -436,7 +434,7 @@ Una radio de campaña, sola, encendida en mitad de la nada. Las baterías deber�
 
 Un hombre atrapado bajo un casco de nave. Tiene las piernas aplastadas y la mirada tranquila. «No me saques. No hay nada que sacar. Solo... no dejes que me encuentren *ellos*.» Señala al este, hacia las Torres.
 
-1. **Hacer lo que pide.** `[Voluntad · 9]`: si lo superas, +1 Temple, por terrible que sea. En su mochila, 3 Chatarra y un mapa: anota `RUTA_` hacia una región vecina que elijas.
+1. **Hacer lo que pide.** `[Voluntad · 9]`. *Éxito:* +1 Temple, por terrible que sea. En todo caso, en su mochila hay 3 Chatarra y un mapa: anota `RUTA_` hacia una región vecina que elijas.
 2. **Intentar sacarlo igualmente.** `[Vigor · 11]`. *Éxito:* lo sacas, y no muere: sus piernas eran de metal. Es un Desguace. Te lo agradecerá siempre: +2 de Reputación con los Desguaces. *Fallo:* muere en tus brazos. −1 Temple.
 3. **Irte.** Esa noche, a lo lejos, oyes a alguien cantar con su voz. +1 Canto ♫.
 
@@ -454,7 +452,7 @@ Se ríen entre ellos en voz baja, sin dejar de mirarte.
 
 **Encuentro (r300).** Precio: 4 Chatarra. Botín: 1d6 Chatarra y un **hacha de casco**.
 
-- **Si ganas:** quédate el Botín. Nadie les echará de menos: +1 de Reputación con los Desguaces y con los Hijos del Pecio. · **Si pasas:** pagas 4 Chatarra y te dejan seguir.
+- **Si ganas:** quédate el Botín. Nadie les echará de menos: +1 de Reputación con los Desguaces y con los Hijos del Pecio. · **Si pasas:** te dejan seguir.
 
 ---
 
@@ -462,13 +460,13 @@ Se ríen entre ellos en voz baja, sin dejar de mirarte.
 ### e056 · Un dron hermano
 *Cualquier región · ⌛ 0*
 
-Un dron de reparación como el que eres (o como el que lleva dentro la Mente), del mismo fabricante, con el número de serie raspado. Flota a trompicones, con un rotor roto y medio casco hundido.
+Un dron de reparación de tu nave, del mismo modelo que el cuerpo de la Mente, con el número de serie raspado. Flota a trompicones, con un rotor roto y medio casco hundido.
 
 Su luz de estado parpadea en un ritmo que reconoces: el de los drones de tu nave cuando piden ayuda. Te sigue con el único sensor que le queda, girando despacio, sin acercarse del todo, como un perro que no sabe si le van a pegar.
 
 - **Si eres la Mente:** te reconoce. `[Ingenio · 9]`. *Éxito:* comparte contigo su memoria antes de apagarse: +1 `MEMORIA` y gana `FRAGMENTO_EL_HERMANO`. *Fallo:* sus datos están corruptos: +1 Canto ♫.
 - **Si no:**
-  1. **Repararlo.** `[Ingenio · 9]`, 1 Chatarra. *Éxito:* te sigue y lleva cosas: puedes llevar un sistema pesado sin penalización. *Fallo:* se apaga.
+  1. **Repararlo.** `[Ingenio · 9]`, 1 Chatarra. *Éxito:* te sigue y carga por ti: anota `DRON_DE_CARGA` (llevas un sistema pesado sin el −1 a Reflejos). *Fallo:* se apaga.
   2. **Desmontarlo.** +3 Chatarra.
 
 ---
@@ -491,7 +489,7 @@ El cadáver de un **cardador**, una bestia de seis patas grande como un camión,
 
 Una cúpula de emergencia de alguna colonia de hace siglos, medio enterrada pero sellada. La puerta tiene un panel numérico y una nota pegada: *el código es el número de los que se quedaron*.
 
-1. **Probar números.** `[Ingenio · 11]`. *Éxito:* el código es 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones y puedes descansar aquí hoy como en un asentamiento. Gana la Pista `esta región · El refugio · e058`. *Fallo:* nada.
+1. **Probar números.** `[Ingenio · 11]`. *Éxito:* el código es 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones (solo la primera vez) y hoy descansas aquí como en un asentamiento. Gana la Pista `esta región · El refugio · e058`. *Fallo:* nada.
 2. **Forzar la puerta.** `[Vigor · 11]` ◉. *Éxito:* entras, pero el sello se rompe y el refugio ya no sirve para volver. +3 Raciones. *Fallo:* 1 Herida.
 3. **Leer las paredes.** Hay nombres grabados, cientos, y al final una frase: *«Nos fuimos todos al Canto. Allí no se muere.»* Gana la Pista `esta región · El refugio · e058`. Si vuelves algún día con Amara, ella reconoce los nombres de una colonia que desapareció hace cuatro siglos: gana `FRAGMENTO_LOS_QUE_SE_FUERON`.
 
@@ -508,6 +506,6 @@ Sus pasos dejan marcas oscuras en la arena. Canta con una voz que no es la suya,
 Nadie le sigue. Nadie le espera.
 
 1. **Despertarlo.** `[Voluntad · 9]`. *Éxito:* se despierta aterrorizado. Te da todo lo que lleva (3 Chatarra y 2 Raciones) a cambio de que lo lleves a un asentamiento: si visitas uno en los próximos 3 días, +1 de Reputación con los Desguaces. *Fallo:* te araña la cara y sigue. 1 Herida.
-2. **Atarlo.** Anota `DORMIDO_ATADO`. Si lo llevas a la Cicatriz, al día siguiente despierta: es un mecánico. Te ayuda a instalar un sistema con Ventaja y se marcha.
+2. **Atarlo.** Anota `DORMIDO_ATADO`. Si lo llevas a la Cicatriz, al día siguiente despierta: es un mecánico. Borra la Marca: Ventaja en tu próxima instalación (r181), y se marcha.
 3. **Dejarle seguir.** Lo ves alejarse. +1 Canto ♫, pero ganas 1 Temple: la decisión no era tuya.
 4. **Quitarle la mochila.** +1 Chatarra y 1 Ración. No se da cuenta. Tú sí.

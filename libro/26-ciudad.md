@@ -58,9 +58,9 @@ Un cilindro de cristal en el centro de una torre. Funciona. Tiene un panel con t
 Una sala esférica con miles de cristales flotando en el aire, cada uno con un brillo distinto. Al acercar la mano, un cristal se ilumina y **te llena la cabeza de imágenes**: es un libro.
 
 1. **Leer un cristal al azar.** `[Voluntad · 9]` ♫. *Éxito:* aprendes algo útil. Elige: +1 Ingenio (permanente, máximo 6, una sola vez), o gana `FRAGMENTO_LA_BIBLIOTECA`. *Fallo:* demasiada información. 1 Herida (dolor de cabeza terrible) y +1 Canto.
-2. **Buscar un tomo concreto.** `[Ingenio · 11]` (Amara: Ventaja). *Éxito:* encuentras el **Tomo de luz** que quería el subastador ([e228](#e228)): anota `TOMO_DE_LUZ`. O un manual de navegación de los Antiguos: si tu Navegación está instalada, +1 de calidad. *Fallo:* los cristales se apagan uno tras otro. Tienes que irte.
-3. **Robar cristales.** `[Reflejos · 9]` ◉. *Éxito:* 3 cristales: 6 Chatarra en Puerto Chatarra (los Vigías los odian). −1 de Reputación con los Vigías. *Fallo:* salta una alarma → [e035](#e035).
-4. **Si eres la Mente:** te conectas a la biblioteca entera. `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y gana dos `FRAGMENTO_` a elegir entre `FRAGMENTO_LA_BIBLIOTECA` y `FRAGMENTO_EL_ARCHIVO`. **★** *Fallo:* +3 Canto ♫ y 1 Daño.
+2. **Buscar un tomo concreto.** `[Ingenio · 11]` (Amara: Ventaja). *Éxito:* elige: el **Tomo de luz** que quería el subastador ([e228](#e228); anota `TOMO_DE_LUZ`) o un manual de navegación de los Antiguos (+1 de calidad a tu Navegación instalada; si no lo está, `POSICION_CONOCIDA`). *Fallo:* los cristales se apagan uno tras otro. Tienes que irte.
+3. **Robar cristales.** `[Reflejos · 9]`. *Éxito:* 3 cristales: valen 6 Chatarra en Puerto Chatarra (los Vigías los odian). −1 de Reputación con los Vigías. *Fallo:* salta una alarma → [e035](#e035).
+4. **Si eres la Mente:** te conectas a la biblioteca entera. `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y gana `FRAGMENTO_LA_BIBLIOTECA` y `FRAGMENTO_EL_ARCHIVO`. **★** *Fallo:* +3 Canto ♫ y 1 Daño.
 
 ---
 
@@ -73,7 +73,7 @@ Un Vigía tumbado en mitad de la calle, con una pierna arrancada. Intenta levant
 Su ojo parpadea en rojo, pidiéndote algo que no sabe decir. Te sigue con el ojo hasta que te alejas. Le falta un trozo de la placa del pecho, y dentro se ve una luz que va y viene.
 
 1. **Repararlo.** `[Ingenio · 11]`, 2 Chatarra (Mente, Noemí: Ventaja). *Éxito:* se levanta. Te hace una reverencia y se va. +2 de Reputación con los Vigías y gana `AMIGO_DE_UN_VIGIA`: una vez, en un combate contra Vigías, puedes terminarlo inmediatamente mostrando su número de serie. Si tienes `ENCARGO_DE_REPARAR`, esta reparación cuenta para el encargo: +1 de Reputación extra. *Fallo:* se apaga. −1 de Reputación con los Vigías.
-2. **Desmontarlo.** `[Vigor · 9]` ◉. *Éxito:* 5 Chatarra y una **coraza de Vigía** (Blind. 2). −2 de Reputación con los Vigías. *Fallo:* se defiende con lo que le queda. *Vigía caído · Ataque 3 · Blind. 2 · Heridas 2 · [Máquina][Antiguo]*.
+2. **Desmontarlo.** `[Vigor · 9]`. *Éxito:* 5 Chatarra y una **coraza de Vigía** (Blind. 2). −2 de Reputación con los Vigías. *Fallo:* se defiende con lo que le queda. *Vigía caído · Ataque 3 · Blind. 2 · Heridas 2 · [Máquina][Antiguo]*.
 3. **Dejarlo.** La luz pasa a rojo. Cuando te alejas, oyes que emite un pitido largo, como un suspiro.
 
 ---
@@ -103,7 +103,7 @@ Una plaza con doce estatuas de los Antiguos, altas, delgadas, de cuatro brazos y
 El polvo del techo cae sobre ellas como nieve, y ninguna lo sacude. Huele a polvo y a cera vieja.
 
 1. **Poner la mano en un hueco.** +1 Canto ♫. La estatua baja un brazo y te señala una dirección. Tira 1d6: con 1–3, hacia el Polo (gana la Pista `Polo · El Pozo · e281`); con 4–6, hacia las Torres (gana la Pista `Torres · La cima · e351`).
-2. **Poner una reliquia en un hueco.** La reliquia se identifica sola (r193): elige su función en la fila de 12–13.
+2. **Poner una reliquia sin identificar en un hueco** (una vez). Se identifica sola (r193): elige su función en la fila de 12–13.
 3. **Contar las estatuas otra vez.** Ahora hay **trece**. La nueva está detrás de ti. `[Reflejos · 11]` para apartarte a tiempo → si fallas, *Vigía-estatua · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina][Antiguo]*. Combate.
 
 ---
@@ -117,7 +117,7 @@ En un templo hundido, un Vigía de rodillas. No patrulla. No vigila. **Reza**: j
 «Hermano. Hermana. Lo que seas. ¿Sabes dónde se fueron?»
 
 1. **Preguntarle quiénes.** «Los que nos hicieron. Una mañana dejaron de darnos órdenes. Diez mil años esperando la siguiente.» `[Voluntad · 9]`. *Éxito:* te cuenta lo que vio la última mañana: gana `FRAGMENTO_LA_ULTIMA_MAÑANA`. *Fallo:* se queda en silencio.
-2. **Darle una orden.** «*Levántate.*» Lo hace. Se queda esperando la siguiente. Puedes llevarlo contigo como compañero (no cuenta para el límite de 2): **Vigía sin dueño**, +2 Ataque, no consume Raciones; pero mientras lo lleves, los demás Vigías te consideran ladrón: −2 de Reputación con los Vigías. Te seguirá hasta que le digas que se quede.
+2. **Darle una orden.** «*Levántate.*» Lo hace. Se queda esperando la siguiente. Puedes llevarlo contigo como compañero (no cuenta para el límite de 2): **Vigía sin dueño**, +2 Ataque, no consume Raciones, [Máquina]. Pero los demás Vigías te consideran ladrón: −1 de Reputación con ellos. Te seguirá hasta que le digas que se quede.
 3. **Rezar con él.** +1 Temple. Y el Vigía te da algo que guardaba: una **llave de los Vigías** (reliquia identificada, [e746](#e746)), solo la primera vez.
 4. **Si eres la Mente:** os reconocéis. Él también es un programa que perdió a su usuario. «*¿Tú también esperas?*» Si contestas que sí, +1 `MEMORIA` y +1 Temple. Si contestas que no, él te mira mucho rato y dice: «*Entonces enséñame.*» Anota `EL_VIGIA_APRENDE`.
 
@@ -170,7 +170,7 @@ Antes de elegir, tira 1d6 para saber qué fragmento sale (si ya lo tienes, sale 
 - **3–4:** «*...si vuelven, la señal los apartará. Que nadie salga. Que nadie entre. Mantened la orden...*». Gana `FRAGMENTO_EL_HOLOGRAMA_2`.
 - **5–6:** «*...lo que duerme bajo el hielo no debe despertar. La señal es su nana. Que no calle nunca...*». Gana `FRAGMENTO_EL_HOLOGRAMA_3`.
 
-1. **Escuchar hasta el final.** +1 Canto ♫.
+1. **Escuchar hasta el final.** +1 Canto ♫ y +1 Temple: nadie te había hablado así.
 2. **Intentar interactuar.** `[Ingenio · 11]`. *Éxito:* el holograma se vuelve hacia ti, te mira y **sigue hablando**. Gana el fragmento siguiente también.
 3. **Si tienes a Amara:** ella llora. «*Tenía razón. Tenía razón en todo.*» +1 Lealtad de Amara.
 
@@ -184,7 +184,7 @@ Un mercado. Puestos, toldos, mercancía colgada: frutas de cristal, telas que ca
 
 1. **Pagar en un puesto.** Mete 2 Chatarra en una ranura. El puesto te da algo. Tira 1d6: 1 nada (la máquina se lo traga) · 2–3 Raciones extrañas (+3, saben a nada) · 4–5 un objeto de r173, eligiendo tú · 6 una reliquia sin identificar.
 2. **Coger algo sin pagar.** `[Reflejos · 9]`. *Éxito:* como si hubieras sacado un 4–5. *Fallo:* el mercado entero se ilumina en rojo. ◉ +1 Alerta y → [e035](#e035).
-3. **Buscar el puesto de las piezas.** `[Ingenio · 11]`. *Éxito:* venden **reguladores de luz fría**. Por 5 Chatarra, el Soporte vital o el Motor instalados en tu nave suben 1 de calidad cuando vuelvas a la Cicatriz. *Fallo:* no lo encuentras.
+3. **Buscar el puesto de las piezas.** `[Ingenio · 11]`. *Éxito:* venden **reguladores de luz fría**. Por 5 Chatarra, tu Soporte vital o tu Motor instalado (eliges uno) sube 1 de calidad cuando vuelvas a la Cicatriz. *Fallo:* no lo encuentras.
 
 Al irte, todos los toldos se mueven a la vez, aunque no corre el aire. No vuelves la vista.
 

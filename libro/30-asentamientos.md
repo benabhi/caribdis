@@ -39,7 +39,7 @@ En el hangar principal, un ring de chapa rodeado de gradas. La gente apuesta a g
    - *Campeón Desguace «Bisagra» · Ataque 5 · Blind. 2 · Heridas 4 · [Náufrago]*. Premio: 8 Chatarra y +1 de Reputación con los Desguaces.
    - *Vigía encadenado · Ataque 6 · Blind. 3 · Heridas 4 · [Máquina][Antiguo]*. Premio: 12 Chatarra y una coraza de Vigía. −1 de Reputación con los Vigías. **★**
    Puedes rendirte en cualquier ronda (pierdes, pero sin más daño).
-2. **Apostar.** Apuesta lo que quieras y tira 1d6: con 1–4 pierdes lo apostado; con 5 lo doblas; con 6 lo triplicas.
+2. **Apostar.** Apuesta hasta 5 Chatarra, una vez, y tira 1d6: con 1–4 pierdes lo apostado; con 5 lo doblas; con 6 lo triplicas.
 3. **Liberar al Vigía de la jaula.** `[Ingenio · 11]` o `[Reflejos · 11]`. *Éxito:* se escapa rompiendo media arena. +2 de Reputación con los Vigías y −2 con los Desguaces si te descubren (1d6: 1–3). *Fallo:* te pillan. Pagas 4 Chatarra de multa o peleas contra Bisagra sin premio.
 
 ---
@@ -54,7 +54,7 @@ Las paredes curvas están cubiertas de placas de naves perdidas, clavadas por lo
 
 1. **Invitar a una ronda.** 2 Chatarra. Tira dos rumores (r164) y quédate con los dos.
 2. **Preguntar por tu tripulación.** `[Voluntad · 9]`. *Éxito:* elige un tripulante no encontrado: descubres su región (o, si ya la sabías, Ventaja al explorar). *Éxito pleno:* alguien sabe dónde está exactamente: ve a su primer evento la próxima vez que estés en su región, sin tirar Explorar. *Fallo:* nadie sabe nada, o nadie quiere decirlo.
-3. **Jugar a los dados de hueso.** Apuesta y tira 2d6 contra el tahúr, que tira 2d6 + 1. El que saque más gana. Si ganas, doblas tu apuesta. Si eres el Contrabandista (`DEUDAS`), tienes Ventaja… y el tahúr te reconoce: «*Tú le debes al Contable.*»
+3. **Jugar a los dados de hueso.** Apuesta hasta 5 Chatarra, una vez, y tira 2d6 contra el tahúr, que tira 2d6 + 1. El que saque más gana (si empatáis, repetid). Si ganas, doblas tu apuesta. Si eres el Contrabandista (`DEUDAS`), tienes Ventaja… y el tahúr te reconoce: «*Tú le debes al Contable.*»
 4. **Reclutar ayuda.** Por 4 Chatarra, un Desguace te acompaña hasta que el Reloj baje 5 (anota el número) como compañero (no cuenta para el límite de 2; +1 Ataque; no tiene historia; se va entonces).
 
 ---
@@ -70,7 +70,7 @@ Entre los puestos se mueven compradores con capucha y vendedores que no dicen su
 1. **Comprar reliquias.** Una reliquia sin identificar: 5 Chatarra. Una ya identificada (eliges cuál en la tabla de r193, salvo [e751](#e751)): 10 Chatarra.
 2. **Vender reliquias.** Por su precio normal +1 (5 sin identificar, 7 identificada); con `CONTRABANDO`, alguien reconoce la caja de la que salió tu reliquia: te paga 4 Chatarra extra por ella (una vez por partida), o te dice para quién era (gana una Pista de la tabla de rumores, eliges).
 3. **Comprar un implante** (Piloto). 5 Chatarra, eliges del catálogo, si tienes ranura libre. Se instala solo, sin prueba, pero tira 1d6: con un 1, el implante tiene un rastreador: ◉ +1 Alerta permanente (la Alerta nunca baja de 2 mientras lo lleves).
-4. **Ver la mercancía humana.** En una jaula hay alguien. Tira 1d6 entre tus tripulantes no encontrados. Si sale uno, está aquí, a la venta: 6 Chatarra. Si lo compras, ve a su primer evento. Si no puedes pagar, `[Reflejos · 11]` para liberarlo: *Éxito:* ve a su primer evento, −2 de Reputación con los Desguaces. *Fallo:* te echan a patadas: 1 Herida y −1 de Reputación. Si no sale nadie de tu tripulación, es un niño de Quilla: si lo compras, anota `NIÑO_DE_QUILLA`; al llevarlo a Quilla, +3 de Reputación con los Hijos del Pecio.
+4. **Ver la mercancía humana.** En una jaula hay alguien. Tira 1d6 en la lista de r108: si ese tripulante no está encontrado, está aquí, a la venta: 6 Chatarra. Si lo compras, ve a su primer evento. Si no puedes pagar, `[Reflejos · 11]` para liberarlo: *Éxito:* ve a su primer evento, −2 de Reputación con los Desguaces. *Fallo:* te echan a patadas: 1 Herida y −1 de Reputación. Si ya lo habías encontrado, es un niño de Quilla: si lo compras (6 Chatarra), anota `NIÑO_DE_QUILLA`; al llevarlo a Quilla, +3 de Reputación con los Hijos del Pecio.
 
 ---
 
@@ -84,8 +84,8 @@ Un dique seco dentro del portanaves, donde los Desguaces reconstruyen naves para
 
 1. **Comprar un Casco Sólido.** 10 Chatarra (o 8, si tienes Reputación +2 o más con los Desguaces).
 2. **Comprar un Casco Precario.** 5 Chatarra.
-3. **Trabajar a cambio.** ⌛ +1 ⌛ +1 (pierdes 2 días más). Al terminar, **Casco Sólido**. Con `[Vigor · 11]`, terminas un día antes.
-4. **Ofrecer un sistema de los Antiguos a cambio.** Si llevas una lente de emisión o una reliquia de los Antiguos: te da un **Casco Excelente** y queda encantado. +1 de Reputación con los Desguaces.
+3. **Trabajar a cambio.** Son dos días más: el Reloj baja 2 (solo 1 si superas `[Vigor · 11]`). Al terminar, **Casco Sólido**.
+4. **Ofrecer tecnología de los Antiguos a cambio.** Si le das una lente de emisión, o una reliquia identificada y 4 Chatarra: te da un **Casco Excelente** y queda encantado. +1 de Reputación con los Desguaces.
 
 ---
 
@@ -97,8 +97,8 @@ El depósito de combustible de la ciudad, guardado por los matones dorados del C
 
 1. **Firmar una deuda.** Te dan **Combustible Sólido** (pesado) gratis, pero anotas `DEUDA_CON_EL_CONTABLE`. Antes de despegar tendrás que pagar 12 Chatarra en Puerto Chatarra, o en la secuencia de despegue sus hombres vendrán a cobrar (ver [e900](#e900)).
 2. **Pagar en el acto.** 12 Chatarra por **Combustible Sólido**, o 18 por **Excelente**.
-3. **Robar un bidón.** `[Reflejos · 13]` (Lio: Ventaja). *Éxito:* **Combustible Precario**, nadie lo sabe. *Fallo:* combate contra *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, te llevas el bidón y anotas `ENEMIGO_DEL_CONTABLE`. −3 de Reputación con los Desguaces.
-4. **Si tienes `FAVOR_DESGUACE`:** te dejan un bidón «a cuenta del favor». Borra la Marca. **Combustible Precario**.
+3. **Robar un bidón.** `[Reflejos · 13]` (Lio: Ventaja). *Éxito:* **Combustible Precario** (pesado), nadie lo sabe. *Fallo:* combate contra *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, te llevas el bidón y anotas `ENEMIGO_DEL_CONTABLE`. −3 de Reputación con los Desguaces.
+4. **Si tienes `FAVOR_DESGUACE`:** te dejan un bidón «a cuenta del favor». Borra la Marca. **Combustible Precario** (pesado).
 
 ---
 
@@ -153,7 +153,7 @@ Por las ventanillas del casco asoman ropa tendida, macetas y caras curiosas. El 
 
 - **Con `MATASTE_A_LA_MADRE`, `EXPULSADO_DE_LOS_CAÑONES` o −2 o menos** → [e415](#e415).
 - **Entregas** (bórralas): `PAQUETE_DE_MENDANA` (+5 Chatarra), `NIÑO_DEL_HUMO` (+1 Rep., +1 Temple), `NIÑO_DE_QUILLA` (+3 Rep.), `NIÑA_DEL_CORO` / `CAJA_DE_SEMILLAS` (+3 Rep., ★).
-- **Reloj en 30 o menos** (una vez) → [e417](#e417).
+- **Reloj en 30 o menos** (una vez): al terminar tu visita → [e417](#e417).
 
 **Servicios:** comprar y vender (r161; las Raciones, 2 por cada Chatarra; no venden armas de distancia), sanador (r163, acepta Raciones), rumores (r164) y descanso a cubierto. El Piloto **no** puede rellenar Aire aquí; la Mente sí puede recargar (tienen paneles de luz fría).
 
@@ -178,7 +178,7 @@ Hay macetas hechas con cascos de soldado y plantas que crecen hacia las ventanil
 
 1. **Escuchar su historia.** Gana `FRAGMENTO_LA_MADRE`: los Hijos del Pecio descienden de una nave colonia que oyó el Canto hace mil años. Y lo que pasó después, cuando llegaron las luces.
 2. **Pedirle ayuda.** Según tu Reputación con los Hijos del Pecio:
-   - **+1 o menos:** «*Gánatela.*» Te encarga algo: elige entre traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Si lo haces, +2 de Reputación.
+   - **+1 o menos:** «*Gánatela.*» Anota `ENCARGO_DE_LA_MADRE` y elige: traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Al volver con ello hecho, bórrala: +2 de Reputación.
    - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección (no el personal) entre Motor y Soporte vital, calidad Sólida.
 3. **Si eres el Nativo:** la Madre te conoce desde que naciste. «*Te vas, ¿verdad? Lo sabía antes que tú.*» Si tu `ARRAIGO` es 4 o más, te pide que lleves contigo a los Mirasoles → [e413](#e413). Si es 3, te pide que cuides de los niños: +1 `ARRAIGO`. Si es 2 o menos, te da la espalda: −1 `ARRAIGO`.
 4. **Si llevas la seta de la Madre:** se la das. La Madre llora. «*Es la seta de mi madre. Creía que se había perdido.*» +3 de Reputación con los Hijos del Pecio y elige un sistema de Quilla: Motor o Soporte vital, calidad Excelente. **★**
@@ -211,7 +211,7 @@ Un grupo de jóvenes de Quilla que se reúne en la popa, de noche, para mirar la
 
 Su líder es una chica con alas de piel que no le sirven para volar: **Ixa**.
 
-1. **Ofrecerles un sitio en tu nave.** Ixa te mira con los ojos llenos de lágrimas. Anota `MIRASOLES_A_BORDO` (en el final cuentan como 2 pasajeros). A cambio, trabajan para ti: anota `INSTALACION_GRATIS`: **la próxima instalación es automática** (sin prueba, con +1 de calidad).
+1. **Ofrecerles un sitio en tu nave.** Ixa te mira con los ojos llenos de lágrimas. Anota `MIRASOLES_A_BORDO` (en el final cuentan como 2 pasajeros). A cambio, trabajan para ti: anota `INSTALACION_GRATIS`: **tu próxima instalación es automática** (sin prueba, con +1 de calidad); bórrala entonces.
 2. **Convencerles de que se queden.** `[Voluntad · 11]`. *Éxito:* «*Tienes razón. Aquí hay mucho por hacer.*» +2 de Reputación con los Hijos del Pecio. Si eres el Nativo, +1 `ARRAIGO`. *Fallo:* Ixa te escupe a los pies.
 3. **Preguntarles qué saben.** Ixa te enseña un dibujo de la Corona que han hecho durante años: hay **una ruta** a través de los restos. Anota `CARTA_DE_LOS_MIRASOLES` (Ventaja en la prueba de Navegación de la secuencia de despegue).
 
@@ -219,12 +219,12 @@ Su líder es una chica con alas de piel que no le sirven para volar: **Ixa**.
 
 <a id="e414"></a>
 ### e414 · La forja de Quilla
-*Quilla · ⌛ +1*
+*Quilla · ⌛ 0*
 
 En las tripas de la *Esperanza*, una forja alimentada por un reactor antiguo que los Hijos del Pecio mantienen vivo con rezos y llaves inglesas. El herrero, un hombre con cuatro brazos, puede fabricar casi cualquier pieza… si le das tiempo y material.
 
-1. **Encargar un motor.** Necesitas 6 Chatarra o 3 objetos, y Reputación +1 o más con los Hijos del Pecio. Tarda ⌛ +1. Al terminar, `[Ingenio · 9]` para ayudarle (Noemí: Ventaja): *Éxito:* **Motor Sólido** (pesado). *Éxito pleno:* **Motor Excelente**. *Fallo:* **Motor Precario**.
-2. **Ayudarle en la forja a cambio.** `[Vigor · 9]` ⌛ +1. *Éxito:* te hace el motor sin cobrarte nada: **Motor Precario**, o **Sólido** si tienes Reputación +2. *Fallo:* 1 Herida (quemaduras).
+1. **Encargar un motor.** Necesitas 6 Chatarra o 3 objetos, y Reputación +1 o más con los Hijos del Pecio. Tarda un día más: ⌛ +1. Al terminar, `[Ingenio · 9]` para ayudarle (Noemí: Ventaja): *Éxito:* **Motor Sólido** (pesado). *Éxito pleno:* **Motor Excelente**. *Fallo:* **Motor Precario**.
+2. **Ayudarle en la forja a cambio.** Un día más: ⌛ +1. `[Vigor · 9]`. *Éxito:* te hace el motor sin cobrarte nada: **Motor Precario**, o **Sólido** si tienes Reputación +2. *Fallo:* 1 Herida (quemaduras).
 3. **Pedirle que mejore un arma.** 2 Chatarra: un arma tuya gana +1 Ataque (máximo +3).
 
 ---
@@ -238,8 +238,8 @@ Los guerreros de la entrada cruzan las lanzas. Detrás, en las portillas, ciento
 - **Si tienes `MATASTE_A_LA_MADRE`:** no hay negociación. *Guerreros de Quilla · Ataque 5 · Blind. 1 · Heridas 5 · [Náufrago]*. Combate o huida (`[Reflejos · 9]`). Aunque ganes, hoy no entras.
 
 1. **Irte.** Nada.
-2. **Pedir perdón** (solo si no tienes `MATASTE_A_LA_MADRE`). `[Voluntad · 11]`. *Éxito:* puedes entrar, pero solo al sanador. +1 de Reputación con los Hijos del Pecio. *Fallo:* te tiran piedras. 1 Herida.
-3. **Dejar una ofrenda en la puerta** (solo si no tienes `MATASTE_A_LA_MADRE`). 3 Raciones o 3 Chatarra. +1 de Reputación con los Hijos del Pecio. No te dejan entrar hoy.
+2. **Pedir perdón** (solo si no tienes `MATASTE_A_LA_MADRE`). `[Voluntad · 11]` (`EXILIADO`: Ventaja; conoces el rito). *Éxito:* puedes entrar, pero solo al sanador. +1 de Reputación con los Hijos del Pecio (cada vez). *Fallo:* te tiran piedras. 1 Herida.
+3. **Dejar una ofrenda en la puerta** (solo si no tienes `MATASTE_A_LA_MADRE`). 3 Raciones o 3 Chatarra. +1 de Reputación con los Hijos del Pecio (cada vez). No te dejan entrar hoy.
 
 ---
 
@@ -285,7 +285,7 @@ Al entrar, +1 Canto ♫.
 - **Si tu Reputación con el Coro es −2 o menos** → [e421](#e421).
 - **Si tienes `SALUDO_DEL_CORO`:** te reciben como peregrino. No subes Canto al entrar.
 
-**Servicios:** comprar y vender (r161; solo piezas y reliquias de los Antiguos), sanador (r163; aquí cura Heridas gratis, pero +1 Canto por Herida curada), descanso a cubierto (sin la bajada de Canto de la Cicatriz) y rumores (r164; los rumores aquí son gratis).
+**Servicios:** comprar y vender (solo piezas, r201, y reliquias: las pagan a 1 Chatarra más que r161), sanador (r163; aquí cura Heridas gratis, pero +1 Canto por Herida curada), descanso a cubierto (sin la bajada de Canto de la Cicatriz) y rumores (r164; los rumores aquí son gratis).
 
 **Actividad especial (elige una):**
 1. **La comunión** → [e422](#e422).
@@ -303,7 +303,7 @@ Al entrar, +1 Canto ♫.
 Los cantores bajan la escalinata en silencio y forman una pared. Uno da un paso adelante y te pone una mano en el pecho: no te empuja. Solo espera.
 
 1. **Irte.** Nada.
-2. **Arrodillarte y pedir perdón.** +2 Canto ♫. +1 de Reputación con el Coro. Puedes entrar.
+2. **Arrodillarte y pedir perdón.** +2 Canto ♫. +1 de Reputación con el Coro (cada vez). Puedes entrar.
 3. **Entrar a la fuerza.** *Cantores del Atrio · Ataque 5 · Blind. 1 · Heridas 6 · [Cantor]*. Combate. *Si ganas:* puedes ir directamente a [e424](#e424) o a [e426](#e426), pero ◉ +2 Alerta y −1 de Reputación con el Coro.
 
 ---
@@ -319,7 +319,7 @@ Las manos que te sujetan son cálidas, callosas, de gente que ha trabajado mucho
 Hace años que nadie te cogía la mano. Nadie te pregunta de dónde vienes. Por una vez, no importa.
 
 1. **Dejarte llevar.** +3 Canto ♫. Pero recuperas todas tus Heridas y todo tu Temple. Y ves algo, dentro del Canto: gana `FRAGMENTO_LA_COMUNION`. +1 de Reputación con el Coro.
-2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte. Ves cómo funciona, de dónde viene, qué quiere. Si tienes 3 `FRAGMENTO_` o más → [e840](#e840). Si no, gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
+2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte. Ves cómo funciona, de dónde viene, qué quiere. Gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
 3. **Soltar las manos y salir.** Los cantores te miran con pena. −1 de Reputación con el Coro.
 
 ---
@@ -330,7 +330,7 @@ Hace años que nadie te cogía la mano. Nadie te pregunta de dónde vienes. Por 
 
 Bajo el templo, una cripta con miles de cajas de metal. Cada una tiene un nombre y una fecha: las pertenencias de los «acogidos». Diarios, fotos, insignias de naves. El Coro lo guarda todo con un cuidado amoroso.
 
-1. **Buscar a tu tripulación.** `[Ingenio · 9]`. *Éxito:* encuentras una caja con el nombre de alguien de tu nave. Tira 1d6 entre los no encontrados. Si es Tadeo, ya es uno de ellos: anota `RASTRO_DE_TADEO`. Si es otro, está en el Atrio como acogido → [e424](#e424). *Fallo:* no está, o no lo encuentras.
+1. **Buscar a tu tripulación.** `[Ingenio · 9]`. *Éxito:* encuentras una caja con el nombre de alguien de tu nave. Sortéalo entre los no encontrados (r108). Si es Tadeo, ya es uno de ellos: anota `RASTRO_DE_TADEO`. Si es otro, está aquí como acogido: su región pasa a ser las Torres → [e424](#e424). *Fallo:* no está, o no lo encuentras.
 2. **Leer los diarios más antiguos.** `[Ingenio · 11]`. *Éxito:* el más antiguo tiene doscientos años y está escrito por una mujer que fundó el Coro: «*El Canto no es Dios. Es una puerta. Y nosotros somos los porteros.*» Gana `FRAGMENTO_LA_FUNDADORA`. *Fallo:* nada.
 3. **Robar cartas estelares** de las cajas. `[Reflejos · 9]`. *Éxito:* anota `CARTAS_ROBADAS` (Ventaja en la vía del Cristal de ruta y en la prueba de Navegación de la secuencia de despegue). *Fallo:* −2 de Reputación con el Coro.
 
@@ -359,7 +359,7 @@ El Coro acoge a todos, pero no regala nada. A cambio de su favor, puedes **canta
 La túnica que te dan está remendada muchas veces y huele a quien la llevó antes. Los demás penitentes no te miran.
 
 `[Vigor · 9]` y `[Voluntad · 9]` ♫.
-- **Dos Éxitos:** +2 de Reputación con el Coro. +2 Canto. Te regalan una túnica bendita: anota `TUNICA_BENDITA`; mientras la lleves, un [Cantor] no te ataca una vez.
+- **Dos Éxitos:** +2 de Reputación con el Coro. +2 Canto. Te regalan una túnica bendita: anota `TUNICA_BENDITA`: una vez, evita un combate contra [Cantor]; bórrala entonces.
 - **Uno:** +1 de Reputación con el Coro. +2 Canto.
 - **Ninguno:** caes rendido. 1 Herida y +3 Canto ♫.
 
@@ -385,7 +385,7 @@ En el altar del templo, flotando en un haz de luz, un cristal del tamaño de un 
 
 En el centro de la Ciudad, una esfera de cristal negro del tamaño de un estadio, flotando a dos metros del suelo. Alrededor, centenares de Vigías inmóviles, en círculos perfectos. Dentro, luz fría. Es el centro de mando de las máquinas de los Antiguos.
 
-Es un asentamiento sin comercio. Pero si te dejan entrar, hay **talleres**.
+Aquí no hay mercado. Pero si te dejan entrar, hay **talleres**, y venden Luz fría y planos (r201, r202).
 
 - **Si tu Reputación con los Vigías es −2 o menos** → [e434](#e434).
 - **Si no tienes `CODIGO_VIGIA` ni Reputación +1 o más con los Vigías:** `[Voluntad · 11]` para que te dejen pasar (mostrar Luz fría, pieza o batería, da Ventaja). Si fallas → [e434](#e434).
@@ -410,7 +410,7 @@ En el corazón de la esfera, una figura de cuatro brazos, más alta que las dem�
 1. **Preguntarle quién dio la orden.** «*LOS QUE ESCUCHAN. ÚLTIMA COMUNICACIÓN: HACE 10.212 AÑOS.*» `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* te enseña la última grabación: gana `FRAGMENTO_LA_ORDEN`. *Fallo:* repite la orden.
 2. **Preguntarle por qué deja que se vayan los que se van.** «*NO SE VA NADIE.*» Pausa. «*LOS QUE INTENTAN IRSE, CAEN. LA SEÑAL LOS DEVUELVE.*» Si insistes, `[Voluntad · 11]`: *Éxito:* Primo admite que **hay una forma**: si la Señal calla un instante, una nave podría salir. Anota `LA_SEÑAL_PUEDE_CALLAR`.
 3. **Pedirle permiso para irte.** «*DENEGADO.*» Pero si tu Reputación con los Vigías es +3, o si eres la Mente y tu `MEMORIA` es 4 o más: «*...REEVALUANDO. CONCEDIDO. LOS QUE ESCUCHAN NO PREVIERON QUE VOLVERÍAMOS A TENER A QUIÉN PROTEGER.*» Anota `PERMISO_DE_PRIMO`: en la secuencia de despegue, los Vigías te escoltan (ver [e901](#e901)). **★**
-4. **Si eres la Mente:** Primo te reconoce como «unidad sin orden». Te ofrece una: custodiar. Si aceptas, +2 de Reputación con los Vigías y anota `UNIDAD_DE_PRIMO`: en tu final, tendrás una opción más.
+4. **Si eres la Mente:** Primo te reconoce como «unidad sin orden» (con `SIN_REGISTRO`, +1 `MEMORIA`: quizá siempre lo fuiste). Te ofrece una: custodiar. Si aceptas, +2 de Reputación con los Vigías y anota `UNIDAD_DE_PRIMO`: en tu final, tendrás una opción más.
 
 ---
 
@@ -423,7 +423,7 @@ Bajo la esfera, un reactor de luz fría del tamaño de una casa, que alimenta a 
 El calor no viene del reactor: viene de la luz, que se te pega a la piel como polvo. Los Vigías que lo cuidan se mueven en silencio, con movimientos lentos, y ninguno te da la espalda. Las paredes están cubiertas de cables gruesos como brazos que laten al mismo ritmo, igual que venas.
 
 1. **Pedir un núcleo.** Con Reputación +2 o más con los Vigías, o con `PERMISO_DE_PRIMO`: **Motor Excelente** (pesado). Todo motor de aquí lleva `MOTOR_DEL_NODO`: +1 Canto en el despegue ([e900](#e900)).
-2. **Robar un núcleo.** `[Ingenio · 13]` y `[Reflejos · 11]` ◉ ◉. *Dos Éxitos:* **Motor Excelente**. −3 de Reputación con los Vigías. *Uno:* **Motor Sólido**, y te persiguen → [e035](#e035). *Ninguno:* combate contra *Guardianes del reactor · Ataque 6 · Blind. 3 · Heridas 5 · [Máquina][Antiguo]*. Si ganas, consigues un **Motor Sólido** y −3 de Reputación; si pierdes, huyes sin núcleo.
+2. **Robar un núcleo.** ◉ +2 Alerta, `[Ingenio · 13]` y `[Reflejos · 11]`. *Dos Éxitos:* **Motor Excelente**. −3 de Reputación con los Vigías. *Uno:* **Motor Sólido**, y te persiguen → [e035](#e035). *Ninguno:* combate contra *Guardianes del reactor · Ataque 6 · Blind. 3 · Heridas 5 · [Máquina][Antiguo]*. Si ganas, consigues un **Motor Sólido** y −3 de Reputación; si pierdes, huyes sin núcleo.
 3. **Ofrecer un trueque.** Si llevas una lente de emisión ([e342](#e342)) o `TORRE_ROTA`: «*LA SEÑAL TE HA DAÑADO. TÚ HAS DAÑADO LA SEÑAL. EQUILIBRIO.*» Te dan un **Motor Sólido** a cambio de la lente, o gratis si tienes `TORRE_ROTA`.
 
 ---
@@ -438,7 +438,7 @@ Quieren que traigas al Vigía que reza ([e327](#e327)).
 
 1. **Aceptar.** Anota `ENCARGO_DE_PRIMO` y la Pista `Ciudad · El Vigía que reza · e327`. Si vuelves con el Vigía sin dueño como compañero (opción 2 de [e327](#e327)), te dan **un sistema Sólido a tu elección** (no el personal) y +2 de Reputación con los Vigías; borra `ENCARGO_DE_PRIMO`. El Vigía será «reprogramado». Si eres la Mente, −1 Temple.
 2. **Rechazar.** «*ANOTADO.*» −1 de Reputación con los Vigías.
-3. **Preguntar qué le harán.** «*BORRADO.*» Si después de saberlo traes al Vigía igualmente, +1 `CULPA` si eres el Piloto, −1 Temple si no.
+3. **Preguntar qué le harán.** «*BORRADO.*» Ahora lo sabes, y eliges otra opción: si aceptas el encargo, −1 Temple (Piloto: además, +1 `CULPA`).
 4. **Ofrecer otro encargo.** Con `AMIGO_DE_UN_VIGIA`, Primo te encarga reparar a tres Vigías caídos: anota `ENCARGO_DE_REPARAR` y cuenta los que repares en [e324](#e324) (+1 Rep. extra cada uno). Al tercero, gana `PERMISO_DE_PRIMO` y borra `ENCARGO_DE_REPARAR`.
 
 ---
@@ -454,5 +454,5 @@ Las luces de la esfera se ponen rojas. Doce Vigías giran la cabeza a la vez.
 Sus pasos resuenan en la esfera, sincronizados. No hay rabia en sus voces.
 
 1. **Huir.** `[Reflejos · 11]` (`TUNELES_DE_LA_SOMBRA`: Ventaja). *Éxito:* escapas. ◉ +1 Alerta. *Fallo:* combate contra *Vigías de expulsión · Ataque 5 · Blind. 3 · Heridas 5 · [Máquina][Antiguo]*.
-2. **Rendirte.** Te sacan en volandas y te dejan en la frontera de la Ciudad. Te quitan todo lo que sea de los Antiguos (reliquias, células, lanzas). Viajas a una región vecina a tu elección, sin encuentro.
+2. **Rendirte.** Te sacan en volandas y te dejan en la frontera de la Ciudad. Te quitan todo lo que sea de los Antiguos (reliquias, Luz fría, baterías y lanzas de luz fría). Viajas a una región vecina a tu elección, sin encuentro.
 3. **Enlazarte** (Mente): `[Ingenio · 13]`. *Éxito:* te reconocen como unidad: +1 de Reputación con los Vigías y puedes entrar → [e430](#e430). *Fallo:* combate como en la 1.

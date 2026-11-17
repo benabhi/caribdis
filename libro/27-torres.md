@@ -2,7 +2,7 @@
 
 *Agujas de metal negro de un kilómetro de altura, tan juntas que forman un bosque. El aire vibra. Las piedras vibran. Tus dientes vibran. Aquí nace el Canto.*
 
-**Regla especial:** al amanecer en las Torres, el pulso del Canto sale con 4–6 (r131). Cada amanecer aquí, +1 Canto (r131), salvo que tengas la habilidad *Raíz* (r190), el Corazón dorado o te hayas tapado los oídos de algún modo que un evento te haya dado.
+**Regla especial:** al amanecer en las Torres, el pulso del Canto sale con 4–6 (r131). Cada amanecer aquí, +1 Canto (r131), salvo que tengas la habilidad *Raíz* (r190), el Corazón dorado o los tapones de [e341](#e341).
 
 <a id="e340"></a>
 ### e340 · Tabla de encuentros: Torres del Canto
@@ -30,7 +30,7 @@
 Entre dos torres, el Canto es tan fuerte que ya no es sonido. Es **una presión**: en los oídos, en el pecho, detrás de los ojos. Te tiemblan las manos. Ves el aire ondularse.
 
 1. **Seguir adelante.** `[Voluntad · 11]` ♫. *Éxito:* aguantas. *Fallo:* +2 Canto.
-2. **Taparte los oídos con algo.** Barro, tela, esporas. `[Ingenio · 9]`. *Éxito:* inventas unos **tapones de barro y resina**: mientras estés en las Torres, el Canto no te sube al amanecer (anótalos en el Equipo). Pero tienes Desventaja para oír cualquier cosa (en los encuentros con plantilla, suma 1 al dado). *Fallo:* no funcionan.
+2. **Taparte los oídos con algo.** Barro, tela, esporas. `[Ingenio · 9]`. *Éxito:* inventas unos **tapones de barro y resina**: mientras estés en las Torres, el Canto no te sube al amanecer (anótalos en el Equipo). Pero oyes mal: en las Torres, en los encuentros con plantilla (r300), suma 1 al dado. *Fallo:* no funcionan.
 3. **Cantar con él.** No luchas contra el Canto. Lo acompañas. +1 Canto ♫. Pero algo cambia: hoy el Canto ya no te sube más, y te sientes **bienvenido**. +1 de Reputación con el Coro.
 
 ---
@@ -42,7 +42,7 @@ Entre dos torres, el Canto es tan fuerte que ya no es sonido. Es **una presión*
 Las torres tienen escalones: placas de metal negro que salen de la superficie como escamas. Arriba, a un kilómetro, hay plataformas. Y en las plataformas, cosas que brillan.
 
 1. **Escalar.** Tres pruebas: `[Vigor · 9]`, `[Reflejos · 9]` y `[Voluntad · 9]` ♫ (cuerda y garfio: Ventaja en las dos primeras).
-   - **Tres Éxitos:** llegas a una plataforma. Hay una **lente de emisión**, un cristal de un metro que concentra el Canto. Puedes llevártela (pesada: cuenta como sistema pesado para cargarla; en el Atrio la compran por 10 Chatarra; si la destruyes en la Cicatriz, −3 Canto y gana `FRAGMENTO_LA_LENTE`) o romperla ahí mismo (◉ ◉, y la torre enmudece: anota `TORRE_ROTA`, ver [e344](#e344)).
+   - **Tres Éxitos:** llegas a una plataforma. Hay una **lente de emisión**, un cristal de un metro que concentra el Canto. Puedes llevártela (pesada: cuenta como sistema pesado para cargarla; en el Atrio la compran por 10 Chatarra; si la destruyes en la Cicatriz, −3 Canto y gana `FRAGMENTO_LA_LENTE`) o romperla ahí mismo (◉ +2 Alerta, y la torre enmudece: anota `TORRE_ROTA`, ver [e344](#e344)).
    - **Dos:** llegas a mitad. Ves el Atrio desde arriba: gana la Pista `Torres · El Atrio · e420` y `RUTA_POLO`.
    - **Uno o ninguno:** caes. 2 Heridas por cada Fallo.
 2. **Mirar desde abajo.** Ves figuras en las plataformas. Te saludan. Son personas del Coro, con los brazos extendidos al viento. Tira 1d6: con un 6, una de ellas salta. Y **vuela**: planea hasta el suelo. +1 Canto ♫ y gana `FRAGMENTO_LOS_QUE_VUELAN`.
@@ -61,9 +61,9 @@ El zumbido te hace cosquillas en los dientes.
 
 - **Si tienes `SALUDO_DEL_CORO` o Reputación +1 o más con el Coro:** te saludan con una inclinación y te dejan pasar.
 
-**Encuentro (r300).** Precio: 1 de Canto (súbelo para «unirte al coro»). Botín: una **lanza vibrante** (cuerpo a cuerpo, silenciosa, +2 Ataque; +3 contra [Cantor]).
+**Encuentro (r300).** Precio: +1 Canto (te unes un momento al coro). Botín: una **lanza vibrante** (cuerpo a cuerpo, silenciosa, +2 Ataque; +3 contra [Cantor]).
 
-- **Si ganas:** quédate el Botín. −2 de Reputación con el Coro. Bajo la túnica de uno hay una lista de nombres: la gente que el Coro ha «acogido». Si buscas a Tadeo, su nombre está: anota `RASTRO_DE_TADEO`: Ventaja para encontrarlo. · **Si pasas:** pagas 1 de Canto y te dejan pasar.
+- **Si ganas:** quédate el Botín. −2 de Reputación con el Coro. Bajo la túnica de uno hay una lista de nombres: la gente que el Coro ha «acogido». Si buscas a Tadeo, su nombre está: anota `RASTRO_DE_TADEO`: Ventaja para encontrarlo. · **Si pasas:** te dejan pasar.
 
 ---
 
@@ -73,7 +73,7 @@ El zumbido te hace cosquillas en los dientes.
 
 En la base de una torre hay una compuerta abierta. Dentro, un laberinto de tubos de luz fría que palpitan al ritmo del Canto. Un cartel de los Desguaces, pintado con prisa: *SI LO ROMPES CALLA. ALGUIEN TIENE QUE ROMPERLO.*
 
-1. **Romper los tubos.** `[Vigor · 9]` ◉ ◉. *Éxito:* la torre se queda muda. Un silencio terrible en un círculo de un kilómetro. Anota `TORRE_ROTA` y −2 Canto. −2 de Reputación con el Coro; +1 con los Desguaces. Si es tu tercera `TORRE_ROTA` (anótalas con un número), gana `FRAGMENTO_EL_SILENCIO` y el pulso del Canto ya no te afecta al amanecer, salvo en las Torres. **★** *Fallo:* la descarga te lanza contra la pared. 2 Heridas y +2 Canto.
+1. **Romper los tubos.** `[Vigor · 9]`. *Éxito:* ◉ +2 Alerta y la torre se queda muda. Un silencio terrible en un círculo de un kilómetro. Anota `TORRE_ROTA` y −2 Canto. −2 de Reputación con el Coro; +1 con los Desguaces. Si es tu tercera `TORRE_ROTA` (anótalas con un número), gana `FRAGMENTO_EL_SILENCIO` y el pulso del Canto ya no te afecta al amanecer, salvo en las Torres. **★** *Fallo:* la descarga te lanza contra la pared. 2 Heridas y +2 Canto.
 2. **Desviar la energía a tus baterías.** `[Ingenio · 11]` (Mente: Ventaja). *Éxito:* +6 Energía o una batería de luz fría (una vez). *Fallo:* 1 Herida y +1 Canto ♫.
 3. **Estudiar cómo funciona.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* el Canto no se **genera** aquí: las torres solo lo **repiten**. Viene de abajo, del Polo. Gana `FRAGMENTO_LAS_TORRES_REPITEN`. *Fallo:* no entiendes nada.
 4. **Cerrar la compuerta y marcharte.** Nada.
@@ -92,7 +92,7 @@ Nadie lleva zapatos. La campana suena una vez a cada paso.
 
 - Si tienes `VI_LA_PROCESION`, reconoces a algunos de los que viste en el desierto: ya sabes en qué orden caminan, y tienes Ventaja en la opción 1.
 
-1. **Buscar a quién es.** Tira 1d6 entre tus tripulantes no encontrados. Si sale **Tadeo**, va voluntario → ve a [e620](#e620). Si sale otro, va drogado por el Canto: puedes intentar sacarlo de la fila → `[Reflejos · 11]` o `[Voluntad · 11]`. *Éxito:* ve a su primer evento (r185). *Fallo:* te descubren → combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*. Si ganas, ve a su primer evento.
+1. **Buscar a quién es.** Sortéalo entre tus tripulantes no encontrados (r108; si no queda ninguno, es un desconocido). Si sale **Tadeo**, va voluntario → ve a [e620](#e620). Si sale otro, va drogado por el Canto: puedes intentar sacarlo de la fila → `[Reflejos · 11]` o `[Voluntad · 11]`. *Éxito:* ve a su primer evento (r185). *Fallo:* te descubren → combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*. Si ganas, ve a su primer evento.
 2. **Unirte a la procesión.** Te dan una túnica blanca. Caminas con ellos hasta la base de la torre más alta: allí te espera la Voz → [e350](#e350). +2 Canto ♫.
 3. **Sabotear la campana.** `[Reflejos · 11]`. *Éxito:* el hombre la toca y no suena. La procesión se detiene, confusa. Algunos despiertan: uno te da las gracias con 3 Chatarra que tenía escondida. −1 de Reputación con el Coro. *Fallo:* te ven. Combate como en la 1.
 
@@ -121,7 +121,7 @@ En una plaza entre las torres, veinte niños cantando en círculo. Tienen los oj
 
 1. **Escuchar.** Reconoces una canción de tu infancia. +1 Temple. +1 Canto ♫.
 2. **Preguntar a la mujer de dónde son.** «*Huérfanos de Quilla, de los Desguaces. El Canto los quiere más que nadie. Aquí son felices.*» `[Voluntad · 9]` para que te deje hablar con ellos. *Éxito:* uno de los niños, sin abrir los ojos, te dice: «*Nos hemos aprendido todas las canciones de todas las naves que cayeron. Para que no se pierdan.*» Gana `FRAGMENTO_LOS_NIÑOS_QUE_CANTAN`.
-3. **Llevarte a uno.** `[Reflejos · 11]` ☰. *Éxito:* anota `NIÑA_DEL_CORO`: si la llevas a Quilla, +3 de Reputación con los Hijos del Pecio y **★**. −2 de Reputación con el Coro. *Fallo:* la mujer grita. Combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*.
+3. **Llevarte a uno.** `[Reflejos · 11]` ☰. *Éxito:* anota `NIÑA_DEL_CORO`: si la llevas a Quilla, +3 de Reputación con los Hijos del Pecio y **★**. −2 de Reputación con el Coro. *Fallo:* la mujer grita. Combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*; si ganas, como el Éxito.
 4. **Si llevas a Lio:** se queda mirando. Luego se une al círculo, cantando una canción que nunca le habías oído. Tienes que sacarlo: `[Voluntad · 9]`. *Fallo:* Lio se queda. Anota `LIO_EN_EL_CORO`; puedes buscarlo: gana la Pista `Torres · Lio en el coro · e628`.
 
 ---
@@ -152,7 +152,7 @@ La nota no se oye solo con los oídos: se siente en los dientes, en el pecho, en
 - **Piloto:** tus implantes se desconectan hasta mañana.
 - **Mente:** `[Ingenio · 11]`. *Fallo:* 2 Daño y +2 Canto ♫. *Éxito:* aguantas, y en la interferencia oyes un mensaje claro: gana `FRAGMENTO_LA_INTERFERENCIA`.
 - **Nativo:** tira 1d6. Con 1–2, ganas una mutación al azar.
-- **Todos:** +1 Canto ♫, y si llevas una lente de emisión o cualquier sistema llevado, `[Reflejos · 9]` para protegerlo; si fallas, baja 1 de calidad.
+- **Todos:** +1 Canto ♫, y si llevas una lente de emisión o cualquier sistema llevado, `[Reflejos · 9]` para protegerlo; si fallas, baja 1 de calidad (mínimo Precaria; la lente pasa a valer 5).
 
 ---
 
@@ -166,7 +166,7 @@ Una mujer flota a un palmo del suelo, en lo alto de una escalinata, rodeada de c
 
 1. **Preguntarle qué es el Canto.** `[Voluntad · 11]` ♫. *Éxito:* te dice la verdad, o lo que ella cree que es la verdad: gana `FRAGMENTO_LA_VOZ_DEL_CORO`. Si ya tienes 2 `FRAGMENTO_`, esto cuenta como el tercero → [e840](#e840). *Fallo:* +2 Canto ♫.
 2. **Pedirle el cristal de ruta.** «*¿Para irte? ¿Por qué quieres irte?*» Si tu Reputación con el Coro es +2 o más, te lo da → [e426](#e426). Si no, se ríe.
-3. **Atacarla.** Los cantores se levantan. *La Voz y su guardia · Ataque 6 · Blind. 2 · Heridas 6 · [Cantor]*. Combate. *Si ganas:* el Coro queda sin líder. −3 de Reputación con el Coro, +1 con los Hijos del Pecio y los Desguaces. Bajo la túnica, la Voz no tiene cuerpo: solo un altavoz de los Antiguos. Gana `FRAGMENTO_LA_VOZ_VACIA`. **★**
+3. **Atacarla.** Los cantores se levantan. *La Voz y su guardia · Ataque 6 · Blind. 2 · Heridas 6 · [Cantor]*. Combate. *Si ganas:* el Coro queda sin líder. −3 de Reputación con el Coro, +1 con los Hijos del Pecio y los Desguaces. Bajo la túnica, la Voz no tiene cuerpo: solo un altavoz de los Antiguos. Gana `FRAGMENTO_LA_VOZ_VACIA`. **★** Desde hoy, donde el libro nombre a la Voz, es su sucesora.
 4. **Arrodillarte.** +3 Canto ♫. Te bendice. +2 de Reputación con el Coro. Y por un momento, estás en paz.
 
 ---

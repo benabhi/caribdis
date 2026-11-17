@@ -76,7 +76,7 @@ Ven. Ven. Siempre estuviste viniendo.
 
 **Día 46.** Bruno jura que en el Polo hay una puerta redonda con una espiral de puntos ([e288](#e288)). Es la misma espiral de la galería norte. La he copiado en mis cartas, por si acaso.
 
-**Día 47.** No le cuento esto a la capitana, pero el Canto ya no me asusta. Me suena **triste**.
+**Día 47.** No se lo cuento a nadie, pero el Canto ya no me asusta. Me suena **triste**.
 
 ### Registro de un Vigía
 
