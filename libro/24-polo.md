@@ -158,7 +158,7 @@ Es la nave colonia de la que descienden los Hijos del Pecio.
 
 - **Si eres el Nativo:** sientes que te tiembla la piel. Si tienes el **Mapa del primer pecio**, ve a [e813](#e813) si no lo has hecho ya; si no, sigue aquí.
 
-1. **Entrar por una escotilla.** Explora un pecio (r170) de tipo **Nave colonia**, de hasta 6 salas en lugar de 4. En la cuarta sala, en lugar de tirar → anota `PUENTE_DE_UR`: has llegado al puente.
+1. **Entrar por una escotilla.** Explora un pecio (r170) de tipo **Nave colonia**, de hasta 6 salas en lugar de 4. En la cuarta sala, en lugar de tirar, llegas al puente: anota `PUENTE_DE_UR` y lee la opción 2.
 2. **Si tienes `PUENTE_DE_UR`:** la IA de la *Esperanza* todavía funciona. Está loca. Repite un mensaje de socorro de hace mil años, **con la misma frecuencia que el Canto**. Gana `FRAGMENTO_LA_ESPERANZA`. Si eres la Mente, puedes intentar hablar con ella: `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y te regala **Navegación Excelente**. **★** *Fallo:* +3 Canto ♫. Con el Secreto 5, cualquiera puede intentar callarla: `[Ingenio · 13]`; con un Éxito, anota `LA_ESPERANZA_CALLA`.
 3. **Arrancar la aleta.** Imposible. Pero sí sus placas: `[Vigor · 11]`. *Éxito:* **Casco Sólido**, si no tienes Casco; si lo tienes, 3 Chatarra.
 

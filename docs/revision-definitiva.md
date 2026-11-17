@@ -124,3 +124,11 @@ Criterios que se aplicaron a todo el libro:
 - [x] e400 avisa de `EN_PUERTO_CHATARRA` (ve al primer evento del tripulante).
 - [x] Panel de consulta de la Alerta (`maqueta/extras.py`) con la redacción de r135.
 - [x] PDF rearmado: igual página a página que el anterior (mismas anclas y fondos de columna). Print friendly regenerado.
+
+## K. Tercera revisión externa (3 puntos, 17 de noviembre)
+
+- [x] e290.1: al llegar al puente se lee la opción 2 (sin esto, seguir la Pista de e845 podía dejar el final Silencio sin camino).
+- [x] e620.2: preguntarle qué oye ya no hace que Tadeo se una gratis; después se elige la 1 o la 3.
+- [x] e302.2 y e302.3: cruzar el puente reparado lleva a explorar el pecio.
+- [=] e610: las tres opciones terminan con Amara en el grupo; la 1 es la forma directa y no hace falta tocarla.
+- [x] PDF rearmado: igual página a página que el anterior. Print friendly regenerado.

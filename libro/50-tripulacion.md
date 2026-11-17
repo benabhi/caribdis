@@ -284,7 +284,7 @@ Cuando le tocas el hombro, abre los ojos y te mira como si fueras un milagro.
 - Si llegaste aquí desde el Atrio o desde la procesión: ya viste a dónde iba. Viste lo que lo espera.
 
 1. **Llevarlo contigo.** `[Voluntad · 9]`. *Éxito:* viene, aunque mira atrás. Se une como compañero. *Fallo:* viene, pero con Lealtad 1.
-2. **Preguntarle qué oye.** «*Una promesa. Que nadie volverá a estar solo.*» Gana `FRAGMENTO_LA_PROMESA`.
+2. **Preguntarle qué oye.** «*Una promesa. Que nadie volverá a estar solo.*» Gana `FRAGMENTO_LA_PROMESA`. Después, elige la 1 o la 3.
 3. **Dejarle quedarse.** Tadeo sonríe. «*Iré a verte antes de que te vayas.*» Anota `TADEO_SE_QUEDA`. Al despegar, si tienes esta Marca, lee [e623](#e623).
 
 **Mientras esté contigo:** cada vez que haya pulso del Canto (r131), tira 1d6. Con un 1 → [e621](#e621).
