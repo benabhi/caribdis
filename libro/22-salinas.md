@@ -114,7 +114,7 @@ Un campamento. Fogata, tiendas, cacerolas. Y la gente, sentada alrededor del fue
 
 1. **Registrar el campamento.** +3 Raciones y 2 Chatarra. Tira 1d6: con un 1, al tocar una estatua se rompe en polvo y lo respiras. +1 Canto ♫.
 2. **Buscar el diario.** `[Ingenio · 9]`. *Éxito:* «*Si cantamos con ellas, dejaremos de tener sed.*» Gana `FRAGMENTO_LA_SED`. *Fallo:* nada.
-3. **Romper las estatuas.** Una por una. Es un trabajo largo y triste. −1 Temple. Pero dentro de una hay algo que no es sal: una **cápsula sellada** con el símbolo de la empresa de tu nave. Si Bruno es tu compañero o lo encuentras más tarde, esto es importante: anota `CAPSULA_DE_BRUNO`. Si Bruno ya está contigo → [e606](#e606).
+3. **Romper las estatuas.** Una por una. Es un trabajo largo y triste. −1 Temple. Pero dentro de una hay algo que no es sal: una **cápsula sellada** con el símbolo de la empresa de tu nave. Anota `CAPSULA_DE_BRUNO`. Si Bruno está contigo → [e606](#e606); si no, gana la Pista `Salinas · La carga · e606` y síguela cuando Bruno vaya contigo.
 4. **Sentarte con ellas un rato.** Por algún motivo, se está bien. +1 Temple y +1 Canto ♫.
 
 ---

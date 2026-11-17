@@ -620,7 +620,7 @@ Una vez por visita, gasta 1 Chatarra y tira 2d6 para conseguir una **Pista** (r1
 |---|---|---|
 | 2 | «En el polo hay una puerta que se abre desde dentro.» | Polo · La puerta · [e288](#e288) |
 | 3 | «Una nave militar cayó entera en los cañones.» | Cañones · El crucero dormido · [e309](#e309) |
-| 4 | «Los Vigías pagan en luz fría por ciertas cabezas.» | Ciudad · El encargo de Primo · [e433](#e433) |
+| 4 | «Los Vigías pagan en luz fría por ciertas cabezas.» | Ciudad · El Nodo · [e430](#e430) |
 | 5 | «Hay un mercader que vende mapas de rutas seguras.» | Cementerio · El cartógrafo · [e226](#e226) |
 | 6 | «En las salinas, de noche, hay luces que caminan.» | Salinas · Luces en la sal · [e245](#e245) |
 | 7 | «Alguien de tu tripulación pasó por aquí.» | Anota la región de un tripulante que no hayas encontrado (eliges cuál); la próxima vez que explores allí, tienes Ventaja |
@@ -876,7 +876,7 @@ La partida termina cuando despegas (e900 o e905), cuando el Reloj llega a 0 (e91
 
 Sela juega con **el Piloto**. Es el **día 3**: el Reloj está en 58, la Alerta en 1, y Sela sigue en la Cicatriz con Herido (−1) del aterrizaje. Tiene Vigor 3, Reflejos 4, Ingenio 3 y Voluntad 3.
 
-**Amanecer (r131).** Tacha el 58 y escribe 57. Por supervivencia gasta 1 Ración; el Aire no, porque amanece en la Cicatriz (r182). Tira el dado del pulso y saca un 4: hoy no hay Canto.
+**Amanecer (r131).** Tacha el 58 y escribe 57. Por supervivencia gasta 1 Ración de la despensa; el Aire no, porque amanece en la Cicatriz (r182). Tira el pulso y saca un 4: hoy no hay Canto.
 
 **Acción (r132).** Necesita el Casco. Decide **explorar** las Dunas: `[Ingenio · 9]`. Tira 2d6 y saca 4 y 3. Suma su Ingenio (3) y resta 1 por estar Herida: 4 + 3 + 3 − 1 = 9. Es un **Éxito**, pero justo. Gana un Hallazgo.
 
@@ -890,7 +890,7 @@ Elige **Defender** (+2, r141) en la tercera ronda para no recibir más. En la cu
 
 **Salir (r170).** Por vencer al guardián, la siguiente sala sería de Equipo (r172). Con Grave, otra sala sería una locura. Sale con 3 Chatarra más: ya tiene 6.
 
-**Anochecer (r133).** No ha descansado, así que no se cura. Duerme en la Cicatriz, así que no hay tirada nocturna. Mañana descansará para curarse, y pasado viajará a las Salinas (vecinas de las Dunas) para explorar allí en busca de Iria.
+**Anochecer (r133).** No ha descansado: no se cura ni hay tirada nocturna. Mañana descansará para curarse, y pasado viajará a las Salinas (vecinas de las Dunas) para explorar allí en busca de Iria.
 
 > El primer día cuentas lo que tienes. El décimo, lo que te falta. Sela cuenta seis de Chatarra, un hueso y tres Heridas.
 

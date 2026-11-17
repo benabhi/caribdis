@@ -204,7 +204,7 @@ Con Desventaja, con 5 + 2 = **7**. Ventaja y Desventaja a la vez se anulan: tira
 
 **Acción.** Haces *una sola* cosa: viajar, explorar, visitar, trabajar en la nave, descansar, ocultarte, seguir Pista o ensamblar.
 
-**Anochecer.** Descansas si toca, tiras por la noche a la intemperie y miras si hoy hay historia personal.
+**Anochecer.** Si descansaste, te curas y, a la intemperie, tiras por la noche. Luego miras si hoy hay historia personal.
 """),
     'r135': ('recuerda', 'La Alerta elige la columna', """
 En todas las tablas de encuentros, la **columna** es tu Alerta. Con Alerta 1 te cruzas con curiosos; con
@@ -370,7 +370,7 @@ RECORDATORIOS = [
     ('Recuerda · Descanso', 'Descansar en la Cicatriz cura 2 Heridas y 1 Temple, y baja 1 el Canto (r133).'),
     ('Recuerda · Defender', 'Defender da +2 a tu tirada. Si ganas, no haces daño, pero tampoco lo recibes (r141).'),
     ('Recuerda · Botín', 'Ganar a un [Náufrago] o a una [Máquina] da 1d6 ÷ 2 de Chatarra y 1 pieza (r146).'),
-    ('Recuerda · La noche', 'Si duermes a la intemperie, tira 2d6: con 9 o más, algo te encuentra (r133).'),
+    ('Recuerda · La noche', 'Si descansas o te ocultas a la intemperie, tira 2d6: con 9 o más, algo te encuentra (r133).'),
     ('Recuerda · Ocultarte', 'Ocultarte ocupa el día y baja la Alerta 1. En las Torres no puedes (r135).'),
     ('Recuerda · Huir', 'Huir es `[Reflejos · 9]`. Si fallas, recibes 1 Herida y el combate sigue (r141).'),
     ('Recuerda · Raciones', 'Cada compañero come 1 Ración al amanecer. Si no tienes, pierde 1 de Lealtad (r136).'),
