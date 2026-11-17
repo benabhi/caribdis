@@ -102,7 +102,7 @@ Estanterías de armas detrás de una reja. La reja tiene un lector de huellas, q
 Pantallas rotas, sillas vacías y un holograma táctico que todavía proyecta el último combate de la nave: seis puntos de luz contra veinte naves militares. Las veinte desaparecen una a una.
 
 1. **Ver la grabación completa.** `[Voluntad · 9]`. *Éxito:* ves cómo los Recolectores luchan… y cómo, en el último segundo, **una nave escapa** cuando el Canto se detiene un instante. Gana `FRAGMENTO_LA_BATALLA` y anota `LA_SEÑAL_PUEDE_CALLAR`. *Fallo:* te tiemblan las manos. −1 Temple.
-2. **Descargar el registro de navegación** (Mente, o con `[Ingenio · 11]`). Si no tienes Navegación, ganas una **Navegación Precaria**; si la tienes, +1 de calidad.
+2. **Descargar el registro de navegación** (Mente, o con `[Ingenio · 11]`). Si no tienes Navegación, ganas una **Navegación Precaria**; si la tienes, +1 de calidad (máximo Excelente).
 3. **Activar la baliza militar.** Emite en una frecuencia de emergencia: el Reloj sube 2 (los Recolectores persiguen un fantasma), pero ◉ la Alerta sube a 4 (si ya lo estaba, no ganas nada).
 
 ---
@@ -168,8 +168,8 @@ Un piano de cola blanco, intacto, en un salón cuyo techo se abrió y deja ver l
 Una sala circular con cien nichos en las paredes. En cada nicho, un Antiguo **dormido**, de pie, con los ojos cerrados y cubierto de una película de luz. Respiran muy despacio. Uno de ellos abre los ojos.
 
 1. **No moverte.** `[Voluntad · 11]` ♫. *Éxito:* te mira, ladea la cabeza y vuelve a cerrar los ojos. Gana `FRAGMENTO_LOS_DORMIDOS`. *Fallo:* +3 Canto ♫ y sales corriendo.
-2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫ y, sin `SECRETO_DESCUBIERTO`, ve a [e840](#e840) aunque no tengas 3 `FRAGMENTO_`. Si ya lo descubriste, +1 Temple.
-3. **Despertarlos a todos.** No sabes cómo. Pero si eres la Mente: `[Ingenio · 13]`. *Éxito:* la luz se apaga, los nichos se abren y los Antiguos salen. Te miran. Y **se deshacen en polvo azul**, uno tras otro. Algo, muy lejos, en el Polo, grita. El Reloj baja 5, pero gana `DESPERTASTE_A_LOS_DORMIDOS` y **★**. *Fallo:* la sala se sella. Tienes que salir del pecio.
+2. **Hablarle.** No te responde con palabras. Te pone una mano en la frente. Ves… todo. +2 Canto ♫ y, sin `SECRETO_DESCUBIERTO`, ve a [e840](#e840). Si ya lo descubriste, +1 Temple.
+3. **Despertarlos a todos.** Solo si eres la Mente: `[Ingenio · 13]`. *Éxito:* la luz se apaga, los nichos se abren y los Antiguos salen. Te miran. Y **se deshacen en polvo azul**, uno tras otro. Algo, muy lejos, en el Polo, grita. El Reloj baja 5, pero gana `DESPERTASTE_A_LOS_DORMIDOS` y **★**. *Fallo:* la sala se sella. Tienes que salir del pecio.
 
 ---
 
@@ -179,7 +179,7 @@ Una sala circular con cien nichos en las paredes. En cada nicho, un Antiguo **do
 
 Una esfera de luz que llena la sala: la galaxia entera en miniatura. Hay un punto rojo que parpadea: Caribdis. Y alrededor, cientos de puntos azules: **otros planetas con torres que cantan**.
 
-1. **Estudiarlo.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* hay más trampas. O más escudos. Caribdis no es la única. Gana `FRAGMENTO_LA_RED`. Y aprendes una ruta que esquiva las torres: si tu Navegación está instalada, +1 de calidad (máximo Excelente); si no, anota `POSICION_CONOCIDA`. *Fallo:* te pierdes mirando las estrellas. ⌛ +1.
+1. **Estudiarlo.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* hay más trampas. O más escudos. Caribdis no es la única. Gana `FRAGMENTO_LA_RED` y aprendes una ruta que esquiva las torres: si tu Navegación está instalada, +1 de calidad (máximo Excelente); si no, gana `POSICION_CONOCIDA`. *Fallo:* te pierdes mirando las estrellas. ⌛ +1.
 2. **Tocar el punto rojo.** Todo el mapa se apaga, salvo un punto azul muy lejos. Gana `FRAGMENTO_EL_ORIGEN`: es de donde vinieron los Antiguos.
 3. **Buscar tu planeta de origen.** No está. O está, pero sin luz. +1 Canto ♫.
 
@@ -233,7 +233,7 @@ Una puerta en mitad de una sala, sin pared alrededor. Un marco de metal oscuro. 
 La puerta está fría, aunque el resto de la sala no. Cierras los ojos un momento. Huele a tu casa.
 
 1. **Cruzarla.** +3 Canto ♫. Al otro lado estás en un sitio de Caribdis que no conoces. Tira 1d8: apareces en esa región, al amanecer de **mañana** (el amanecer normal: el Reloj baja 1). Gana `FRAGMENTO_LA_PUERTA_SIN_PARED`.
-2. **Tirar algo a través.** Pierdes un objeto o 1 Chatarra. No sale por el otro lado. Al rato, cae algo distinto a tus pies: una reliquia sin identificar.
+2. **Tirar algo a través.** Pierdes un objeto o 1 Chatarra. Al rato, cae algo distinto a tus pies: una reliquia sin identificar.
 3. **Mirar a través hasta ver algo.** `[Voluntad · 11]`. *Éxito:* en la sala del otro lado entras **tú**, pero más viejo, y te mira. Niega con la cabeza. Gana 2 Temple: es un aviso. *Fallo:* +2 Canto ♫.
 
 ---
@@ -251,7 +251,7 @@ Una nave de transporte del mismo tamaño que la tuya, partida por la mitad, con 
 Pero las placas están soldadas por el calor del impacto, y la nave está habitada: algo anida en la bodega.
 
 1. **Soltar las placas a mano.** `[Vigor · 11]` ⌛ +1. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Casco Precario** y 1 Herida.
-2. **Cortarlas con herramientas.** Necesitas herramientas de los Antiguos, ser la Mente, a Noemí o `CARRONERO`. `[Ingenio · 9]`. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Precario**.
+2. **Cortarlas.** Solo con herramientas de los Antiguos, Noemí, `CARRONERO` o la Mente. `[Ingenio · 9]`. *Éxito:* **Casco Sólido**. *Éxito pleno:* **Excelente**. *Fallo:* **Precario**.
 3. **Limpiar primero la bodega** → [e561](#e561).
 
 ---
@@ -357,7 +357,7 @@ Un tanquero de combustible, enterrado hasta la mitad. Sus depósitos están llen
 El casco está pintado con letras que ya no lee nadie. Huele a dulce, a fruta podrida, y el aire tiembla encima de las escotillas como sobre la chapa al mediodía. Los huesos están en fila, todos con la cabeza hacia el tanquero.
 
 1. **Bombear con cuidado.** `[Ingenio · 11]` ⌛ +1. *Éxito:* **Combustible Sólido** (pesado). *Éxito pleno:* **Excelente**. *Fallo:* una chispa → [e569](#e569).
-2. **Bombear rápido.** `[Reflejos · 9]`. *Éxito:* **Combustible Precario** (pesado). *Fallo:* → [e569](#e569).
+2. **Deprisa.** `[Reflejos · 9]`. *Éxito:* **Combustible Precario** (pesado). *Fallo:* → [e569](#e569).
 3. **Estabilizarlo primero.** Necesitas sal de las Salinas (`SABE_DE_SAL`, [e247](#e247)) o la ayuda de Noemí. Entonces bombeas sin riesgo: **Combustible Sólido**.
 
 ---

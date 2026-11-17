@@ -51,7 +51,7 @@ Por cada causa que tengas, haz un combate o paga:
 - **−3 con los Hijos del Pecio:** combate contra *Cazadores de Quilla · Ataque 5 · Blind. 1 · Heridas 5 · [Náufrago]*.
 - **−3 con el Coro:** cantan contra ti. `[Voluntad · 13]` ♫; si fallas, +3 Canto, que pesará en la prueba 4.
 - **−3 con los Vigías:** combate contra *Vigías de eliminación · Ataque 6 · Blind. 3 · Heridas 6 · [Máquina][Antiguo]*.
-- **`ROBASTE_AL_ARGO`:** la tripulación del Argo Pálido te bloquea la pista. Combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*, o devuélveles lo suyo: ese sistema baja 1 de calidad (si era Precario, lo pierdes: su prueba será un Fallo).
+- **`ROBASTE_AL_ARGO`:** la tripulación del Argo te bloquea la pista. Combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*, o devuélvelo: ese sistema baja 1 de calidad (si era Precario, lo pierdes: Fallo en su prueba).
 
 **Ayudas:** `GUERREROS_DE_QUILLA` o `PAZ_DEL_CONTABLE` anulan uno de estos ataques. `ESCOLTA_VIGIA` o `PERMISO_DE_PRIMO` anulan otro. `TORRETA_DE_LA_CICATRIZ` anula otro más (dos si salió *Maestra*). Si `PASAJERO_EL_CONTABLE` está a bordo, los Desguaces no atacan.
 
@@ -127,7 +127,7 @@ Orla Venn te espera en la rampa del Argo, con el brazo de grúa levantado en se�
 
 El motor tose. El casco cruje. Por un momento, flotas en el borde del espacio, entre la Corona y las estrellas.
 
-Desde la cabina ves Caribdis entera por primera vez: las Salinas como una mancha blanca, los Cañones como arrugas, el Polo brillando en la noche. Es más pequeño de lo que creías. Y más hermoso. Sueltas los mandos sin habértelo propuesto. La Corona gira a tu alrededor, llena de naves que también quisieron irse.
+Desde la cabina ves Caribdis entera por primera vez: las Salinas como una mancha blanca, los Cañones como arrugas, el Polo brillando en la noche. Es más pequeño de lo que creías. Y más hermoso. Sueltas los mandos sin habértelo propuesto, como quien suelta una cuerda. La Corona gira a tu alrededor, llena de naves que también quisieron irse.
 
 Y entonces oyes el Canto, suave, amable, como una mano en la espalda. **Quédate.**
 
@@ -137,7 +137,7 @@ Esa noche, en Caribdis, alguien mira la Corona y ve caer una estrella que no cae
 
 *Fin. Has caído otra vez.*
 
-Tu nave sigue en Caribdis, caída en las Dunas. En tu próxima partida podrás encontrarla, con tu Hoja dentro y una Marca que heredar: lee «Los que vinieron antes» (r212).
+Tu nave sigue en Caribdis, caída en las Dunas. En tu próxima partida (r212), colócala al prepararla como un Hallazgo más y explórala como un pecio de tipo **Nave militar**, con el doble en las salas de Restos. En la última sala está tu Hoja: hereda una Marca de esta partida y +1 Temple.
 
 ---
 
@@ -173,7 +173,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - Con el cuaderno de Amara (aunque Amara no esté): *«Llevas el cuaderno a una universidad. Les cambia la historia.»*
 
 **Sobre los que se quedaron:**
-- Por cada tripulante encontrado que no subió, o con `PERDIDO_` y su nombre: *«(Nombre) se queda en Caribdis.»* Con `TRIPULANTE_EN_EL_ARGO`: *«(Nombre) salió en el Argo. A veces te escribe.»*
+- Por cada tripulante encontrado que no subió, o con su `PERDIDO_`: *«(Nombre) se queda en Caribdis.»* Con `TRIPULANTE_EN_EL_ARGO`: *«(Nombre) salió en el Argo. Te escribe.»*
 - Con `PASAJERO_EL_CONTABLE` sin él a bordo: *«La gente del Contable te busca. Cobra siempre.»*
 - Con `HALCYON`: *«No vuelves a por los dormidos del Halcyon. Siete luces verdes, en un cementerio de naves. Siempre te preguntarás.»*
 
@@ -197,7 +197,7 @@ Lo has conseguido. Nadie había salido nunca de Caribdis. Tú sí.
 - `PROMESA_AL_CORO`: *«El Coro te espera. Cada vez que oyes interferencias, sabes que te recuerdan.»*
 - `MUERTO_EN_LOS_PAPELES`: *«En el libro del Contable figuras como muerto. Te parece justo.»*
 - `DESPERTASTE_A_LOS_DORMIDOS`: *«Despertaste a los Antiguos y se deshicieron. No sabes si los liberaste o los mataste.»*
-- `DOS_EN_UNA` o `EL_VIGIA_APRENDE` (la Mente): *«Hay otra mente como la tuya. No estás sola.»*
+- `DOS_EN_UNA` o `EL_VIGIA_APRENDE`: *«Hay otra mente como la tuya. No estás sola.»*
 - `AMARA_TENIA_RAZON`: *«Amara tenía razón. Lo escribió todo. Algún día, alguien la creerá.»*
 
 **Sobre el Secreto** (solo si lo descubriste):
@@ -314,7 +314,7 @@ Subes a la cima de la torre más alta. Te sientas en el trono. Y te vas, hacia d
 
 El Polo se abre. El hielo estalla en una columna que llega hasta la Corona. Y de debajo sale algo tan grande que no lo entiendes: un ojo, una boca, un horizonte vivo.
 
-- **Si vienes del paso 0 del despegue**, termina la secuencia sin la huida (paso 3). **Si vienes del Pozo** y el Secreto es 3 (si no lo sabías, cuéntalo: [e840](#e840)), llega a la Cicatriz y despega antes de que el Reloj baje 3. Si lo logras: *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) sin las líneas de Quilla, la Cicatriz, el Santuario y los que se quedaron: ya no existen. Añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
+- **Si vienes del paso 0 del despegue**, termina la secuencia sin la huida (paso 3). **Si vienes del Pozo** y el Secreto es 3 (si no lo sabías, cuéntalo: [e840](#e840)), llega a la Cicatriz y despega antes de que el Reloj baje 3. Si lo logras (en el despegue, con 0–4 Daños de nave): *«Los Recolectores la ven. Por fin. Las seis luces se lanzan sobre ella como lobos sobre un ciervo. Nadie te mira mientras te vas. Detrás de ti, Caribdis se rompe como un huevo. Lo que salió de él y lo que la cazaba se pierden juntos en la oscuridad.»* Lee [e910](#e910) sin las líneas de Quilla, la Cicatriz, el Santuario y los que se quedaron: ya no existen. Añade: *«Nadie volverá a caer en Caribdis. Ya no existe.»* **Es una victoria terrible.**
 - **Si no lo logras:** *«La Bestia despierta hambrienta. Y tú estás encima.»* **Es una derrota.**
 
 *Fin.*
@@ -348,7 +348,7 @@ Te quedas tumbado en la arena roja (si eres la Mente, tu esfera se apaga). Escil
 
 Por una vez, le crees.
 
-- Si tienes compañeros con Lealtad 3, uno de ellos sigue adelante con tu trabajo. Puedes seguir jugando con él: conserva tu Hoja (Equipo, Marcas, sistemas, Reloj) y su habilidad; tiene 3 en todos los atributos, Temple 1, Canto 0 y ninguna Herida, sin contador ni historia personal. Si despega, lee [e910](#e910) en su nombre.
+- Si tienes un compañero con Lealtad 3, juegas con él: conserva tu Hoja (Equipo, Marcas, sistemas, Reloj) y su habilidad; tiene 3 en todo, Temple 1, Canto 0, sin Heridas, sin contador ni historia. Si despega, lee [e910](#e910) en su nombre.
 - Si no: *«El viento cubre tu cuerpo en una noche. En un año, los Desguaces encuentran tu nave y la desmontan. Una placa de tu casco acaba en el tejado de una casa de Quilla. Un niño la mira a veces, sin saber por qué, y piensa en irse.»*
 
 *Fin.*

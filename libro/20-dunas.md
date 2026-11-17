@@ -64,7 +64,7 @@ Una hondonada llena de restos masticados: alerones, tuberías y un asiento de pi
 
 - Si tienes `RATAS_AMIGAS`, te dejan bajar → opción 4.
 
-1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si no tienes Casco, ganas un **Casco Precario**; si ya lo tienes, +3 Chatarra.
+1. **Asaltar el nido.** Combate: *Nido de ratas de óxido · Ataque 3 · Blind. 0 · Heridas 5 · [Bestia][Enjambre]*. *Si ganas:* en el fondo hay **piezas de tu propia nave**. Si no tienes Casco, ganas un **Casco Precario**; si ya lo tenías, +3 Chatarra en piezas.
 2. **Ahumarlas.** Necesitas 1 Ración (grasa) y `[Ingenio · 9]`. *Éxito:* huyen y saqueas el nido tranquilo: como en la opción 1, pero sin combatir. *Fallo:* salen todas a la vez → combate como en la 1, con Emboscada.
 3. **Marcharte.** Las ratas te siguen a distancia, pero no pasan de la Cicatriz. Gana la Pista `Dunas · El nido · e203`: volverás mejor preparado.
 4. **Bajar como amigo** (solo con `RATAS_AMIGAS`). Ofrece 1 Chatarra. La reina del nido, una rata del tamaño de un perro con una antena en la cabeza, te deja coger lo que quieras: **Casco Precario** o 4 Chatarra.
@@ -93,7 +93,7 @@ El motor aún está caliente al tacto.
 
 1. **Llevártela.** `[Ingenio · 9]` para arrancarla. *Éxito:* ganas una **moto de arena** (vehículo, r152; consume 1 Energía o 1 Chatarra por viaje; no sube a las Torres ni entra en la Ciudad). Al arrancar ruge: ◉ +1 Alerta, solo esta vez. *Fallo:* gastas 1 Chatarra en piezas y lo vuelves a intentar mañana: gana la Pista `Dunas · La moto · e205`.
 2. **Enterrar al Desguace.** En su bolsillo hay una ficha de Puerto Chatarra: anota `FICHA_DESGUACE`. Al visitar Puerto Chatarra, entrégala: +1 de Reputación con los Desguaces y ellos te regalan la moto ya arreglada.
-3. **Seguir el rastro de la flecha.** `[Ingenio · 9]`. *Éxito:* son cazadores de Quilla que creyeron que era un saqueador. Si eres el Nativo, te reconocen y te dan la moto como «botín de caza» (sin ruido). Si no, te dejan ir: aún puedes elegir la opción 1, pero con −1 de Reputación con los Hijos del Pecio.
+3. **Seguir el rastro de la flecha.** `[Ingenio · 9]`. *Éxito:* son cazadores de Quilla que creyeron que era un saqueador. Si eres el Nativo, te reconocen y te dan la moto como «botín de caza» (sin ruido). Si no, solo te dejan ir: aún puedes elegir la opción 1, pero con −1 de Reputación con los Hijos del Pecio.
 
 ---
 
@@ -167,7 +167,7 @@ Huele a metal cortado y a goma quemada. Las bengalas tiñen de rojo la arena, y 
 
 > **Asaltantes** · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]
 
-1. **Defender la nave.** Combate. *Si ganas:* recuperas todo y les quitas 4 Chatarra. *Si pierdes o huyes:* pierden la paciencia y se llevan un **sistema instalado** a tu elección (lo tachas: tendrás que conseguirlo otra vez) o, si no hay ninguno, hasta 6 Chatarra.
+1. **Defender la nave.** Combate. *Si ganas:* recuperas todo y les quitas 4 Chatarra. *Si pierdes o huyes:* pierden la paciencia y se llevan un **sistema instalado** a tu elección (lo tachas y vuelve a faltarte) o, si no hay ninguno, hasta 6 Chatarra.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* se llevan solo 2 Chatarra. *Fallo:* combate con Emboscada.
 3. **Dejarles y seguirles.** Se llevan lo mismo que si pierdes. Gana la Pista `Cementerio · Lo que te robaron · e230`. Allí podrás recuperarlo.
 

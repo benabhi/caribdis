@@ -71,7 +71,7 @@ Sus plumas tintinean al planear, como cubiertos en un cajón.
 
 Gritas «¡hola!» para probar el eco. El cañón te devuelve «¡hola!». Y después, con tu voz, «¿hay alguien?». Tú no dijiste eso.
 
-1. **Contestar.** «Sí.» El eco: «*Ven.*» Te guía. Tira 1d6: con 1–3, hacia una cueva donde vive algo que imita voces para cazar → combate contra *Imitador · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia]*; con 4–6, hacia alguien de verdad: un tripulante no encontrado (sortéalo, r108), que gritaba pidiendo ayuda: ve a su primer evento. Si no queda ninguno, un náufrago: 1 rumor (r164).
+1. **Contestar.** «Sí.» El eco: «*Ven.*» Tira 1d6: con 1–3, te lleva a una cueva donde algo imita voces para cazar → combate contra *Imitador · Ataque 5 · Blind. 1 · Heridas 3 · [Bestia]*; con 4–6, hacia alguien de verdad: un tripulante no encontrado (sortéalo, r108), que pedía ayuda: ve a su primer evento. Si no queda ninguno, un náufrago: 1 rumor (r164).
 2. **Callar y esperar.** El eco sigue hablando solo. Dice nombres. El de alguien de tu tripulación, seguido de una palabra: el nombre de una región. Elige un tripulante no encontrado: su región es la que tú quieras de las vecinas a los Cañones (Dunas, Bosque o Torres). Corrígela en la Hoja.
 3. **Taparte los oídos y seguir.** Nada.
 
@@ -99,7 +99,7 @@ Una piedra cae a tus pies. Luego otra. En lo alto de las paredes, una docena de 
 
 **Encuentro (r300).** Precio: 3 Chatarra. Botín: 5 Chatarra y una **cuerda y garfio**.
 
-- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio. · **Si pasas:** te dejan seguir.
+- **Si ganas:** quédate el Botín. Los Hijos del Pecio llevaban tiempo queriendo librarse de ellos: +1 de Reputación con los Hijos del Pecio. · **Si pasas:** te dejan seguir, sin quitarte la vista de encima.
 - Si eres el Nativo con `GUERRERO`, no se atreven contigo: pasas sin tirar.
 
 ---
@@ -140,7 +140,7 @@ No hay arena en el casco. No hay óxido en las juntas. El aire alrededor del cru
 
 En la rampa, un cartel en tu idioma: *ZONA DE CUARENTENA · NO ENTRAR*.
 
-1. **Entrar por la rampa.** El crucero te recibe: *Torretas de defensa · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina]*. Combate. *Si ganas:* explora un pecio (r170) de tipo **Nave militar** de hasta 6 salas. Si llegas a la sexta, no tires: es el **motor de salto del crucero**, un **Motor Excelente** (pesado). **★**
+1. **Entrar por la rampa.** El crucero te recibe: *Torretas de defensa · Ataque 5 · Blind. 3 · Heridas 3 · [Máquina]*. Combate. *Si ganas:* explora un pecio (r170) de tipo **Nave militar** de hasta 6 salas. En la sexta, no tires: es el **motor de salto del crucero**: **Motor Excelente** (pesado). **★**
 2. **Hackear las torretas.** `[Ingenio · 11]` (Mente: Ventaja; `VETERANO`: Ventaja). *Éxito:* entras sin combatir y explora como en la 1. *Fallo:* combate con Emboscada.
 3. **Leer el registro de cuarentena** (en la rampa). `[Ingenio · 9]`. *Éxito:* «*Tripulación expuesta al Canto. Todos se fueron caminando hacia el este. La nave sigue operativa. No la uséis. Ella también lo oye.*» Gana `FRAGMENTO_EL_CRUCERO` y Ventaja contra estas torretas. Después, elige otra opción.
 4. **Marcar la ubicación.** Gana la Pista `Cañones · El crucero dormido · e309` y vete.

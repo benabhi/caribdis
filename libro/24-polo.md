@@ -99,11 +99,11 @@ Ninguno parpadea.
 ### e286 · La estación del viento
 *Polo Helado · ⌛ día*
 
-Una estación de los Antiguos: una cúpula de metal blanco con antenas como hojas de helecho, que giran despacio con el viento. Dentro, pantallas apagadas y un aire caliente. Funciona.
+Una estación de los Antiguos: una cúpula de metal blanco con antenas como helechos, que giran despacio con el viento. Dentro, pantallas apagadas y aire caliente. Funciona.
 
 1. **Descansar dentro.** Puedes descansar aquí hoy como en un asentamiento. El Piloto rellena el Aire, y la Mente, la Energía. Gana la Pista `Polo · La estación · e286`; seguirla no la borra.
-2. **Encender las pantallas.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* son mapas meteorológicos del planeta… y en uno, un **mapa de órbitas**, con seis puntos que se acercan. La estación sabe cuándo llegarán exactamente. Si tienes la Navegación instalada, la actualizas: +1 calidad (máximo Excelente). Si no, gana `POSICION_CONOCIDA`. *Fallo:* la estación lanza una alarma. ◉ +2 Alerta.
-3. **Desmontar las antenas.** `[Vigor · 9]`. *Éxito:* 5 Chatarra y una **batería de luz fría**. ◉ +1 Alerta. La estación muere: anota `ESTACION_MUERTA`; si vuelve a salirte este evento, repite la tirada.
+2. **Encender las pantallas.** `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* son mapas meteorológicos del planeta… y en uno, un **mapa de órbitas**, con seis puntos que se acercan. La estación sabe cuándo llegarán exactamente. Si tu Navegación está instalada, +1 calidad (máximo Excelente). Si no, gana `POSICION_CONOCIDA`. *Fallo:* la estación lanza una alarma. ◉ +2 Alerta.
+3. **Desmontar las antenas.** `[Vigor · 9]`. *Éxito:* 5 Chatarra y una **batería de luz fría**. ◉ +1 Alerta. La estación muere: anota `ESTACION_MUERTA` (si vuelve a salir, repite la tirada).
 
 ---
 
@@ -125,7 +125,7 @@ El cielo se enciende. Una aurora verde y azul que no es eléctrica: **se mueve a
 
 Una puerta redonda de los Antiguos, en la pared de hielo. Tres metros de diámetro. Lisa, sin pomo ni cerradura. En el centro hay una espiral de puntos grabada.
 
-El hielo alrededor de la puerta es transparente como el cristal, y dentro hay cosas atrapadas: burbujas, semillas, una pluma, una mano pequeña de metal. Nada se ha derretido en mil años. Tu aliento se congela antes de llegar a la puerta y cae al suelo como polvo.
+El hielo alrededor de la puerta es transparente como el cristal, y dentro hay cosas atrapadas: burbujas, semillas, una pluma, una mano pequeña de metal. Nada se ha derretido en mil años, ni se derretirá. Tu aliento se congela antes de llegar a la puerta y cae al suelo como polvo.
 
 Cuando te acercas, la espiral **se ilumina**. Desde dentro, alguien golpea tres veces. Los golpes suenan pacientes, como de alguien que sabe esperar.
 
@@ -160,7 +160,7 @@ Es la nave colonia de la que descienden los Hijos del Pecio.
 
 1. **Entrar por una escotilla.** Explora un pecio (r170) de tipo **Nave colonia**, de hasta 6 salas en lugar de 4. En la cuarta sala, en lugar de tirar → anota `PUENTE_DE_UR`: has llegado al puente.
 2. **Si tienes `PUENTE_DE_UR`:** la IA de la *Esperanza* todavía funciona. Está loca. Repite un mensaje de socorro de hace mil años, **con la misma frecuencia que el Canto**. Gana `FRAGMENTO_LA_ESPERANZA`. Si eres la Mente, puedes intentar hablar con ella: `[Ingenio · 13]`. *Éxito:* +2 `MEMORIA` y te regala **Navegación Excelente**. **★** *Fallo:* +3 Canto ♫. Con el Secreto 5, cualquiera puede intentar callarla: `[Ingenio · 13]`; con un Éxito, anota `LA_ESPERANZA_CALLA`.
-3. **Arrancar la aleta.** Imposible. Pero puedes arrancar placas: `[Vigor · 11]`. *Éxito:* **Casco Sólido**, si no tienes Casco; si lo tienes, 3 Chatarra.
+3. **Arrancar la aleta.** Imposible. Pero sí sus placas: `[Vigor · 11]`. *Éxito:* **Casco Sólido**, si no tienes Casco; si lo tienes, 3 Chatarra.
 
 ---
 

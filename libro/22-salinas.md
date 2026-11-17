@@ -25,7 +25,7 @@
 ### e241 · La refinería abandonada
 *Salinas Blancas · ⌛ día*
 
-Tres torres de destilación oxidadas, conectadas por tuberías que se hunden en la sal. Una colonia minera la construyó hace un siglo para sacar combustible del mar enterrado. Las bombas están paradas, pero el depósito central **todavía gotea azul**.
+Tres torres de destilación, conectadas por tuberías que se hunden en la sal. Una colonia minera la construyó para sacar combustible del mar enterrado. Las bombas están paradas, pero el depósito central **todavía gotea azul**. Con `REFINERIA_VOLADA`, solo hay ruinas: 2 Chatarra.
 
 En la puerta, un cartel en cuatro idiomas: *PELIGRO · NO DESPERTAR AL CAPATAZ*.
 
@@ -53,7 +53,7 @@ Haz las tres pruebas. Cuenta los Éxitos:
 - **Tres:** **Combustible Excelente** (pesado). **★**
 - **Dos:** **Combustible Sólido** (pesado).
 - **Uno:** **Combustible Precario** (pesado). Una explosión: 1 Herida.
-- **Ninguno:** explota la torre. 3 Heridas, ◉ +2 Alerta, y la refinería queda destruida: anota `REFINERIA_VOLADA`; si vuelve a salirte [e241](#e241), allí solo quedan ruinas y 2 Chatarra.
+- **Ninguno:** la torre explota: 3 Heridas, ◉ +2 Alerta, refinería rota. Anota `REFINERIA_VOLADA`: en [e241](#e241), solo ruinas y 2 Chatarra.
 
 Si no fue destruida, puedes volver otro día a mejorar el resultado (siguiendo la Pista o explorando las Salinas): te quedas el mejor.
 
@@ -83,7 +83,7 @@ Si tienes a Amara, lee el nombre: «*El que vuelve*».
 
 De la cubierta cuelgan cuerdas que gotean sal en vez de agua. Algo golpea el casco desde dentro.
 
-1. **Nadar hasta él.** `[Vigor · 11]` ⚔. *Éxito:* subes a bordo. *Fallo:* la salmuera te quema la piel. 2 Heridas.
+1. **Nadar hasta él.** `[Vigor · 11]` ⚔. *Éxito:* subes a bordo. *Fallo:* la salmuera te quema la piel y te devuelve a la orilla de sal. 2 Heridas.
 2. **Construir una balsa.** `[Ingenio · 9]`, 2 Chatarra. *Éxito:* subes a bordo sin daño. *Fallo:* la balsa se hunde. 1 Herida y lo intentas nadando (opción 1).
 3. **Hacer señales.** Tira 1d6. Con un 6, alguien te responde desde la cubierta con un farol. Pero allí no hay nadie. Gana `FRAGMENTO_EL_BARCO`.
 
@@ -170,7 +170,7 @@ La costra de sal se agrieta y salen pinzas: cangrejos blancos del tamaño de una
 
 Tras una lluvia rara, una lámina de agua de un centímetro cubre la sal. El cielo se refleja en ella perfecto: caminas por encima de la Corona, entre las estrellas.
 
-1. **Estudiar las estrellas.** `[Ingenio · 9]` (Mente con `NAVEGANTE`: automático). *Éxito:* calculas tu posición exacta en la galaxia: si tu Navegación está instalada, sube 1 de calidad. Si no, anota `POSICION_CONOCIDA` (Ventaja en la prueba de Navegación del despegue). *Fallo:* ves cosas que no deberían estar: las seis luces, más cerca de lo que creías. El Reloj baja 1.
+1. **Estudiar las estrellas.** `[Ingenio · 9]` (Mente con `NAVEGANTE`: automático). *Éxito:* calculas tu posición exacta: si tu Navegación está instalada, sube 1 de calidad. Si no, anota `POSICION_CONOCIDA` (Ventaja en la Navegación del despegue). *Fallo:* ves cosas que no deberían estar: las seis luces, más cerca de lo que creías. El Reloj baja 1.
 2. **Buscar el anillo de restos en el reflejo.** En el espejo, la Corona es una espiral perfecta, como la escritura de los Antiguos. No es basura: es un mensaje, escrito con naves muertas. Gana `FRAGMENTO_LA_ESPIRAL`. +1 Canto ♫.
 3. **Tumbarte en el agua y descansar.** Hoy puedes descansar aquí como en un asentamiento: recuperas 2 Heridas y 1 Temple, sin tirada nocturna. Esto consume tu acción de hoy.
 
@@ -186,7 +186,7 @@ Por un instante todo se queda quieto: el viento, la sal, tu respiración. Luego 
 
 Notas algo duro bajo la suela: una hebilla, un casco, una mano. Hay más gente ahí abajo. La sal guarda todo lo que se traga, y no lo devuelve nunca entero. Te agarras a lo primero que encuentras y no piensas en qué es.
 
-1. **Lanzarte hacia atrás.** `[Reflejos · 11]` (`SABE_DE_SAL`: Ventaja). *Éxito:* te salvas. *Fallo:* caes hasta la cintura. Pierdes 1 objeto común (o, si llevas un sistema pesado y sacas 1–3 en 1d6, ese sistema) y 1 Herida.
+1. **Lanzarte hacia atrás.** `[Reflejos · 11]` (`SABE_DE_SAL`: Ventaja). *Éxito:* te salvas de un salto. *Fallo:* caes hasta la cintura. Pierdes 1 objeto que no sea un arma (o, si llevas un sistema pesado y sacas 1–3 en 1d6, ese sistema) y 1 Herida.
 2. **Agarrarte a lo que haya.** `[Vigor · 11]`. *Éxito:* te sacas a pulso, y de paso sacas algo que estaba atrapado en la salmuera: una reliquia sin identificar. *Fallo:* 2 Heridas, pero sales.
 3. **Dejarte hundir** (si tienes `SAL_EN_LA_PIEL` o eres la Mente). Caes. Abajo hay un mar, oscuro, enorme, y en él flotan miles de cuerpos dormidos. Uno abre los ojos y te empuja hacia arriba. Sales sin daño. Gana `FRAGMENTO_EL_MAR_DE_ABAJO`. +2 Canto ♫.
 

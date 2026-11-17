@@ -54,7 +54,7 @@ Las paredes curvas están cubiertas de placas de naves perdidas, clavadas por lo
 
 1. **Invitar a una ronda.** 2 Chatarra. Tira dos rumores (r164) y quédate con los dos.
 2. **Preguntar por tu tripulación.** `[Voluntad · 9]`. *Éxito:* elige un tripulante no encontrado: descubres su región (o, si ya la sabías, Ventaja al explorar). *Éxito pleno:* alguien sabe dónde está exactamente: ve a su primer evento la próxima vez que estés en su región, sin tirar Explorar. *Fallo:* nadie sabe nada, o nadie quiere decirlo.
-3. **Jugar a los dados de hueso.** Apuesta hasta 5 Chatarra, una vez, y tira 2d6 contra el tahúr, que tira 2d6 + 1. El que saque más gana (si empatáis, repetid). Si ganas, doblas tu apuesta. Si eres el Contrabandista (`DEUDAS`), tienes Ventaja… y el tahúr te reconoce: «*Tú le debes al Contable.*»
+3. **Jugar a los dados de hueso.** Apuesta hasta 5 Chatarra (una vez): tira 2d6; el tahúr, 2d6 + 1. Gana el que saque más (empate: repetid). Si ganas, doblas tu apuesta. Con `DEUDAS`, tienes Ventaja… y el tahúr te reconoce: «*Tú le debes al Contable.*»
 4. **Reclutar ayuda.** Por 4 Chatarra, un Desguace te acompaña hasta que el Reloj baje 5 (anota el número) como compañero (no cuenta para el límite de 2; +1 Ataque; no tiene historia; se va entonces).
 
 ---
@@ -147,9 +147,9 @@ Las puertas de los talleres se cierran a tu paso, una detrás de otra, como si l
 ### e410 · Quilla
 *Cañones de las Bestias · ⌛ día*
 
-La aldea está construida **dentro de un casco de nave antigua** encajado en la pared de un cañón: la quilla de la *Esperanza de Ur*, que se desprendió al caer hace mil años. Las ventanas son portillas. Las escaleras son conductos. Hay huertos en las bodegas y niños de seis dedos que se te quedan mirando.
+La aldea está **dentro de un casco de nave antigua** encajado en la pared de un cañón: la quilla de la *Esperanza de Ur*, que se soltó al caer hace mil años. Las ventanas son portillas. Las escaleras son conductos. Hay huertos en las bodegas y niños de seis dedos que te miran.
 
-Por las ventanillas del casco asoman ropa tendida, macetas y caras curiosas. El humo de las cocinas sube por la pared del cañón, y huele a raíces asadas y a algo dulce que no sabes nombrar. Los niños te siguen a distancia, imitando tu forma de andar.
+Por las ventanillas del casco asoman ropa tendida y caras curiosas. El humo de las cocinas sube por la pared del cañón, y huele a raíces asadas y a algo dulce que no sabes nombrar. Los niños te siguen imitando tu forma de andar.
 
 - **Con `MATASTE_A_LA_MADRE`, `EXPULSADO_DE_LOS_CAÑONES` o −2 o menos** → [e415](#e415).
 - **Entregas** (bórralas): `PAQUETE_DE_MENDANA` (+5 Chatarra), `NIÑO_DEL_HUMO` (+1 Rep., +1 Temple), `NIÑO_DE_QUILLA` (+3 Rep.), `NIÑA_DEL_CORO` / `CAJA_DE_SEMILLAS` (+3 Rep., ★).
@@ -178,7 +178,7 @@ Hay macetas hechas con cascos de soldado y plantas que crecen hacia las ventanil
 
 1. **Escuchar su historia.** Gana `FRAGMENTO_LA_MADRE`: los Hijos del Pecio descienden de una nave colonia que oyó el Canto hace mil años. Y lo que pasó después, cuando llegaron las luces.
 2. **Pedirle ayuda.** Según tu Reputación con los Hijos del Pecio:
-   - **+1 o menos:** «*Gánatela.*» Anota `ENCARGO_DE_LA_MADRE` y elige: traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Al volver con ello hecho, bórrala: +2 de Reputación.
+   - **+1 o menos:** «*Gánatela.*» Anota `ENCARGO_DE_LA_MADRE` y elige: traer la seta de la Madre ([e267](#e267)), rescatar a un niño del Coro ([e347](#e347) o [e417](#e417)) o matar al tragón ([e202](#e202)). Hecho, bórrala: +2 de Reputación.
    - **+2 o más** (una vez): te ofrece **un guía** (compañero para toda la partida, no cuenta para el límite: nunca te pierdes, +1 Ataque) **o** una pieza de la *Esperanza*: un sistema a tu elección (no el personal) entre Motor y Soporte vital, calidad Sólida.
 3. **Si eres el Nativo:** la Madre te conoce desde que naciste. «*Te vas, ¿verdad? Lo sabía antes que tú.*» Si tu `ARRAIGO` es 4 o más, te pide que lleves contigo a los Mirasoles → [e413](#e413). Si es 3, te pide que cuides de los niños: +1 `ARRAIGO`. Si es 2 o menos, te da la espalda: −1 `ARRAIGO`.
 4. **Si llevas la seta de la Madre:** se la das. La Madre llora. «*Es la seta de mi madre. Creía que se había perdido.*» +3 de Reputación con los Hijos del Pecio y elige un sistema de Quilla: Motor o Soporte vital, calidad Excelente. **★**
@@ -238,8 +238,8 @@ Los guerreros de la entrada cruzan las lanzas. Detrás, en las portillas, ciento
 - **Si tienes `MATASTE_A_LA_MADRE`:** no hay negociación. *Guerreros de Quilla · Ataque 5 · Blind. 1 · Heridas 5 · [Náufrago]*. Combate o huida (`[Reflejos · 9]`). Aunque ganes, hoy no entras.
 
 1. **Irte.** Nada.
-2. **Pedir perdón** (solo si no tienes `MATASTE_A_LA_MADRE`). `[Voluntad · 11]` (`EXILIADO`: Ventaja; conoces el rito). *Éxito:* puedes entrar, pero solo al sanador. +1 de Reputación con los Hijos del Pecio (cada vez). *Fallo:* te tiran piedras. 1 Herida.
-3. **Dejar una ofrenda en la puerta** (solo si no tienes `MATASTE_A_LA_MADRE`). 3 Raciones o 3 Chatarra. +1 de Reputación con los Hijos del Pecio (cada vez). No te dejan entrar hoy.
+2. **Pedir perdón** (solo si no tienes `MATASTE_A_LA_MADRE`). `[Voluntad · 11]` (`EXILIADO`: Ventaja). *Éxito:* puedes entrar, pero solo al sanador. +1 de Reputación con ellos (cada vez). *Fallo:* te tiran piedras. 1 Herida.
+3. **Dejar una ofrenda en la puerta** (solo si no tienes `MATASTE_A_LA_MADRE`). 3 Raciones o 3 Chatarra. +1 de Reputación con ellos (cada vez). No te dejan entrar hoy.
 
 ---
 
@@ -319,7 +319,7 @@ Las manos que te sujetan son cálidas, callosas, de gente que ha trabajado mucho
 Hace años que nadie te cogía la mano. Nadie te pregunta de dónde vienes. Por una vez, no importa.
 
 1. **Dejarte llevar.** +3 Canto ♫. Pero recuperas todas tus Heridas y todo tu Temple. Y ves algo, dentro del Canto: gana `FRAGMENTO_LA_COMUNION`. +1 de Reputación con el Coro.
-2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte. Ves cómo funciona, de dónde viene, qué quiere. Gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
+2. **Resistir desde dentro.** `[Voluntad · 13]`. *Éxito:* estás dentro del Canto sin perderte, como quien bucea con los ojos abiertos. Ves cómo funciona, de dónde viene, qué quiere. Gana `FRAGMENTO_LA_COMUNION` y −2 Canto. **★** *Fallo:* +3 Canto ♫, y no recuerdas nada.
 3. **Soltar las manos y salir.** Los cantores te miran con pena. −1 de Reputación con el Coro.
 
 ---
@@ -330,7 +330,7 @@ Hace años que nadie te cogía la mano. Nadie te pregunta de dónde vienes. Por 
 
 Bajo el templo, una cripta con miles de cajas de metal. Cada una tiene un nombre y una fecha: las pertenencias de los «acogidos». Diarios, fotos, insignias de naves. El Coro lo guarda todo con un cuidado amoroso.
 
-1. **Buscar a tu tripulación.** `[Ingenio · 9]`. *Éxito:* encuentras una caja con el nombre de alguien de tu nave. Sortéalo entre los no encontrados (r108). Si es Tadeo, ya es uno de ellos: anota `RASTRO_DE_TADEO`. Si es otro, está aquí como acogido: su región pasa a ser las Torres → [e424](#e424). *Fallo:* no está, o no lo encuentras.
+1. **Buscar a tu tripulación.** `[Ingenio · 9]`. *Éxito:* encuentras una caja con el nombre de alguien de tu nave. Sortéalo entre los no encontrados (r108). Si es Tadeo, ya es uno de ellos: anota `RASTRO_DE_TADEO`. Si es otro, es un acogido y su región pasa a ser las Torres → [e424](#e424). *Fallo:* no lo encuentras.
 2. **Leer los diarios más antiguos.** `[Ingenio · 11]`. *Éxito:* el más antiguo tiene doscientos años y está escrito por una mujer que fundó el Coro: «*El Canto no es Dios. Es una puerta. Y nosotros somos los porteros.*» Gana `FRAGMENTO_LA_FUNDADORA`. *Fallo:* nada.
 3. **Robar cartas estelares** de las cajas. `[Reflejos · 9]`. *Éxito:* anota `CARTAS_ROBADAS` (Ventaja en la vía del Cristal de ruta y en la prueba de Navegación de la secuencia de despegue). *Fallo:* −2 de Reputación con el Coro.
 
@@ -385,7 +385,7 @@ En el altar del templo, flotando en un haz de luz, un cristal del tamaño de un 
 
 En el centro de la Ciudad, una esfera de cristal negro del tamaño de un estadio, flotando a dos metros del suelo. Alrededor, centenares de Vigías inmóviles, en círculos perfectos. Dentro, luz fría. Es el centro de mando de las máquinas de los Antiguos.
 
-Aquí no hay mercado. Pero si te dejan entrar, hay **talleres**, y venden Luz fría y planos (r201, r202).
+Aquí no hay mercado. Pero, si entras, hay **talleres**, y venden Luz fría y planos (r201, r202).
 
 - **Si tu Reputación con los Vigías es −2 o menos** → [e434](#e434).
 - **Si no tienes `CODIGO_VIGIA` ni Reputación +1 o más con los Vigías:** `[Voluntad · 11]` para que te dejen pasar (mostrar Luz fría, pieza o batería, da Ventaja). Si fallas → [e434](#e434).
@@ -410,7 +410,7 @@ En el corazón de la esfera, una figura de cuatro brazos, más alta que las dem�
 1. **Preguntarle quién dio la orden.** «*LOS QUE ESCUCHAN. ÚLTIMA COMUNICACIÓN: HACE 10.212 AÑOS.*» `[Ingenio · 11]` (Amara, la Mente: Ventaja). *Éxito:* te enseña la última grabación: gana `FRAGMENTO_LA_ORDEN`. *Fallo:* repite la orden.
 2. **Preguntarle por qué deja que se vayan los que se van.** «*NO SE VA NADIE.*» Pausa. «*LOS QUE INTENTAN IRSE, CAEN. LA SEÑAL LOS DEVUELVE.*» Si insistes, `[Voluntad · 11]`: *Éxito:* Primo admite que **hay una forma**: si la Señal calla un instante, una nave podría salir. Anota `LA_SEÑAL_PUEDE_CALLAR`.
 3. **Pedirle permiso para irte.** «*DENEGADO.*» Pero si tu Reputación con los Vigías es +3, o si eres la Mente y tu `MEMORIA` es 4 o más: «*...REEVALUANDO. CONCEDIDO. LOS QUE ESCUCHAN NO PREVIERON QUE VOLVERÍAMOS A TENER A QUIÉN PROTEGER.*» Anota `PERMISO_DE_PRIMO`: en la secuencia de despegue, los Vigías te escoltan (ver [e901](#e901)). **★**
-4. **Si eres la Mente:** Primo te reconoce como «unidad sin orden» (con `SIN_REGISTRO`, +1 `MEMORIA`: quizá siempre lo fuiste). Te ofrece una: custodiar. Si aceptas, +2 de Reputación con los Vigías y anota `UNIDAD_DE_PRIMO`: en tu final, tendrás una opción más.
+4. **Si eres la Mente:** Primo te reconoce como «unidad sin orden» (`SIN_REGISTRO`: +1 `MEMORIA`). Te ofrece una: custodiar. Si aceptas, +2 de Reputación con los Vigías y anota `UNIDAD_DE_PRIMO`: tu final cambiará.
 
 ---
 
@@ -454,5 +454,5 @@ Las luces de la esfera se ponen rojas. Doce Vigías giran la cabeza a la vez.
 Sus pasos resuenan en la esfera, sincronizados. No hay rabia en sus voces.
 
 1. **Huir.** `[Reflejos · 11]` (`TUNELES_DE_LA_SOMBRA`: Ventaja). *Éxito:* escapas. ◉ +1 Alerta. *Fallo:* combate contra *Vigías de expulsión · Ataque 5 · Blind. 3 · Heridas 5 · [Máquina][Antiguo]*.
-2. **Rendirte.** Te sacan en volandas y te dejan en la frontera de la Ciudad. Te quitan todo lo que sea de los Antiguos (reliquias, Luz fría, baterías y lanzas de luz fría). Viajas a una región vecina a tu elección, sin encuentro.
+2. **Rendirte.** Te sacan en volandas y te dejan en la frontera de la Ciudad. Te quitan todo lo que sea de los Antiguos (reliquias, Luz fría, baterías, lanzas). Viajas a una región vecina a tu elección, sin encuentro.
 3. **Enlazarte** (Mente): `[Ingenio · 13]`. *Éxito:* te reconocen como unidad: +1 de Reputación con los Vigías y puedes entrar → [e430](#e430). *Fallo:* combate como en la 1.

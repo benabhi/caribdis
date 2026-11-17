@@ -63,7 +63,7 @@ El zumbido te hace cosquillas en los dientes.
 
 **Encuentro (r300).** Precio: +1 Canto (te unes un momento al coro). Botín: una **lanza vibrante** (cuerpo a cuerpo, silenciosa, +2 Ataque; +3 contra [Cantor]).
 
-- **Si ganas:** quédate el Botín. −2 de Reputación con el Coro. Bajo la túnica de uno hay una lista de nombres: la gente que el Coro ha «acogido». Si buscas a Tadeo, su nombre está: anota `RASTRO_DE_TADEO`: Ventaja para encontrarlo. · **Si pasas:** te dejan pasar.
+- **Si ganas:** quédate el Botín. −2 de Reputación con el Coro. Bajo la túnica de uno hay una lista de nombres: la gente que el Coro ha «acogido». Si buscas a Tadeo, su nombre está: anota `RASTRO_DE_TADEO`: Ventaja para encontrarlo. · **Si pasas:** te dejan pasar, cantando.
 
 ---
 
@@ -92,7 +92,7 @@ Nadie lleva zapatos. La campana suena una vez a cada paso.
 
 - Si tienes `VI_LA_PROCESION`, reconoces a algunos de los que viste en el desierto: ya sabes en qué orden caminan, y tienes Ventaja en la opción 1.
 
-1. **Buscar a quién es.** Sortéalo entre tus tripulantes no encontrados (r108; si no queda ninguno, es un desconocido). Si sale **Tadeo**, va voluntario → ve a [e620](#e620). Si sale otro, va drogado por el Canto: puedes intentar sacarlo de la fila → `[Reflejos · 11]` o `[Voluntad · 11]`. *Éxito:* ve a su primer evento (r185). *Fallo:* te descubren → combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*. Si ganas, ve a su primer evento.
+1. **Buscar a quién es.** Sortéalo entre los no encontrados (r108; si no queda ninguno, es un extraño). Si sale **Tadeo**, va voluntario → ve a [e620](#e620). Si sale otro, va drogado por el Canto: puedes sacarlo de la fila: `[Reflejos · 11]` o `[Voluntad · 11]`. *Éxito:* ve a su primer evento (r185). *Fallo:* combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*. Si ganas, ve a su primer evento.
 2. **Unirte a la procesión.** Te dan una túnica blanca. Caminas con ellos hasta la base de la torre más alta: allí te espera la Voz → [e350](#e350). +2 Canto ♫.
 3. **Sabotear la campana.** `[Reflejos · 11]`. *Éxito:* el hombre la toca y no suena. La procesión se detiene, confusa. Algunos despiertan: uno te da las gracias con 3 Chatarra que tenía escondida. −1 de Reputación con el Coro. *Fallo:* te ven. Combate como en la 1.
 
@@ -121,7 +121,7 @@ En una plaza entre las torres, veinte niños cantando en círculo. Tienen los oj
 
 1. **Escuchar.** Reconoces una canción de tu infancia. +1 Temple. +1 Canto ♫.
 2. **Preguntar a la mujer de dónde son.** «*Huérfanos de Quilla, de los Desguaces. El Canto los quiere más que nadie. Aquí son felices.*» `[Voluntad · 9]` para que te deje hablar con ellos. *Éxito:* uno de los niños, sin abrir los ojos, te dice: «*Nos hemos aprendido todas las canciones de todas las naves que cayeron. Para que no se pierdan.*» Gana `FRAGMENTO_LOS_NIÑOS_QUE_CANTAN`.
-3. **Llevarte a uno.** `[Reflejos · 11]` ☰. *Éxito:* anota `NIÑA_DEL_CORO`: si la llevas a Quilla, +3 de Reputación con los Hijos del Pecio y **★**. −2 de Reputación con el Coro. *Fallo:* la mujer grita. Combate contra *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*; si ganas, como el Éxito.
+3. **Llevarte a uno.** `[Reflejos · 11]` ☰. *Éxito:* anota `NIÑA_DEL_CORO`: si la llevas a Quilla, +3 de Reputación con los Hijos del Pecio y **★**. −2 de Reputación con el Coro. *Fallo:* grita. Combate: *Cantores del Coro · Ataque 4 · Blind. 1 · Heridas 4 · [Cantor]*; si ganas, como el Éxito.
 4. **Si llevas a Lio:** se queda mirando. Luego se une al círculo, cantando una canción que nunca le habías oído. Tienes que sacarlo: `[Voluntad · 9]`. *Fallo:* Lio se queda. Anota `LIO_EN_EL_CORO`; puedes buscarlo: gana la Pista `Torres · Lio en el coro · e628`.
 
 ---
@@ -152,7 +152,7 @@ La nota no se oye solo con los oídos: se siente en los dientes, en el pecho, en
 - **Piloto:** tus implantes se desconectan hasta mañana.
 - **Mente:** `[Ingenio · 11]`. *Fallo:* 2 Daño y +2 Canto ♫. *Éxito:* aguantas, y en la interferencia oyes un mensaje claro: gana `FRAGMENTO_LA_INTERFERENCIA`.
 - **Nativo:** tira 1d6. Con 1–2, ganas una mutación al azar.
-- **Todos:** +1 Canto ♫, y si llevas una lente de emisión o cualquier sistema llevado, `[Reflejos · 9]` para protegerlo; si fallas, baja 1 de calidad (mínimo Precaria; la lente pasa a valer 5).
+- **Todos:** +1 Canto ♫, y si llevas una lente de emisión o cualquier sistema llevado, `[Reflejos · 9]`; si fallas, baja 1 de calidad (mínimo Precaria; la lente pasa a valer 5).
 
 ---
 
@@ -166,7 +166,7 @@ Una mujer flota a un palmo del suelo, en lo alto de una escalinata, rodeada de c
 
 1. **Preguntarle qué es el Canto.** `[Voluntad · 11]` ♫. *Éxito:* te dice la verdad, o lo que ella cree que es la verdad: gana `FRAGMENTO_LA_VOZ_DEL_CORO`. Si ya tienes 2 `FRAGMENTO_`, esto cuenta como el tercero → [e840](#e840). *Fallo:* +2 Canto ♫.
 2. **Pedirle el cristal de ruta.** «*¿Para irte? ¿Por qué quieres irte?*» Si tu Reputación con el Coro es +2 o más, te lo da → [e426](#e426). Si no, se ríe.
-3. **Atacarla.** Los cantores se levantan. *La Voz y su guardia · Ataque 6 · Blind. 2 · Heridas 6 · [Cantor]*. Combate. *Si ganas:* el Coro queda sin líder. −3 de Reputación con el Coro, +1 con los Hijos del Pecio y los Desguaces. Bajo la túnica, la Voz no tiene cuerpo: solo un altavoz de los Antiguos. Gana `FRAGMENTO_LA_VOZ_VACIA`. **★** Desde hoy, donde el libro nombre a la Voz, es su sucesora.
+3. **Atacarla.** *La Voz y su guardia · Ataque 6 · Blind. 2 · Heridas 6 · [Cantor]*. Combate. *Si ganas:* el Coro queda sin líder. −3 de Reputación con el Coro, +1 con los Hijos del Pecio y los Desguaces. Bajo la túnica, la Voz no tiene cuerpo: solo un altavoz de los Antiguos. Gana `FRAGMENTO_LA_VOZ_VACIA`. **★** Desde hoy, «la Voz» es su sucesora.
 4. **Arrodillarte.** +3 Canto ♫. Te bendice. +2 de Reputación con el Coro. Y por un momento, estás en paz.
 
 ---

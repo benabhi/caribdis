@@ -194,7 +194,7 @@ Anota en tu hoja:
 - **Reputación** (r194): Hijos del Pecio, Desguaces, Coro y Vigías, de −3 a +3. Empiezan en 0 (salvo el Nativo). Hijos y Coro son rivales, igual que Desguaces y Vigías: lo que ganas con uno lo pierdes con su rival.
 - **Alerta** (r135): de 1 a 4. Empieza en 1.
 - **Reloj** (r134): empieza en 60.
-- **Pistas** 5 · **Marcas** sin límite · **Equipo** sin límite · **Reliquias** 6 (r191–r193). Un **objeto común** es cualquiera de tu Equipo que no sea un arma.
+- **Pistas** 5 · **Marcas** sin límite · **Equipo** sin límite · **Reliquias** 6 (r191–r193).
 - **Arma:** Puños (+0). **Protección:** Traje de vuelo, Blindaje 0 (la Mente: Blindaje 2 fijo, no suma armadura).
 - **Piezas:** Cobre, Hueso, Cristal, Luz fría (0). **Planos:** los de tu protagonista (r202).
 
@@ -362,11 +362,11 @@ Cada amanecer:
 |---|---|---|
 | Piloto | 1 Ración y 1 Aire (el Aire solo fuera de la Cicatriz y de los asentamientos) | 1 Herida por cada recurso que falte |
 | Nativo | 1 Ración | 1 Herida |
-| Mente | 1 Energía, solo fuera de la Cicatriz (r104) | 1 Daño |
+| Mente | 1 Energía (r104) | 1 Daño |
 
-Cada **compañero** que vaya contigo consume 1 Ración al amanecer. Si no tienes, pierde 1 de Lealtad (r186).
+Cada **compañero** que llevas contigo come 1 Ración al amanecer; si no hay, pierde 1 de Lealtad (r186).
 
-**En la Cicatriz** no gastas tus Raciones: comes de la **despensa** de la nave mientras le quede algo (r182).
+**En la Cicatriz** no gastas Raciones (comes de la **despensa** mientras le quede algo, r182) y la Mente no gasta Energía.
 
 **Recuperar:** en la Cicatriz, el Piloto rellena su Aire gratis; en un asentamiento, por 1 Chatarra. La Mente recarga su Energía como dice r104. Las Raciones se compran (r161) o se forrajean (r153).
 
@@ -719,7 +719,7 @@ Tu nave necesita seis sistemas para despegar. Cada uno se consigue por **vías**
 | **Combustible** | [e568](#e568) | Refinería de las Salinas ([e242](#e242)) · Bidones del Contable ([e405](#e405)) |
 | **Sistema personal** | Tu historia personal (r102–r104) | — |
 
-Cuando consigas un sistema, anótalo en la Hoja de la nave como **«llevado»**, con su calidad. Un sistema está **conseguido** si lo llevas o lo tienes instalado. **Motor** y **Combustible** son **pesados**: mientras lleves uno, tienes −1 a Reflejos y no puedes llevar otro pesado (salvo con `ESTIBADORA`): si consigues otro, deja uno donde estés y anota la región; lo recoges al volver. Tienes que llevarlos a la Cicatriz e **instalarlos** (r181).
+Cuando consigas un sistema, anótalo en la Hoja de la nave como **«llevado»**, con su calidad. Un sistema está **conseguido** (lo «tienes») si lo llevas o está instalado. **Motor** y **Combustible** son **pesados**: mientras lleves uno, tienes −1 a Reflejos y no puedes llevar otro pesado (salvo con `ESTIBADORA`): si consigues otro, deja uno donde estés y anota la región; lo recoges al volver. Tienes que llevarlos a la Cicatriz e **instalarlos** (r181).
 
 <a id="r181"></a>
 ### r181 · Trabajar en la nave
@@ -789,7 +789,7 @@ Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2; si tienes `SEÑAL_EN_R
 <a id="r190"></a>
 ### r190 · Hitos y mejoras
 
-Cada vez que **instales un sistema** o superes un evento o una opción con **★**, elige una mejora:
+Cada vez que **instales un sistema** o superes un evento o una opción con **★** (ver r003), elige una mejora:
 
 - +1 a un atributo (máximo 6).
 - +1 Temple máximo (máximo 4, con cualquier bonificación).
@@ -816,7 +816,7 @@ Las Marcas que empiezan por `FRAGMENTO_` son pedazos de la verdad sobre el Canto
 
 Una Pista es un destino que conoces: `Región · Nombre · eXXX`. Puedes tener **5** como máximo. Si consigues una sexta, borra otra.
 
-**Seguir una Pista** (acción del día): en su región, ve a su evento sin tirar encuentro. Después, bórrala, salvo que el evento diga lo contrario. Si lleva a un asentamiento, lo Visitas (r160) y el rumor de ese día te sale gratis.
+**Seguir una Pista** (tu acción): en su región, ve a su evento sin encuentro; luego bórrala, salvo que el evento diga otra cosa. Si lleva a un asentamiento, lo Visitas (r160) y su rumor es gratis.
 
 <a id="r193"></a>
 ### r193 · Reliquias sin identificar
@@ -832,7 +832,7 @@ Cuando encuentres una reliquia sin identificar, tira 1d6 en esta tabla para sabe
 | 5 | Una máscara sin agujeros para los ojos |
 | 6 | Un hueso de metal con espirales de puntos |
 
-La **primera vez que la uses** (en cualquier momento, como acción gratuita), tira 2d6 y suma tu Ingenio, y busca la fila. Cada fila tiene dos reliquias: tira 1d6 (1–3, la primera; 4–6, la segunda). Si tu tirada fue de 12 o más, en lugar de eso **eliges** cualquiera de tu fila o de una fila vecina. Luego ve a su entrada ([e740](#e740)–[e751](#e751)):
+La **primera vez que la uses** (en cualquier momento, como acción gratuita), tira 2d6 + Ingenio y busca la fila. Cada fila tiene dos reliquias: tira 1d6 (1–3, la primera; 4–6, la segunda). Con 12 o más, **eliges** cualquiera de tu fila o de una vecina. Luego ve a su entrada ([e740](#e740)–[e751](#e751)):
 
 | 2d6 + Ingenio | Función |
 |---|---|

@@ -57,7 +57,7 @@ La radio de tu traje cruje. Una voz de tu tripulación: sortéala entre los no e
 ### e803 · Lo que grabó la caja
 *Piloto · Reloj 20 · ⌛ 0*
 
-- **Si no tienes la Caja negra:** la frecuencia de la caja se apaga. Se le agotó la batería. Cuando la encuentres ([e807](#e807)), será **Precaria**, sin tirar. +1 `CULPA`. No sigas leyendo.
+- **Si no tienes la Caja negra:** la frecuencia de la caja se apaga. Se le agotó la batería, o alguien la encontró antes. Cuando la encuentres ([e807](#e807)), será **Precaria**, sin tirar. +1 `CULPA`. No sigas leyendo.
 - **Si tienes la Caja negra:** esta noche, por fin, la escuchas.
 
 La grabación es clara. Las alarmas. Tu voz. Y otra voz, que no es de nadie de la tripulación, que dice tranquila **por el canal interno**: «*Desvío a 1,4 grados. Confirmado.*» Y tú, en la grabación, contestas: «*Confirmado.*»
@@ -125,7 +125,7 @@ La Caja negra es tu **sistema personal**. Sin ella, la nave no aceptará a su pi
 Tiene arañazos de garras y una abolladura con forma de bota. Alguien intentó abrirla y no pudo. La pintura naranja aún brilla bajo el polvo, como si acabara de salir de fábrica. Está caliente.
 
 1. **Llevártela sin más.** Anota la Caja negra en tu Hoja como sistema llevado, con su calidad.
-2. **Escucharla ahora** (si el Reloj está por encima de 20). No esperes. → lee [e803](#e803) ahora y no el día 20: ese día no lees nada.
+2. **Escucharla ahora** (si el Reloj está por encima de 20). No quieres esperar. → lee [e803](#e803) ahora y no el día 20: ese día ya no lees nada.
 
 ---
 
@@ -212,7 +212,7 @@ Subes a lo alto de una duna y miras el planeta. Las Torres. Los Cañones. El hum
 
 Te das cuenta de que ya no piensas en Quilla. Ni en tu madre. Ni en la lengua. Solo en las estrellas.
 
-Tu Reputación con los Hijos del Pecio baja a −1 (si era mayor), pero ganas **Mirada al cielo**: Ventaja en todas las pruebas de la secuencia de despegue. Los Hijos del Pecio ya no te dan nada gratis.
+Tu Reputación con los Hijos del Pecio baja a −1 (si era mayor), pero ganas **Mirada al cielo**: Ventaja en todas las pruebas del despegue. Los Hijos del Pecio ya no te dan nada gratis.
 
 ---
 
@@ -226,7 +226,7 @@ Te esperan junto al fuego grande, con las caras pintadas de ceniza. No sonríen.
 
 1. **Aceptar.** Anota `QUIERES_QUEDARTE`: tu final será **Hogar** ([e914](#e914)), una victoria. Cuando la nave esté lista, podrás **enviarla** con tu tripulación, sin ti.
 2. **Rechazar.** Te miran con tristeza. «*Entonces llévate a alguien.*» Anota `MIRASOLES_A_BORDO` si no lo tenías.
-3. **Pedir tiempo.** Te lo dan. Anota `PIDIO_TIEMPO`: decidirás en el paso 0 del despegue.
+3. **Pedir tiempo.** Anota `PIDIO_TIEMPO`: decidirás en el paso 0 del despegue.
 
 ---
 
@@ -461,5 +461,5 @@ Las tumbas con tu nombre. Las naves idénticas a la tuya. La voz que es la tuya.
 Todo encaja de golpe, como una pieza que llevaba años fuera de sitio. Algo te tiembla por dentro, y no sabes si es miedo o alivio.
 
 **Efectos:**
-- Cada una de estas Marcas que tengas te da +1 Temple ahora (hasta tu máximo): `FRAGMENTO_LA_VOZ`, `FRAGMENTO_LA_HERMANA`, `FRAGMENTO_LA_TUMBA_FUTURA`, `TU_TUMBA`, `FRAGMENTO_LA_RADIO`, `FRAGMENTO_EL_PILOTO_FANTASMA`.
+- Cada una de estas Marcas te da +1 Temple ahora (hasta tu máximo): `FRAGMENTO_LA_VOZ`, `FRAGMENTO_LA_HERMANA`, `FRAGMENTO_LA_TUMBA_FUTURA`, `TU_TUMBA`, `FRAGMENTO_LA_RADIO`, `FRAGMENTO_EL_PILOTO_FANTASMA`.
 - Nuevo final posible: **Romper el bucle** ([e911](#e911)): si en la secuencia de despegue emites un mensaje **correcto** al pasado, quizás la próxima vez no caigas.

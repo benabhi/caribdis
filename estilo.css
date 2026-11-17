@@ -778,3 +778,5 @@ section#e004 ol.opciones > li:nth-child(3) { letter-spacing: -.002em; }
 .h-par + .h-rot { margin-top: 3.2mm; }
 .h-reloj + .h-par { margin-top: 2.6mm; }
 .hoja > .h-dias + .h-rot { margin-top: 2.2mm; }
+.rf-lema .rf-regla { font-style: normal; }
+.rf-lema .rf-regla a { color: inherit; }

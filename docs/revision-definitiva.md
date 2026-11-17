@@ -5,7 +5,7 @@ Registro de la revisión regla por regla y evento por evento. Cada línea es un 
 Criterios que se aplicaron a todo el libro:
 
 - **Los símbolos de riesgo (◉ ♫ ⚔ ⌛ ⚙ ☰) solo avisan.** Lo que se gana o se pierde lo dice siempre el texto. Todos los «◉ ◉» sueltos pasaron a «◉ +2 Alerta» y los símbolos sin efecto se quitaron.
-- **«Conseguido»** = llevado o instalado (r180). Se usa esa palabra en todas las condiciones sobre sistemas.
+- **«Conseguido»** (o «tener» un sistema) = llevado o instalado (r180). Así se leen todas las condiciones sobre sistemas.
 - **Tripulante al azar:** siempre con la misma frase, «sortéalo entre los no encontrados (r108)».
 - **Nada de dados ocultos**, nada «opcional» en el taller, ningún premio grande repetible (r004.6, con «cada vez» donde sí se repite).
 - **La Mente:** regla general «Cuerpo prestado» en r104 y reescritura de los textos que más chocaban.
@@ -26,7 +26,7 @@ Criterios que se aplicaron a todo el libro:
 
 ## B. Anotaciones del autor
 
-- [x] Apodo de Noemí: «Grasa» → **«Biela»** (libro, citas de la maqueta, app y biblia del mundo).
+- [x] Apodo de Noemí: «Grasa» → **«Biela»** (libro, citas de la maqueta y biblia del mundo). La app no se tocó en esta pasada: allí sigue «Grasa» hasta que se actualice.
 - [x] e021 (uñas, manos, pantalón): reescrito para que sirva a los tres protagonistas.
 - [x] e049 (charco): la opción pasa a ser «Probarla»; r104 aclara que las Raciones y el Aire que gane la Mente son para compañeros, despensa o trueque.
 - [x] Más casos de la Mente: e007, e010, e025, e056, e060, e067, e284, e846, e908.
@@ -44,7 +44,7 @@ Criterios que se aplicaron a todo el libro:
 - [x] r153 Éxito pleno: forrajeas como en c.
 - [x] r161 regatear sobre el total de una compra · r162 géneros de las calidades · r163 el sanador borra `ESPORAS` o `DEDOS_HELADOS`.
 - [x] r171–r172: guardián ya vencido = sala Vacía.
-- [x] r180 define «conseguido» · r185 apodo · r186 `CULPA` y Lealtad que empieza en 3.
+- [x] r180 define «conseguido» (= lo «tienes») · r185 apodo · r186 `CULPA` y Lealtad que empieza en 3.
 - [x] r190 ★ por evento u opción · r192 Pista a un asentamiento (lo Visitas y el rumor sale gratis).
 - [x] r194 Reputación −3 (B.2) · r195 caída de la Mente igual que la de los demás.
 - [x] r198 daño al enjambre y cita final («tres Heridas»).
@@ -93,6 +93,8 @@ Criterios que se aplicaron a todo el libro:
 - [x] e914 Hogar es una victoria y dice qué pasa con la nave · e918 condición reescrita · e919 acepta `BUNKER` en las Dunas · e920 qué hereda el compañero que sigue.
 - [x] Tablas resumidas: Alerta y Canto, igual que r135 y r137.
 - [x] Índice de Marcas regenerado (278 Marcas).
+- [x] Cabeceras de región (Polo, Ciudad, Torres): la «Regla especial» salía con asteriscos y un enlace en crudo; ahora se compone bien, sin cursiva.
+- [x] Relectura final del diff completo: `MASCARA_DE_LA_NIÑA` también se avisa en e043 y `REFINERIA_VOLADA` en e241; e918 aclara qué es «lograrlo» al venir del despegue.
 
 ## H. Hoja de protagonista
 
@@ -103,9 +105,11 @@ Criterios que se aplicaron a todo el libro:
 
 ## I. Comprobaciones finales
 
-- [x] `herramientas/verificar.py`: 443 entradas, 0 enlaces rotos, 0 duplicados, 0 huérfanas, 0 Marcas sin consultar.
-- [x] PDF reconstruido: 200 páginas.
-- [x] Comparación de maqueta página a página contra el PDF anterior (anclas, imágenes y fondo de columnas).
-- [x] `herramientas/revisar_maqueta.py`.
-- [x] Simulador.
-- [x] `Caribdis_Print_Friendly.pdf` y datos de la app regenerados.
+- [x] `herramientas/verificar.py`: 443 entradas, 0 enlaces rotos, 0 duplicados, 0 huérfanas, 0 Marcas que se ganan sin consultarse.
+- [x] PDF reconstruido: 200 páginas, 18 viñetas y 6 citas, como antes; todas las reglas y eventos empiezan en la misma página que en la versión anterior.
+- [x] Comparación de maqueta página a página contra el PDF anterior (anclas, imágenes y fondo de columnas); las 25 páginas con cambios de una o dos líneas se revisaron a ojo.
+- [x] `herramientas/revisar_maqueta.py`: los mismos 2 avisos de título que ya tenía el libro y un hueco grande menos.
+- [x] Simulador (3000 partidas por protagonista): Piloto 71,6 %, Nativo 70,3 %, Mente 67,8 % de victorias (antes 68,0 / 72,7 / 63,1).
+- [x] `Caribdis_Print_Friendly.pdf` regenerado (200 páginas).
+- [=] La app no se actualizó, a pedido del autor.
+- Nota: el PDF se armó en Linux; si se reconstruye en Windows, algún corte de línea puede variar un poco.

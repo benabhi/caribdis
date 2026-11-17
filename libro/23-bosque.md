@@ -33,7 +33,7 @@ Respiras y te mareas un poco: hace días que no respiras algo así. Las setas se
 
 Los Jardineros no hablan. Te miran con unos ojos que parecen gotas de resina, y siguen cuidando las setas con unas manos muy lentas.
 
-1. **Pedirles un esqueje** para el **Soporte vital** de tu nave (no con `TIRASTE_LA_NAVE` ni `QUEMASTE_EL_JARDIN`). Los Jardineros te miran sin parpadear. Piden algo a cambio. Elige:
+1. **Pedirles un esqueje** para el **Soporte vital** de tu nave (no con `TIRASTE_LA_NAVE` ni `QUEMASTE_EL_JARDIN`). Te miran sin parpadear. Piden algo a cambio. Elige:
    - *Tu sangre:* 2 Heridas. Te dan el esqueje: **Soporte vital Excelente** (no pesado; anota `JARDIN_A_BORDO`). **★**
    - *Un recuerdo:* −1 Temple máximo (permanente; mínimo 1). Te dan **Soporte vital Sólido**. Si eres la Mente, −1 `MEMORIA`; si ya está en 0, −1 Temple máximo en su lugar.
    - *Un compañero que se quede:* deja a un compañero aquí para siempre (táchalo; si eres el Piloto, +1 `CULPA`). Te dan **Soporte vital Excelente** y te bendicen: −3 Canto.
@@ -188,7 +188,7 @@ Y entre latido y latido, el corazón **canta**, pero no el mismo Canto: una cont
 El aire está tibio y húmedo, como un aliento.
 
 1. **Escuchar.** `[Voluntad · 9]`. *Éxito:* entiendes: el micelio lleva milenios **cantando en contra** del Canto para que no llegue más allá del Bosque. Gana `FRAGMENTO_LA_CONTRAMELODIA` y −3 Canto. **★** *Fallo:* el contraste te marea. 1 Herida.
-2. **Llevarte un trozo.** `[Vigor · 11]`. *Éxito:* ganas un **Corazón dorado**, una reliquia (identificada): una vez por partida, anula un evento de Canto 6 (no lo lees), y en las Torres no te sube el Canto al amanecer. Pero el bosque se debilita: anota `HERISTE_EL_CORAZON`. *Fallo:* el micelio te expulsa. 2 Heridas.
+2. **Llevarte un trozo.** `[Vigor · 11]`. *Éxito:* ganas un **Corazón dorado**, una reliquia (identificada): una vez por partida, anula un evento de Canto 6 (no lo lees), y en las Torres no te sube el Canto al amanecer. Pero el bosque se debilita: anota `HERISTE_EL_CORAZON`. *Fallo:* el micelio te expulsa a latigazos. 2 Heridas.
 3. **Ofrecerle tu Canto.** Pon la mano en el corazón. Baja tu Canto a 0 y recupera 1 Temple por cada 2 puntos que bajes (redondeando hacia arriba). Si tenías 4 o más, el corazón late más fuerte: anota `ALIMENTASTE_EL_CORAZON`.
 
 Cuando subes de nuevo a la superficie, el bosque entero suena distinto. Tardas horas en dejar de oír el latido.

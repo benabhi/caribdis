@@ -516,7 +516,11 @@ class Libro:
         self.capitulo = {'maqueta': 'region'}
         self.arte_actual = r['arte']
         cita = cita_html(r['cita'], 'cita-region')
-        lema = re.sub(r'^\*(.*)\*$', r'\1', intro.strip())
+        partes = [x.strip() for x in re.split(r'\n\s*\n', intro.strip()) if x.strip()]
+        lema = esc(re.sub(r'^\*(.*)\*$', r'\1', partes[0])) if partes else ''
+        if len(partes) > 1:   # «Regla especial»: se compone como texto, sin cursiva
+            regla = pulir(md.renderInline(inline_previo(' '.join(partes[1:]))))
+            lema += f' <span class="rf-regla">{regla}</span>'
         self.out.append(
             f'<section class="lamina lamina-region" id="{ancla}">{img(r["arte"], r["pos"], "lamina-img")}'
             f'<div class="velo-abajo"></div><div class="region-rot">'
@@ -527,7 +531,7 @@ class Libro:
             f'<div class="region-ficha">'
             f'<div class="rf-num">{r["n"]}</div>'
             f'<div class="rf-datos"><div class="rf-nombre">{esc(nombre)}</div>'
-            f'<div class="rf-lema">{esc(lema)}</div>'
+            f'<div class="rf-lema">{lema}</div>'
             f'<div class="rf-fila">{icono("mapa")}<b>Vecinas</b> {esc(r["vecinas"])}</div>'
             f'<div class="rf-fila">{icono("asentamiento")}<b>Lugar</b> {esc(r["lugar"])}</div></div></div></header>')
         self.region_pendiente = True

@@ -29,7 +29,7 @@ Una columna de humo negro que no se mueve con el viento. Debajo, un cráter de c
 
 Desde lejos se oyen martillos, motores y una música de cuerdas que nadie diría que existe aquí.
 
-1. **Ir directamente.** Gana la Pista `Cementerio · Puerto Chatarra · e400`. Síguela para visitarlo (r192): los chatarreros dejan pasar a quien llega por la pista de las grúas.
+1. **Ir directamente.** Gana la Pista `Cementerio · Puerto Chatarra · e400`. Síguela cuando quieras para visitarlo (r192): los chatarreros dejan pasar a quien llega por la pista de las grúas.
 2. **Observar desde lejos.** `[Ingenio · 9]`. *Éxito:* ves quién entra y quién sale, y en una grúa, colgando de los tobillos, a alguien con el uniforme de tu nave. Elige un tripulante no encontrado (Iria, Bruno, Amara o Noemí): su región pasa a ser el Cementerio: anota `EN_PUERTO_CHATARRA` con su nombre (ver su evento). *Fallo:* un vigía te ve. Al visitar Puerto Chatarra, pagas 1 Chatarra de «aduana».
 3. **Rodear la ciudad.** No hay nada para ti allí. Exploras las naves de los alrededores: un pecio (r170), tirando dos veces el tipo y eligiendo uno.
 
@@ -131,7 +131,7 @@ Tira 1d6 para saber cuál: 1 Casco · 2 Motor · 3 Navegación · 4 Soporte vita
 1. **Pujar.** Precio de salida: 6 Chatarra. Tira 1d6 por cada otro postor (son dos): cada uno ofrece 6 más su dado. Si pagas 1 más que la oferta mayor, es tuyo. Si no, se lo lleva otro.
 2. **Pujar con trampas.** `[Voluntad · 11]` (`ACTRIZ`: Ventaja) para convencer a los otros de que la pieza está rota. *Éxito:* lo consigues por 6. *Fallo:* lo descubren. −1 de Reputación con los Desguaces y no puedes pujar.
 3. **Robarlo después.** Sigues al ganador: `[Reflejos · 11]`. *Éxito:* es tuyo. −2 de Reputación con los Desguaces si te ven (tira 1d6: con 1–3 te ven). *Fallo:* combate contra *Ganador y sus guardias · Ataque 4 · Blind. 1 · Heridas 4 · [Náufrago]*. Si ganas, es tuyo.
-4. **Ofrecer un trabajo a cambio.** El subastador te mira. «*Hay algo en la Ciudad que quiero. Tráemelo y la pieza es tuya.*» Anota `ENCARGO_DEL_SUBASTADOR`, qué sistema era, y la Pista `Ciudad · Biblioteca de luz · e323`. Lleva el `TOMO_DE_LUZ` a Puerto Chatarra ([e406](#e406)) y el sistema es tuyo.
+4. **Ofrecer un trabajo a cambio.** «*Hay algo en la Ciudad que quiero. Tráemelo y la pieza es tuya.*» Anota `ENCARGO_DEL_SUBASTADOR`, qué sistema era, y la Pista `Ciudad · Biblioteca de luz · e323`. Lleva el `TOMO_DE_LUZ` a Puerto Chatarra ([e406](#e406)) y el sistema es tuyo.
 
 ---
 
@@ -161,7 +161,7 @@ Dos matones con trajes de vuelo pintados de dorado te cortan el paso. Detrás de
 - **Si llegaste aquí siguiendo la Pista *Lo que te robaron*** (desde [e210](#e210)): tiene tu sistema. Opciones 1 a 3 para recuperarlo; si no, se lo queda.
 - **Si tienes `DEUDAS`:** «*Ah, tú. Tienes una cuenta abierta.*» Paga 4 Chatarra o elige la opción 3.
 
-1. **Pagar.** 4 Chatarra: recuperas el sistema robado (lo llevas, con su calidad). Si no vienes por el sistema, 3 Chatarra y +1 de Reputación con los Desguaces.
+1. **Pagar.** 4 Chatarra: recuperas tu sistema (llevado). Si no vienes a por él, 3 Chatarra y +1 de Reputación con los Desguaces.
 2. **Negociar.** `[Voluntad · 11]`. *Éxito:* te contrata: anota `TRABAJO_DEL_CONTABLE` (trae 1 reliquia de los Antiguos a Puerto Chatarra y ganas 6 Chatarra y +2 de Reputación con los Desguaces; o el sistema robado). *Fallo:* te quitan 2 Chatarra «por las molestias».
 3. **Pelear.** *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. *Si ganas:* recuperas lo tuyo, el Contable huye y −3 de Reputación con los Desguaces. Anota `ENEMIGO_DEL_CONTABLE`.
 4. **Ofrecerle información.** Si tienes alguna `FRAGMENTO_`, se la vendes: 4 Chatarra por cada una que le cuentes (no la pierdes, pero cada una se vende una vez). Él escribe todo en su libro con una letra minúscula.
@@ -179,6 +179,6 @@ Una nave de rescate de hace cincuenta años, el **Argo Pálido**, casi reparada.
 Han pintado el nombre a mano, siete veces, cada una con una letra distinta. En la cubierta han plantado un huerto.
 
 1. **Unir fuerzas.** Les das un sistema que tengas **llevado** (no instalado). A cambio, en tu final, **puedes despegar con ellos** si el Argo llega antes que tu nave (Reloj 5 o menos): anota `PASAJE_EN_EL_ARGO`. Si tienes esta Marca y el Reloj llega a 5, puedes ir a [e906](#e906).
-2. **Venderles algo.** Pagan bien: un sistema Precario vale 5 Chatarra; uno Sólido, 8; uno Excelente, 11 (`SEÑAS_DE_LOS_SORDOS`: +2).
-3. **Robarles.** `[Reflejos · 13]`. *Éxito:* te llevas el sistema que tú quieras de su nave (con calidad Sólida). Anota `ROBASTE_AL_ARGO`. Si algún día vuelven a verte… *Fallo:* combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*. Si ganas, el sistema es tuyo y el Argo no despegará nunca. En ambos casos, borra `PASAJE_EN_EL_ARGO`.
+2. **Venderles algo.** Pagan bien: un sistema Precario, 5 Chatarra; uno Sólido, 8; uno Excelente, 11 (`SEÑAS_DE_LOS_SORDOS`: +2).
+3. **Robarles.** `[Reflejos · 13]`. *Éxito:* te llevas el sistema que tú quieras de su nave (Sólido). Anota `ROBASTE_AL_ARGO`. *Fallo:* combate contra *Tripulación del Argo · Ataque 5 · Blind. 2 · Heridas 5 · [Náufrago]*. Si ganas, el sistema es tuyo y el Argo no despegará nunca. En ambos casos, borra `PASAJE_EN_EL_ARGO`.
 4. **Pedirles que se queden con tu tripulación.** Si llevas un compañero, puedes dejárselo: lo cuidarán, y si el Argo despega, ese tripulante estará a salvo (cuenta como salvado en tu final). Anota `TRIPULANTE_EN_EL_ARGO`.

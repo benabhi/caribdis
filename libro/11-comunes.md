@@ -69,7 +69,7 @@ A lo lejos, en fila, caminan hacia el este una docena de figuras. Algunas van de
 
 Por primera vez desde que llegaste, **silencio absoluto**. El viento se detiene. Las bestias no hacen ruido. Es tan perfecto que te duele.
 
-Te oyes por dentro por primera vez en días.
+Te oyes por dentro, por primera vez en muchos días.
 
 - Baja tu Canto a 0.
 - Durante todo el día, cualquier tirada de pulso o efecto que dé Canto no tiene efecto.
@@ -177,7 +177,7 @@ Lo oyes antes de verlo: un clac-clac de seis patas de metal. Un **trepador** car
 
 «¡Náufrago! ¡Cliente! ¡Qué alegría! ¿Qué te falta? Lo tengo. Y si no lo tengo, lo tendré.»
 
-El trepador huele a grasa caliente y a fruta pasada. Si tienes `DEUDAS`, te conoce: «Tú le debes a alguien que me debe a mí». Paga 2 Chatarra o se va sin atenderte.
+El trepador huele a grasa caliente y a fruta pasada, y sus patas no paran quietas. Si tienes `DEUDAS`, te conoce: «Tú le debes a alguien que me debe a mí». Paga 2 Chatarra o se va sin atenderte.
 
 1. **Comprar.** Puedes comprar de la tabla r161. Además vende: **Mapa de rutas** (3 Chatarra: gana `RUTA_` a una región a tu elección, r151) y **Reliquia sin identificar** (5 Chatarra).
 2. **Pedirle trabajo.** Necesita que alguien le lleve un paquete a Quilla. Anota `PAQUETE_DE_MENDANA`. Al visitar Quilla con él, ganas 5 Chatarra. No lo abras.
@@ -278,7 +278,7 @@ Una niña con una máscara de soldador demasiado grande. Lleva un saco a la espa
 
 «No tengo nada. Y tú tampoco, ¿verdad?»
 
-Le tiembla el cañón de la pistola, pero no baja los brazos.
+Le tiembla la pistola, pero no la baja. Con `MASCARA_DE_LA_NIÑA`, dásela ([e283](#e283)) y no elijas.
 
 1. **Darle algo.** Pierdes 1 Ración. Se quita la máscara: tiene los ojos de cristal de los Hijos del Pecio. Te dice dónde dormir seguro: la próxima vez que descanses a la intemperie, no tires por la noche.
 2. **Quitarle la pistola.** `[Reflejos · 9]`. *Éxito:* es tuya. Ella huye llorando. Anota `ROBASTE_A_UNA_NIÑA`. *Fallo:* te dispara un clavo. 1 Herida, y se va.
@@ -311,7 +311,7 @@ Tiene las uñas negras de tanto rascar la piedra. Cuando habla, cuenta con los d
 
 1. **Decirle el número de tu Reloj.** Se ríe. «Eso es lo que *te queda*, no lo que *llevas*. Tú todavía tienes prisa. Qué envidia.» +1 Temple.
 2. **Preguntarle cómo sobrevivió tanto.** «No intenté irme.» Te enseña a vivir del planeta: gana `SABE_VIVIR` (forrajear da +1 Ración).
-3. **Ofrecerle venir contigo.** Te mira mucho tiempo. «Si consigues que esa cosa vuele, vuelve a por mí.» Anota `EL_VIEJO_ESPERA`. Al despegar, si tienes esta Marca y le das una plaza (e900), viene contigo: cuenta como un tripulante en el final.
+3. **Ofrecerle venir contigo.** Te mira durante mucho tiempo, sin parpadear. «Si consigues que esa cosa vuele, vuelve a por mí.» Anota `EL_VIEJO_ESPERA`. Al despegar, si tienes esta Marca y le das una plaza (e900), viene contigo: cuenta como un tripulante en el final.
 
 ---
 
@@ -400,7 +400,7 @@ Sobre la mesa, un ojo de cristal te sigue cuando te mueves.
 
 1. **Comprar un implante** (solo el Piloto): 6 Chatarra por uno del catálogo, si tienes ranura libre. Instalarlo: `[Vigor · 9]`. *Fallo:* lo instala mal, 2 Heridas, pero se queda.
 2. **Vender uno tuyo.** Te da 4 Chatarra por cada implante (Piloto), mutación (Nativo: una de las 1–9 del catálogo; la pierdes) o protocolo copiado (Mente: no lo pierdes, +1 Canto ♫, y cada uno se copia una vez).
-3. **Preguntar de dónde saca las piezas.** «De los que ya no las necesitan.» Si insistes, `[Voluntad · 9]`: te enseña un brazo con un tatuaje de tu nave. Elige un tripulante no encontrado y tira 1d6: con 1–2, ya no está: tacha su ficha (Piloto: +2 `CULPA`); con 3–6, vive: su región pasa a ser esta.
+3. **Preguntar de dónde saca las piezas.** «De los que ya no las necesitan.» `[Voluntad · 9]`: te enseña un brazo tatuado con tu nave. Elige un tripulante no encontrado; tira 1d6: con 1–2, murió: táchalo (Piloto: +2 `CULPA`); con 3–6, vive y está en esta región.
 
 ---
 
@@ -434,7 +434,7 @@ Una radio de campaña, sola, encendida en mitad de la nada. Las baterías deber�
 
 Un hombre atrapado bajo un casco de nave. Tiene las piernas aplastadas y la mirada tranquila. «No me saques. No hay nada que sacar. Solo... no dejes que me encuentren *ellos*.» Señala al este, hacia las Torres.
 
-1. **Hacer lo que pide.** `[Voluntad · 9]`. *Éxito:* +1 Temple, por terrible que sea. En todo caso, en su mochila hay 3 Chatarra y un mapa: anota `RUTA_` hacia una región vecina que elijas.
+1. **Hacer lo que pide.** `[Voluntad · 9]`. *Éxito:* +1 Temple, por terrible que sea. Y en su mochila hay 3 Chatarra y un mapa: anota `RUTA_` hacia una región vecina que elijas.
 2. **Intentar sacarlo igualmente.** `[Vigor · 11]`. *Éxito:* lo sacas, y no muere: sus piernas eran de metal. Es un Desguace. Te lo agradecerá siempre: +2 de Reputación con los Desguaces. *Fallo:* muere en tus brazos. −1 Temple.
 3. **Irte.** Esa noche, a lo lejos, oyes a alguien cantar con su voz. +1 Canto ♫.
 
@@ -460,7 +460,7 @@ Se ríen entre ellos en voz baja, sin dejar de mirarte.
 ### e056 · Un dron hermano
 *Cualquier región · ⌛ 0*
 
-Un dron de reparación de tu nave, del mismo modelo que el cuerpo de la Mente, con el número de serie raspado. Flota a trompicones, con un rotor roto y medio casco hundido.
+Un dron de reparación de tu nave, del mismo modelo que el cuerpo de la Mente, con el número de serie raspado. Flota a trompicones, con un rotor roto y medio casco hundido por un golpe.
 
 Su luz de estado parpadea en un ritmo que reconoces: el de los drones de tu nave cuando piden ayuda. Te sigue con el único sensor que le queda, girando despacio, sin acercarse del todo, como un perro que no sabe si le van a pegar.
 
@@ -489,8 +489,8 @@ El cadáver de un **cardador**, una bestia de seis patas grande como un camión,
 
 Una cúpula de emergencia de alguna colonia de hace siglos, medio enterrada pero sellada. La puerta tiene un panel numérico y una nota pegada: *el código es el número de los que se quedaron*.
 
-1. **Probar números.** `[Ingenio · 11]`. *Éxito:* el código es 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones (solo la primera vez) y hoy descansas aquí como en un asentamiento. Gana la Pista `esta región · El refugio · e058`. *Fallo:* nada.
-2. **Forzar la puerta.** `[Vigor · 11]` ◉. *Éxito:* entras, pero el sello se rompe y el refugio ya no sirve para volver. +3 Raciones. *Fallo:* 1 Herida.
+1. **Probar números.** `[Ingenio · 11]`. *Éxito:* es el 0. Dentro, todo está como lo dejaron: camas hechas, comida en latas. +3 Raciones (la primera vez) y hoy descansas aquí como en un asentamiento. Gana la Pista `esta región · El refugio · e058`. *Fallo:* nada.
+2. **Forzar la puerta.** `[Vigor · 11]`. *Éxito:* entras, pero el sello se rompe y el refugio ya no sirve para volver. +3 Raciones. *Fallo:* 1 Herida.
 3. **Leer las paredes.** Hay nombres grabados, cientos, y al final una frase: *«Nos fuimos todos al Canto. Allí no se muere.»* Gana la Pista `esta región · El refugio · e058`. Si vuelves algún día con Amara, ella reconoce los nombres de una colonia que desapareció hace cuatro siglos: gana `FRAGMENTO_LOS_QUE_SE_FUERON`.
 
 ---

@@ -1,6 +1,6 @@
 ## La tripulación
 
-*Cada tripulante tiene cuatro eventos: el **encuentro**, una **crisis**, su momento de **lealtad** (al llegar a Lealtad 3, r186) y un **desenlace**. Cuando un tripulante se una a ti, anota su ficha: Lealtad 2, Heridas 0 de 2. Si la opción que elijas en su encuentro no dice otra cosa, al terminar se une a ti.*
+*Cada tripulante tiene cuatro eventos: el **encuentro**, una **crisis**, su momento de **lealtad** (al llegar a Lealtad 3, r186) y un **desenlace**. Tras su encuentro se une a ti (si no se dice otra cosa): anota Lealtad 2, Heridas 0 de 2.*
 
 ---
 
@@ -102,7 +102,7 @@ Bruno se arrodilla. No dice nada durante mucho rato.
 La niña tiene el pelo blanco de sal y una pulsera de plástico con un número.
 
 1. **Despertarla.** `[Ingenio · 9]` (Iria: Ventaja). *Éxito:* abre los ojos. No habla tu idioma. Tiene en la muñeca un código de barras: la vendían. Bruno se la carga a la espalda. «*Ya no tengo contrato. Ahora tengo esto.*» Anota `LA_NIÑA_DE_LA_CAPSULA` (pasajera para tu final). +1 Lealtad de Bruno. **★** *Fallo:* no despierta. Bruno la lleva igualmente: anota `NIÑA_DORMIDA`; con un sanador o con Iria, cámbiala por la otra Marca.
-2. **Dejar que Bruno decida.** Bruno cierra la cápsula. «*Mi contrato era entregarla. La entregaré. Pero a mí.*» No la despertáis: anota `NIÑA_DORMIDA` (como en el Fallo) y +1 Lealtad de Bruno.
+2. **Dejar que Bruno decida.** Bruno cierra la cápsula. «*Mi contrato era entregarla. La entregaré. Pero a mí.*» No la despertáis: anota `NIÑA_DORMIDA` y +1 Lealtad de Bruno.
 3. **Avisar al comprador.** El nombre está en la cápsula: es el Contable. Te pagaría 15 Chatarra. Bruno te mira. Si eliges esto, Bruno te ataca: *Bruno · Ataque 6 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, la entregas: 15 Chatarra, `PERDIDO_BRUNO`, y −2 Temple. Si eres el Piloto, +2 `CULPA`.
 
 ---
