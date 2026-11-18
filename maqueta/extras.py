@@ -208,7 +208,7 @@ Con Desventaja, con 5 + 2 = **7**. Ventaja y Desventaja a la vez se anulan: tira
 """),
     'r135': ('recuerda', 'La Alerta elige la columna', """
 En todas las tablas de encuentros, la **columna** es tu Alerta. Con Alerta 1 te cruzas con curiosos; con
-Alerta 4, con lo que caza a los curiosos. Si ya estás en 4 y vuelve a subir, el Reloj baja 2.
+Alerta 4, con lo que caza a los curiosos.
 """),
     'r137': ('consejo', 'Antes de ir a las Torres', """
 Descansa en la Cicatriz y baja el Canto todo lo que puedas. Con 3 o más tendrás Desventaja justo

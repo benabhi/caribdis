@@ -104,7 +104,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Implantes:** elige 2 del catálogo ([e700](#e700)–[e707](#e707)). Tienes 3 ranuras; cada implante en uso consume Energía según su entrada.
 - **Manos de piloto:** Ventaja en pruebas para conducir vehículos y en la prueba del Casco al despegar (e900).
 - **Pulmones de otro mundo:** el aire de Caribdis te envenena. Gastas 1 Aire cada amanecer fuera de la Cicatriz y de los asentamientos (r136).
-- **Contador: CULPA** (empieza en 3, de 0 a 6). Baja cuando salvas a alguien de la tripulación y sube cuando alguien muere o lo abandonas. Al llegar a 0 → [e805](#e805). Al llegar a 6 → [e806](#e806).
+- **Contador: CULPA** (empieza en 3, de 0 a 6). Baja cuando salvas a alguien de la tripulación (lo dice su evento) y sube cuando alguien muere o lo abandonas. Al llegar a 0 → [e805](#e805). Al llegar a 6 → [e806](#e806).
 - **Historia:** al anochecer, con el Reloj en 50, 40, 30, 20 y 10, lee [e800](#e800), [e801](#e801), [e802](#e802), [e803](#e803) y [e804](#e804), en ese orden.
 - **Sistema personal:** la **Caja negra**.
 - **Canto 6:** → [e830](#e830).
@@ -117,7 +117,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Ajuste:** +1 Vigor o +1 Voluntad.
 - **Recursos:** Raciones 5. No usas Aire ni Energía (salvo para objetos). Heridas: 4 niveles.
 - **Mutaciones:** tira dos veces 1d12 en el catálogo ([e710](#e710)–[e721](#e721)). Si repites resultado, vuelve a tirar.
-- **Hijo de Caribdis:** nunca te pierdes al viajar (r151) y forrajeas +3 Raciones en lugar de +1 (r153).
+- **Hijo de Caribdis:** nunca te pierdes al viajar (r151) y forrajeas +2 Raciones en lugar de +1 (r153).
 - **Inestabilidad:** cada vez que tu Canto sube y queda en 3 o más, tira 1d6: con un 1 ganas una mutación nueva al azar.
 - **Forastero entre forasteros:** empiezas con −1 de Reputación con los Desguaces y +1 con los Hijos del Pecio.
 - **Contador: ARRAIGO** (empieza en 3, de 0 a 6). Sube cuando ayudas a tu pueblo y baja cuando eliges las estrellas. Al llegar a 0 → [e815](#e815). Al llegar a 6 → [e816](#e816).
@@ -134,7 +134,7 @@ Los atributos van de 1 a 6. Nunca pueden bajar de 1.
 - **Recursos:** Energía 6. No usas Aire ni Raciones. **Blindaje 2.** Tienes 4 niveles de Daño en lugar de Heridas.
 - **Protocolos:** elige 2 del catálogo ([e725](#e725)–[e732](#e732)).
 - **Enlace:** puedes hablar con las máquinas. Contra enemigos [Máquina] puedes usar la maniobra Hablar con Ingenio en lugar de Voluntad.
-- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra, también al descansar; en la Cicatriz, la primera del día es gratis. Gastas 1 Energía al amanecer fuera de la Cicatriz (allí recuperas 1) y 1 más por Viaje sin vehículo; sin Energía, 1 Daño. Recargar del todo cuesta 2 Chatarra en la Cicatriz o en un asentamiento (r136).
+- **Cuerpo de metal:** no te curas descansando. Reparar 1 Daño cuesta 1 Chatarra, también al descansar; en la Cicatriz, la primera del día es gratis. Gastas 1 Energía al amanecer fuera de la Cicatriz (allí recuperas 1) y 1 más por Viaje sin vehículo; sin Energía, 1 Daño. Recargar del todo cuesta 1 Chatarra en la Cicatriz o 2 en un asentamiento (r136).
 - **Eco:** para ti, el Canto es la Red que te reclama. Funciona igual (r137).
 - **Cuerpo prestado:** el libro habla a un cuerpo de carne; donde diga manos, respirar o dormir, entiende pinzas, sensores y reposo. No comes ni respiras: las Raciones y el Aire que ganes son para tus compañeros, la despensa o el trueque.
 - **Contador: MEMORIA** (empieza en 0, de 0 a 6). Sube al recuperar recuerdos. Al llegar a 6 → [e825](#e825).
@@ -240,7 +240,7 @@ Lo que anotaste en los pasos 2 y 3 son **Hallazgos**: cuando explores una regió
 - **Desesperado:** el Reloj empieza en 40 y la Alerta en 2. Las historias personales se leen con el Reloj en 35, 28, 20, 12 y 5.
 - **Náufrago:** el Reloj sigue bajando como cuenta de días, pero al llegar a 0 se para y no vienen los Recolectores. El Canto sube 1 cada 5 días. Para ganar, debes despegar con al menos 3 tripulantes (si no, lee [e908](#e908)).
 
-En Desesperado y en la Partida corta (r211), cuando una historia o un evento nombre el Reloj en 50, 40, 30, 20 o 10, entiende la primera, segunda… quinta fecha de tu modo.
+En Desesperado y en la Partida corta (r211), cuando una historia, un evento o una regla nombre el Reloj en 50, 40, 30, 20 o 10, entiende la primera, segunda… quinta fecha de tu modo. En [e900](#e900), la huida empieza con el Reloj en 15.
 
 Si es tu primera partida, el modo Estándar es el más equilibrado: los otros dos cambian mucho la experiencia.
 
@@ -285,7 +285,7 @@ El Temple es tu reserva de coraje y suerte (máximo 3; 4 con mejoras).
 
 Si llevas un compañero cuya habilidad encaja con la prueba (lo dice su ficha), tienes Ventaja. Si el evento dice «**solo**», la ayuda no cuenta.
 
-Por ejemplo, si llevas a alguien que sabe de motores y el evento te pide reparar uno, la prueba tiene Ventaja. Merece la pena mirar las fichas antes de tirar.
+Por ejemplo, si llevas a alguien que sabe de motores y el evento te pide reparar uno, la prueba tiene Ventaja. En el despegue (e900) solo cuentan las ayudas de su tabla.
 
 
 ---
@@ -307,9 +307,7 @@ Cada día tiene tres fases:
 1. **El Reloj baja 1.** Si llega a 0 → [e919](#e919).
 2. **Supervivencia** (r136).
 3. **Las Torres:** si amaneces en las Torres del Canto, +1 Canto ♫.
-4. **Pulso del Canto:** tira 1d6. Con 5–6 (o con 4–6 si estás en las Torres del Canto), tira otro d6 y lee [e020](#e020)–[e025](#e025): 1 = e020, 2 = e021, y así sucesivamente.
-
-Es también el mejor momento para repasar la Hoja: qué te falta, qué te sobra y adónde ir hoy.
+4. **Pulso del Canto:** tira 1d6. Con 5–6 (o con 4–6 si estás en las Torres del Canto), tira otro d6 y lee [e020](#e020)–[e025](#e025): 1 = e020, 2 = e021, y así sucesivamente. Si ya lo leíste, lee el siguiente que no hayas leído (tras e025, e020); cuando los hayas leído todos, vuelve a empezar.
 
  Si el Pulso del Canto te lleva a un evento, léelo antes de decidir nada más: a veces cambia los planes del día entero, y otras veces solo deja un mal sabor de boca.
 
@@ -345,11 +343,12 @@ El Reloj empieza en 60. Baja 1 cada amanecer y más con los eventos **⌛ +1** y
 <a id="r135"></a>
 ### r135 · Alerta
 
-La Alerta (de 1 a 4) mide cuánto ruido haces en Caribdis. Todo lo que tiene oídos, sensores o hambre te encuentra antes.
+La Alerta (de 1 a 4) mide cuánto ruido haces.
 
 - **Sube** cuando el texto lo diga (lo avisa un **◉**) y tras los combates ruidosos o largos (r145).
 - **Elige la columna** de las tablas de encuentros: cuanta más Alerta, más peligro.
 - **Si ya está en 4 y vuelve a subir**, se queda en 4, pero el Reloj baja 2: los Recolectores han oído algo.
+- **Con el tiempo:** +1 Alerta ◉ al amanecer con el Reloj en 40 y en 20.
 - **Mientras tengas `BALIZA_ACTIVA`**, cuando la Alerta llegue a 2 ya no baja de ahí.
 - **Ocultarte** (acción del día; no es descanso): la Alerta baja 1. Pasas el día bajo tierra, entre restos o en silencio. Si te ocultas a la intemperie, también tiras por la noche (r133).
 
@@ -504,7 +503,7 @@ Caribdis se divide en **ocho regiones**. Viajar te lleva a una región **vecina*
 <a id="r152"></a>
 ### r152 · Vehículos
 
-Algunos eventos dan un vehículo (moto de arena, trepador, deslizador). Con un vehículo, viajar te permite llegar hasta **dos regiones** de distancia en un día, con una sola tirada de Orientación y un solo encuentro, en la región de destino. Cada vehículo indica su consumo y sus límites.
+Algunos eventos dan un vehículo (moto de arena, trepador, deslizador). Con un vehículo, viajar te permite llegar hasta **dos regiones** de distancia en un día, con una sola tirada de Orientación y un solo encuentro, en la región de destino. Cada vehículo indica su consumo y sus límites. Si viajas sin él, se queda en la región donde lo dejaste: anótala y recógelo al volver.
 
 <a id="r153"></a>
 ### r153 · Explorar
@@ -518,7 +517,7 @@ Exploras la región en la que estás: `[Ingenio · 9]`.
 **Hallazgo**, elige uno:
 - **a)** Algo de tu lista de Hallazgos (r108) que esté en esta región (táchalo): un sistema → [e560](#e560)–[e569](#e569) (según el sistema, ver r180); un tripulante → su primer evento (r185).
 - **b)** Un **pecio o ruina** (r170).
-- **c)** **Forrajear:** +1 Ración (el Nativo, +3) o +1 Energía.
+- **c)** **Forrajear:** +1 Ración (el Nativo, +2) o +1 Energía.
 - **d)** Tira en la tabla de encuentros de la región, en la **columna 1**, sea cual sea tu Alerta.
 - **e)** **Rebuscar:** 2 piezas del tipo de la región, o 3 con un Éxito pleno (r201).
 
@@ -673,7 +672,7 @@ Un pecio o una ruina se explora **sala a sala**. Toda la exploración ocupa el d
 | 11 | **Sala especial** | Tira 1d6: con 1–3, [e500](#e500) + (tipo − 1) × 3; con 4–5, el siguiente; con 6, el siguiente a ese. *Ejemplo: en un Arca (tipo 5), con un 4 vas a [e513](#e513)* |
 | 12 | **Superviviente o tesoro** | Tira 1d6. Con 1–3, un superviviente: te da 1 Pista (r164, tirando 2d6). Con 4–6, un tesoro: 5 Chatarra y una reliquia |
 
-En la **segunda sala** que explores de cada pecio, si la tirada es 3, 4 o 5, cámbiala por **Guardián**.
+En la **segunda sala** que explores de cada pecio, si la tirada es 3, 4, 5 o 6, cámbiala por **Guardián**.
 
 <a id="r173"></a>
 ### r173 · Equipo (1d6)
@@ -734,17 +733,17 @@ Solo en la Cicatriz. Elige una:
 ### r182 · La Cicatriz
 
 Tu campamento, junto al casco de tu nave. Allí:
-- El Piloto rellena el Aire gratis. La Mente recupera 1 Energía cada amanecer, o recarga del todo por 2 Chatarra.
+- El Piloto rellena el Aire gratis. La Mente recupera 1 Energía cada amanecer, o recarga del todo por 1 Chatarra.
 - Descansar cura 2 Heridas y baja 1 de Canto.
 - Si estás en las Dunas de Óxido al amanecer o al anochecer, estás en la Cicatriz: no tiras la nocturna ni gastas Aire.
 - Puedes guardar objetos y reliquias sin límite.
-- **La despensa.** La nave guardaba raciones de emergencia: empieza con **8**. Anótala en la Hoja de la nave. Cada amanecer en la Cicatriz, tu Ración (y la de los compañeros que van contigo) sale de la despensa. Cuando se vacíe, comes de lo que lleves. Puedes dejar Raciones en ella.
-- Los compañeros que dejes en la Cicatriz se apañan con poco y no gastan nada, pero no te acompañan ni cuentan como compañeros.
+- **La despensa.** La nave guardaba raciones de emergencia: empieza con **12**. Anótala en la Hoja de la nave. Cada amanecer en la Cicatriz, tu Ración (y la de los compañeros que van contigo) sale de la despensa. Cuando se vacíe, comes de lo que lleves. Puedes dejar Raciones en ella.
+- Los que dejes en la Cicatriz al amanecer se apañan con poco y no gastan nada, pero ese día no te acompañan ni cuentan como compañeros.
 
 <a id="r183"></a>
 ### r183 · La secuencia de despegue
 
-Cuando tengas **los seis sistemas instalados**, puedes intentar despegar desde la Cicatriz como acción del día → [e900](#e900).
+Cuando tengas **los seis sistemas instalados**, puedes intentar despegar desde la Cicatriz como acción del día → [e900](#e900). Antes de despegar (aquí o con r184), lee en orden las entradas de tu historia personal que no hayas leído.
 
 <a id="r184"></a>
 ### r184 · Despegar sin todo
@@ -791,7 +790,7 @@ Cada compañero tiene **Lealtad** de 0 a 3. Empieza en 2; si tienes `SEÑAL_EN_R
 
 Cada vez que **instales un sistema** o superes un evento o una opción con **★** (ver r003), elige una mejora:
 
-- +1 a un atributo (máximo 6).
+- +1 a un atributo (máximo 5).
 - +1 Temple máximo (máximo 4, con cualquier bonificación).
 - Una **habilidad** de tu protagonista de la tabla siguiente (cada una, solo una vez).
 - Piloto: una ranura de implante más (máximo 4). Nativo: elige una mutación del catálogo. Mente: un protocolo más.
@@ -1048,7 +1047,7 @@ Para que cada partida sea distinta, tira 1d6 al preparar la partida y aplica el 
 |---|---|---|
 | 1 | **Año de óxido** | Un 4 en el dado del pulso (r131) trae una tormenta de óxido (r155) hasta el día siguiente |
 | 2 | **Sol bajo** | En Polo y Salinas, la noche a la intemperie es Noche helada (r155) |
-| 3 | **Corona inquieta** | +1 Alerta ◉ al amanecer con el Reloj en 50, 40, 30, 20 y 10 |
+| 3 | **Corona inquieta** | +1 Alerta ◉ al amanecer también con el Reloj en 50, 30 y 10 |
 | 4 | **Coro en procesión** | En Bosque y Ciudad, tira dos veces en la tabla de encuentros y quédate el que tenga [Cantor]; si no lo hay, el primero |
 | 5 | **Mercado de pecios** | Cada asentamiento vende, una sola vez, un sistema a tu elección (no el personal) de calidad Precaria por 12 Chatarra |
 | 6 | **Silencio** | No hay pulso del Canto los días en que el Reloj acaba en 5 |

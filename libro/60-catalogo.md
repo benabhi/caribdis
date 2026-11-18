@@ -21,7 +21,7 @@ Chirría al doblar el codo y huele a grasa vieja, pero no se cansa nunca.
 <a id="e702"></a>
 
 ### e702 · Filtro pulmonar
-**Pecho.** Coste: 0. Gastas Aire cada **dos** amaneceres en lugar de cada uno. Inmune a las esporas.
+**Pecho.** Coste: 0. Solo gastas Aire uno de cada **dos** amaneceres en que te tocaría gastarlo. Inmune a las esporas.
 
 <a id="e703"></a>
 ### e703 · Reflejos sintéticos

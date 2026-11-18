@@ -96,7 +96,7 @@ Un dique seco dentro del portanaves, donde los Desguaces reconstruyen naves para
 
 El depósito de combustible de la ciudad, guardado por los matones dorados del Contable. Cien bidones azules. El Contable vende combustible, pero no a cualquiera: solo a quien **le deba algo**.
 
-1. **Firmar una deuda.** Te dan **Combustible Sólido** (pesado) gratis, pero anotas `DEUDA_CON_EL_CONTABLE`. Antes de despegar tendrás que pagar 12 Chatarra en Puerto Chatarra, o en la secuencia de despegue sus hombres vendrán a cobrar (ver [e900](#e900)).
+1. **Firmar una deuda.** Te dan **Combustible Precario** (pesado) gratis, pero anotas `DEUDA_CON_EL_CONTABLE`. Antes de despegar tendrás que pagar 12 Chatarra en Puerto Chatarra, o en la secuencia de despegue sus hombres vendrán a cobrar (ver [e900](#e900)).
 2. **Pagar en el acto.** 12 Chatarra por **Combustible Sólido**, o 18 por **Excelente**.
 3. **Robar un bidón.** `[Reflejos · 13]` (Lio: Ventaja). *Éxito:* **Combustible Precario** (pesado), nadie lo sabe. *Fallo:* combate contra *Matones dorados · Ataque 4 · Blind. 2 · Heridas 4 · [Náufrago]*. Si ganas, te llevas el bidón y anotas `ENEMIGO_DEL_CONTABLE`. −3 de Reputación con los Desguaces.
 4. **Si tienes `FAVOR_DESGUACE`:** te dejan un bidón «a cuenta del favor». Borra la Marca. **Combustible Precario** (pesado).
@@ -253,7 +253,7 @@ Las bodegas de la *Esperanza* son un huerto: algas que producen aire, setas come
 Huele a tierra húmeda y a verde.
 
 1. **Pedir un cultivo.** Con Reputación +1 o más: **Soporte vital Sólido** (no pesado). Con Reputación +3: **Excelente**.
-2. **Comprarlo.** 8 Chatarra o 4 objetos por **Soporte vital Sólido**.
+2. **Comprarlo.** 12 Chatarra o 6 objetos por **Soporte vital Sólido**.
 3. **Aprender a cuidarlo.** `[Ingenio · 9]` ⌛ +1. *Éxito:* aprendes. Si consigues un Soporte vital Precario por cualquier vía, sube automáticamente a Sólido. Anota `JARDINERO`. *Fallo:* matas tres plantas. −1 de Reputación.
 4. **Robar algas.** `[Reflejos · 9]`. *Éxito:* **Soporte vital Precario**. *Fallo:* −2 de Reputación con los Hijos del Pecio.
 

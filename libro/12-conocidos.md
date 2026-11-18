@@ -13,7 +13,7 @@ En mitad del camino hay una mujer de pie, quieta, como si te esperase. Lleva una
 —Vas hacia el lugar equivocado —dice—. Todos van hacia el lugar equivocado. Yo también.
 
 Según dónde estés:
-- **Dunas, Cementerio o Cañones:** te pide agua. Si le das 1 Ración, te dice dónde **no** ir: la próxima vez que explores esta región, ignora un Fallo (cuenta como Éxito).
+- **Dunas, Cementerio o Cañones:** te pide agua. Si le das 1 Ración, te dice dónde **no** ir: la próxima vez que falles al explorar esta región, cuenta como Éxito.
 - **Salinas, Bosque o Polo:** camina contigo un rato sin hablar. Al separarse, notas que tu Canto ha bajado 1.
 - **Ciudad o Torres:** se arrodilla y apoya la máscara contra el suelo, escuchando. «Aquí debajo cantan más fuerte.» +1 Canto ♫, pero gana la Pista `Torres · La procesión · e345`.
 

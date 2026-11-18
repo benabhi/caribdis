@@ -142,3 +142,43 @@ Criterios que se aplicaron a todo el libro:
 - [x] Primo: e327.2 no baja la Reputación con los Vigías si tienes `ENCARGO_DE_PRIMO` (antes podía cerrarte la puerta del Nodo al ir a entregarlo). El rumor 4 de r164 lleva al Nodo (e430), no a e433.
 - [x] Tirada nocturna: la caja «Un día en Caribdis» y el ejemplo r198 ya no sugieren que se tira cada noche al raso; en el día 3 de r198 la Ración sale de la despensa.
 - [x] PDF rearmado: igual página a página que el anterior. Print friendly regenerado.
+
+## M. Arreglos tras la 1.ª partida narrada (18 de noviembre)
+
+Origen: la partida narrada con el Piloto (`partidas/piloto.md` en la carpeta del proyecto) y el plan [plan-arreglos-partida-1.md](plan-arreglos-partida-1.md). El plan tal cual desequilibraba a los protagonistas, así que se aplicó una versión corregida con dos objetivos más: bajar las victorias a un 65 % como mucho y que haya más combates.
+
+**Hambre y Cicatriz**
+- [x] r182: la despensa empieza con **12** Raciones (antes 8). También en la Hoja de la nave del PDF y en la hoja de texto de los apéndices.
+- [x] r153 c) y r103: forrajear da +1 Ración; el Nativo, **+2** (antes +3).
+- [x] r182: «Los que dejes en la Cicatriz **al amanecer**… pero **ese día** no te acompañan». Se acaba el truco de dejarlos «esperando» para que no coman y recogerlos al salir.
+- [x] r182 y r104: la Mente recarga del todo por **1** Chatarra en la Cicatriz (2 en un asentamiento).
+
+**Final y dificultad**
+- [x] e900 Paso 3: los Recolectores llegan al despegue con el Reloj en **25 o menos** (antes 15). En Desesperado y Partida corta sigue siendo 15 (r109).
+- [x] r135: **+1 Alerta ◉ al amanecer con el Reloj en 40 y en 20.** r213 *Corona inquieta* pasa a «también con el Reloj en 50, 30 y 10», para que el defecto siga castigando lo mismo que antes.
+- [x] r190: +1 a un atributo, **máximo 5** (los eventos que dicen «máximo 6» siguen pudiendo). Instalar un sistema sigue dando mejora.
+- [x] e405.1: la deuda da Combustible **Precario** (antes Sólido). e416.2: el Soporte vital cuesta **12** Chatarra o **6** objetos (antes 8 o 4).
+- [x] r172: en la segunda sala de cada pecio, con 3, 4, 5 **o 6** sale un Guardián (más combates).
+
+**Historia y pulsos**
+- [x] r183: antes de despegar se leen, en orden, las entradas de la historia personal que falten (e803, e804… ya no se pierden si despegas pronto).
+- [x] r131: los pulsos no se repiten hasta haberlos leído todos.
+- [x] e021: Amara lee la dirección también si está en la Cicatriz; perder un objeto, con 1–2 (antes 1–3).
+
+**Ambigüedades**
+- [x] e302.1: «para agarrarte **y volver**».
+- [x] e060: «la próxima vez que **falles** al explorar esta región, cuenta como Éxito».
+- [x] r102 CULPA: baja al salvar a alguien de la tripulación «(lo dice su evento)».
+- [x] r123: en el despegue (e900) solo cuentan las ayudas de su tabla.
+- [x] r152: el vehículo que no usas se queda en la región donde lo dejaste.
+- [x] e702 Filtro pulmonar: «uno de cada dos amaneceres en que te tocaría gastarlo».
+- [x] r109: la regla de las fechas de Desesperado y Partida corta vale también para las reglas (las fechas 40 y 20 de r135).
+- [=] e009: el +1 Temple al máximo no se pierde por error; es la regla general (r122).
+
+**Para que la maqueta no se mueva** se quitaron cuatro frases de ambientación o repetidas: «Es también el mejor momento para repasar la Hoja…» (r131), «Merece la pena mirar las fichas antes de tirar» (r123), «Todo lo que tiene oídos, sensores o hambre te encuentra antes» (r135), «Te limpias como puedes» (e021), y en el panel de la Alerta la frase que repetía el último punto de r135.
+
+**Comprobaciones**
+- [x] Simulador (3000 partidas por protagonista, semilla 1): Piloto **67,4 %**, Nativo **66,4 %**, Mente **64,3 %** (antes 71,8 / 71,8 / 68,1). Combates por partida: 1,13 / 1,51 / 3,05 (antes 0,87 / 1,01 / 2,58). El simulador casi no explora pecios ni usa e405 y e416, así que el Guardián de r172 y los atajos solo se miden en partidas narradas.
+- [x] `herramientas/verificar.py`: 0 enlaces rotos, 0 duplicados, 0 huérfanas.
+- [x] PDF: 200 páginas. Comparación página a página contra el anterior: solo cambia el texto de las 19 páginas tocadas; todas las imágenes, láminas y rellenos quedan iguales. `revisar_maqueta.py` da exactamente los mismos avisos que antes. Print friendly regenerado.
+- [ ] 2.ª partida narrada con el Piloto, para comparar con la 1.ª.
