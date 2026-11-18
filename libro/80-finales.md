@@ -30,7 +30,7 @@ Seis sistemas. Semanas de trabajo. Cien naves soldadas con rabia. Tu nave está 
 - Cada **Fallo**, también el del Canto, es un **Daño de nave**.
 - Si llevas el **Fragmento de la Matriz**, convierte un Fallo en Éxito.
 
-**Paso 3 · La huida.** Si el Reloj está en **15 o menos**, o tienes `BALIZA_ACTIVA` → [e902](#e902), y luego vuelve aquí.
+**Paso 3 · La huida.** Si el Reloj está en **25 o menos**, o tienes `BALIZA_ACTIVA` → [e902](#e902), y luego vuelve aquí.
 
 **Paso 4 · Resultado.** Cuenta los Daños de nave:
 - **0–2:** lo consigues → [e903](#e903).

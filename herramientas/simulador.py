@@ -171,6 +171,7 @@ class Partida:
     def __init__(self, prota, ev, tablas, rng, traza=False, estrategia='normal'):
         self.p, self.ev, self.tablas, self.r = prota, ev, tablas, rng
         self.traza, self.estr = traza, estrategia
+        self.pulsos_leidos = set()
         self.at = {'Vigor': 3, 'Reflejos': 3, 'Ingenio': 3, 'Voluntad': 3}
         if prota == 'piloto':
             self.at.update(Vigor=2, Reflejos=4, Ingenio=4, Voluntad=2); self.at['Reflejos'] += 1
@@ -203,7 +204,7 @@ class Partida:
         self.stats = Counter(); self.fin = None; self.danos = None; self.canto6 = 0; self.caidas = 0
         self.dia_sistemas = {}
         self.reglas_v2 = estrategia != 'v1'
-        self.despensa = 8 if self.reglas_v2 else 0
+        self.despensa = 12 if self.reglas_v2 else 0   # r182
         self.max_compas = {'normal': 1, 'sola': 0, 'grupo': 2}.get(estrategia, 1)
 
     # ----- utilidades
@@ -499,7 +500,7 @@ class Partida:
             self.encuentro(); return
         if res == 'pl':
             if self.p == 'mente': self.energia = min(6, self.energia + 1)
-            else: self.raciones = min(8, self.raciones + 1)
+            else: self.raciones = min(8, self.raciones + (2 if self.p == 'nativo' else 1))   # r153 c)
         aqui = self.hall[self.region]
         sis = [h for h in aqui if h.startswith('sis:')]
         per = [h for h in aqui if h == 'personal']
@@ -521,7 +522,7 @@ class Partida:
                 self.cicatriz.append(t)
             self.log('encuentra a', t)
         elif self.p != 'mente' and self.raciones <= 2:
-            self.raciones = min(8, self.raciones + (3 if self.p == 'nativo' else 1))
+            self.raciones = min(8, self.raciones + (2 if self.p == 'nativo' else 1))
         else:
             self.pecio()
 
@@ -536,7 +537,7 @@ class Partida:
             self.subir_canto(1)
         for sala in range(1, 5):
             t = self.d2()
-            if sala == 2 and t in (3, 4, 5):
+            if sala == 2 and t in (3, 4, 5, 6):
                 t = 2
             if t == 2:
                 g = guard
@@ -600,7 +601,7 @@ class Partida:
         if reg == 2:
             if self.necesita('Combustible'):
                 if self.chatarra >= 12: self.chatarra -= 12; self.conseguir('Combustible', 'Sólida', 'e405')
-                elif self.estr != 'sin_deuda': self.deuda = True; self.conseguir('Combustible', 'Sólida', 'e405')
+                elif self.estr != 'sin_deuda': self.deuda = True; self.conseguir('Combustible', 'Precaria', 'e405')
             elif self.necesita('Casco') and self.chatarra >= 10:
                 self.chatarra -= 10; self.conseguir('Casco', 'Sólida', 'e404')
             elif self.necesita('Casco') and self.chatarra >= 5 and self.reloj < 25:
@@ -609,8 +610,8 @@ class Partida:
             self.quilla = True
             if self.necesita('Soporte vital') and self.rep['hijos'] >= 1:
                 self.conseguir('Soporte vital', 'Excelente' if self.rep['hijos'] >= 3 else 'Sólida', 'e416')
-            elif self.necesita('Soporte vital') and self.chatarra >= 8:
-                self.chatarra -= 8; self.conseguir('Soporte vital', 'Sólida', 'e416')
+            elif self.necesita('Soporte vital') and self.chatarra >= 12:
+                self.chatarra -= 12; self.conseguir('Soporte vital', 'Sólida', 'e416')
             elif self.necesita('Motor') and self.rep['hijos'] >= 1 and self.chatarra >= 6:
                 self.chatarra -= 6; self.reloj -= 1
                 r = self.prueba('Ingenio', 9, 'V' if 'Noemí' in self.compas else None, True)
@@ -682,7 +683,7 @@ class Partida:
                 or (s == 'Soporte vital' and 'Iria' in self.compas + self.cicatriz) else None
             if self.prueba(attr, dif, modo, True) == 'fa':
                 danos += 1
-        if self.reloj <= 15 or self.baliza:
+        if self.reloj <= 25 or self.baliza:
             if self.prueba('Reflejos', 11, None, True) == 'fa':
                 danos += 2
         self.danos = danos
@@ -694,6 +695,7 @@ class Partida:
     # ----- el bucle
     def amanecer(self):
         self.dia += 1; self.reloj -= 1
+        if self.reloj in (40, 20): self.subir_alerta(1)              # r135: con el tiempo
         if self.reloj <= 0:
             self.fin = 'recolectores'; return
         if self.p == 'piloto' and self.dia == 11:
@@ -722,8 +724,8 @@ class Partida:
                 if self.aire > 0: self.aire -= 1
                 else: self.herir(1, 'asfixia'); self.stats['asfixia'] += 1
         if self.p == 'mente':
-            if self.region == 1:                                          # r104: en la Cicatriz recupera 1; recargar del todo cuesta 1 Chatarra
-                if self.energia < 4 and self.chatarra >= 2: self.chatarra -= 2; self.energia = 6
+            if self.region == 1:                                          # r104: en la Cicatriz recupera 1; recargar del todo cuesta 1 Chatarra (2 fuera)
+                if self.energia < 4 and self.chatarra >= 1: self.chatarra -= 1; self.energia = 6
                 elif self.energia < 6: self.energia += 1
             elif self.energia > 0: self.energia -= 1
             else: self.herir(1, 'sin energía'); self.stats['sin_energia'] += 1
@@ -739,7 +741,11 @@ class Partida:
         pulso = self.r.randint(1, 6)
         if pulso >= 5 or (pulso == 4 and self.region == 7):
             self.stats['pulsos'] += 1
-            self.evento(f'e02{self.r.randint(0, 5)}')
+            k = self.r.randint(0, 5)                       # r131: no se repite hasta leerlos todos
+            if len(self.pulsos_leidos) == 6: self.pulsos_leidos = set()
+            while k in self.pulsos_leidos: k = (k + 1) % 6
+            self.pulsos_leidos.add(k)
+            self.evento(f'e02{k}')
 
     def objetivo(self):
         """Región a la que ir: el Hallazgo o la vía de sistema más cercana."""

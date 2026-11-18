@@ -20,10 +20,10 @@ Te despiertas tarareando una melodía que no conoces. Te la sabes entera. Te la 
 
 Estás haciendo algo, y de pronto estás haciendo otra cosa. Ha pasado una hora. Estás manchado de óxido y has dibujado en el suelo **una espiral de puntos** perfecta.
 
-Hay óxido donde no debería: bajo las uñas, o entre las juntas de tus pinzas, como si hubieras escarbado en la chapa. No duele. Lo que te inquieta es que la espiral está bien hecha, más de lo que tú sabrías dibujar. Durante un buen rato no te atreves a apartar la vista de ella. Te limpias como puedes.
+Hay óxido donde no debería: bajo las uñas, o entre las juntas de tus pinzas, como si hubieras escarbado en la chapa. No duele. Lo que te inquieta es que la espiral está bien hecha, más de lo que tú sabrías dibujar. Durante un buen rato no te atreves a apartar la vista de ella.
 
-- Si tienes a Amara contigo, la lee: es una **dirección**. Gana la Pista `Polo · La puerta · e288`.
-- Si no, tira 1d6. Con 1–3, pierdes 1 objeto común: no sabes dónde lo dejaste. Con 4–6, encuentras a tus pies 1 Chatarra que no estaba ahí.
+- Si tienes a Amara contigo o en la Cicatriz, la lee: es una **dirección**. Gana la Pista `Polo · La puerta · e288`.
+- Si no, tira 1d6. Con 1–2, pierdes 1 objeto común: no sabes dónde lo dejaste. Con 3–6, encuentras a tus pies 1 Chatarra que no estaba ahí.
 
 ---
 
